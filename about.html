@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Candlestick PE</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- Bootstrap Icons (선택) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --brand-dark:#333;
+      --brand-accent:#0d6efd;
+    }
+    body{ background:#f8f9fa; color:#212529; }
+
+    /* NAV */
+    .navbar { background: var(--brand-dark); }
+
+    /* HERO */
+    .hero {
+      position:relative;
+      padding:96px 0 72px;
+      background: radial-gradient(1200px 600px at 10% -10%, rgba(13,110,253,.12), transparent 60%),
+                  linear-gradient(180deg, #ffffff 0%, #f6f7f9 60%, #f8f9fa 100%);
+      overflow:hidden;
+    }
+    .hero h1{ font-weight:700; letter-spacing:-.5px; }
+    .hero p.lead{ color:#5c6670; max-width:760px; }
+
+    /* SECTION HEADERS */
+    .section-title{
+      font-weight:700; letter-spacing:-.3px; margin-bottom:12px;
+    }
+    .section-sub{
+      color:#6c757d; margin-bottom:28px;
+    }
+
+    /* CARDS */
+    .card-clean{
+      border:1px solid #e9ecef; border-radius:16px; background:#fff;
+      box-shadow: 0 1px 0 rgba(16,24,40,.02);
+    }
+    .card-clean .card-body{ padding:24px; }
+    .logo-box{
+      width:44px; height:44px; border-radius:10px; display:flex; align-items:center; justify-content:center;
+      background:#f1f5ff; border:1px solid #e0e7ff;
+    }
+    .kpi-pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:6px 10px; border-radius:999px; background:#f1f5f9; color:#0f172a; font-size:13px;
+      border:1px solid #e9ecef;
+    }
+
+    /* ICON LIST */
+    .icon-li{
+      display:flex; align-items:flex-start; gap:12px;
+      padding:10px 0;
+    }
+    .icon-li i{
+      font-size:18px; line-height:1; margin-top:3px; color:var(--brand-accent);
+    }
+
+    /* FOOTER NOTE */
+    .note{
+      font-size:14px; color:#6c757d;
+    }
+
+    /* TIMELINE (간단형) */
+    .timeline{
+      border-left:2px solid #e9ecef; padding-left:16px; margin-left:10px;
+    }
+    .timeline .t-item{ position:relative; margin-bottom:14px; }
+    .timeline .t-item::before{
+      content:""; position:absolute; left:-27px; top:6px;
+      width:10px; height:10px; background:#0d6efd; border-radius:50%;
+      box-shadow:0 0 0 4px #e7f1ff;
+    }
+
+    /* CTA */
+    .cta{
+      background:#fff; border:1px solid #e9ecef; border-radius:16px; padding:28px;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="navbar navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">CANDLESTICK PE</a>
+      <div class="d-flex gap-2">
+        <a class="btn btn-outline-light btn-sm" href="/" target="_blank" rel="noopener">
+          Home <i class="bi bi-box-arrow-up-right ms-1"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <h1 class="display-5 mb-3">About PS</h1>
+      <p class="lead mb-0">
+        파트너사의 성장 단계별 니즈를 아우르는 **폭넓은 딜 커버리지**를 기반으로,
+        상황에 맞춘 **맞춤형 투자 솔루션**을 제공합니다. 장기 가치 창출과 신뢰 중심의
+        투자 파트너십을 지향합니다.
+      </p>
+    </div>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+
+      <!-- COMPANY UNITS -->
+      <section class="mb-5">
+        <h2 class="section-title">회사 소개</h2>
+        <p class="section-sub">두 개의 운용 주체가 단계별/성격별 투자를 수행합니다.</p>
+
+        <div class="row g-3">
+          <!-- PS Capital Partners -->
+          <div class="col-md-6">
+            <div class="card-clean h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="logo-box">
+                    <!-- 로고 자리 -->
+                    <img src="assets/logo-capital.svg" alt="PS Capital Partners" width="24" height="24">
+                  </div>
+                  <div>
+                    <h3 class="h5 mb-1">PS Capital Partners</h3>
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="kpi-pill"><i class="bi bi-calendar2"></i> 2017.11 설립</span>
+                      <span class="kpi-pill"><i class="bi bi-patch-check"></i> 2021.08 기관전용 PEF GP 등록</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="timeline">
+                  <div class="t-item"><strong>Private Equity</strong> 중심의 중대형 기업 투자</div>
+                  <div class="t-item">M&A·스페셜시츄에이션 중심의 구조화 솔루션</div>
+                  <div class="t-item">성장 전략 실행 지원(거버넌스/IR/Exit)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PS Investment -->
+          <div class="col-md-6">
+            <div class="card-clean h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="logo-box">
+                    <!-- 로고 자리 -->
+                    <img src="assets/logo-investment.svg" alt="PS Investment" width="24" height="24">
+                  </div>
+                  <div>
+                    <h3 class="h5 mb-1">PS Investment</h3>
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="kpi-pill"><i class="bi bi-calendar2"></i> 2023.07 설립</span>
+                      <span class="kpi-pill"><i class="bi bi-patch-check"></i> 2024.07 신기술사업투자 등록</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="timeline">
+                  <div class="t-item"><strong>Venture Capital</strong> 중심의 스타트업·SME 투자</div>
+                  <div class="t-item">그로스 자본 및 후속(시리즈) 투자 연계</div>
+                  <div class="t-item">전략적 투자자(SI) 네트워크 연동</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="note mt-2">
+          ※ 위 연혁·등록 정보는 참고용 예시이며 실제 데이터에 맞게 조정하세요. (구성 레이아웃은 PSCP “About PS” 페이지를 참조했습니다.) :contentReference[oaicite:1]{index=1}
+        </p>
+      </section>
+
+      <!-- INVESTMENT VEHICLE -->
+      <section class="mb-5">
+        <h2 class="section-title">Investment Vehicle</h2>
+        <p class="section-sub">투자 비히클을 목적에 맞게 설계합니다.</p>
+
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="card-clean h-100">
+              <div class="card-body">
+                <div class="icon-li">
+                  <i class="bi bi-briefcase"></i>
+                  <div>
+                    <h3 class="h6 mb-1">Private Equity Fund</h3>
+                    <p class="mb-0 text-muted">중대형 딜, 구조화 솔루션, 기업가치 제고 프로젝트에 최적화.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card-clean h-100">
+              <div class="card-body">
+                <div class="icon-li">
+                  <i class="bi bi-rocket-takeoff"></i>
+                  <div>
+                    <h3 class="h6 mb-1">Venture Capital Fund</h3>
+                    <p class="mb-0 text-muted">스타트업·SME 그로스 투자 및 후속 라운드 전략 연계.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEAL COVERAGE -->
+      <section class="mb-5">
+        <h2 class="section-title">Deal Coverage</h2>
+        <p class="section-sub">성장 단계 전반을 아우르는 커버리지.</p>
+
+        <div class="row g-3">
+          <div class="col-md-6 col-lg-3">
+            <div class="card-clean h-100"><div class="card-body">
+              <div class="icon-li">
+                <i class="bi bi-building"></i>
+                <div>
+                  <strong>Mid-to-Large Cap</strong>
+                  <div class="text-muted small">성숙 단계의 기업 대상 밸류업</div>
+                </div>
+              </div>
+            </div></div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card-clean h-100"><div class="card-body">
+              <div class="icon-li">
+                <i class="bi bi-diagram-3"></i>
+                <div>
+                  <strong>M&A / Special Situations</strong>
+                  <div class="text-muted small">승계·구조조정·카브아웃 등</div>
+                </div>
+              </div>
+            </div></div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card-clean h-100"><div class="card-body">
+              <div class="icon-li">
+                <i class="bi bi-graph-up-arrow"></i>
+                <div>
+                  <strong>Growth Capital</strong>
+                  <div class="text-muted small">성장 자본 공급 및 후속 투자</div>
+                </div>
+              </div>
+            </div></div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card-clean h-100"><div class="card-body">
+              <div class="icon-li">
+                <i class="bi bi-building-gear"></i>
+                <div>
+                  <strong>Startups & SMEs</strong>
+                  <div class="text-muted small">초기~그로스 단계 기업</div>
+                </div>
+              </div>
+            </div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VALUE ADD / STRATEGY -->
+      <section class="mb-5">
+        <h2 class="section-title">Value & Strategy</h2>
+        <p class="section-sub">투자 이후의 실행력까지 책임집니다.</p>
+
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="card-clean h-100"><div class="card-body">
+              <div class="icon-li">
+                <i class="bi bi-arrows-fullscreen"></i>
+                <div>
+                  <strong>M&A·승계 전략 수립</strong>
+                  <div class="text-muted small">인수/합병 및 지배구조/승계 플랜 설계</div>
+                </div>
+              </div>
+              <div class="icon-li">
+                <i class="bi bi-people"></i>
+                <div>
+                  <strong>전략적 투자자(SI) 네트워크</strong>
+                  <div class="text-muted small">산업 파트너십으로 사업 시너지 극대화</div>
+                </div>
+              </div>
+            </div></div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card-clean h-100"><div class="card-body">
+              <div class="icon-li">
+                <i class="bi bi-cash-coin"></i>
+                <div>
+                  <strong>IPO 전략</strong>
+                  <div class="text-muted small">상장 로드맵·자본시장 커뮤니케이션</div>
+                </div>
+              </div>
+              <div class="icon-li">
+                <i class="bi bi-repeat"></i>
+                <div>
+                  <strong>후속 투자(Series)</strong>
+                  <div class="text-muted small">단계별 자본 조달로 성장 가속</div>
+                </div>
+              </div>
+            </div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MISSION -->
+      <section class="mb-5">
+        <div class="card-clean">
+          <div class="card-body">
+            <h2 class="section-title mb-2">Our Mission</h2>
+            <p class="mb-0">
+              차별화된 투자 전략과 혁신적 금융 솔루션을 통해 안정적이면서도 의미 있는 수익을 추구합니다.
+              포트폴리오 기업의 성장 잠재력과 주주 가치를 극대화할 수 있도록 **가치 제고 활동**을 병행합니다.
+            </p>
+          </div>
+        </div>
+        <p class="note mt-2">문구는 샘플입니다. 실제 Key Message에 맞춰 조정하세요. (구성 참고: PSCP “About PS”). :contentReference[oaicite:2]{index=2}</p>
+      </section>
+
+      <!-- CTA -->
+      <section class="mb-4">
+        <div class="cta d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-3">
+          <div>
+            <h3 class="h5 mb-1">문의하세요</h3>
+            <div class="text-muted">파트너십·투자 제안·IR 관련 문의를 환영합니다.</div>
+          </div>
+          <div class="d-flex gap-2">
+            <a href="contact.html" class="btn btn-primary" target="_blank" rel="noopener">
+              Contact <i class="bi bi-box-arrow-up-right ms-1"></i>
+            </a>
+            <a href="portfolio.html" class="btn btn-outline-secondary" target="_blank" rel="noopener">
+              Portfolio
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="py-4 border-top bg-white">
+    <div class="container small text-muted">
+      © CANDLESTICK PE · B02, 3rd Floor, 20, Gukjekeumyung-ro, Yeongdeungpo-gu, Seoul ·
+      <a href="mailto:jcjang@candlestickpe.com" class="text-reset">jcjang@candlestickpe.com</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+          crossorigin="anonymous"></script>
+</body>
+</html>
