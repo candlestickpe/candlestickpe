@@ -2,367 +2,344 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About | Candlestick PE</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CANDLESTICK PE - About</title>
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <!-- Bootstrap Icons (선택) -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+        crossorigin="anonymous">
 
   <style>
     :root{
-      --brand-dark:#333;
-      --brand-accent:#0d6efd;
-    }
-    body{ background:#f8f9fa; color:#212529; }
-
-    /* NAV */
-    .navbar { background: var(--brand-dark); }
-
-    /* HERO */
-    .hero {
-      position:relative;
-      padding:96px 0 72px;
-      background: radial-gradient(1200px 600px at 10% -10%, rgba(13,110,253,.12), transparent 60%),
-                  linear-gradient(180deg, #ffffff 0%, #f6f7f9 60%, #f8f9fa 100%);
-      overflow:hidden;
-    }
-    .hero h1{ font-weight:700; letter-spacing:-.5px; }
-    .hero p.lead{ color:#5c6670; max-width:760px; }
-
-    /* SECTION HEADERS */
-    .section-title{
-      font-weight:700; letter-spacing:-.3px; margin-bottom:12px;
-    }
-    .section-sub{
-      color:#6c757d; margin-bottom:28px;
+      --hero-h: clamp(250px, 40vw, 400px);
+      --hero-focus-y: 40%;
+      --subhead-size: clamp(1.25rem, 2.2vw, 2rem);
+      --section-max-w: 1200px;
+      --section-x-pad: 24px;
+      --brand-blue: #0b1140; /* 외곽 남색 */
     }
 
-    /* CARDS */
-    .card-clean{
-      border:1px solid #e9ecef; border-radius:16px; background:#fff;
-      box-shadow: 0 1px 0 rgba(16,24,40,.02);
+    .hero{
+      position: relative; min-height: var(--hero-h);
+      background:#333 url('high.PNG') no-repeat 50% var(--hero-focus-y)/cover;
     }
-    .card-clean .card-body{ padding:24px; }
-    .logo-box{
-      width:44px; height:44px; border-radius:10px; display:flex; align-items:center; justify-content:center;
-      background:#f1f5ff; border:1px solid #e0e7ff;
+    .hero::before{content:"";position:absolute;inset:0;
+      background:linear-gradient(to bottom,rgba(0,0,0,.35),rgba(0,0,0,.15));}
+    .hero > .container-fluid{position:relative;z-index:1;}
+
+    @media (max-width:768px){ :root{ --hero-focus-y: 88%; } }
+
+    .brand{position:absolute;top:10px;left:20px;z-index:2;font-weight:700;color:#fff;font-size:1.1rem;letter-spacing:.5px;}
+    .hero-title{margin:0;color:#fff;}
+    .hero-subtext{
+      margin-top:25px;font-size:1rem;line-height:1.2;max-width:1200px;margin-inline:auto;color:#fff;
+      text-shadow:0 1px 2px rgba(0,0,0,.35);
     }
-    .kpi-pill{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:6px 10px; border-radius:999px; background:#f1f5f9; color:#0f172a; font-size:13px;
-      border:1px solid #e9ecef;
+    .center-wrap{ text-align:center; padding-top: calc(var(--hero-h)*.28); padding-bottom: calc(var(--hero-h)*.12); }
+
+    .content-section{ background:#fff; padding:140px 0 60px; }
+    .content-inner{ width:min(var(--section-max-w),100% - var(--section-x-pad)*2); margin:0 auto; padding:0 var(--section-x-pad); }
+    .section-title{ font-weight:800; font-size:var(--subhead-size); line-height:1.2; margin:0; color:#111; }
+    .section-title.size-lg{ --subhead-size:2rem; }
+
+    /* Key Partners */
+    .partners{ margin-top:22px; }
+    .partners-header{ background:#16224c; color:#fff; font-weight:800; text-align:center; padding:14px 16px; border-radius:2px; box-shadow:0 4px 0 rgba(0,0,0,.25); }
+    .partners-rule{ height:0; margin:10px 0 22px; border-top:4px solid #16224c; border-bottom:2px solid #dcdde3; }
+    .partners-grid{ display:grid; gap:22px; grid-template-columns:repeat(3,minmax(220px,1fr)); }
+    .partner-card{ background:#f2f2f4; border:1px solid #1b2656; border-radius:3px; text-align:center; padding:32px 16px; box-shadow:6px 6px 0 rgba(0,0,0,.25); }
+    .partners .partner-card p{ margin:0; font-size:1.25rem; font-weight:700; line-height:1.4; color:#111; }
+
+    .section-arrow{ display:flex; justify-content:center; align-items:center; margin-top:28px; }
+    .section-arrow svg{ width:60px; height:auto; }
+    .section-arrow .bar{ fill:#c7c7c7; }
+    .section-arrow .head{ fill:#a6a6a6; }
+
+    .strategy-box{ margin-top:22px; background:#fff; border:3px solid #1a1a1a; border-radius:2px; padding:18px 22px; box-shadow:4px 4px 0 rgba(0,0,0,.25); }
+    .strategy-list{ margin:0; padding-left:1.2em; list-style-type:disc; }
+    .strategy-list li{ margin:10px 0; font-size:1.02rem; line-height:1.6; color:#111; }
+    .strategy-list li::marker{ color:#000; }
+
+    /* ===== Investment Strategy: 사각형 리본 + 이중 그림자 ===== */
+    .ribbon-wrap{ margin-top:28px; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+    .ribbon{ width:100%; height:auto; display:block; }
+    .ribbon-outer{ fill:var(--brand-blue); }
+    .ribbon-inner{ fill:#fff; }
+    .ribbon-text{
+      font:700 16px/1 Pretendard,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;
+      fill:#111; text-anchor:middle; dominant-baseline:middle;
+    }
+    .ribbon-step{
+      filter: drop-shadow(0 2px 0 var(--brand-blue)) drop-shadow(0 6px 0 #d3d6df);
+    }
+    @media (max-width:768px){
+      .ribbon-text{ font:700 14px/1 Pretendard,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif; }
     }
 
-    /* ICON LIST */
-    .icon-li{
-      display:flex; align-items:flex-start; gap:12px;
-      padding:10px 0;
+    /* === Step별 메모 카드 === */
+    .steps-notes{ margin-top:26px; }
+    .steps-notes-grid{
+      display:grid; gap:18px;
+      grid-template-columns:repeat(5, minmax(180px,1fr));
     }
-    .icon-li i{
-      font-size:18px; line-height:1; margin-top:3px; color:var(--brand-accent);
+    .note-card{
+      background:#fff; border:2px solid #1a1a1a; border-radius:6px;
+      padding:16px; box-shadow:4px 4px 0 rgba(0,0,0,.18);
     }
+    .note-title{ font-weight:800; margin:0 0 10px; font-size:1.05rem; color:#111; }
 
-    /* FOOTER NOTE */
-    .note{
-      font-size:14px; color:#6c757d;
-    }
+    .note-list{ list-style: disc outside; margin:.2em 0 0; padding-left:1.2em; }
+    .note-list li{ margin:.38em 0; line-height:1.6; color:#222; }
 
-    /* TIMELINE (간단형) */
-    .timeline{
-      border-left:2px solid #e9ecef; padding-left:16px; margin-left:10px;
-    }
-    .timeline .t-item{ position:relative; margin-bottom:14px; }
-    .timeline .t-item::before{
-      content:""; position:absolute; left:-27px; top:6px;
-      width:10px; height:10px; background:#0d6efd; border-radius:50%;
-      box-shadow:0 0 0 4px #e7f1ff;
-    }
+    .note-card.active{ border-color:var(--brand-blue); box-shadow:6px 6px 0 rgba(11,17,64,.28); }
+    .ribbon-step.is-active text{ text-decoration:underline; }
 
-    /* CTA */
-    .cta{
-      background:#fff; border:1px solid #e9ecef; border-radius:16px; padding:28px;
+    @media (max-width: 1024px){ .steps-notes-grid{ grid-template-columns:repeat(2, minmax(180px,1fr)); } }
+    @media (max-width: 640px){ .steps-notes-grid{ grid-template-columns:1fr; } }
+
+    /* ===== 떠 있는(투명) 네비게이션 ===== */
+    .navbar--floating{
+      position: absolute;
+      top: 14px;
+      right: 16px;
+      background: transparent !important;
+      padding: 0 !important;
+      z-index: 1000;
+    }
+    .navbar--floating .navbar-toggler{
+      position: static !important;
+      transform: none !important;
+      margin: 0;
     }
   </style>
 </head>
+
 <body>
-  <!-- NAV -->
-  <nav class="navbar navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="/">CANDLESTICK PE</a>
-      <div class="d-flex gap-2">
-        <a class="btn btn-outline-light btn-sm" href="/" target="_blank" rel="noopener">
-          Home <i class="bi bi-box-arrow-up-right ms-1"></i>
-        </a>
-      </div>
-    </div>
+  <!-- 떠 있는(투명) 햄버거 버튼 -->
+  <nav class="navbar navbar-dark navbar--floating" aria-label="Main navigation">
+    <button class="navbar-toggler border-0" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+            aria-controls="offcanvasMenu" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   </nav>
 
-  <!-- HERO -->
-  <header class="hero">
-    <div class="container">
-      <h1 class="display-5 mb-3">About PS</h1>
-      <p class="lead mb-0">
-        파트너사의 성장 단계별 니즈를 아우르는 **폭넓은 딜 커버리지**를 기반으로,
-        상황에 맞춘 **맞춤형 투자 솔루션**을 제공합니다. 장기 가치 창출과 신뢰 중심의
-        투자 파트너십을 지향합니다.
-      </p>
+  <!-- 오프캔버스 메뉴 -->
+  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1"
+       id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel"
+       style="--bs-offcanvas-width:300px;">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-  </header>
-
-  <main class="py-5">
-    <div class="container">
-
-      <!-- COMPANY UNITS -->
-      <section class="mb-5">
-        <h2 class="section-title">회사 소개</h2>
-        <p class="section-sub">두 개의 운용 주체가 단계별/성격별 투자를 수행합니다.</p>
-
-        <div class="row g-3">
-          <!-- PS Capital Partners -->
-          <div class="col-md-6">
-            <div class="card-clean h-100">
-              <div class="card-body">
-                <div class="d-flex align-items-center gap-3 mb-3">
-                  <div class="logo-box">
-                    <!-- 로고 자리 -->
-                    <img src="assets/logo-capital.svg" alt="PS Capital Partners" width="24" height="24">
-                  </div>
-                  <div>
-                    <h3 class="h5 mb-1">PS Capital Partners</h3>
-                    <div class="d-flex flex-wrap gap-2">
-                      <span class="kpi-pill"><i class="bi bi-calendar2"></i> 2017.11 설립</span>
-                      <span class="kpi-pill"><i class="bi bi-patch-check"></i> 2021.08 기관전용 PEF GP 등록</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="timeline">
-                  <div class="t-item"><strong>Private Equity</strong> 중심의 중대형 기업 투자</div>
-                  <div class="t-item">M&A·스페셜시츄에이션 중심의 구조화 솔루션</div>
-                  <div class="t-item">성장 전략 실행 지원(거버넌스/IR/Exit)</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- PS Investment -->
-          <div class="col-md-6">
-            <div class="card-clean h-100">
-              <div class="card-body">
-                <div class="d-flex align-items-center gap-3 mb-3">
-                  <div class="logo-box">
-                    <!-- 로고 자리 -->
-                    <img src="assets/logo-investment.svg" alt="PS Investment" width="24" height="24">
-                  </div>
-                  <div>
-                    <h3 class="h5 mb-1">PS Investment</h3>
-                    <div class="d-flex flex-wrap gap-2">
-                      <span class="kpi-pill"><i class="bi bi-calendar2"></i> 2023.07 설립</span>
-                      <span class="kpi-pill"><i class="bi bi-patch-check"></i> 2024.07 신기술사업투자 등록</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="timeline">
-                  <div class="t-item"><strong>Venture Capital</strong> 중심의 스타트업·SME 투자</div>
-                  <div class="t-item">그로스 자본 및 후속(시리즈) 투자 연계</div>
-                  <div class="t-item">전략적 투자자(SI) 네트워크 연동</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <p class="note mt-2">
-          ※ 위 연혁·등록 정보는 참고용 예시이며 실제 데이터에 맞게 조정하세요. (구성 레이아웃은 PSCP “About PS” 페이지를 참조했습니다.) :contentReference[oaicite:1]{index=1}
-        </p>
-      </section>
-
-      <!-- INVESTMENT VEHICLE -->
-      <section class="mb-5">
-        <h2 class="section-title">Investment Vehicle</h2>
-        <p class="section-sub">투자 비히클을 목적에 맞게 설계합니다.</p>
-
-        <div class="row g-3">
-          <div class="col-md-6">
-            <div class="card-clean h-100">
-              <div class="card-body">
-                <div class="icon-li">
-                  <i class="bi bi-briefcase"></i>
-                  <div>
-                    <h3 class="h6 mb-1">Private Equity Fund</h3>
-                    <p class="mb-0 text-muted">중대형 딜, 구조화 솔루션, 기업가치 제고 프로젝트에 최적화.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="card-clean h-100">
-              <div class="card-body">
-                <div class="icon-li">
-                  <i class="bi bi-rocket-takeoff"></i>
-                  <div>
-                    <h3 class="h6 mb-1">Venture Capital Fund</h3>
-                    <p class="mb-0 text-muted">스타트업·SME 그로스 투자 및 후속 라운드 전략 연계.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- DEAL COVERAGE -->
-      <section class="mb-5">
-        <h2 class="section-title">Deal Coverage</h2>
-        <p class="section-sub">성장 단계 전반을 아우르는 커버리지.</p>
-
-        <div class="row g-3">
-          <div class="col-md-6 col-lg-3">
-            <div class="card-clean h-100"><div class="card-body">
-              <div class="icon-li">
-                <i class="bi bi-building"></i>
-                <div>
-                  <strong>Mid-to-Large Cap</strong>
-                  <div class="text-muted small">성숙 단계의 기업 대상 밸류업</div>
-                </div>
-              </div>
-            </div></div>
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <div class="card-clean h-100"><div class="card-body">
-              <div class="icon-li">
-                <i class="bi bi-diagram-3"></i>
-                <div>
-                  <strong>M&A / Special Situations</strong>
-                  <div class="text-muted small">승계·구조조정·카브아웃 등</div>
-                </div>
-              </div>
-            </div></div>
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <div class="card-clean h-100"><div class="card-body">
-              <div class="icon-li">
-                <i class="bi bi-graph-up-arrow"></i>
-                <div>
-                  <strong>Growth Capital</strong>
-                  <div class="text-muted small">성장 자본 공급 및 후속 투자</div>
-                </div>
-              </div>
-            </div></div>
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <div class="card-clean h-100"><div class="card-body">
-              <div class="icon-li">
-                <i class="bi bi-building-gear"></i>
-                <div>
-                  <strong>Startups & SMEs</strong>
-                  <div class="text-muted small">초기~그로스 단계 기업</div>
-                </div>
-              </div>
-            </div></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- VALUE ADD / STRATEGY -->
-      <section class="mb-5">
-        <h2 class="section-title">Value & Strategy</h2>
-        <p class="section-sub">투자 이후의 실행력까지 책임집니다.</p>
-
-        <div class="row g-3">
-          <div class="col-md-6">
-            <div class="card-clean h-100"><div class="card-body">
-              <div class="icon-li">
-                <i class="bi bi-arrows-fullscreen"></i>
-                <div>
-                  <strong>M&A·승계 전략 수립</strong>
-                  <div class="text-muted small">인수/합병 및 지배구조/승계 플랜 설계</div>
-                </div>
-              </div>
-              <div class="icon-li">
-                <i class="bi bi-people"></i>
-                <div>
-                  <strong>전략적 투자자(SI) 네트워크</strong>
-                  <div class="text-muted small">산업 파트너십으로 사업 시너지 극대화</div>
-                </div>
-              </div>
-            </div></div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="card-clean h-100"><div class="card-body">
-              <div class="icon-li">
-                <i class="bi bi-cash-coin"></i>
-                <div>
-                  <strong>IPO 전략</strong>
-                  <div class="text-muted small">상장 로드맵·자본시장 커뮤니케이션</div>
-                </div>
-              </div>
-              <div class="icon-li">
-                <i class="bi bi-repeat"></i>
-                <div>
-                  <strong>후속 투자(Series)</strong>
-                  <div class="text-muted small">단계별 자본 조달로 성장 가속</div>
-                </div>
-              </div>
-            </div></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- MISSION -->
-      <section class="mb-5">
-        <div class="card-clean">
-          <div class="card-body">
-            <h2 class="section-title mb-2">Our Mission</h2>
-            <p class="mb-0">
-              차별화된 투자 전략과 혁신적 금융 솔루션을 통해 안정적이면서도 의미 있는 수익을 추구합니다.
-              포트폴리오 기업의 성장 잠재력과 주주 가치를 극대화할 수 있도록 **가치 제고 활동**을 병행합니다.
-            </p>
-          </div>
-        </div>
-        <p class="note mt-2">문구는 샘플입니다. 실제 Key Message에 맞춰 조정하세요. (구성 참고: PSCP “About PS”). :contentReference[oaicite:2]{index=2}</p>
-      </section>
-
-      <!-- CTA -->
-      <section class="mb-4">
-        <div class="cta d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-3">
-          <div>
-            <h3 class="h5 mb-1">문의하세요</h3>
-            <div class="text-muted">파트너십·투자 제안·IR 관련 문의를 환영합니다.</div>
-          </div>
-          <div class="d-flex gap-2">
-            <a href="contact.html" class="btn btn-primary" target="_blank" rel="noopener">
-              Contact <i class="bi bi-box-arrow-up-right ms-1"></i>
-            </a>
-            <a href="portfolio.html" class="btn btn-outline-secondary" target="_blank" rel="noopener">
-              Portfolio
-            </a>
-          </div>
-        </div>
-      </section>
-
+    <div class="offcanvas-body">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
     </div>
-  </main>
+  </div>
 
-  <!-- FOOTER -->
-  <footer class="py-4 border-top bg-white">
-    <div class="container small text-muted">
-      © CANDLESTICK PE · B02, 3rd Floor, 20, Gukjekeumyung-ro, Yeongdeungpo-gu, Seoul ·
-      <a href="mailto:jcjang@candlestickpe.com" class="text-reset">jcjang@candlestickpe.com</a>
+  <!-- Hero -->
+  <div class="hero">
+   <a href="index.html"
+   class="brand"
+   style="text-decoration:none !important; color:#fff; cursor:pointer"
+   aria-label="Go to Home (Index)">
+  CANDLESTICK PE
+</a>
+
+    <div class="container-fluid px-4 center-wrap">
+      <h1 class="display-4 hero-title">About Company</h1>
+      <div class="hero-subtext">
+        We make trust our highest value, leveraging seasoned expertise and rigorous, data-driven analysis to maximize client returns.
+      </div>
     </div>
-  </footer>
+  </div>
 
-  <!-- Bootstrap JS -->
+  <!-- Deal Sourcing -->
+  <section class="content-section" id="deal-sourcing">
+    <div class="content-inner">
+      <h2 class="section-title size-lg">■ Deal Sourcing Strategy</h2>
+
+      <div class="partners" aria-labelledby="partners-title">
+        <div class="partners-header" id="partners-title">Key Partners</div>
+        <div class="partners-rule"></div>
+        <div class="partners-grid">
+          <div class="partner-card"><p>Accounting Firms</p></div>
+          <div class="partner-card"><p>Private Equity</p></div>
+          <div class="partner-card"><p>Asset Management Company</p></div>
+        </div>
+      </div>
+
+      <div class="section-arrow" aria-hidden="true">
+        <svg viewBox="0 0 64 64" role="img" aria-label="down arrow">
+          <rect class="bar" x="16" y="6"  width="32" height="6" rx="1.5"></rect>
+          <rect class="bar" x="16" y="16" width="32" height="6" rx="1.5"></rect>
+          <rect class="bar" x="16" y="26" width="32" height="6" rx="1.5"></rect>
+          <path class="head" d="M4 32 L32 60 L60 32 Z"></path>
+        </svg>
+      </div>
+
+      <div class="strategy-box">
+        <ul class="strategy-list" style="list-style-position:outside; padding-left:3em;">
+          <li>Proactively screen M&amp;A opportunities through accounting firms’ FAS practices and originate pathways to engage strategic investors.</li>
+          <li>Source opportunities to acquire significant equity stakes in private companies via the Korea Asset Management Corporation (KAMCO).</li>
+          <li>Maintain origination channels with commercial banks to identify quality investment opportunities in blue-chip companies.</li>
+          <li>Expand relationships with PEs, asset managers, and securities firms (investment banks) to establish co-GP and co-investment partnerships.</li>
+          <li>Leverage our extended network—portfolio companies, their affiliates, and key partners—to broaden deal flow and investment opportunities.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Investment Strategy -->
+  <section class="content-section" id="investment-strategy">
+    <div class="content-inner">
+      <h2 class="section-title size-lg">■ Investment Strategy</h2>
+
+      <div class="ribbon-wrap" role="group" aria-label="Investment process">
+        <svg class="ribbon"
+             viewBox="0 0 1260 64"
+             preserveAspectRatio="xMidYMid meet"
+             shape-rendering="crispEdges">
+          <defs>
+            <g id="step-outer-rect"><rect class="ribbon-outer" x="0" y="0" width="220" height="64" /></g>
+            <g id="step-inner-rect"><rect class="ribbon-inner" x="10" y="6" width="200" height="52" /></g>
+            <g id="step-outer"><use href="#step-outer-rect"/></g>
+            <g id="step-inner"><use href="#step-inner-rect"/></g>
+            <g id="step-outer-leftflat"><use href="#step-outer-rect"/></g>
+            <g id="step-inner-leftflat"><use href="#step-inner-rect"/></g>
+          </defs>
+
+          <!-- x 증분: 220(폭) + 28(간격) = 248 -->
+          <g class="ribbon-step" data-step="0" transform="translate(20,0)">
+            <use href="#step-outer" /><use href="#step-inner" />
+            <text class="ribbon-text" x="110" y="32">Deal Sourcing</text>
+          </g>
+          <g class="ribbon-step" data-step="1" transform="translate(268,0)">
+            <use href="#step-outer" /><use href="#step-inner" />
+            <text class="ribbon-text" x="110" y="32">Due Diligence</text>
+          </g>
+          <g class="ribbon-step" data-step="2" transform="translate(516,0)">
+            <use href="#step-outer" /><use href="#step-inner" />
+            <text class="ribbon-text" x="110" y="32">Execution</text>
+          </g>
+          <g class="ribbon-step" data-step="3" transform="translate(764,0)">
+            <use href="#step-outer" /><use href="#step-inner" />
+            <text class="ribbon-text" x="110" y="32">Monitoring</text>
+          </g>
+          <g class="ribbon-step" data-step="4" transform="translate(1012,0)">
+            <use href="#step-outer" /><use href="#step-inner" />
+            <text class="ribbon-text" x="110" y="32">Exit</text>
+          </g>
+        </svg>
+      </div>
+
+      <!-- ▼ 리본 5단계 아래 내용: 특수기호 → 자동 리스트 변환 -->
+      <div class="steps-notes" role="group" aria-label="Investment details by step">
+        <div class="steps-notes-grid">
+          <article id="note-0" class="note-card" role="listitem">
+            <h3 class="note-title">Deal Sourcing</h3>
+            <div class="note-body" data-autosplit>
+              〮 Identification of Investment Targets through Networks with Securities Firms, Banks, and Accounting Firms
+              〮 Conducting Investment Checklist Reviews
+              〮 Assessing Growth Potential, Stability, and Recoverability
+            </div>
+          </article>
+
+          <article id="note-1" class="note-card" role="listitem">
+            <h3 class="note-title">Due Diligence</h3>
+            <div class="note-body" data-autosplit>
+              〮 Due Diligence Checklist Review
+              〮 Management Interviews LDD / FDD / CDD
+              〮 Valuation Adjustment
+              〮 Negotiation of Investment Terms
+            </div>
+          </article>
+
+          <article id="note-2" class="note-card" role="listitem">
+            <h3 class="note-title">Execution</h3>
+            <div class="note-body" data-autosplit>
+              〮 Review of Contract Documents
+              〮 Capital Deployment
+            </div>
+          </article>
+
+          <article id="note-3" class="note-card" role="listitem">
+            <h3 class="note-title">Monitoring</h3>
+            <div class="note-body" data-autosplit>
+              〮 Attendance at Board Meetings and Shareholders’ Meetings
+              〮 Performance Monitoring
+              〮 Preparation of Fund Operation Reports
+            </div>
+          </article>
+
+          <article id="note-4" class="note-card" role="listitem">
+            <h3 class="note-title">Exit</h3>
+            <div class="note-body" data-autosplit>
+              〮 Review of Valuation Appropriateness
+              〮 Assessment of Various Exit Strategies
+              〮 Consideration of Timing and Schedule
+            </div>
+          </article>
+        </div>
+      </div>
+      <!-- ▲ 여기까지 -->
+    </div>
+  </section>
+
+  <!-- Interaction Script -->
+  <script>
+    (function(){
+      const steps = document.querySelectorAll('.ribbon-step');
+      const cards = document.querySelectorAll('.note-card');
+      function activate(idx){
+        steps.forEach(s => s.classList.toggle('is-active', s.dataset.step == idx));
+        cards.forEach(c => c.classList.toggle('active', c.id === 'note-' + idx));
+      }
+      steps.forEach(s => {
+        s.style.cursor = 'pointer';
+        s.addEventListener('click', () => {
+          const idx = s.dataset.step;
+          const target = document.getElementById('note-' + idx);
+          if(target){
+            activate(idx);
+            target.scrollIntoView({ behavior:'smooth', block:'start' });
+          }
+        });
+      });
+    })();
+
+    (function(){
+      const SPLIT_RE = /[〮ㆍ•●○◦∙·‧]+/;
+      document.querySelectorAll('.note-body[data-autosplit]').forEach(node => {
+        const raw = node.textContent
+          .replace(/\u000B/g, ' ')
+          .replace(/\u00A0/g, ' ')
+          .replace(/\s+/g, ' ')
+          .trim();
+
+        const parts = raw.split(SPLIT_RE).map(s => s.trim()).filter(Boolean);
+        if (parts.length <= 1) return;
+
+        const ul = document.createElement('ul');
+        ul.className = 'note-list';
+        parts.forEach(text => {
+          const li = document.createElement('li');
+          li.textContent = text;
+          ul.appendChild(li);
+        });
+        node.replaceChildren(ul);
+      });
+    })();
+  </script>
+
+  <!-- Bootstrap JS (bundle) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
           crossorigin="anonymous"></script>
