@@ -1,11 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CandleStick PE</title>
 
+  <!-- ✅ 이전과 같은 글씨체 유지: 기존 default.css 그대로 사용 -->
   <link rel="stylesheet" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/easygpt/default.css">
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
@@ -19,37 +22,34 @@
       min-height:100vh;
       display:flex;
       flex-direction:column;
-      margin:-0px;
+      margin:0;
     }
 
-    .navbar .navbar-toggler{
-      position:absolute; right:20px; top:40%; transform:translateY(-50%);
+    /* 히어로(배경 사진) */
+    .site-hero{
+      flex:1 0 auto;
+      display:flex;
+      align-items:center;
+      position:relative;
+      overflow:hidden;
+      min-height:0;
+
+      background-image: url('sunset1.jpg'); /* 필요 이미지로 교체 */
+      background-size: cover;
+      background-position: center 90%;
+      background-repeat: no-repeat;
     }
 
-.site-hero{
-  flex:1 0 auto;
-  display:flex;
-  align-items:center;
-  position:relative;
-  overflow:hidden;
-  min-height:0;
-
-  /* 배경 이미지: 아래쪽을 더 보이게(center + 70%로 세로 포지션을 내림) */
-  background-image: url('sunset1.jpg');
-  background-size: cover;
-  background-position: center 90%; /* ← 이 값을 60%/70%/80%로 바꿔서 미세조정 */
-  background-repeat: no-repeat;
-}
-    /* 하단 반투명 바(검정 네모) */
+    /* 하단 반투명 바(기존 파란 박스 느낌) */
     .hero--fade::after{
       content:"";
       position:absolute; left:0; right:0; bottom:0;
-      height:80px; /* 조절 가능 */
+      height:80px;
       background: rgba(0,0,0,0.38);
       z-index:0; pointer-events:none;
     }
 
-    /* 푸터 텍스트: 가운데에 container 배치, 내부는 별도 정렬 가능 */
+    /* 하단 텍스트 */
     .hero-footer{
       position:absolute; left:0; right:0; bottom:0;
       z-index:2; color:#fff;
@@ -61,109 +61,109 @@
     }
     .hero-footer .container{
       position:relative;
-      pointer-events:auto; /* 링크 클릭 허용 */
+      pointer-events:auto;
       display:flex;
       flex-direction:column;
       align-items:center;
       justify-content:center;
       gap:2px;
     }
-    .hero-title--left{
-      align-self:flex-start;
-      padding-left:12px;
-      margin:0;
-      font-weight:600;
-      white-space:nowrap;
-    }
     .hero-sub{ text-align:center; margin:0; font-size:14px; line-height:1.35; }
     .hero-footer a{ color:inherit; text-decoration:underline; pointer-events:auto; }
 
-    /* 기타: 말풍선 카드 등이 위로 보이도록 z-index 조절 */
+    /* ⬇️ 상단(빨간 박스) → 하단과 같은 명암의 반투명 바 */
+    .topbar {
+      position: absolute; left: 0; right: 0; top: 0;
+      height: 150px;                           /* 하단 바와 동일 높이 */
+      display: flex; align-items: center;
+      background: rgba(0,0,0,0.38);           /* 하단 바와 동일한 명암 */
+      z-index: 10;
+    }
+    .topbar h1 {
+      /* ✅ 글씨체: 별도 font-family 지정 없음(기존과 동일) */
+      margin: 0;
+      color: #fff;
+      text-shadow: 0 2px 6px rgba(0,0,0,.5);
+      font-weight: 300;
+      font-size: calc(3.7rem - 4pt);          /* 이전 상단 타이틀과 동일 크기 */
+      line-height: 1.05;
+      white-space: nowrap;
+    }
+
+    /* 햄버거 버튼: 배경 없이 떠 있게 */
+    .navbar--floating{
+      position: absolute; top: 18px; right: 18px;
+      background: transparent !important; padding: 0 !important; z-index: 11;
+    }
+    .navbar--floating .navbar-toggler{ position: static !important; transform: none !important; margin: 0; }
+
+    /* 말풍선 카드가 사진 위로 올라오도록 */
     .site-hero > .container { position:relative; z-index:1; }
   </style>
 </head>
 
 <body>
-  <!-- top title (kept as-is) -->
-  <div class="hero" style="background-color:#333333; padding:2rem 0;">
-    <div class="container-fluid px-4">
-      <h1 class="display-4 text-light" style="font-size: calc(3.7rem - 4pt); line-height: 1.1; transform: translateY(6px); margin: 0;">
-        CANDLESTICK PRIVATE EQUITY
-      </h1>
-    </div>
-  </div>
-
-<!-- navbar -->
-<nav class="navbar navbar-dark py-3" style="background:#333; position:relative;">
-  <div class="container">
-    
-
-    <!-- ✅ collapse → offcanvas 로 통일 -->
-    <button class="navbar-toggler border-0" type="button"
-            data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
-            aria-controls="offcanvasMenu" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>
-</nav>
-
-<!-- ✅ 여기! 위 <nav>...</nav> 바로 아래에 Offcanvas 추가 -->
-<div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1"
-     id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel"
-     style="--bs-offcanvas-width:300px;">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
-    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-
-  <div class="offcanvas-body">
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item">
-  <a class="nav-link" href="about.html" target="_blank" rel="noopener">About</a>
-</li>
-      <li class="nav-item">
-  <a class="nav-link" href="portfolio.html" target="_blank" rel="noopener">Portfolio</a>
-</li>
-      <li class="nav-item">
-  <a class="nav-link" href="team.html" target="_blank" rel="noopener">Team</a>
-</li>
-
-    </ul>
-  </div>
-</div>
-  </nav>
-
-  <!-- hero section: background-image applied to .site-hero -->
+  <!-- 히어로 섹션(배경 사진) -->
   <section class="hero site-hero hero--fade d-flex align-items-center">
+    <!-- ⬆️ 상단 반투명 바(빨간 박스 대체) -->
+    <div class="topbar">
+      <div class="container-fluid px-4">
+        <h1 class="display-4">CANDLESTICK PRIVATE EQUITY</h1>
+      </div>
+    </div>
+
+    <!-- 배경 없는 떠 있는 햄버거 버튼 -->
+    <nav class="navbar navbar-dark navbar--floating" aria-label="Main navigation">
+      <button class="navbar-toggler border-0" type="button"
+              data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+              aria-controls="offcanvasMenu" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+
     <div class="container">
-      <!-- 투명한 카드 (말풍선) -->
+      <!-- 투명한 카드(말풍선) -->
       <div class="p-5"
-           style="max-width:420px; background:rgba(10,20,40,0.55); margin-left:-250px; backdrop-filter: blur(4px); padding-block:4.2rem; transform:translateY(-170px);">
+           style="max-width:420px; background:rgba(10,20,40,0.55); margin-left:-250px; backdrop-filter: blur(4px); padding-block:4.2rem; transform:translateY(40px);">
         <h2 class="h3 text-white mb-3" style="font-size: calc(2.2rem - 2pt); line-height:1.1; transform: translateY(6px); margin:0; font-weight:700;">
           CANDLESTICK PE
         </h2>
-
         <p class="text-white-50 small" style="margin-top:1rem;">
           CANDLESTICK PE is a prominent investment firm in Korea, focusing on private equity and venture capital.
           With a strategic presence in the region, we drive innovation, foster growth, and create lasting value for our partners.
         </p>
-
-
-        </a>
       </div>
     </div>
 
-    <!-- bottom overlay bar + text (unchanged look, photo shows behind it) -->
+    <!-- 하단 반투명 바 위 텍스트 -->
     <div class="hero-footer">
       <div class="container">
-     <div class="fw-semibold" style="transform:translateX(-20px); display:block;">
-  CANDLESTICK PE Private Equity
-        <div class="hero-sub">
-          E-mail: <a href="mailto:jcjang@candlestickpe.com">jcjang@candlestickpe.com</a>
-          / Address: B02, 3rd Floor, 20, Gukjekeumyung-ro, Yeongdeungpo-gu, Seoul, Republic of Korea
+        <div class="fw-semibold" style="transform:translateX(-20px); display:block;">
+          CANDLESTICK PE
+          <div class="hero-sub">
+            E-mail: <a href="mailto:jcjang@candlestickpe.com">jcjang@candlestickpe.com</a>
+            / Address: B02, 3rd Floor, 20, Gukjekeumyung-ro, Yeongdeungpo-gu, Seoul, Republic of Korea
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- 오프캔버스 메뉴 -->
+  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1"
+       id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel"
+       style="--bs-offcanvas-width:300px;">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="about.html" target="_blank" rel="noopener">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html" target="_blank" rel="noopener">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="team.html" target="_blank" rel="noopener">Team</a></li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
