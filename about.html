@@ -11,6 +11,10 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
         crossorigin="anonymous">
 
+  <!-- Pretendard (CDN) -->
+  <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+
   <style>
     :root{
       --hero-h: clamp(250px, 40vw, 400px);
@@ -21,6 +25,15 @@
       --brand-blue: #0b1140; /* 외곽 남색 */
     }
 
+    /* ✅ 빨간박스(스텝 라벨) + 파란박스(내용) 영역: Pretendard */
+    #investment-strategy,
+    #investment-strategy * ,
+    .strategy-box,
+    .strategy-box * {
+      font-family: Pretendard, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+                   "Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic", sans-serif;
+    }
+
     .hero{
       position: relative; min-height: var(--hero-h);
       background:#333 url('high.PNG') no-repeat 50% var(--hero-focus-y)/cover;
@@ -28,7 +41,6 @@
     .hero::before{content:"";position:absolute;inset:0;
       background:linear-gradient(to bottom,rgba(0,0,0,.35),rgba(0,0,0,.15));}
     .hero > .container-fluid{position:relative;z-index:1;}
-
     @media (max-width:768px){ :root{ --hero-focus-y: 88%; } }
 
     .brand{position:absolute;top:10px;left:20px;z-index:2;font-weight:700;color:#fff;font-size:1.1rem;letter-spacing:.5px;}
@@ -62,42 +74,50 @@
     .strategy-list li{ margin:10px 0; font-size:1.02rem; line-height:1.6; color:#111; }
     .strategy-list li::marker{ color:#000; }
 
-    /* ===== Investment Strategy: 사각형 리본 + 이중 그림자 ===== */
-    .ribbon-wrap{ margin-top:28px; overflow-x:auto; -webkit-overflow-scrolling:touch; }
-    .ribbon{ width:100%; height:auto; display:block; }
-    .ribbon-outer{ fill:var(--brand-blue); }
-    .ribbon-inner{ fill:#fff; }
-    .ribbon-text{
-      font:700 16px/1 Pretendard,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;
-      fill:#111; text-anchor:middle; dominant-baseline:middle;
-    }
-    .ribbon-step{
-      filter: drop-shadow(0 2px 0 var(--brand-blue)) drop-shadow(0 6px 0 #d3d6df);
-    }
-    @media (max-width:768px){
-      .ribbon-text{ font:700 14px/1 Pretendard,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif; }
+    /* ===== Investment Strategy : "빨간박스(라벨) + 파란박스(내용)" 가로 배치 후, 아래로 순서대로 ===== */
+    .process-list{ margin-top: 28px; display:flex; flex-direction:column; gap: 18px; }
+    .process-item{
+      display:grid;
+      grid-template-columns: minmax(170px, 220px) 1fr;
+      gap: 18px;
+      align-items: start; /* 라벨은 위쪽 정렬 */
     }
 
-    /* === Step별 메모 카드 === */
-    .steps-notes{ margin-top:26px; }
-    .steps-notes-grid{
-      display:grid; gap:18px;
-      grid-template-columns:repeat(5, minmax(180px,1fr));
+    /* 빨간박스(라벨) 스타일 */
+    .step-badge{
+      background: var(--brand-blue);
+      padding: 6px;
+      border-radius: 2px;
+      box-shadow: 0 2px 0 var(--brand-blue), 0 6px 0 #d3d6df;
     }
+    .step-badge__inner{
+      background:#fff;
+      height: 52px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight: 800;
+      color:#111;
+      border-radius: 2px;
+      text-align:center;
+      padding: 0 10px;
+      font-size: 0.98rem;
+      line-height: 1.1;
+    }
+
+    /* 파란박스(내용) 카드 스타일(기존 note-card 유지) */
     .note-card{
       background:#fff; border:2px solid #1a1a1a; border-radius:6px;
       padding:16px; box-shadow:4px 4px 0 rgba(0,0,0,.18);
     }
     .note-title{ font-weight:800; margin:0 0 10px; font-size:1.05rem; color:#111; }
-
     .note-list{ list-style: disc outside; margin:.2em 0 0; padding-left:1.2em; }
     .note-list li{ margin:.38em 0; line-height:1.6; color:#222; }
 
-    .note-card.active{ border-color:var(--brand-blue); box-shadow:6px 6px 0 rgba(11,17,64,.28); }
-    .ribbon-step.is-active text{ text-decoration:underline; }
-
-    @media (max-width: 1024px){ .steps-notes-grid{ grid-template-columns:repeat(2, minmax(180px,1fr)); } }
-    @media (max-width: 640px){ .steps-notes-grid{ grid-template-columns:1fr; } }
+    @media (max-width: 768px){
+      .process-item{ grid-template-columns: 1fr; }
+      .step-badge{ width: min(320px, 100%); }
+    }
 
     /* ===== 떠 있는(투명) 네비게이션 ===== */
     .navbar--floating{
@@ -145,12 +165,12 @@
 
   <!-- Hero -->
   <div class="hero">
-   <a href="index.html"
-   class="brand"
-   style="text-decoration:none !important; color:#fff; cursor:pointer"
-   aria-label="Go to Home (Index)">
-  CANDLESTICK PE
-</a>
+    <a href="index.html"
+       class="brand"
+       style="text-decoration:none !important; color:#fff; cursor:pointer"
+       aria-label="Go to Home (Index)">
+      CANDLESTICK PE
+    </a>
 
     <div class="container-fluid px-4 center-wrap">
       <h1 class="display-4 hero-title">About Company</h1>
@@ -186,10 +206,10 @@
 
       <div class="strategy-box">
         <ul class="strategy-list" style="list-style-position:outside; padding-left:3em;">
-          <li>Proactively screen M&amp;A opportunities through accounting firms’ FAS practices and originate pathways to engage strategic investors.</li>
-          <li>Source opportunities to acquire significant equity stakes in private companies via the Korea Asset Management Corporation (KAMCO).</li>
-          <li>Maintain origination channels with commercial banks to identify quality investment opportunities in blue-chip companies.</li>
-          <li>Expand relationships with PEs, asset managers, and securities firms (investment banks) to establish co-GP and co-investment partnerships.</li>
+          <li>Proactively screen M&A opportunities with accounting firms’ FAS teams and originate opportunities to engage strategic investors.</li>
+          <li>Source opportunities to acquire significant equity stakes in private companies through the Korea Asset Management Corporation (KAMCO).</li>
+          <li>Maintain origination channels with commercial banks to identify high-quality investment opportunities in blue-chip companies.</li>
+          <li>Expand relationships with private equity firms, asset managers, and investment banks to establish co-GP and co-investment partnerships.</li>
           <li>Leverage our extended network—portfolio companies, their affiliates, and key partners—to broaden deal flow and investment opportunities.</li>
         </ul>
       </div>
@@ -201,48 +221,14 @@
     <div class="content-inner">
       <h2 class="section-title size-lg">■ Investment Strategy</h2>
 
-      <div class="ribbon-wrap" role="group" aria-label="Investment process">
-        <svg class="ribbon"
-             viewBox="0 0 1260 64"
-             preserveAspectRatio="xMidYMid meet"
-             shape-rendering="crispEdges">
-          <defs>
-            <g id="step-outer-rect"><rect class="ribbon-outer" x="0" y="0" width="220" height="64" /></g>
-            <g id="step-inner-rect"><rect class="ribbon-inner" x="10" y="6" width="200" height="52" /></g>
-            <g id="step-outer"><use href="#step-outer-rect"/></g>
-            <g id="step-inner"><use href="#step-inner-rect"/></g>
-            <g id="step-outer-leftflat"><use href="#step-outer-rect"/></g>
-            <g id="step-inner-leftflat"><use href="#step-inner-rect"/></g>
-          </defs>
-
-          <!-- x 증분: 220(폭) + 28(간격) = 248 -->
-          <g class="ribbon-step" data-step="0" transform="translate(20,0)">
-            <use href="#step-outer" /><use href="#step-inner" />
-            <text class="ribbon-text" x="110" y="32">Deal Sourcing</text>
-          </g>
-          <g class="ribbon-step" data-step="1" transform="translate(268,0)">
-            <use href="#step-outer" /><use href="#step-inner" />
-            <text class="ribbon-text" x="110" y="32">Due Diligence</text>
-          </g>
-          <g class="ribbon-step" data-step="2" transform="translate(516,0)">
-            <use href="#step-outer" /><use href="#step-inner" />
-            <text class="ribbon-text" x="110" y="32">Execution</text>
-          </g>
-          <g class="ribbon-step" data-step="3" transform="translate(764,0)">
-            <use href="#step-outer" /><use href="#step-inner" />
-            <text class="ribbon-text" x="110" y="32">Monitoring</text>
-          </g>
-          <g class="ribbon-step" data-step="4" transform="translate(1012,0)">
-            <use href="#step-outer" /><use href="#step-inner" />
-            <text class="ribbon-text" x="110" y="32">Exit</text>
-          </g>
-        </svg>
-      </div>
-
-      <!-- ▼ 리본 5단계 아래 내용: 특수기호 → 자동 리스트 변환 -->
-      <div class="steps-notes" role="group" aria-label="Investment details by step">
-        <div class="steps-notes-grid">
-          <article id="note-0" class="note-card" role="listitem">
+      <!-- ✅ 요청사항: 라벨(빨간박스) 오른쪽에 내용(파란박스) + 전체는 아래로 순서대로 -->
+      <div class="process-list" aria-label="Investment process (label + details)">
+        <!-- 1) Deal Sourcing -->
+        <div class="process-item">
+          <div class="step-badge" aria-hidden="true">
+            <div class="step-badge__inner">Deal Sourcing</div>
+          </div>
+          <article class="note-card">
             <h3 class="note-title">Deal Sourcing</h3>
             <div class="note-body" data-autosplit>
               〮 Identification of Investment Targets through Networks with Securities Firms, Banks, and Accounting Firms
@@ -250,8 +236,14 @@
               〮 Assessing Growth Potential, Stability, and Recoverability
             </div>
           </article>
+        </div>
 
-          <article id="note-1" class="note-card" role="listitem">
+        <!-- 2) Due Diligence -->
+        <div class="process-item">
+          <div class="step-badge" aria-hidden="true">
+            <div class="step-badge__inner">Due Diligence</div>
+          </div>
+          <article class="note-card">
             <h3 class="note-title">Due Diligence</h3>
             <div class="note-body" data-autosplit>
               〮 Due Diligence Checklist Review
@@ -260,16 +252,28 @@
               〮 Negotiation of Investment Terms
             </div>
           </article>
+        </div>
 
-          <article id="note-2" class="note-card" role="listitem">
+        <!-- 3) Execution -->
+        <div class="process-item">
+          <div class="step-badge" aria-hidden="true">
+            <div class="step-badge__inner">Execution</div>
+          </div>
+          <article class="note-card">
             <h3 class="note-title">Execution</h3>
             <div class="note-body" data-autosplit>
               〮 Review of Contract Documents
               〮 Capital Deployment
             </div>
           </article>
+        </div>
 
-          <article id="note-3" class="note-card" role="listitem">
+        <!-- 4) Monitoring -->
+        <div class="process-item">
+          <div class="step-badge" aria-hidden="true">
+            <div class="step-badge__inner">Monitoring</div>
+          </div>
+          <article class="note-card">
             <h3 class="note-title">Monitoring</h3>
             <div class="note-body" data-autosplit>
               〮 Attendance at Board Meetings and Shareholders’ Meetings
@@ -277,8 +281,14 @@
               〮 Preparation of Fund Operation Reports
             </div>
           </article>
+        </div>
 
-          <article id="note-4" class="note-card" role="listitem">
+        <!-- 5) Exit -->
+        <div class="process-item">
+          <div class="step-badge" aria-hidden="true">
+            <div class="step-badge__inner">Exit</div>
+          </div>
+          <article class="note-card">
             <h3 class="note-title">Exit</h3>
             <div class="note-body" data-autosplit>
               〮 Review of Valuation Appropriateness
@@ -292,28 +302,8 @@
     </div>
   </section>
 
-  <!-- Interaction Script -->
+  <!-- ✅ 특수기호(〮) 자동 리스트 변환 -->
   <script>
-    (function(){
-      const steps = document.querySelectorAll('.ribbon-step');
-      const cards = document.querySelectorAll('.note-card');
-      function activate(idx){
-        steps.forEach(s => s.classList.toggle('is-active', s.dataset.step == idx));
-        cards.forEach(c => c.classList.toggle('active', c.id === 'note-' + idx));
-      }
-      steps.forEach(s => {
-        s.style.cursor = 'pointer';
-        s.addEventListener('click', () => {
-          const idx = s.dataset.step;
-          const target = document.getElementById('note-' + idx);
-          if(target){
-            activate(idx);
-            target.scrollIntoView({ behavior:'smooth', block:'start' });
-          }
-        });
-      });
-    })();
-
     (function(){
       const SPLIT_RE = /[〮ㆍ•●○◦∙·‧]+/;
       document.querySelectorAll('.note-body[data-autosplit]').forEach(node => {

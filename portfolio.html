@@ -11,6 +11,10 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
         crossorigin="anonymous">
 
+  <!-- ✅ Pretendard (CDN) -->
+  <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+
   <style>
     :root{
       --hero-h: clamp(250px, 40vw, 400px);
@@ -22,6 +26,13 @@
       --line-gray: #e5e7eb;  /* 라이트 보더 */
       --text-dark: #111;
       --text-mid: #333;
+      --cell-bg: #fff;       /* 표(셀) 배경색 */
+    }
+
+    /* ✅ 전체 글씨체 Pretendard 적용 */
+    html, body{
+      font-family: Pretendard, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+                   "Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic", sans-serif;
     }
 
     /* ===== Hero ===== */
@@ -29,24 +40,45 @@
       position: relative; min-height: var(--hero-h);
       background:#333 url('high.PNG') no-repeat 50% var(--hero-focus-y)/cover;
     }
-    .hero::before{content:"";position:absolute;inset:0;
-      background:linear-gradient(to bottom,rgba(0,0,0,.35),rgba(0,0,0,.15));}
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(to bottom,rgba(0,0,0,.35),rgba(0,0,0,.15));
+    }
     .hero > .container-fluid{position:relative;z-index:1;}
     @media (max-width:768px){ :root{ --hero-focus-y: 88%; } }
 
-    .brand{position:absolute;top:10px;left:20px;z-index:2;font-weight:700;color:#fff;font-size:1.1rem;letter-spacing:.5px;}
+    .brand{
+      position:absolute;top:10px;left:20px;z-index:2;
+      font-weight:700;color:#fff;font-size:1.1rem;letter-spacing:.5px;
+    }
     .hero-title{margin:0;color:#fff;}
     .hero-subtext{
       margin-top:25px; font-size:1rem; line-height:1.4; max-width:1200px;
       margin-inline:auto; color:#fff; text-shadow:0 1px 2px rgba(0,0,0,.35);
       white-space: pre-line;
     }
-    .center-wrap{ text-align:center; padding-top: calc(var(--hero-h)*.28); padding-bottom: calc(var(--hero-h)*.12); }
+    .center-wrap{
+      text-align:center;
+      padding-top: calc(var(--hero-h)*.28);
+      padding-bottom: calc(var(--hero-h)*.12);
+    }
 
     /* ===== 공통 레이아웃 ===== */
     .content-section{ background:#fff; padding:140px 0 60px; }
-    .content-inner{ width:min(var(--section-max-w),100% - var(--section-x-pad)*2); margin:0 auto; padding:0 var(--section-x-pad); }
-    .section-title{ font-weight:800; font-size:var(--subhead-size); line-height:1.2; margin:0; color:var(--text-dark); }
+    .content-inner{
+      width:min(var(--section-max-w),100% - var(--section-x-pad)*2);
+      margin:0 auto;
+      padding:0 var(--section-x-pad);
+    }
+    .section-title{
+      font-weight:800;
+      font-size:var(--subhead-size);
+      line-height:1.2;
+      margin:0;
+      color:var(--text-dark);
+    }
     .section-title.size-lg{ --subhead-size:2rem; }
 
     /* ===== Portfolio Table ===== */
@@ -72,38 +104,85 @@
       padding:16px 18px;
       letter-spacing:.2px;
       border-right:1px solid rgba(255,255,255,.2);
-      vertical-align: middle; /* 세로 가운데 */
+      vertical-align: middle;
     }
     .portfolio-table thead th:last-child{ border-right:none; }
 
     .portfolio-table tbody td{
-      vertical-align: middle; /* ← 가운데 정렬 */
+      vertical-align: middle;
       padding:22px 22px;
       border-top:1px solid var(--line-gray);
       border-right:1px solid #f2f4f7;
-      background:#fff;
+      background: var(--cell-bg);
+
+      /* 한국어 단어 중간 끊김 방지 */
+      word-break: keep-all;
+      overflow-wrap: normal;
     }
     .portfolio-table tbody tr:first-child td{ border-top:1px solid var(--line-gray); }
     .portfolio-table tbody td:last-child{ border-right:none; }
 
-    /* 컬럼 너비 & 스타일 */
+    /* 컬럼 너비 */
     .portfolio-table th:nth-child(1), .portfolio-table td:nth-child(1){ width:26%; }
     .portfolio-table th:nth-child(2), .portfolio-table td:nth-child(2){ width:37%; }
     .portfolio-table th:nth-child(3), .portfolio-table td:nth-child(3){ width:37%; }
 
+    /* 첫번째 칸: 이미지 + 텍스트 세로 배치 */
     .p-name{
       text-align:center;
       font-weight:800;
       line-height:1.3;
       font-size:1.05rem;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap: 6px;
     }
-    .p-name .status{
-      display:block; margin-top:.25rem;
-      font-weight:800; color:var(--brand-blue);
+
+    /* 이미지 박스 */
+    .p-thumb-wrap{
+      width: 100%;
+      max-width: clamp(55px, 6vw, 75px);
+      height: clamp(45px, 5vw, 60px);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+
+      background: var(--cell-bg);
+      border: 1px solid #eef1f5;
+      border-radius: 12px;
+      padding: 6px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,.10);
+    }
+    .p-thumb{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background: transparent;
+      transform: none;
+    }
+
+    .p-title{
+      display:block;
+      font-weight:800;
+    }
+    .p-title .status{
+      display:block;
+      margin-top:.25rem;
+      font-weight:800;
+      color:var(--brand-blue);
     }
 
     .portfolio-table ul{ margin:0; padding-left:1.2em; }
-    .portfolio-table li{ margin:.5em 0; line-height:1.7; color:var(--text-mid); }
+    .portfolio-table li{
+      margin:.5em 0;
+      line-height:1.7;
+      color:var(--text-mid);
+      word-break: keep-all;
+      overflow-wrap: normal;
+    }
+    .nowrap{ white-space: nowrap; }
 
     /* ===== 모바일(카드형) ===== */
     @media (max-width: 900px){
@@ -113,12 +192,21 @@
       .portfolio-table tbody td{
         display:flex; gap:12px; padding:14px 16px;
         border-right:none; background:#fff;
+        align-items:flex-start;
       }
       .portfolio-table tbody td::before{
         content:attr(data-label);
-        flex:0 0 110px; font-weight:800; color:var(--text-dark);
+        flex:0 0 110px;
+        font-weight:800;
+        color:var(--text-dark);
       }
-      .p-name{ text-align:left; }
+      .p-name{ text-align:left; align-items:flex-start; }
+
+      .p-thumb-wrap{
+        max-width: 70px;
+        height: 55px;
+        padding: 6px;
+      }
     }
 
     /* ===== 떠 있는(투명) 네비게이션 ===== */
@@ -126,8 +214,8 @@
       position: absolute;
       top: 14px;
       right: 16px;
-      background: transparent !important;  /* 배경 제거 */
-      padding: 0 !important;               /* 검은 바 제거 */
+      background: transparent !important;
+      padding: 0 !important;
       z-index: 1000;
     }
     .navbar--floating .navbar-toggler{
@@ -168,11 +256,11 @@
   <!-- Hero -->
   <div class="hero">
     <a href="index.html"
-   class="brand"
-   style="text-decoration:none !important; color:#fff; cursor:pointer"
-   aria-label="Go to Home (Index)">
-  CANDLESTICK PE
-</a>
+       class="brand"
+       style="text-decoration:none !important; color:#fff; cursor:pointer"
+       aria-label="Go to Home (Index)">
+      CANDLESTICK PE
+    </a>
 
     <div class="container-fluid px-4 center-wrap">
       <h1 class="display-4 hero-title"></h1>
@@ -185,7 +273,6 @@
     <div class="content-inner">
       <h2 class="section-title size-lg">■ Portfolio</h2>
 
-      <!-- 포트폴리오 표 -->
       <div class="portfolio-wrap">
         <table class="portfolio-table" role="table" aria-label="Candlestick PE Portfolio">
           <thead>
@@ -195,20 +282,28 @@
               <th scope="col">담당 역할</th>
             </tr>
           </thead>
+
           <tbody>
             <!-- Row 1 -->
             <tr class="portfolio-row">
               <td class="col-name" data-label="프로젝트명">
                 <div class="p-name">
-                  Project Optical
-                  <span class="status">(투자완료)</span>
+                  <div class="p-thumb-wrap">
+                    <img class="p-thumb" src="Optomind.png" alt="Project Optical" />
+                  </div>
+
+                  <span class="p-title">
+                    Project Optical
+                  </span>
                 </div>
               </td>
+
               <td class="col-desc" data-label="프로젝트 내용">
                 <ul>
-                  <li>경기도 소재 미국 데이터센터 향 트랜시버 공급업체 ‘옵토마인드’ 신규 CB 투자 건</li>
+                  <li>경기도 소재 미국 데이터센터 향 트랜시버 <span class="nowrap">공급업체</span> ‘옵토마인드’ 신규 CB 투자 건</li>
                 </ul>
               </td>
+
               <td class="col-role" data-label="담당 역할">
                 <ul>
                   <li>2026년 상장 준비를 위한 Pre-IPO 투자</li>
@@ -222,19 +317,24 @@
             <tr class="portfolio-row">
               <td class="col-name" data-label="프로젝트명">
                 <div class="p-name">
-                  Project Ember
-                  <span class="status">(검토중)</span>
+                  <!-- ✅ 요청사항: 그림이 위, Project EN이 아래 -->
+                  <div class="p-thumb-wrap">
+                    <img class="p-thumb" src="EN.png" alt="EASTERN NETWORKS" />
+                  </div>
+                  <span class="p-title">Project EN</span>
                 </div>
               </td>
+
               <td class="col-desc" data-label="프로젝트 내용">
                 <ul>
-                  <li>소방전문시설공사업을 영위하는 을지공영(주) 지분 100% 인수 건</li>
+                  <li>이스턴네트웍스의 피플바이오 지분인수의 건</li>
                 </ul>
               </td>
+
               <td class="col-role" data-label="담당 역할">
                 <ul>
-                  <li>2025년 지분 100% 인수를 위한 자금 조달</li>
-                  <li>인수금융을 위한 인수 구조 설계 및 자본조달 계획 수립·수행</li>
+                  <li>2025년 지분 인수를 위한 자금 조달</li>
+                  <li>자금조달의 구조 설계 및 조달 계획 수립·수행</li>
                 </ul>
               </td>
             </tr>
@@ -242,7 +342,6 @@
           </tbody>
         </table>
       </div>
-      <!-- ▲ 포트폴리오 표 끝 -->
     </div>
   </section>
 

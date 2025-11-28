@@ -5,10 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CandleStick PE</title>
 
-  <!-- ✅ 이전과 같은 글씨체 유지: 기존 default.css 그대로 사용 -->
   <link rel="stylesheet" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/easygpt/default.css">
 
-  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
@@ -16,7 +14,6 @@
           crossorigin="anonymous"></script>
 
   <style>
-    /* layout */
     html, body { height:100%; }
     body{
       min-height:100vh;
@@ -25,120 +22,174 @@
       margin:0;
     }
 
-    /* 히어로(배경 사진) */
+    :root{
+      --bar-alpha: .38;
+      --topbar-h: clamp(72px, 12vh, 140px);
+      --footer-h: clamp(72px, 10vh, 110px);
+      --hero-card-max: 420px;
+    }
+
+    /* 히어로 */
     .site-hero{
-      flex:1 0 auto;
+      flex: 1 0 auto;
+      position:relative;
       display:flex;
       align-items:center;
-      position:relative;
-      overflow:hidden;
-      min-height:0;
+      min-height: 100svh;
+      padding-top: var(--topbar-h);
+      padding-bottom: var(--footer-h);
+      background: none;
+    }
 
-      background-image: url('sunset1.jpg'); /* 필요 이미지로 교체 */
+    /* 배경 이미지 레이어 */
+    .site-hero::before{
+      content:"";
+      position:absolute; inset:0;
+      background-image: url('sunset1.jpg');
       background-size: cover;
       background-position: center 90%;
       background-repeat: no-repeat;
+      z-index:0;
     }
 
-    /* 하단 반투명 바(기존 파란 박스 느낌) */
-    .hero--fade::after{
-      content:"";
-      position:absolute; left:0; right:0; bottom:0;
-      height:80px;
-      background: rgba(0,0,0,0.38);
-      z-index:0; pointer-events:none;
+    /* 상단/하단 바 */
+    .topbar, .hero-footer{
+      position:absolute; left:0; right:0;
+      display:flex; align-items:center;
+      background: rgba(0,0,0,var(--bar-alpha));
+      z-index:10;
+    }
+
+    .topbar{
+      top:0;
+      min-height: var(--topbar-h);
+      padding: 0 clamp(1rem, 3vw, 2rem);
+    }
+
+    .hero-footer{
+      bottom:0;
+      min-height: var(--footer-h);
+      padding: 0 clamp(1rem, 3vw, 2rem);
+      color:#fff;
+
+      /* ✅ 전체 텍스트 블록을 바(footer) "가운데"로 보내기 */
+      justify-content: center;
+    }
+    /* ✅ container 안에서도 가운데 정렬(블록 자체만 가운데로) */
+    .hero-footer .container{
+      width:100%;
+      display:flex;
+      justify-content:center;
+    }
+
+    /* 상단 타이틀 */
+    .topbar h1{
+      margin:0;
+      color:#fff;
+      text-shadow: 0 2px 6px rgba(0,0,0,.5);
+      font-weight: 300;
+      font-size: clamp(1.35rem, 2.4vw + 0.6rem, 3.4rem);
+      line-height: 1.1;
+      white-space: normal;
+      overflow-wrap: anywhere;
+    }
+    @media (min-width: 992px){
+      .topbar h1{ white-space: nowrap; }
+    }
+
+    /* 햄버거 버튼 */
+    .navbar--floating{
+      position:absolute;
+      top: calc((var(--topbar-h) - 44px) / 2);
+      right: clamp(12px, 2vw, 24px);
+      background: transparent !important;
+      padding: 0 !important;
+      z-index: 11;
+    }
+    .navbar--floating .navbar-toggler{
+      width: 44px; height: 44px;
+      padding: 0;
+      border: 0;
+    }
+
+    /* 말풍선 카드 영역 */
+    .hero-content{
+      position:relative;
+      z-index:1;
+      width: 100%;
+      padding-left: clamp(16px, 4vw, 90px);
+      padding-right: clamp(16px, 4vw, 90px);
+    }
+
+    .hero-card-wrap{
+      display:flex;
+      justify-content:center;  /* 작은 화면에서는 가운데 */
+      width:100%;
+    }
+    @media (min-width: 992px){
+      .hero-card-wrap{ justify-content:flex-start; } /* 큰 화면에서는 왼쪽 */
+    }
+
+    .hero-card{
+      width: min(var(--hero-card-max), 92vw);
+      background: rgba(10,20,40,0.55);
+      backdrop-filter: blur(4px);
+      border-radius: 14px;
+      padding: clamp(1.25rem, 3vw, 3rem);
+      margin-top: clamp(0rem, 2vh, 2.5rem);
+    }
+
+    @media (min-width: 992px){
+      .hero-card{ margin-left: 0; }
+    }
+
+    /* ✅ footer 내부: "블록은 가운데", "문장들은 왼쪽 맞춤" */
+    .hero-footer .footer-left{
+      text-align:left;
+      width: fit-content;              /* 블록 폭을 내용에 맞추기 */
+      max-width: min(100%, 1100px);    /* 너무 길어질 때를 대비 */
     }
 
     /* 하단 텍스트 */
-    .hero-footer{
-      position:absolute; left:0; right:0; bottom:0;
-      z-index:2; color:#fff;
-      height:80px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      pointer-events:none;
-    }
-    .hero-footer .container{
-      position:relative;
-      pointer-events:auto;
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      justify-content:center;
-      gap:2px;
-    }
-    .hero-sub{ text-align:center; margin:0; font-size:14px; line-height:1.35; }
-    .hero-footer a{ color:inherit; text-decoration:underline; pointer-events:auto; }
-
-    /* ⬇️ 상단(빨간 박스) → 하단과 같은 명암의 반투명 바 */
-    .topbar {
-      position: absolute; left: 0; right: 0; top: 0;
-      height: 150px;                           /* 하단 바와 동일 높이 */
-      display: flex; align-items: center;
-      background: rgba(0,0,0,0.38);           /* 하단 바와 동일한 명암 */
-      z-index: 10;
-    }
-    .topbar h1 {
-      /* ✅ 글씨체: 별도 font-family 지정 없음(기존과 동일) */
-      margin: 0;
-      color: #fff;
-      text-shadow: 0 2px 6px rgba(0,0,0,.5);
-      font-weight: 300;
-      font-size: calc(3.7rem - 4pt);          /* 이전 상단 타이틀과 동일 크기 */
-      line-height: 1.05;
-      white-space: nowrap;
-    }
-
-    /* 햄버거 버튼: 배경 없이 떠 있게 */
-    .navbar--floating{
-      position: absolute; top: 100px; right: 18px;
-      background: transparent !important; padding: 0 !important; z-index: 11;
-    }
-    .navbar--floating .navbar-toggler{ position: static !important; transform: none !important; margin: 0; }
-
-    /* 말풍선 카드가 사진 위로 올라오도록 */
-    .site-hero > .container { position:relative; z-index:1; }
+    .hero-sub{ text-align:left; margin:0; font-size:14px; line-height:1.35; }
+    .hero-footer a{ color:inherit; text-decoration:underline; }
   </style>
 </head>
 
 <body>
-  <!-- 히어로 섹션(배경 사진) -->
-  <section class="hero site-hero hero--fade d-flex align-items-center">
-    <!-- ⬆️ 상단 반투명 바(빨간 박스 대체) -->
+  <section class="hero site-hero d-flex align-items-center">
+
     <div class="topbar">
-      <div class="container-fluid px-4">
+      <div class="container-fluid px-0">
         <h1 class="display-4">CANDLESTICK PRIVATE EQUITY</h1>
       </div>
     </div>
 
-    <!-- 배경 없는 떠 있는 햄버거 버튼 -->
     <nav class="navbar navbar-dark navbar--floating" aria-label="Main navigation">
-      <button class="navbar-toggler border-0" type="button"
+      <button class="navbar-toggler" type="button"
               data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
               aria-controls="offcanvasMenu" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     </nav>
 
-    <div class="container">
-      <!-- 투명한 카드(말풍선) -->
-      <div class="p-5"
-           style="max-width:420px; background:rgba(10,20,40,0.55); margin-left:-250px; backdrop-filter: blur(4px); padding-block:4.2rem; transform:translateY(40px);">
-        <h2 class="h3 text-white mb-3" style="font-size: calc(2.2rem - 2pt); line-height:1.1; transform: translateY(6px); margin:0; font-weight:700;">
-          CANDLESTICK PE
-        </h2>
-        <p class="text-white-50 small" style="margin-top:1rem;">
-          CANDLESTICK PE is a prominent investment firm in Korea, focusing on private equity and venture capital.
-          With a strategic presence in the region, we drive innovation, foster growth, and create lasting value for our partners.
-        </p>
+    <div class="container-fluid hero-content">
+      <div class="hero-card-wrap">
+        <div class="hero-card">
+          <h2 class="h3 text-white mb-3" style="font-size: clamp(1.6rem, 1.6vw + 1rem, 2.2rem); line-height:1.1; margin:0; font-weight:700;">
+            CANDLESTICK PE
+          </h2>
+          <p class="text-white-50 small" style="margin-top:1rem;">
+            CANDLESTICK PE is a prominent investment firm in Korea, focusing on private equity and venture capital.
+            With a strategic presence in the region, we drive innovation, foster growth, and create lasting value for our partners.
+          </p>
+        </div>
       </div>
     </div>
 
-    <!-- 하단 반투명 바 위 텍스트 -->
     <div class="hero-footer">
       <div class="container">
-        <div class="fw-semibold" style="transform:translateX(-20px); display:block;">
+        <div class="fw-semibold footer-left">
           CANDLESTICK PE
           <div class="hero-sub">
             E-mail: <a href="mailto:jcjang@candlestickpe.com">jcjang@candlestickpe.com</a>
@@ -149,7 +200,6 @@
     </div>
   </section>
 
-  <!-- 오프캔버스 메뉴 -->
   <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1"
        id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel"
        style="--bs-offcanvas-width:300px;">
