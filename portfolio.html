@@ -20,16 +20,18 @@
       --hero-h: clamp(250px, 40vw, 400px);
       --hero-focus-y: 40%;
       --subhead-size: clamp(1.25rem, 2.2vw, 2rem);
-      --section-max-w: 1200px;
-      --section-x-pad: 24px;
-      --brand-blue: #0b1140; /* 네이비 */
-      --line-gray: #e5e7eb;  /* 라이트 보더 */
+
+      /* ✅ 좌우를 "조금" 넓히기 */
+      --section-max-w: 1320px;
+      --section-x-pad: 18px;
+
+      --brand-blue: #0b1140;
+      --line-gray: #e5e7eb;
       --text-dark: #111;
       --text-mid: #333;
-      --cell-bg: #fff;       /* 표(셀) 배경색 */
+      --cell-bg: #fff;
     }
 
-    /* ✅ 전체 글씨체 Pretendard 적용 */
     html, body{
       font-family: Pretendard, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
                    "Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic", sans-serif;
@@ -55,7 +57,8 @@
     }
     .hero-title{margin:0;color:#fff;}
     .hero-subtext{
-      margin-top:25px; font-size:1rem; line-height:1.4; max-width:1200px;
+      margin-top:25px; font-size:1rem; line-height:1.4;
+      max-width: var(--section-max-w);
       margin-inline:auto; color:#fff; text-shadow:0 1px 2px rgba(0,0,0,.35);
       white-space: pre-line;
     }
@@ -68,10 +71,11 @@
     /* ===== 공통 레이아웃 ===== */
     .content-section{ background:#fff; padding:140px 0 60px; }
     .content-inner{
-      width:min(var(--section-max-w),100% - var(--section-x-pad)*2);
-      margin:0 auto;
-      padding:0 var(--section-x-pad);
+      width: min(var(--section-max-w), 100%);
+      margin: 0 auto;
+      padding: 0 var(--section-x-pad);
     }
+
     .section-title{
       font-weight:800;
       font-size:var(--subhead-size);
@@ -115,7 +119,6 @@
       border-right:1px solid #f2f4f7;
       background: var(--cell-bg);
 
-      /* 한국어 단어 중간 끊김 방지 */
       word-break: keep-all;
       overflow-wrap: normal;
     }
@@ -136,22 +139,22 @@
       display:flex;
       flex-direction:column;
       align-items:center;
-      gap: 6px;
+      gap: 8px; /* ✅ 아이콘 커져서 간격 약간 증가 */
     }
 
-    /* 이미지 박스 */
+    /* ✅ 이미지 박스(아이콘) 크기 업 */
     .p-thumb-wrap{
       width: 100%;
-      max-width: clamp(55px, 6vw, 75px);
-      height: clamp(45px, 5vw, 60px);
+      max-width: clamp(78px, 7.5vw, 105px);  /* (기존 55~75px) */
+      height: clamp(64px, 6.5vw, 88px);      /* (기존 45~60px) */
       display:flex;
       align-items:center;
       justify-content:center;
 
       background: var(--cell-bg);
       border: 1px solid #eef1f5;
-      border-radius: 12px;
-      padding: 6px;
+      border-radius: 14px;                   /* 살짝 더 둥글게 */
+      padding: 8px;                          /* (기존 6px) */
       overflow: hidden;
       box-shadow: 0 6px 18px rgba(0,0,0,.10);
     }
@@ -167,12 +170,6 @@
       display:block;
       font-weight:800;
     }
-    .p-title .status{
-      display:block;
-      margin-top:.25rem;
-      font-weight:800;
-      color:var(--brand-blue);
-    }
 
     .portfolio-table ul{ margin:0; padding-left:1.2em; }
     .portfolio-table li{
@@ -182,7 +179,12 @@
       word-break: keep-all;
       overflow-wrap: normal;
     }
-    .nowrap{ white-space: nowrap; }
+
+    .keep-together{
+      display:inline-block;
+      white-space:nowrap;
+      max-width:100%;
+    }
 
     /* ===== 모바일(카드형) ===== */
     @media (max-width: 900px){
@@ -202,10 +204,16 @@
       }
       .p-name{ text-align:left; align-items:flex-start; }
 
+      /* ✅ 모바일에서도 아이콘 조금 더 크게 */
       .p-thumb-wrap{
-        max-width: 70px;
-        height: 55px;
-        padding: 6px;
+        max-width: 90px;   /* (기존 70px) */
+        height: 72px;      /* (기존 55px) */
+        padding: 8px;
+      }
+
+      .keep-together{
+        display:inline;
+        white-space:normal;
       }
     }
 
@@ -284,62 +292,98 @@
           </thead>
 
           <tbody>
-            <!-- Row 1 -->
+            <!-- 1) Project Optical (옵토마인드) -->
             <tr class="portfolio-row">
               <td class="col-name" data-label="프로젝트명">
                 <div class="p-name">
                   <div class="p-thumb-wrap">
-                    <img class="p-thumb" src="Optomind.png" alt="Project Optical" />
+                    <img class="p-thumb" src="Optomind.png" alt="OPTOMIND" />
                   </div>
-
-                  <span class="p-title">
-                    Project Optical
-                  </span>
+                  <span class="p-title">Project Optical (옵토마인드)</span>
                 </div>
               </td>
 
               <td class="col-desc" data-label="프로젝트 내용">
                 <ul>
-                  <li>경기도 소재 미국 데이터센터 향 트랜시버 <span class="nowrap">공급업체</span> ‘옵토마인드’ 신규 CB 투자 건</li>
+                  <li>미국 데이터센터向 광트랜시버 공급업체 ‘옵토마인드’ 대상 신규 CB(전환사채) 투자</li>
+                  <li>2025년 4월 펀드 결성 및 투자 재원 확보(수성에셋인베스트먼트와 Co-GP)</li>
+                  <li>2026년 IPO를 전제로 한 Pre-IPO 자금 조달 목적 구조화 투자</li>
                 </ul>
               </td>
 
               <td class="col-role" data-label="담당 역할">
                 <ul>
-                  <li>2026년 상장 준비를 위한 Pre-IPO 투자</li>
-                  <li>약 65억원 자금 조달을 위한 펀드 결성</li>
-                  <li>2025년 4월 말 수성에셋인베스트먼트와 Co-GP 펀드 결성 완료</li>
+                  <li>Pre-IPO 투자전략 수립 및 투자 구조/조건 설계
+                    <span class="keep-together">(CB 핵심 조건 및 보호장치 구성 지원)</span>
+                  </li>
+                  <li>약 65억 원 규모 자금조달을 위한 펀드 구조 설계·결성 주도</li>
+                  <li>2025년 4월 말, 수성에셋인베스트먼트와 Co-GP 펀드 결성 완료</li>
                 </ul>
               </td>
             </tr>
 
-            <!-- Row 2 -->
+            <!-- 2) 피플바이오 M&A 컨설팅 -->
             <tr class="portfolio-row">
               <td class="col-name" data-label="프로젝트명">
                 <div class="p-name">
-                  <!-- ✅ 요청사항: 그림이 위, Project EN이 아래 -->
                   <div class="p-thumb-wrap">
-                    <img class="p-thumb" src="EN.png" alt="EASTERN NETWORKS" />
+                    <img class="p-thumb" src="PP.png" alt="PeopleBio" />
                   </div>
-                  <span class="p-title">Project EN</span>
+                  <span class="p-title">피플바이오 M&A 컨설팅</span>
                 </div>
               </td>
 
               <td class="col-desc" data-label="프로젝트 내용">
                 <ul>
-                  <li>이스턴네트웍스의 피플바이오 지분인수의 건</li>
+                  <li>이스턴네트웍스의 피플바이오 지분 인수(M&amp;A) 거래 컨설팅</li>
+                  <li>인수 목적/가정에 부합하는 거래구조 및 인수자금 조달 전략 수립·실행 지원</li>
                 </ul>
               </td>
 
               <td class="col-role" data-label="담당 역할">
                 <ul>
-                  <li>2025년 지분 인수를 위한 자금 조달</li>
-                  <li>자금조달의 구조 설계 및 조달 계획 수립·수행</li>
+                  <li>2025년 지분 인수를 위한 인수자금 조달(현물출자, 유상증자)에 관한 금융 구조 설계 및 실행 지원</li>
+                  <li>자금조달 계획 수립·수행
+                    <span class="keep-together">(조달 트랙 관리, 주요 조건 협의 지원)</span>
+                  </li>
+                  <li>270억원 현물출자 및 40억원 유상증자 프로세스 컨설팅 및 지원 </li>
                 </ul>
               </td>
             </tr>
 
+            <!-- 3) 대치동 Edge 데이터센터 개발 컨설팅 -->
+            <tr class="portfolio-row">
+              <td class="col-name" data-label="프로젝트명">
+                <div class="p-name">
+                  <div class="p-thumb-wrap">
+                    <img class="p-thumb" src="EN.png" alt="EASTERN NETWORKS Advisory" />
+                  </div>
+                  <span class="p-title">대치동 Edge 데이터센터 개발 컨설팅</span>
+                </div>
+              </td>
+
+              <td class="col-desc" data-label="프로젝트 내용">
+                <ul>
+                  <li>이스턴네트웍스 보유 토지를 대상으로 한 대치동 데이터센터 개발 관련 재무자문/구조화·자금조달 컨설팅 수행</li>
+                  <li>개발 단계별 의사결정에 필요한 자금계획–조달–실행 로드맵 수립 지원 및 이해관계자 커뮤니케이션 지원</li>
+                </ul>
+              </td>
+
+              <td class="col-role" data-label="담당 역할">
+                <ul>
+                  <li>개발 사업 구조 설계
+                    <span class="keep-together">(개발SPC 구성, 지분/차입 구조 프레임 등)</span>
+                  </li>
+                  <li>자금조달 컨설팅: 소요자금 산정, 조달 시나리오 구성(Equity/Mezz/Senior Debt 등), 협의 지원</li>
+                  <li>실행 타임라인 및 클로징 로드맵 설계
+                    <span class="keep-together">(인허가/설계/시공/조달 마일스톤 기반)</span>
+                  </li>
+                  <li>투자자/대주단 대상 IR 자료 구조화 및 협상 프로세스 운영 지원</li>
+                </ul>
+              </td>
+            </tr>
           </tbody>
+
         </table>
       </div>
     </div>
