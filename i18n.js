@@ -74,7 +74,7 @@
 
   const pylerDetailPages = {
     en: {
-      title: "CANDLESTICK PE - Project PYLER",
+      title: "Project PYLER / 프로젝트 파일러 | CANDLESTICK PE",
       heroTitle: "Project PYLER",
       heroSub: "Vision AI-based Ad-tech investment through an institutional private equity fund",
       backLabel: "Back to Portfolio",
@@ -122,7 +122,7 @@
       ],
     },
     ko: {
-      title: "캔들스틱 PE - 프로젝트 파일러",
+      title: "Project PYLER / 프로젝트 파일러 | CANDLESTICK PE",
       heroTitle: "프로젝트 파일러",
       heroSub: "기관전용 PEF를 통한 Vision AI 기반 Ad-tech 투자",
       backLabel: "포트폴리오로 돌아가기",
@@ -174,7 +174,7 @@
   const pages = {
     index: {
       en: {
-        title: "CandleStick PE",
+        title: "CANDLESTICK PE | 캔들스틱 PE",
         headline: "CANDLESTICK PRIVATE EQUITY",
         cardTitle: "CANDLESTICK PE",
         cardText:
@@ -183,7 +183,7 @@
           'CANDLESTICK PE<div class="hero-sub">E-mail: <a href="mailto:jcjang@candlestickpe.com">jcjang@candlestickpe.com</a> / Address: Unit Ga-115, 3rd Floor, 39, Gangnam-daero 118-gil, Gangnam-gu, Seoul, Republic of Korea</div>',
       },
       ko: {
-        title: "캔들스틱 PE",
+        title: "CANDLESTICK PE | 캔들스틱 PE",
         headline: "캔들스틱 프라이빗 에쿼티",
         cardTitle: "캔들스틱 PE",
         cardText:
@@ -195,7 +195,7 @@
 
     about: {
       en: {
-        title: "CANDLESTICK PE - About",
+        title: "About | CANDLESTICK PE",
         heroTitle: "About Company",
         heroSub:
           "We make trust our highest value, leveraging seasoned expertise and rigorous, data-driven analysis to maximize client returns.",
@@ -251,7 +251,7 @@
         ],
       },
       ko: {
-        title: "캔들스틱 PE - 회사소개",
+        title: "회사소개 | CANDLESTICK PE",
         heroTitle: "회사소개",
         heroSub:
           "캔들스틱 PE는 신뢰를 최우선 가치로 삼고, 축적된 전문성과 엄정한 데이터 기반 분석을 통해 고객 수익 극대화를 추구합니다.",
@@ -302,7 +302,7 @@
 
     portfolio: {
       en: {
-        title: "CANDLESTICK PE - Portfolio",
+        title: "Portfolio | CANDLESTICK PE",
         heroTitle: "Portfolio",
         heroSub: "Selected transactions and advisory mandates led by Candlestick PE",
         sectionTitle: "■ Portfolio",
@@ -359,7 +359,7 @@
         ],
       },
       ko: {
-        title: "캔들스틱 PE - 포트폴리오",
+        title: "포트폴리오 | CANDLESTICK PE",
         heroTitle: "포트폴리오",
         heroSub: "캔들스틱 PE가 주도한 주요 투자 및 자문 사례",
         sectionTitle: "■ 포트폴리오",
@@ -419,7 +419,7 @@
 
     team: {
       en: {
-        title: "CANDLESTICK PE - Team",
+        title: "Team | CANDLESTICK PE",
         heroTitle: "About Our Team",
         heroSub:
           "Candlestick PE is composed of seasoned professionals with extensive experience and a proven track record in the Korean investment market.\nLeveraging our accumulated expertise and deep market insight, we pursue proactive and strategic investment activities.",
@@ -466,7 +466,7 @@
         ],
       },
       ko: {
-        title: "캔들스틱 PE - 팀",
+        title: "팀 | CANDLESTICK PE",
         heroTitle: "팀 소개",
         heroSub:
           "캔들스틱 PE는 한국 투자시장에서 폭넓은 경험과 검증된 실적을 보유한 전문 인력으로 구성되어 있습니다.\n축적된 전문성과 깊이 있는 시장 이해를 바탕으로 선제적이고 전략적인 투자 활동을 수행합니다.",
@@ -516,7 +516,7 @@
 
     esg: {
       en: {
-        title: "CANDLESTICK PE - ESG / Stewardship Code",
+        title: "ESG / Stewardship Code | CANDLESTICK PE",
         heroTitle: "ESG / Stewardship Code",
         heroSub: "Responsible investment principles for sustainable value creation",
         esgTitle: "Candlestick's ESG",
@@ -620,7 +620,7 @@
         ],
       },
       ko: {
-        title: "캔들스틱 PE - ESG / 스튜어드십 코드",
+        title: "ESG / 스튜어드십 코드 | CANDLESTICK PE",
         heroTitle: "ESG / 스튜어드십 코드",
         heroSub: "지속가능한 가치 창출을 위한 책임투자 원칙",
         esgTitle: "주식회사 캔들스틱의 ESG",
