@@ -7,6 +7,7 @@
     index: "en",
     about: "en",
     portfolio: "ko",
+    "project-pyler": "ko",
     team: "ko",
     esg: "ko",
   };
@@ -37,6 +38,136 @@
       toggle: "언어 전환",
       hamburger: "메뉴 열기",
       home: "홈으로 이동",
+    },
+  };
+
+  const pylerPortfolioRows = {
+    en: {
+      logoText: "PYLER",
+      alt: "PYLER",
+      title: "Project PYLER",
+      link: "project-pyler.html",
+      desc: [
+        "Equity investment in PYLER, a Vision AI-based Ad-tech company providing brand safety and contextual video advertising solutions",
+        "PYLER provides AiD and AiM solutions based on video, image, audio, and text analysis",
+        "The company is classified as an application software development and supply business (J58222)",
+      ],
+      role: [
+        "Candlestick acted as the sole GP, establishing an institutional private equity fund and executing the investment in Project PYLER through the fund.",
+      ],
+    },
+    ko: {
+      logoText: "PYLER",
+      alt: "PYLER",
+      title: "프로젝트 파일러",
+      link: "project-pyler.html",
+      desc: [
+        "Vision AI 기반 브랜드 세이프티 및 맞춤형 동영상 광고 솔루션을 제공하는 Ad-tech 기업 파일러에 대한 지분 투자",
+        "파일러는 영상·이미지·음성·텍스트 분석 기반의 AiD 및 AiM 솔루션을 제공",
+        "표준산업분류 기준 응용 소프트웨어 개발 및 공급업(J58222)에 해당",
+      ],
+      role: [
+        "캔들스틱은 단독 GP로서 기관전용 PEF를 설립하고, 해당 PEF를 통해 Project PYLER에 대한 투자를 집행함.",
+      ],
+    },
+  };
+
+  const pylerDetailPages = {
+    en: {
+      title: "CANDLESTICK PE - Project PYLER",
+      heroTitle: "Project PYLER",
+      heroSub: "Vision AI-based Ad-tech investment through an institutional private equity fund",
+      backLabel: "Back to Portfolio",
+      eyebrow: "Portfolio Detail",
+      heading: "Project PYLER",
+      lead:
+        "Project PYLER is an equity investment in PYLER, a Vision AI company that provides B2B solutions for brand safety and contextual video advertising.",
+      fields: [
+        ["Project Name", "Project PYLER"],
+        ["Company / Target", "PYLER CO., LTD. / 주식회사 파일러"],
+        ["Sector", "Application software development and supply business (J58222); Ad-tech"],
+        ["Investment Type", "Investment through an institutional private equity fund"],
+        [
+          "Role",
+          "Candlestick acted as the sole GP, establishing an institutional private equity fund and executing the investment in Project PYLER through the fund.",
+        ],
+        ["Status", "Investment executed through an institutional private equity fund"],
+      ],
+      sections: [
+        {
+          title: "Project Overview",
+          paragraphs: [
+            "PYLER provides video analysis solutions based on multimodal AI that understands and reasons across video, audio, image, and text. The company focuses on helping advertisers avoid harmful or unsuitable content exposure and match advertising with content that fits brand context.",
+            "According to the provided materials, PYLER was established on November 10, 2021 and operates as an Ad-tech company providing harmful-content blocking and customized video advertising connection services.",
+          ],
+        },
+        {
+          title: "Investment Highlights",
+          items: [
+            "Provides AiD (Ads in Defense), a brand safety solution that blocks advertising exposure next to risky or unsuitable content.",
+            "Provides AiM (Ads in Match), a contextual advertising matching solution designed to connect ads with content situations likely to support advertising performance.",
+            "The materials state that PYLER won first place in the NVIDIA Inception Startup Grand Challenge 2025.",
+            "The materials state that PYLER secured official Google API access for YouTube video data and is working with Google on an AI-based automatic filtering system.",
+          ],
+        },
+        {
+          title: "Business / Technology Summary",
+          items: [
+            "Video, image, audio, and text analysis AI for brand safety and contextual advertising.",
+            "Core service areas include AiD for harmful-content ad blocking and AiM for brand-fit ad matching.",
+            "The investment review materials describe PYLER's video understanding approach using evidence reasoning, commonsense reasoning, and video summarization.",
+            "The company uses NVIDIA GPU and CUDA infrastructure in its Vision AI implementation, according to the provided materials.",
+          ],
+        },
+      ],
+    },
+    ko: {
+      title: "캔들스틱 PE - 프로젝트 파일러",
+      heroTitle: "프로젝트 파일러",
+      heroSub: "기관전용 PEF를 통한 Vision AI 기반 Ad-tech 투자",
+      backLabel: "포트폴리오로 돌아가기",
+      eyebrow: "포트폴리오 상세",
+      heading: "프로젝트 파일러",
+      lead:
+        "Project PYLER는 브랜드 세이프티와 맞춤형 동영상 광고 솔루션을 제공하는 Vision AI 기업 파일러에 대한 지분 투자 프로젝트입니다.",
+      fields: [
+        ["Project Name", "Project PYLER / 프로젝트 파일러"],
+        ["Company / Target", "주식회사 파일러 / PYLER CO., LTD."],
+        ["Sector", "응용 소프트웨어 개발 및 공급업(J58222); Ad-tech"],
+        ["Investment Type", "기관전용 PEF를 통한 투자"],
+        [
+          "Role",
+          "캔들스틱은 단독 GP로서 기관전용 PEF를 설립하고, 해당 PEF를 통해 Project PYLER에 대한 투자를 집행함.",
+        ],
+        ["Status", "기관전용 PEF를 통한 투자 집행"],
+      ],
+      sections: [
+        {
+          title: "Project Overview",
+          paragraphs: [
+            "파일러는 동영상·음성·이미지·텍스트를 통합적으로 이해하고 추론하는 멀티모달 AI를 기반으로 영상 분석 솔루션을 제공하는 기업입니다. 유해하거나 부적합한 콘텐츠 옆 광고 노출을 차단하고, 브랜드 맥락에 맞는 콘텐츠에 광고를 연결하는 사업을 영위합니다.",
+            "제공 자료 기준 파일러는 2021년 11월 10일 설립되었으며, 유해 콘텐츠 차단 및 맞춤형 동영상 광고 연결 서비스를 제공하는 Ad-tech 기업입니다.",
+          ],
+        },
+        {
+          title: "Investment Highlights",
+          items: [
+            "AiD(Ads in Defense)를 통해 위험·부적절 콘텐츠 옆 광고 노출을 자동 차단하는 브랜드 세이프티 솔루션을 제공.",
+            "AiM(Ads in Match)을 통해 광고 성과가 날 만한 콘텐츠 맥락에 광고를 정교하게 매칭.",
+            "제공 자료상 파일러는 NVIDIA Inception Startup Grand Challenge 2025에서 1위를 수상.",
+            "제공 자료상 유튜브 영상 데이터 접근을 위한 Google API를 공식 확보하고, Google과 AI 기반 자동 필터링 시스템을 공동 개발 중.",
+          ],
+        },
+        {
+          title: "Business / Technology Summary",
+          items: [
+            "영상·이미지·음성·텍스트 분석 AI를 활용한 브랜드 세이프티 및 맞춤형 광고 매칭.",
+            "주요 서비스는 유해 콘텐츠 광고 차단을 위한 AiD와 브랜드 적합 콘텐츠 매칭을 위한 AiM.",
+            "투자 검토 자료는 파일러의 영상 이해 접근 방식을 Evidence Reasoning, Commonsense Reasoning, Video Summarization으로 설명.",
+            "제공 자료 기준 NVIDIA GPU 및 CUDA 인프라를 활용한 Vision AI 구현 역량을 보유.",
+          ],
+        },
+      ],
     },
   };
 
@@ -586,6 +717,8 @@
     },
   };
 
+  pages["project-pyler"] = pylerDetailPages;
+
   function getPageName() {
     const file = window.location.pathname.split("/").pop() || "index.html";
     return file.replace(/\.html$/i, "") || "index";
@@ -797,7 +930,10 @@
     if (!tbody) return;
     tbody.replaceChildren();
 
-    data.rows.forEach(function (row) {
+    const lang = document.documentElement.lang === "ko" ? "ko" : "en";
+    const rows = data.rows.concat(pylerPortfolioRows[lang] ? [pylerPortfolioRows[lang]] : []);
+
+    rows.forEach(function (row) {
       const tr = document.createElement("tr");
       tr.className = "portfolio-row";
 
@@ -809,14 +945,22 @@
       nameWrap.className = "p-name";
       const thumbWrap = document.createElement("div");
       thumbWrap.className = "p-thumb-wrap";
-      const img = document.createElement("img");
-      img.className = "p-thumb";
-      img.src = row.image;
-      img.alt = row.alt;
-      thumbWrap.appendChild(img);
-      const title = document.createElement("span");
-      title.className = "p-title";
+      if (row.image) {
+        const img = document.createElement("img");
+        img.className = "p-thumb";
+        img.src = row.image;
+        img.alt = row.alt;
+        thumbWrap.appendChild(img);
+      } else {
+        const logo = document.createElement("span");
+        logo.className = "p-logo-text";
+        logo.textContent = row.logoText || row.alt || row.title;
+        thumbWrap.appendChild(logo);
+      }
+      const title = document.createElement(row.link ? "a" : "span");
+      title.className = row.link ? "p-title p-title-link" : "p-title";
       title.textContent = row.title;
+      if (row.link) title.href = row.link;
       nameWrap.append(thumbWrap, title);
       nameTd.appendChild(nameWrap);
 
@@ -855,6 +999,44 @@
 
       tr.append(nameTd, descTd, roleTd);
       tbody.appendChild(tr);
+    });
+  }
+
+  function applyProjectDetail(data) {
+    setTitle(data.title);
+    text(".hero-title", data.heroTitle);
+    text(".hero-subtext", data.heroSub);
+    text(".back-link", data.backLabel);
+    text(".project-eyebrow", data.eyebrow);
+    text(".project-heading-title", data.heading);
+    text(".project-heading-lead", data.lead);
+
+    document.querySelectorAll("[data-project-field]").forEach(function (row, index) {
+      const item = data.fields[index];
+      if (!item) return;
+      text(".field-label", item[0], row);
+      text(".field-value", item[1], row);
+    });
+
+    document.querySelectorAll("[data-project-section]").forEach(function (section, index) {
+      const item = data.sections[index];
+      if (!item) return;
+      text(".detail-block-title", item.title, section);
+
+      const paragraphsNode = section.querySelector(".detail-paragraphs");
+      if (paragraphsNode && Array.isArray(item.paragraphs)) {
+        paragraphsNode.replaceChildren();
+        item.paragraphs.forEach(function (paragraph) {
+          const p = document.createElement("p");
+          p.textContent = paragraph;
+          paragraphsNode.appendChild(p);
+        });
+      }
+
+      const listNode = section.querySelector(".detail-list");
+      if (listNode && Array.isArray(item.items)) {
+        list(".detail-list", item.items, section);
+      }
     });
   }
 
@@ -956,6 +1138,7 @@
     if (pageName === "index") applyIndex(pageData);
     if (pageName === "about") applyAbout(pageData);
     if (pageName === "portfolio") renderPortfolio(pageData);
+    if (pageName === "project-pyler") applyProjectDetail(pageData);
     if (pageName === "team") applyTeam(pageData);
     if (pageName === "esg") applyEsg(pageData);
   }
