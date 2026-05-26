@@ -45,51 +45,55 @@
     en: {
       logoText: "PYLER",
       alt: "PYLER",
-      title: "Project PYLER",
+      title: "Project Vision AI (PYLER)",
       link: "project-pyler.html",
       desc: [
         "Equity investment in PYLER, a Vision AI-based Ad-tech company providing brand safety and contextual video advertising solutions",
         "PYLER provides AiD and AiM solutions based on video, image, audio, and text analysis",
-        "The company is classified as an application software development and supply business (J58222)",
+        "Fund formation and investment execution completed in April 2026",
+        "Growth capital investment deal targeting exit at unicorn valuation by 2028",
       ],
       role: [
-        "Candlestick acted as the sole GP, establishing an institutional private equity fund and executing the investment in Project PYLER through the fund.",
+        "Established investment strategy and exit strategy based on industry and company analysis",
+        "Candlestick PE acted as the sole GP, establishing an institutional private equity fund and executing the investment in PYLER through the fund.",
       ],
     },
     ko: {
       logoText: "PYLER",
       alt: "PYLER",
-      title: "프로젝트 파일러",
+      title: "Project Vision AI (파일러)",
       link: "project-pyler.html",
       desc: [
         "Vision AI 기반 브랜드 세이프티 및 맞춤형 동영상 광고 솔루션을 제공하는 Ad-tech 기업 파일러에 대한 지분 투자",
         "파일러는 영상·이미지·음성·텍스트 분석 기반의 AiD 및 AiM 솔루션을 제공",
-        "표준산업분류 기준 응용 소프트웨어 개발 및 공급업(J58222)에 해당",
+        "2026년 4월 펀드 결성 및 투자 집행 완료",
+        "2028년까지 유니콘 Value 청산 목표 Growth capital 투자 딜",
       ],
       role: [
-        "캔들스틱은 단독 GP로서 기관전용 PEF를 설립하고, 해당 PEF를 통해 Project PYLER에 대한 투자를 집행함.",
+        "산업/기업 분석 기반 투자전략 및 Exit 전략 수립",
+        "캔들스틱 PE는 단독 GP로서 기관전용 PEF를 설립하고, 해당 PEF를 통해 PYLER에 대한 투자를 집행함.",
       ],
     },
   };
 
   const pylerDetailPages = {
     en: {
-      title: "Project PYLER / 프로젝트 파일러 | CANDLESTICK PE",
-      heroTitle: "Project PYLER",
+      title: "Project Vision AI (PYLER) | CANDLESTICK PE",
+      heroTitle: "Project Vision AI (PYLER)",
       heroSub: "Vision AI-based Ad-tech investment through an institutional private equity fund",
       backLabel: "Back to Portfolio",
       eyebrow: "Portfolio Detail",
-      heading: "Project PYLER",
+      heading: "Project Vision AI (PYLER)",
       lead:
-        "Project PYLER is an equity investment in PYLER, a Vision AI company that provides B2B solutions for brand safety and contextual video advertising.",
+        "Project Vision AI is an equity investment in PYLER, a Vision AI company that provides B2B solutions for brand safety and contextual video advertising.",
       fields: [
-        ["Project Name", "Project PYLER"],
+        ["Project Name", "Project Vision AI (PYLER)"],
         ["Company / Target", "PYLER CO., LTD. / 주식회사 파일러"],
         ["Sector", "Application software development and supply business (J58222); Ad-tech"],
         ["Investment Type", "Investment through an institutional private equity fund"],
         [
           "Role",
-          "Candlestick acted as the sole GP, establishing an institutional private equity fund and executing the investment in Project PYLER through the fund.",
+          "Candlestick PE acted as the sole GP, establishing an institutional private equity fund and executing the investment in PYLER through the fund.",
         ],
         ["Status", "Investment executed through an institutional private equity fund"],
       ],
@@ -122,22 +126,22 @@
       ],
     },
     ko: {
-      title: "Project PYLER / 프로젝트 파일러 | CANDLESTICK PE",
-      heroTitle: "프로젝트 파일러",
+      title: "Project Vision AI (파일러) | CANDLESTICK PE",
+      heroTitle: "Project Vision AI (파일러)",
       heroSub: "기관전용 PEF를 통한 Vision AI 기반 Ad-tech 투자",
       backLabel: "포트폴리오로 돌아가기",
       eyebrow: "포트폴리오 상세",
-      heading: "프로젝트 파일러",
+      heading: "Project Vision AI (파일러)",
       lead:
-        "Project PYLER는 브랜드 세이프티와 맞춤형 동영상 광고 솔루션을 제공하는 Vision AI 기업 파일러에 대한 지분 투자 프로젝트입니다.",
+        "Project Vision AI는 브랜드 세이프티와 맞춤형 동영상 광고 솔루션을 제공하는 Vision AI 기업 파일러에 대한 지분 투자 프로젝트입니다.",
       fields: [
-        ["프로젝트명", "Project PYLER / 프로젝트 파일러"],
+        ["프로젝트명", "Project Vision AI (파일러)"],
         ["회사 / 투자대상", "주식회사 파일러 / PYLER CO., LTD."],
         ["섹터", "응용 소프트웨어 개발 및 공급업(J58222); Ad-tech"],
         ["투자 유형", "기관전용 PEF를 통한 투자"],
         [
           "담당 역할",
-          "캔들스틱은 단독 GP로서 기관전용 PEF를 설립하고, 해당 PEF를 통해 Project PYLER에 대한 투자를 집행함.",
+          "캔들스틱 PE는 단독 GP로서 기관전용 PEF를 설립하고, 해당 PEF를 통해 PYLER에 대한 투자를 집행함.",
         ],
         ["현황", "기관전용 PEF를 통한 투자 집행"],
       ],
@@ -323,7 +327,7 @@
                 text: "Established an investment strategy based on industry and company analysis, and designed investor-favorable structure and terms",
                 keep: "(including tag-along rights, key CB terms, and investor protections)",
               },
-              "Supported LP sales and decision-making for KRW 6.5 billion in fundraising",
+              "Supported LP sales and decision-making for fundraising",
               "Led co-investor attraction and investor collaboration, including IMM Investment",
             ],
           },
@@ -380,7 +384,7 @@
                 text: "산업/기업 분석 기반 투자전략 수립 및 투자자 우위의 구조·조건 설계",
                 keep: "(Tag-along 포함, CB 핵심 조항·보호장치 협의)",
               },
-              "총 65억원 규모 자금조달을 위한 LP 세일즈, 의사결정 지원",
+              "자금조달을 위한 LP 세일즈, 의사결정 지원",
               "IMM인베스트먼트 등 공동투자자 유치 및 투자자 협업 주도",
             ],
           },
@@ -931,7 +935,7 @@
     tbody.replaceChildren();
 
     const lang = document.documentElement.lang === "ko" ? "ko" : "en";
-    const rows = data.rows.concat(pylerPortfolioRows[lang] ? [pylerPortfolioRows[lang]] : []);
+    const rows = pylerPortfolioRows[lang] ? [pylerPortfolioRows[lang]].concat(data.rows) : data.rows;
 
     rows.forEach(function (row) {
       const tr = document.createElement("tr");
