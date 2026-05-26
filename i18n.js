@@ -131,26 +131,26 @@
       lead:
         "Project PYLER는 브랜드 세이프티와 맞춤형 동영상 광고 솔루션을 제공하는 Vision AI 기업 파일러에 대한 지분 투자 프로젝트입니다.",
       fields: [
-        ["Project Name", "Project PYLER / 프로젝트 파일러"],
-        ["Company / Target", "주식회사 파일러 / PYLER CO., LTD."],
-        ["Sector", "응용 소프트웨어 개발 및 공급업(J58222); Ad-tech"],
-        ["Investment Type", "기관전용 PEF를 통한 투자"],
+        ["프로젝트명", "Project PYLER / 프로젝트 파일러"],
+        ["회사 / 투자대상", "주식회사 파일러 / PYLER CO., LTD."],
+        ["섹터", "응용 소프트웨어 개발 및 공급업(J58222); Ad-tech"],
+        ["투자 유형", "기관전용 PEF를 통한 투자"],
         [
-          "Role",
+          "담당 역할",
           "캔들스틱은 단독 GP로서 기관전용 PEF를 설립하고, 해당 PEF를 통해 Project PYLER에 대한 투자를 집행함.",
         ],
-        ["Status", "기관전용 PEF를 통한 투자 집행"],
+        ["현황", "기관전용 PEF를 통한 투자 집행"],
       ],
       sections: [
         {
-          title: "Project Overview",
+          title: "프로젝트 개요",
           paragraphs: [
             "파일러는 동영상·음성·이미지·텍스트를 통합적으로 이해하고 추론하는 멀티모달 AI를 기반으로 영상 분석 솔루션을 제공하는 기업입니다. 유해하거나 부적합한 콘텐츠 옆 광고 노출을 차단하고, 브랜드 맥락에 맞는 콘텐츠에 광고를 연결하는 사업을 영위합니다.",
             "제공 자료 기준 파일러는 2021년 11월 10일 설립되었으며, 유해 콘텐츠 차단 및 맞춤형 동영상 광고 연결 서비스를 제공하는 Ad-tech 기업입니다.",
           ],
         },
         {
-          title: "Investment Highlights",
+          title: "투자 포인트",
           items: [
             "AiD(Ads in Defense)를 통해 위험·부적절 콘텐츠 옆 광고 노출을 자동 차단하는 브랜드 세이프티 솔루션을 제공.",
             "AiM(Ads in Match)을 통해 광고 성과가 날 만한 콘텐츠 맥락에 광고를 정교하게 매칭.",
@@ -159,7 +159,7 @@
           ],
         },
         {
-          title: "Business / Technology Summary",
+          title: "사업 / 기술 요약",
           items: [
             "영상·이미지·음성·텍스트 분석 AI를 활용한 브랜드 세이프티 및 맞춤형 광고 매칭.",
             "주요 서비스는 유해 콘텐츠 광고 차단을 위한 AiD와 브랜드 적합 콘텐츠 매칭을 위한 AiM.",
