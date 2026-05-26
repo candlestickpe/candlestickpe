@@ -4,7 +4,7 @@
   const STORAGE_KEY = "candlestickpe.language";
 
   const pageDefaults = {
-    index: "en",
+    index: "ko",
     about: "ko",
     portfolio: "ko",
     "project-pyler": "ko",
@@ -182,7 +182,7 @@
         headline: "CANDLESTICK PRIVATE EQUITY",
         cardTitle: "CANDLESTICK PE",
         cardText:
-          "CANDLESTICK PE is a prominent investment firm in Korea, focusing on private equity and venture capital. With a strategic presence in the region, we drive innovation, foster growth, and create lasting value for our partners.",
+          "Candlestick PE is a professional investment firm investing in promising companies and growth industries in Korea. Based on accumulated investment experience and deep industry understanding, we support corporate growth strategies and create sustainable value together with investors and partners.",
         footer:
           'CANDLESTICK PE<div class="hero-sub">E-mail: <a href="mailto:jcjang@candlestickpe.com">jcjang@candlestickpe.com</a> / Address: Unit Ga-115, 3rd Floor, 39, Gangnam-daero 118-gil, Gangnam-gu, Seoul, Republic of Korea</div>',
       },
@@ -191,7 +191,7 @@
         headline: "캔들스틱 프라이빗 에쿼티",
         cardTitle: "캔들스틱 PE",
         cardText:
-          "캔들스틱 PE는 대한민국의 사모투자 및 벤처투자 분야에 집중하는 투자회사입니다. 축적된 투자 경험과 지역 시장에 대한 이해를 바탕으로 혁신과 성장을 지원하고, 파트너에게 지속적인 가치를 제공합니다.",
+          "캔들스틱 PE는 대한민국의 유망 기업과 성장 산업에 투자하는 전문 투자회사입니다. 축적된 투자 경험과 산업에 대한 깊은 이해를 바탕으로 기업의 성장 전략을 지원하며, 투자자 및 파트너와 함께 지속 가능한 가치를 만들어갑니다.",
         footer:
           '캔들스틱 PE<div class="hero-sub">이메일: <a href="mailto:jcjang@candlestickpe.com">jcjang@candlestickpe.com</a> / 주소: 서울특별시 강남구 강남대로118길 39, 3층 가-115호</div>',
       },
