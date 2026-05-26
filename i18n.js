@@ -5,7 +5,7 @@
 
   const pageDefaults = {
     index: "en",
-    about: "en",
+    about: "ko",
     portfolio: "ko",
     "project-pyler": "ko",
     team: "ko",
@@ -16,7 +16,7 @@
     en: {
       menu: "Menu",
       nav: {
-        about: "About",
+        about: "About Candlestick",
         portfolio: "Portfolio",
         team: "Team",
         esg: "ESG / Stewardship Code",
@@ -29,7 +29,7 @@
     ko: {
       menu: "메뉴",
       nav: {
-        about: "회사소개",
+        about: "About Candlestick",
         portfolio: "포트폴리오",
         team: "팀",
         esg: "ESG / 스튜어드십 코드",
@@ -199,108 +199,168 @@
 
     about: {
       en: {
-        title: "About | CANDLESTICK PE",
-        heroTitle: "About Company",
+        title: "About Candlestick | CANDLESTICK PE",
+        heroTitle: "About Candlestick",
         heroSub:
-          "We make trust our highest value, leveraging seasoned expertise and rigorous, data-driven analysis to maximize client returns.",
-        dealTitle: "■ Deal Sourcing Strategy",
-        partnersTitle: "Key Partners",
-        partners: ["Accounting Firms", "Private Equity", "Asset Management Company"],
-        strategyItems: [
-          "Proactively screen M&A opportunities with accounting firms' FAS teams and originate opportunities to engage strategic investors.",
-          "We tap into key industry players and our sector networks to source investment and M&A opportunities, primarily in the private company space.",
-          "Maintain origination channels with commercial banks to identify high-quality investment opportunities in blue-chip companies.",
-          "Expand relationships with private equity firms, asset managers, and investment banks to establish co-GP and co-investment partnerships.",
-          "Leverage our extended network, including portfolio companies, affiliates, and key partners, to broaden deal flow and investment opportunities.",
+          "Candlestick PE structures and manages institutional private equity funds, executing investments tailored to the strategic and financial needs of each company.",
+        introEyebrow: "Institutional PEF Manager",
+        introTitle: "Private equity solutions built around each company's needs",
+        introLead:
+          "As the general partner of institutional private equity funds, Candlestick PE reviews each transaction from the perspective of fund formation, investment execution, post-investment value creation, and exit. We focus on building practical investment structures that reflect the company's capital needs, shareholder objectives, growth strategy, and recoverability.",
+        roleCards: [
+          {
+            title: "Investment Vehicle",
+            body:
+              "Candlestick establishes and manages institutional PEFs as the investment vehicle for corporate investments.",
+            items: [
+              "Institutional private equity fund formation and management",
+              "Investment structure design aligned with investor and company needs",
+              "Fund-level governance, reporting, and compliance management",
+            ],
+          },
+          {
+            title: "Deal Coverage",
+            body:
+              "We review control investments, M&A transactions, growth capital, and financial restructuring opportunities with a PEF-oriented approach.",
+            items: [
+              "Control investment and M&A opportunities",
+              "Growth capital for companies requiring expansion capital",
+              "Capital structure improvement and shareholder restructuring cases",
+            ],
+          },
+          {
+            title: "Value-add Role",
+            body:
+              "After investment, Candlestick works with management teams and stakeholders to support practical value creation initiatives.",
+            items: [
+              "Business strategy, financial planning, and governance improvement",
+              "Support for internal control, reporting, and risk management",
+              "Exit strategy review and execution support",
+            ],
+          },
         ],
-        investmentTitle: "■ Investment Strategy",
-        process: [
+        flowTitle: "How Candlestick Executes PEF Investments",
+        flowSteps: [
           {
-            title: "Deal Sourcing",
-            items: [
-              "Identification of investment targets through networks with securities firms, banks, and accounting firms",
-              "Investment checklist review",
-              "Assessment of growth potential, stability, and recoverability",
-            ],
+            title: "Capital Formation",
+            body:
+              "Form an institutional PEF based on the investment thesis, transaction structure, and target investor profile.",
           },
           {
-            title: "Due Diligence",
-            items: [
-              "Due diligence checklist review",
-              "Management interviews, LDD / FDD / CDD",
-              "Valuation adjustment",
-              "Negotiation of investment terms",
-            ],
+            title: "Deal Structuring",
+            body:
+              "Design transaction terms that reflect the company's funding purpose, shareholder needs, and investor protection requirements.",
           },
           {
-            title: "Execution",
-            items: ["Review of contract documents", "Capital deployment"],
+            title: "Investment Execution",
+            body:
+              "Complete diligence, investment committee review, fund documentation, and capital deployment through the PEF.",
           },
           {
-            title: "Monitoring",
-            items: [
-              "Attendance at board meetings and shareholders' meetings",
-              "Performance monitoring",
-              "Preparation of fund operation reports",
-            ],
+            title: "Value Creation",
+            body:
+              "Support management on strategy, finance, governance, organization, and risk-management priorities after investment.",
           },
           {
             title: "Exit",
-            items: [
-              "Review of valuation appropriateness",
-              "Assessment of various exit strategies",
-              "Consideration of timing and schedule",
-            ],
+            body:
+              "Review exit alternatives and timing based on company performance, market conditions, and fund objectives.",
           },
         ],
+        solutionsTitle: "Solutions We Provide",
+        solutions: [
+          "Control investment",
+          "M&A investment",
+          "Growth capital",
+          "Financial restructuring",
+          "Business portfolio realignment",
+          "Governance improvement",
+        ],
+        closingTitle: "Our Role",
+        closingText:
+          "Candlestick PE acts as a GP and investment partner that connects institutional capital with corporate needs. We aim to execute investments through disciplined PEF structures and help portfolio companies build sustainable enterprise value.",
       },
       ko: {
-        title: "회사소개 | CANDLESTICK PE",
-        heroTitle: "회사소개",
+        title: "About Candlestick | CANDLESTICK PE",
+        heroTitle: "About Candlestick",
         heroSub:
-          "캔들스틱 PE는 신뢰를 최우선 가치로 삼고, 축적된 전문성과 엄정한 데이터 기반 분석을 통해 고객 수익 극대화를 추구합니다.",
-        dealTitle: "■ 딜 소싱 전략",
-        partnersTitle: "주요 파트너",
-        partners: ["회계법인", "사모투자회사", "자산운용사"],
-        strategyItems: [
-          "회계법인 FAS 팀과의 네트워크를 통해 M&A 기회를 선제적으로 검토하고 전략적 투자자 참여 기회를 발굴합니다.",
-          "핵심 산업 참여자 및 섹터 네트워크를 활용해 비상장 기업 중심의 투자 및 M&A 기회를 발굴합니다.",
-          "시중은행과의 소싱 채널을 유지하여 우량 기업 투자 기회를 지속적으로 확인합니다.",
-          "사모투자회사, 자산운용사, 투자은행과의 관계를 확대하여 공동 GP 및 공동투자 파트너십을 구축합니다.",
-          "포트폴리오 회사, 계열사, 주요 파트너 등 확장된 네트워크를 활용해 딜 플로우와 투자 기회를 넓힙니다.",
-        ],
-        investmentTitle: "■ 투자 전략",
-        process: [
+          "캔들스틱 PE는 기관전용 PEF를 설립·운용하고, 기업의 전략적·재무적 니즈에 맞춘 투자를 실행하는 사모펀드 운용사입니다.",
+        introEyebrow: "기관전용 PEF 운용사",
+        introTitle: "기업의 니즈에 맞춘 PEF 기반 투자 솔루션",
+        introLead:
+          "캔들스틱 PE는 기관전용 PEF의 업무집행사원(GP)으로서 펀드 결성, 투자 구조 설계, 투자 집행, 사후관리 및 회수까지의 전 과정을 검토합니다. 각 기업의 자금 수요, 주주 구성, 성장 전략, 회수 가능성을 종합적으로 고려하여 실질적인 투자 구조를 설계합니다.",
+        roleCards: [
           {
-            title: "딜 소싱",
+            title: "Investment Vehicle",
+            body:
+              "캔들스틱은 기관전용 PEF를 기업투자를 위한 핵심 투자기구로 설립하고 운용합니다.",
             items: [
-              "증권사, 은행, 회계법인 네트워크를 통한 투자대상 발굴",
-              "투자 체크리스트 검토",
-              "성장성, 안정성, 회수 가능성 검토",
+              "기관전용 사모집합투자기구 설립 및 운용",
+              "투자자와 기업의 목적에 맞춘 투자 구조 설계",
+              "펀드 거버넌스, 보고, 컴플라이언스 관리",
             ],
           },
           {
-            title: "실사",
+            title: "Deal Coverage",
+            body:
+              "경영권 인수, M&A, Growth Capital, 재무구조 개선 등 기업의 주요 현안에 맞는 투자 기회를 검토합니다.",
             items: [
-              "실사 체크리스트 검토",
-              "경영진 인터뷰 및 LDD / FDD / CDD",
-              "가치평가 조정",
-              "투자 조건 협상",
+              "경영권 인수 및 M&A 투자",
+              "성장자금이 필요한 기업에 대한 Growth Capital 투자",
+              "재무구조 개선 및 주주구조 재편 거래",
             ],
+          },
+          {
+            title: "Value-add Role",
+            body:
+              "투자 이후에는 경영진 및 이해관계자와 협력하여 기업가치 제고를 위한 실행 과제를 지원합니다.",
+            items: [
+              "사업전략, 재무계획, 지배구조 개선 지원",
+              "내부통제, 보고체계, 리스크 관리 강화",
+              "회수 전략 검토 및 실행 지원",
+            ],
+          },
+        ],
+        flowTitle: "캔들스틱의 PEF 투자 실행 흐름",
+        flowSteps: [
+          {
+            title: "펀드 결성",
+            body:
+              "투자 논리, 거래 구조, 투자자 구성에 맞춰 기관전용 PEF 결성 방향을 수립합니다.",
+          },
+          {
+            title: "거래 구조 설계",
+            body:
+              "기업의 자금 목적, 주주 니즈, 투자자 보호 장치를 반영한 투자 조건을 설계합니다.",
           },
           {
             title: "투자 집행",
-            items: ["계약서 검토", "투자금 집행"],
+            body:
+              "실사, 투자심의, 펀드 문서화, 자금 납입 절차를 거쳐 PEF를 통해 투자를 집행합니다.",
           },
           {
-            title: "사후관리",
-            items: ["이사회 및 주주총회 참석", "성과 모니터링", "펀드 운용보고서 작성"],
+            title: "가치제고",
+            body:
+              "투자 이후 전략, 재무, 지배구조, 조직, 리스크 관리 측면의 개선 과제를 지원합니다.",
           },
           {
             title: "회수",
-            items: ["가치평가 적정성 검토", "다양한 회수 전략 검토", "시점 및 일정 검토"],
+            body:
+              "기업 성과, 시장 상황, 펀드 목적을 바탕으로 회수 방식과 시점을 검토합니다.",
           },
         ],
+        solutionsTitle: "주요 솔루션",
+        solutions: [
+          "경영권 인수",
+          "M&A 투자",
+          "Growth Capital",
+          "재무구조 개선",
+          "사업 포트폴리오 재편",
+          "지배구조 개선",
+        ],
+        closingTitle: "캔들스틱의 역할",
+        closingText:
+          "캔들스틱 PE는 기관투자자의 자본과 기업의 니즈를 연결하는 GP이자 투자 파트너입니다. 원칙 있는 PEF 구조를 통해 투자를 실행하고, 투자대상회사의 지속가능한 기업가치 제고를 지원합니다.",
       },
     },
 
@@ -906,18 +966,51 @@
     html(".hero-footer .footer-left", data.footer);
   }
 
+  function renderAboutCards(cards) {
+    document.querySelectorAll("[data-about-card]").forEach(function (card, index) {
+      const item = cards[index];
+      if (!item) return;
+      text(".role-card-title", item.title, card);
+      text(".role-card-body", item.body, card);
+      list(".role-card-list", item.items, card);
+    });
+  }
+
+  function renderFlowSteps(steps) {
+    document.querySelectorAll("[data-flow-step]").forEach(function (step, index) {
+      const item = steps[index];
+      if (!item) return;
+      text(".flow-step-title", item.title, step);
+      text(".flow-step-body", item.body, step);
+    });
+  }
+
+  function renderSolutionChips(items) {
+    const node = document.querySelector(".solution-list");
+    if (!node || !Array.isArray(items)) return;
+    node.replaceChildren();
+    items.forEach(function (item) {
+      const li = document.createElement("li");
+      li.className = "solution-chip";
+      li.textContent = item;
+      node.appendChild(li);
+    });
+  }
+
   function applyAbout(data) {
     setTitle(data.title);
     text(".hero-title", data.heroTitle);
     text(".hero-subtext", data.heroSub);
-    text("#deal-sourcing .section-title", data.dealTitle);
-    text("#partners-title", data.partnersTitle);
-    document.querySelectorAll(".partner-card p").forEach(function (node, index) {
-      node.textContent = data.partners[index] || node.textContent;
-    });
-    list(".strategy-list", data.strategyItems);
-    text("#investment-strategy .section-title", data.investmentTitle);
-    renderProcess(data.process);
+    text(".section-eyebrow", data.introEyebrow);
+    text(".about-intro-title", data.introTitle);
+    text(".about-intro-lead", data.introLead);
+    text(".about-flow-title", data.flowTitle);
+    text(".about-solutions-title", data.solutionsTitle);
+    text(".about-closing-title", data.closingTitle);
+    text(".about-closing-text", data.closingText);
+    renderAboutCards(data.roleCards);
+    renderFlowSteps(data.flowSteps);
+    renderSolutionChips(data.solutions);
   }
 
   function renderPortfolio(data) {

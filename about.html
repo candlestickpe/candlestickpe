@@ -3,35 +3,32 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>회사소개 | CANDLESTICK PE</title>
-  <meta name="description" content="캔들스틱 PE의 회사소개, 투자전략, 딜 소싱 파트너 네트워크 정보를 제공합니다." />
+  <title>About Candlestick | CANDLESTICK PE</title>
+  <meta name="description" content="캔들스틱 PE는 기관전용 PEF 운용사로서 PEF를 통한 기업투자, M&A, Growth Capital, 재무구조 개선 등 기업 니즈에 맞춘 투자 솔루션을 제공합니다." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://candlestickpe.com/about.html" />
   <link rel="alternate" hreflang="ko" href="https://candlestickpe.com/about.html" />
   <link rel="alternate" hreflang="x-default" href="https://candlestickpe.com/about.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="CANDLESTICK PE" />
-  <meta property="og:title" content="회사소개 | CANDLESTICK PE" />
-  <meta property="og:description" content="캔들스틱 PE의 회사소개, 투자전략, 딜 소싱 파트너 네트워크 정보를 제공합니다." />
+  <meta property="og:title" content="About Candlestick | CANDLESTICK PE" />
+  <meta property="og:description" content="캔들스틱 PE는 기관전용 PEF 운용사로서 PEF를 통한 기업투자와 기업 니즈에 맞춘 투자 솔루션을 제공합니다." />
   <meta property="og:url" content="https://candlestickpe.com/about.html" />
   <meta property="og:image" content="https://candlestickpe.com/high.PNG" />
   <meta property="og:locale" content="ko_KR" />
   <meta property="og:locale:alternate" content="en_US" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="회사소개 | CANDLESTICK PE" />
-  <meta name="twitter:description" content="캔들스틱 PE의 회사소개, 투자전략, 딜 소싱 파트너 네트워크 정보를 제공합니다." />
+  <meta name="twitter:title" content="About Candlestick | CANDLESTICK PE" />
+  <meta name="twitter:description" content="캔들스틱 PE는 기관전용 PEF 운용사로서 PEF를 통한 기업투자와 기업 니즈에 맞춘 투자 솔루션을 제공합니다." />
   <meta name="twitter:image" content="https://candlestickpe.com/high.PNG" />
   <!-- Search verification placeholders: replace content values after issuing codes. -->
   <!-- <meta name="google-site-verification" content="GOOGLE_SITE_VERIFICATION" /> -->
   <!-- <meta name="naver-site-verification" content="NAVER_SITE_VERIFICATION" /> -->
 
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
         crossorigin="anonymous">
-
-  <!-- Pretendard (CDN) -->
   <link rel="stylesheet" as="style" crossorigin
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
 
@@ -39,107 +36,229 @@
     :root{
       --hero-h: clamp(250px, 40vw, 400px);
       --hero-focus-y: 40%;
-      --subhead-size: clamp(1.25rem, 2.2vw, 2rem);
       --section-max-w: 1200px;
       --section-x-pad: 24px;
-      --brand-blue: #0b1140; /* 외곽 남색 */
+      --brand-blue: #0b1140;
+      --brand-blue-soft: #f4f6fb;
+      --line-gray: #e5e7eb;
+      --text-dark: #111827;
+      --text-mid: #374151;
+      --text-muted: #667085;
     }
 
-    /* ✅ 빨간박스(스텝 라벨) + 파란박스(내용) 영역: Pretendard */
-    #investment-strategy,
-    #investment-strategy * ,
-    .strategy-box,
-    .strategy-box * {
+    html,
+    body{
       font-family: Pretendard, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
-                   "Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic", sans-serif;
+                   "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+      color: var(--text-dark);
+      background: #fff;
     }
 
     .hero{
-      position: relative; min-height: var(--hero-h);
-      background:#333 url('high.PNG') no-repeat 50% var(--hero-focus-y)/cover;
+      position: relative;
+      min-height: var(--hero-h);
+      background: #333 url('high.PNG') no-repeat 50% var(--hero-focus-y)/cover;
     }
-    .hero::before{content:"";position:absolute;inset:0;
-      background:linear-gradient(to bottom,rgba(0,0,0,.35),rgba(0,0,0,.15));}
-    .hero > .container-fluid{position:relative;z-index:1;}
-    @media (max-width:768px){ :root{ --hero-focus-y: 88%; } }
+    .hero::before{
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,.38), rgba(0,0,0,.18));
+    }
+    .hero > .container-fluid{ position: relative; z-index: 1; }
+    @media (max-width: 768px){ :root{ --hero-focus-y: 88%; } }
 
-    .brand{position:absolute;top:10px;left:20px;z-index:2;font-weight:700;color:#fff;font-size:1.1rem;letter-spacing:.5px;}
-    .hero-title{margin:0;color:#fff;}
+    .brand{
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      z-index: 2;
+      font-weight: 700;
+      color: #fff;
+      font-size: 1.1rem;
+      letter-spacing: .5px;
+    }
+    .hero-title{
+      margin: 0;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
     .hero-subtext{
-      margin-top:25px;font-size:1rem;line-height:1.2;max-width:1200px;margin-inline:auto;color:#fff;
-      text-shadow:0 1px 2px rgba(0,0,0,.35);
+      margin: 25px auto 0;
+      max-width: 920px;
+      color: #fff;
+      font-size: 1rem;
+      line-height: 1.55;
+      text-shadow: 0 1px 2px rgba(0,0,0,.35);
+      word-break: keep-all;
     }
-    .center-wrap{ text-align:center; padding-top: calc(var(--hero-h)*.28); padding-bottom: calc(var(--hero-h)*.12); }
+    .center-wrap{
+      text-align: center;
+      padding-top: calc(var(--hero-h) * .28);
+      padding-bottom: calc(var(--hero-h) * .12);
+    }
 
-    .content-section{ background:#fff; padding:140px 0 60px; }
-    .content-inner{ width:min(var(--section-max-w),100% - var(--section-x-pad)*2); margin:0 auto; padding:0 var(--section-x-pad); }
-    .section-title{ font-weight:800; font-size:var(--subhead-size); line-height:1.2; margin:0; color:#111; }
-    .section-title.size-lg{ --subhead-size:2rem; }
+    .content-section{ background: #fff; padding: 96px 0 0; }
+    .content-section:last-of-type{ padding-bottom: 72px; }
+    .content-inner{
+      width: min(var(--section-max-w), 100%);
+      margin: 0 auto;
+      padding: 0 var(--section-x-pad);
+    }
+    .section-eyebrow{
+      margin: 0 0 10px;
+      color: var(--brand-blue);
+      font-weight: 900;
+      font-size: .86rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .section-title{
+      margin: 0;
+      color: var(--text-dark);
+      font-weight: 900;
+      line-height: 1.22;
+      letter-spacing: 0;
+    }
+    .section-title.size-lg{ font-size: clamp(1.8rem, 3vw, 2.65rem); }
+    .section-lead{
+      max-width: 900px;
+      margin: 20px 0 0;
+      color: var(--text-mid);
+      line-height: 1.85;
+      word-break: keep-all;
+    }
 
-    /* Key Partners */
-    .partners{ margin-top:22px; }
-    .partners-header{ background:#16224c; color:#fff; font-weight:800; text-align:center; padding:14px 16px; border-radius:2px; box-shadow:0 4px 0 rgba(0,0,0,.25); }
-    .partners-rule{ height:0; margin:10px 0 22px; border-top:4px solid #16224c; border-bottom:2px solid #dcdde3; }
-    .partners-grid{ display:grid; gap:22px; grid-template-columns:repeat(3,minmax(220px,1fr)); }
-    .partner-card{ background:#f2f2f4; border:1px solid #1b2656; border-radius:3px; text-align:center; padding:32px 16px; box-shadow:6px 6px 0 rgba(0,0,0,.25); }
-    .partners .partner-card p{ margin:0; font-size:1.25rem; font-weight:700; line-height:1.4; color:#111; }
-
-    .section-arrow{ display:flex; justify-content:center; align-items:center; margin-top:28px; }
-    .section-arrow svg{ width:60px; height:auto; }
-    .section-arrow .bar{ fill:#c7c7c7; }
-    .section-arrow .head{ fill:#a6a6a6; }
-
-    .strategy-box{ margin-top:22px; background:#fff; border:3px solid #1a1a1a; border-radius:2px; padding:18px 22px; box-shadow:4px 4px 0 rgba(0,0,0,.25); }
-    .strategy-list{ margin:0; padding-left:1.2em; list-style-type:disc; }
-    .strategy-list li{ margin:10px 0; font-size:1.02rem; line-height:1.6; color:#111; }
-    .strategy-list li::marker{ color:#000; }
-
-    /* ===== Investment Strategy : "빨간박스(라벨) + 파란박스(내용)" 가로 배치 후, 아래로 순서대로 ===== */
-    .process-list{ margin-top: 28px; display:flex; flex-direction:column; gap: 18px; }
-    .process-item{
-      display:grid;
-      grid-template-columns: minmax(170px, 220px) 1fr;
+    .role-grid{
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 18px;
-      align-items: start; /* 라벨은 위쪽 정렬 */
+      margin-top: 38px;
+    }
+    .role-card{
+      border: 1px solid var(--line-gray);
+      border-top: 4px solid var(--brand-blue);
+      border-radius: 8px;
+      padding: 24px;
+      background: #fff;
+      min-height: 100%;
+    }
+    .role-card-title{
+      margin: 0 0 12px;
+      color: var(--brand-blue);
+      font-size: 1.18rem;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+    .role-card-body{
+      margin: 0 0 16px;
+      color: var(--text-mid);
+      line-height: 1.7;
+      word-break: keep-all;
+    }
+    .role-card-list{
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--text-mid);
+    }
+    .role-card-list li{
+      margin: .45rem 0;
+      line-height: 1.6;
+      word-break: keep-all;
     }
 
-    /* 빨간박스(라벨) 스타일 */
-    .step-badge{
-      background: var(--brand-blue);
-      padding: 6px;
-      border-radius: 2px;
-      box-shadow: 0 2px 0 var(--brand-blue), 0 6px 0 #d3d6df;
+    .about-flow{
+      background: var(--brand-blue-soft);
+      padding-bottom: 88px;
     }
-    .step-badge__inner{
-      background:#fff;
-      height: 52px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
+    .flow-grid{
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 34px;
+    }
+    .flow-step{
+      position: relative;
+      border: 1px solid #d8deed;
+      border-radius: 8px;
+      padding: 20px 18px;
+      background: #fff;
+      min-height: 178px;
+    }
+    .flow-step:not(:last-child)::after{
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -9px;
+      width: 16px;
+      height: 16px;
+      border-top: 2px solid var(--brand-blue);
+      border-right: 2px solid var(--brand-blue);
+      transform: translateY(-50%) rotate(45deg);
+      background: transparent;
+      z-index: 2;
+    }
+    .flow-step-title{
+      margin: 0 0 10px;
+      color: var(--brand-blue);
+      font-size: 1rem;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+    .flow-step-body{
+      margin: 0;
+      color: var(--text-mid);
+      line-height: 1.7;
+      font-size: .95rem;
+      word-break: keep-all;
+    }
+
+    .solutions-wrap{
+      display: grid;
+      grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+      gap: 34px;
+      align-items: start;
+    }
+    .solution-list{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .solution-chip{
+      border: 1px solid var(--line-gray);
+      border-radius: 6px;
+      padding: 12px 14px;
+      background: #fff;
+      color: var(--text-dark);
       font-weight: 800;
-      color:#111;
-      border-radius: 2px;
-      text-align:center;
-      padding: 0 10px;
-      font-size: 0.98rem;
-      line-height: 1.1;
+      line-height: 1.35;
+      word-break: keep-all;
     }
 
-    /* 파란박스(내용) 카드 스타일(기존 note-card 유지) */
-    .note-card{
-      background:#fff; border:2px solid #1a1a1a; border-radius:6px;
-      padding:16px; box-shadow:4px 4px 0 rgba(0,0,0,.18);
+    .closing-panel{
+      border-top: 1px solid var(--line-gray);
+      border-bottom: 1px solid var(--line-gray);
+      padding: 34px 0;
     }
-    .note-title{ font-weight:800; margin:0 0 10px; font-size:1.05rem; color:#111; }
-    .note-list{ list-style: disc outside; margin:.2em 0 0; padding-left:1.2em; }
-    .note-list li{ margin:.38em 0; line-height:1.6; color:#222; }
-
-    @media (max-width: 768px){
-      .process-item{ grid-template-columns: 1fr; }
-      .step-badge{ width: min(320px, 100%); }
+    .about-closing-title{
+      margin: 0 0 12px;
+      color: var(--brand-blue);
+      font-size: 1.3rem;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+    .about-closing-text{
+      max-width: 920px;
+      margin: 0;
+      color: var(--text-mid);
+      line-height: 1.85;
+      word-break: keep-all;
     }
 
-    /* ===== 떠 있는(투명) 네비게이션 ===== */
     .navbar--floating{
       position: absolute;
       top: 14px;
@@ -153,11 +272,25 @@
       transform: none !important;
       margin: 0;
     }
+
+    @media (max-width: 980px){
+      .role-grid{ grid-template-columns: 1fr; }
+      .flow-grid{ grid-template-columns: 1fr; }
+      .flow-step{ min-height: 0; }
+      .flow-step:not(:last-child)::after{ display: none; }
+      .solutions-wrap{ grid-template-columns: 1fr; }
+      .content-section{ padding-top: 72px; }
+    }
+    @media (max-width: 560px){
+      .brand{ left: 14px; font-size: 1rem; }
+      .navbar--floating{ top: 12px; right: 12px; }
+      .role-card{ padding: 20px; }
+      .solution-chip{ width: 100%; }
+    }
   </style>
 </head>
 
 <body>
-  <!-- 떠 있는(투명) 햄버거 버튼 -->
   <nav class="navbar navbar-dark navbar--floating" aria-label="Main navigation">
     <button class="navbar-toggler border-0" type="button"
             data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
@@ -166,7 +299,6 @@
     </button>
   </nav>
 
-  <!-- 오프캔버스 메뉴 -->
   <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1"
        id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel"
        style="--bs-offcanvas-width:300px;">
@@ -176,7 +308,7 @@
     </div>
     <div class="offcanvas-body">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Candlestick</a></li>
         <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
         <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
         <li class="nav-item"><a class="nav-link" href="esg.html">ESG / Stewardship Code</a></li>
@@ -184,172 +316,122 @@
     </div>
   </div>
 
-  <!-- Hero -->
   <div class="hero">
     <a href="index.html"
        class="brand"
        style="text-decoration:none !important; color:#fff; cursor:pointer"
-       aria-label="Go to Home (Index)">
+       aria-label="Go to Home">
       CANDLESTICK PE
     </a>
 
     <div class="container-fluid px-4 center-wrap">
-      <h1 class="display-4 hero-title">About Company</h1>
+      <h1 class="display-4 hero-title">About Candlestick</h1>
       <div class="hero-subtext">
-        We make trust our highest value, leveraging seasoned expertise and rigorous, data-driven analysis to maximize client returns.
+        캔들스틱 PE는 기관전용 PEF를 설립·운용하고, 기업의 전략적·재무적 니즈에 맞춘 투자를 실행하는 사모펀드 운용사입니다.
       </div>
     </div>
   </div>
 
-  <!-- Deal Sourcing -->
-  <section class="content-section" id="deal-sourcing">
-    <div class="content-inner">
-      <h2 class="section-title size-lg">■ Deal Sourcing Strategy</h2>
+  <main>
+    <section class="content-section about-overview" id="about-candlestick">
+      <div class="content-inner">
+        <p class="section-eyebrow">기관전용 PEF 운용사</p>
+        <h2 class="section-title size-lg about-intro-title">기업의 니즈에 맞춘 PEF 기반 투자 솔루션</h2>
+        <p class="section-lead about-intro-lead">
+          캔들스틱 PE는 기관전용 PEF의 업무집행사원(GP)으로서 펀드 결성, 투자 구조 설계, 투자 집행, 사후관리 및 회수까지의 전 과정을 검토합니다. 각 기업의 자금 수요, 주주 구성, 성장 전략, 회수 가능성을 종합적으로 고려하여 실질적인 투자 구조를 설계합니다.
+        </p>
 
-      <div class="partners" aria-labelledby="partners-title">
-        <div class="partners-header" id="partners-title">Key Partners</div>
-        <div class="partners-rule"></div>
-        <div class="partners-grid">
-          <div class="partner-card"><p>Accounting Firms</p></div>
-          <div class="partner-card"><p>Private Equity</p></div>
-          <div class="partner-card"><p>Asset Management Company</p></div>
+        <div class="role-grid" aria-label="Candlestick PE investment role">
+          <article class="role-card" data-about-card>
+            <h3 class="role-card-title">Investment Vehicle</h3>
+            <p class="role-card-body">캔들스틱은 기관전용 PEF를 기업투자를 위한 핵심 투자기구로 설립하고 운용합니다.</p>
+            <ul class="role-card-list">
+              <li>기관전용 사모집합투자기구 설립 및 운용</li>
+              <li>투자자와 기업의 목적에 맞춘 투자 구조 설계</li>
+              <li>펀드 거버넌스, 보고, 컴플라이언스 관리</li>
+            </ul>
+          </article>
+
+          <article class="role-card" data-about-card>
+            <h3 class="role-card-title">Deal Coverage</h3>
+            <p class="role-card-body">경영권 인수, M&A, Growth Capital, 재무구조 개선 등 기업의 주요 현안에 맞는 투자 기회를 검토합니다.</p>
+            <ul class="role-card-list">
+              <li>경영권 인수 및 M&A 투자</li>
+              <li>성장자금이 필요한 기업에 대한 Growth Capital 투자</li>
+              <li>재무구조 개선 및 주주구조 재편 거래</li>
+            </ul>
+          </article>
+
+          <article class="role-card" data-about-card>
+            <h3 class="role-card-title">Value-add Role</h3>
+            <p class="role-card-body">투자 이후에는 경영진 및 이해관계자와 협력하여 기업가치 제고를 위한 실행 과제를 지원합니다.</p>
+            <ul class="role-card-list">
+              <li>사업전략, 재무계획, 지배구조 개선 지원</li>
+              <li>내부통제, 보고체계, 리스크 관리 강화</li>
+              <li>회수 전략 검토 및 실행 지원</li>
+            </ul>
+          </article>
         </div>
       </div>
+    </section>
 
-      <div class="section-arrow" aria-hidden="true">
-        <svg viewBox="0 0 64 64" role="img" aria-label="down arrow">
-          <rect class="bar" x="16" y="6"  width="32" height="6" rx="1.5"></rect>
-          <rect class="bar" x="16" y="16" width="32" height="6" rx="1.5"></rect>
-          <rect class="bar" x="16" y="26" width="32" height="6" rx="1.5"></rect>
-          <path class="head" d="M4 32 L32 60 L60 32 Z"></path>
-        </svg>
+    <section class="content-section about-flow" id="investment-flow">
+      <div class="content-inner">
+        <h2 class="section-title size-lg about-flow-title">캔들스틱의 PEF 투자 실행 흐름</h2>
+        <div class="flow-grid" aria-label="PEF investment execution flow">
+          <article class="flow-step" data-flow-step>
+            <h3 class="flow-step-title">펀드 결성</h3>
+            <p class="flow-step-body">투자 논리, 거래 구조, 투자자 구성에 맞춰 기관전용 PEF 결성 방향을 수립합니다.</p>
+          </article>
+          <article class="flow-step" data-flow-step>
+            <h3 class="flow-step-title">거래 구조 설계</h3>
+            <p class="flow-step-body">기업의 자금 목적, 주주 니즈, 투자자 보호 장치를 반영한 투자 조건을 설계합니다.</p>
+          </article>
+          <article class="flow-step" data-flow-step>
+            <h3 class="flow-step-title">투자 집행</h3>
+            <p class="flow-step-body">실사, 투자심의, 펀드 문서화, 자금 납입 절차를 거쳐 PEF를 통해 투자를 집행합니다.</p>
+          </article>
+          <article class="flow-step" data-flow-step>
+            <h3 class="flow-step-title">가치제고</h3>
+            <p class="flow-step-body">투자 이후 전략, 재무, 지배구조, 조직, 리스크 관리 측면의 개선 과제를 지원합니다.</p>
+          </article>
+          <article class="flow-step" data-flow-step>
+            <h3 class="flow-step-title">회수</h3>
+            <p class="flow-step-body">기업 성과, 시장 상황, 펀드 목적을 바탕으로 회수 방식과 시점을 검토합니다.</p>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <div class="strategy-box">
-        <ul class="strategy-list" style="list-style-position:outside; padding-left:3em;">
-          <li>Proactively screen M&A opportunities with accounting firms’ FAS teams and originate opportunities to engage strategic investors.</li>
-          <li>We tap into key industry players and our sector networks to source investment and M&A opportunities, primarily in the private company space.</li>
-          <li>Maintain origination channels with commercial banks to identify high-quality investment opportunities in blue-chip companies.</li>
-          <li>Expand relationships with private equity firms, asset managers, and investment banks to establish co-GP and co-investment partnerships.</li>
-          <li>Leverage our extended network—portfolio companies, their affiliates, and key partners—to broaden deal flow and investment opportunities.</li>
+    <section class="content-section about-solutions" id="solutions">
+      <div class="content-inner solutions-wrap">
+        <div>
+          <p class="section-eyebrow">Solutions</p>
+          <h2 class="section-title size-lg about-solutions-title">주요 솔루션</h2>
+        </div>
+        <ul class="solution-list" aria-label="Candlestick PE solutions">
+          <li class="solution-chip">경영권 인수</li>
+          <li class="solution-chip">M&A 투자</li>
+          <li class="solution-chip">Growth Capital</li>
+          <li class="solution-chip">재무구조 개선</li>
+          <li class="solution-chip">사업 포트폴리오 재편</li>
+          <li class="solution-chip">지배구조 개선</li>
         </ul>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Investment Strategy -->
-  <section class="content-section" id="investment-strategy">
-    <div class="content-inner">
-      <h2 class="section-title size-lg">■ Investment Strategy</h2>
-
-      <!-- ✅ 요청사항: 라벨(빨간박스) 오른쪽에 내용(파란박스) + 전체는 아래로 순서대로 -->
-      <div class="process-list" aria-label="Investment process (label + details)">
-        <!-- 1) Deal Sourcing -->
-        <div class="process-item">
-          <div class="step-badge" aria-hidden="true">
-            <div class="step-badge__inner">Deal Sourcing</div>
-          </div>
-          <article class="note-card">
-            <h3 class="note-title">Deal Sourcing</h3>
-            <div class="note-body" data-autosplit>
-              〮 Identification of Investment Targets through Networks with Securities Firms, Banks, and Accounting Firms
-              〮 Conducting Investment Checklist Reviews
-              〮 Assessing Growth Potential, Stability, and Recoverability
-            </div>
-          </article>
-        </div>
-
-        <!-- 2) Due Diligence -->
-        <div class="process-item">
-          <div class="step-badge" aria-hidden="true">
-            <div class="step-badge__inner">Due Diligence</div>
-          </div>
-          <article class="note-card">
-            <h3 class="note-title">Due Diligence</h3>
-            <div class="note-body" data-autosplit>
-              〮 Due Diligence Checklist Review
-              〮 Management Interviews LDD / FDD / CDD
-              〮 Valuation Adjustment
-              〮 Negotiation of Investment Terms
-            </div>
-          </article>
-        </div>
-
-        <!-- 3) Execution -->
-        <div class="process-item">
-          <div class="step-badge" aria-hidden="true">
-            <div class="step-badge__inner">Execution</div>
-          </div>
-          <article class="note-card">
-            <h3 class="note-title">Execution</h3>
-            <div class="note-body" data-autosplit>
-              〮 Review of Contract Documents
-              〮 Capital Deployment
-            </div>
-          </article>
-        </div>
-
-        <!-- 4) Monitoring -->
-        <div class="process-item">
-          <div class="step-badge" aria-hidden="true">
-            <div class="step-badge__inner">Monitoring</div>
-          </div>
-          <article class="note-card">
-            <h3 class="note-title">Monitoring</h3>
-            <div class="note-body" data-autosplit>
-              〮 Attendance at Board Meetings and Shareholders’ Meetings
-              〮 Performance Monitoring
-              〮 Preparation of Fund Operation Reports
-            </div>
-          </article>
-        </div>
-
-        <!-- 5) Exit -->
-        <div class="process-item">
-          <div class="step-badge" aria-hidden="true">
-            <div class="step-badge__inner">Exit</div>
-          </div>
-          <article class="note-card">
-            <h3 class="note-title">Exit</h3>
-            <div class="note-body" data-autosplit>
-              〮 Review of Valuation Appropriateness
-              〮 Assessment of Various Exit Strategies
-              〮 Consideration of Timing and Schedule
-            </div>
-          </article>
+    <section class="content-section about-role" id="candlestick-role">
+      <div class="content-inner">
+        <div class="closing-panel">
+          <h2 class="about-closing-title">캔들스틱의 역할</h2>
+          <p class="about-closing-text">
+            캔들스틱 PE는 기관투자자의 자본과 기업의 니즈를 연결하는 GP이자 투자 파트너입니다. 원칙 있는 PEF 구조를 통해 투자를 실행하고, 투자대상회사의 지속가능한 기업가치 제고를 지원합니다.
+          </p>
         </div>
       </div>
-      <!-- ▲ 여기까지 -->
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- ✅ 특수기호(〮) 자동 리스트 변환 -->
-  <script>
-    (function(){
-      const SPLIT_RE = /[〮ㆍ•●○◦∙·‧]+/;
-      document.querySelectorAll('.note-body[data-autosplit]').forEach(node => {
-        const raw = node.textContent
-          .replace(/\u000B/g, ' ')
-          .replace(/\u00A0/g, ' ')
-          .replace(/\s+/g, ' ')
-          .trim();
-
-        const parts = raw.split(SPLIT_RE).map(s => s.trim()).filter(Boolean);
-        if (parts.length <= 1) return;
-
-        const ul = document.createElement('ul');
-        ul.className = 'note-list';
-        parts.forEach(text => {
-          const li = document.createElement('li');
-          li.textContent = text;
-          ul.appendChild(li);
-        });
-        node.replaceChildren(ul);
-      });
-    })();
-  </script>
-
-  <!-- Bootstrap JS (bundle) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
           crossorigin="anonymous"></script>
