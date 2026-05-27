@@ -2,6 +2,7 @@
   "use strict";
 
   const STORAGE_KEY = "candlestickpe.language";
+  const BRAND_LABEL = "CANDLESTICK PE";
 
   const pageDefaults = {
     index: "ko",
@@ -188,7 +189,7 @@
       },
       ko: {
         title: "CANDLESTICK PE | 캔들스틱 PE",
-        headline: "캔들스틱 프라이빗 에쿼티",
+        headline: "CANDLESTICK PRIVATE EQUITY",
         cardTitle: "캔들스틱 PE",
         cardText:
           "캔들스틱 PE는 대한민국의 유망 기업과 성장 산업에 투자하는 전문 투자회사입니다. 축적된 투자 경험과 산업에 대한 깊은 이해를 바탕으로 기업의 성장 전략을 지원하며, 투자자 및 파트너와 함께 지속 가능한 가치를 만들어갑니다.",
@@ -921,6 +922,7 @@
       button.setAttribute("aria-label", c.hamburger);
     });
     document.querySelectorAll(".brand").forEach(function (brand) {
+      brand.textContent = BRAND_LABEL;
       brand.setAttribute("aria-label", c.home);
     });
     document.querySelectorAll(".offcanvas .nav-link").forEach(function (link) {
