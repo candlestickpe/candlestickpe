@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>팀 | CANDLESTICK PE</title>
-  <meta name="description" content="캔들스틱 PE 투자팀의 주요 인력과 투자 경험을 소개합니다." />
+  <title>핵심운용인력 | CANDLESTICK PE</title>
+  <meta name="description" content="캔들스틱 PE 핵심운용인력과 주요 투자 실적을 소개합니다." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://candlestickpe.com/team.html" />
   <link rel="alternate" hreflang="ko" href="https://candlestickpe.com/team.html" />
   <link rel="alternate" hreflang="x-default" href="https://candlestickpe.com/team.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="CANDLESTICK PE" />
-  <meta property="og:title" content="팀 | CANDLESTICK PE" />
-  <meta property="og:description" content="캔들스틱 PE 투자팀의 주요 인력과 투자 경험을 소개합니다." />
+  <meta property="og:title" content="핵심운용인력 | CANDLESTICK PE" />
+  <meta property="og:description" content="캔들스틱 PE 핵심운용인력과 주요 투자 실적을 소개합니다." />
   <meta property="og:url" content="https://candlestickpe.com/team.html" />
   <meta property="og:image" content="https://candlestickpe.com/high.PNG" />
   <meta property="og:locale" content="ko_KR" />
   <meta property="og:locale:alternate" content="en_US" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="팀 | CANDLESTICK PE" />
-  <meta name="twitter:description" content="캔들스틱 PE 투자팀의 주요 인력과 투자 경험을 소개합니다." />
+  <meta name="twitter:title" content="핵심운용인력 | CANDLESTICK PE" />
+  <meta name="twitter:description" content="캔들스틱 PE 핵심운용인력과 주요 투자 실적을 소개합니다." />
   <meta name="twitter:image" content="https://candlestickpe.com/high.PNG" />
   <!-- Search verification placeholders: replace content values after issuing codes. -->
   <!-- <meta name="google-site-verification" content="GOOGLE_SITE_VERIFICATION" /> -->
@@ -134,6 +134,14 @@
 
       padding: var(--card-pad);
     }
+    .profile-card.profile-card--no-exp{
+      grid-template-areas:
+        "photo inv"
+        "meta  inv";
+    }
+    .profile-card.profile-card--no-exp .inv-block{
+      align-self:start;
+    }
 
     .left-photo{
       grid-area: photo;
@@ -194,6 +202,10 @@
       padding: var(--block-pad);
       box-shadow: 0 2px 10px rgba(0,0,0,.04);
     }
+    .profile-block[hidden],
+    .left-meta .title[hidden]{
+      display:none !important;
+    }
 
     .profile-heading{
       display:inline-block;
@@ -217,6 +229,12 @@
           "photo"
           "meta"
           "exp"
+          "inv";
+      }
+      .profile-card.profile-card--no-exp{
+        grid-template-areas:
+          "photo"
+          "meta"
           "inv";
       }
       .left-photo{ padding-top: 0; }
@@ -262,7 +280,7 @@
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="team.html">핵심운용인력</a></li>
         <li class="nav-item"><a class="nav-link" href="esg.html">ESG / Stewardship Code</a></li>
       </ul>
     </div>
@@ -278,7 +296,7 @@
     </a>
 
     <div class="container-fluid px-4 center-wrap">
-      <h1 class="display-4 hero-title">About Our Team</h1>
+      <h1 class="display-4 hero-title">핵심운용인력</h1>
       <div class="hero-subtext">
 Candlestick PE is composed of seasoned professionals with extensive experience and a proven track record in the Korean investment market.
 Leveraging our accumulated expertise and deep market insight, we pursue proactive and strategic investment activities.
@@ -289,43 +307,36 @@ Leveraging our accumulated expertise and deep market insight, we pursue proactiv
   <!-- Content -->
   <section class="content-section" id="deal-sourcing">
     <div class="content-inner">
-      <h2 class="section-title size-lg">■ Key Personnel</h2>
+        <h2 class="section-title size-lg">핵심운용인력</h2>
 
       <div class="team-section" id="key-people">
 
         <!-- 홍갑표 대표 카드 -->
-        <div class="profile-card" style="margin-bottom:28px;">
+        <div class="profile-card profile-card--no-exp" style="margin-bottom:28px;">
 
           <div class="left-photo">
             <div class="profile-photo-frame">
               <img src="KP.png"
-                   alt="홍갑표 대표이사 증명사진"
+                   alt="홍갑표 증명사진"
                    class="profile-photo">
             </div>
           </div>
 
-          <section class="profile-block exp-block">
+          <section class="profile-block exp-block" hidden>
             <h3 class="profile-heading">주요경력</h3>
-            <ul class="profile-list">
-              <li>(주)캔들스틱 PE 대표</li>
-              <li>모비딕 자산운용 대표</li>
-              <li>KPH자산운용 대표, 운용본부장</li>
-              <li>LDS Presiding Bishopric Office 동아시아 자산관리 본부장</li>
-              <li>Ensign Peak Advisors, SLC office</li>
-            </ul>
+            <ul class="profile-list"></ul>
           </section>
 
           <div class="left-meta">
             <div class="name">홍갑표</div>
-            <span class="title">대표이사</span>
+            <span class="title" hidden></span>
           </div>
 
           <section class="profile-block inv-block">
             <h3 class="profile-heading">주요 투자실적</h3>
             <ul class="profile-list">
-              <li>2023년 대광건영의 큐로CC 인수자문</li>
-              <li>2016~2024년 Pre-IPO 펀드운용(에이피알 등 8개사 투자완료)</li>
-              <li>2017년 선물/옵션 CTA 전략 펀드(바운티풀, PSY, 하나) 운용 등 추가 실적 다수</li>
+              <li>2026년 비전 AI 업체 파일러 투자</li>
+              <li>2025년 미국 데이터센터향 광통신 업체 옵토마인드 투자</li>
             </ul>
           </section>
 
@@ -345,27 +356,20 @@ Leveraging our accumulated expertise and deep market insight, we pursue proactiv
           <section class="profile-block exp-block">
             <h3 class="profile-heading">주요경력</h3>
             <ul class="profile-list">
-              <li>(주)캔들스틱 PE 투자본부장</li>
-              <li>모비딕자산운용 투자본부장</li>
-              <li>DGB캐피탈, 효성캐피탈, 엠캐피탈 투자금융부</li>
-              <li>PwC 삼일회계법인 Deal 본부</li>
+              <li>DGB캐피탈, 효성캐피탈, 엠캐피탈 투자금융부 부서장</li>
             </ul>
           </section>
 
           <div class="left-meta">
             <div class="name">민병선</div>
-            <span class="title">이사</span>
+            <span class="title">이사, KICPA</span>
           </div>
 
           <section class="profile-block inv-block">
             <h3 class="profile-heading">주요 투자실적</h3>
             <ul class="profile-list">
-              <li>2023년 대광건영의 큐로CC 인수자문</li>
-              <li>2022년 두산공작기계 경영권 인수 Co-GP (한투 PE)/ 2021년 코스닥상장사 ISC 경영권 인수 Co-GP (헬리오스 PE)</li>
-              <li>2021년~2022년 에코프로, 천보, 삼성중공업, 페이레터 등 다수 LP 투자</li>
-              <li>2017년~2020년 셀바이오휴먼텍, 풍원정밀, 리디, 비올, 현대힘스 등 다수 LP 투자</li>
-              <li>2016년 강원도 원주 청우 GC,경기도 안성 마에스트로CC 매각 자문</li>
-              <li>2010년 신일정공 현양(자동차 부품) 매각 자문 / 2013년 대한해운(해운업) 매각 자문</li> 
+              <li>2026년 비전 AI 업체 파일러 투자</li>
+              <li>2025년 미국 데이터센터향 광통신 업체 옵토마인드 투자</li>
             </ul>
           </section>
 
@@ -379,6 +383,6 @@ Leveraging our accumulated expertise and deep market insight, we pursue proactiv
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
           crossorigin="anonymous"></script>
-  <script src="i18n.js?v=20260527-portfolio"></script>
+  <script src="i18n.js?v=20260527-team-philosophy6"></script>
 </body>
 </html>
