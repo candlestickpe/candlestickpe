@@ -147,6 +147,61 @@
     },
   };
 
+  const pylerArticles = {
+    en: [
+      {
+        source: "DealSite",
+        date: "2026.04.07",
+        title: "NVIDIA-backed AI company PYLER looks abroad for higher valuation",
+        summary:
+          "Discusses PYLER's NVIDIA collaboration, overseas partnership activity, and new investment round discussions.",
+        url: "https://dealsite.co.kr/articles/159629",
+      },
+      {
+        source: "HelloT",
+        date: "2025.11.18",
+        title: "PYLER wins NVIDIA Inception Challenge with multimodal AI for T&S",
+        summary:
+          "Covers PYLER's first-place result at NVIDIA Inception Startup Grand Challenge 2025 and its multimodal AI-based T&S capabilities.",
+        url: "https://www.hellot.net/news/article.html?no=107265",
+      },
+      {
+        source: "Edaily",
+        date: "2026.04.29",
+        title: "PYLER wins NVIDIA Nemotron hackathon, demonstrating video safety technology",
+        summary:
+          "Highlights PYLER's win at NVIDIA Nemotron Developer Day Seoul 2026 and its video safety analysis technology.",
+        url: "https://www.edaily.co.kr/News/Read?newsId=03476806645421040&mediaCodeNo=257",
+      },
+    ],
+    ko: [
+      {
+        source: "딜사이트",
+        date: "2026.04.07",
+        title: "엔비디아의 AI '파일러'…해외서 몸값 높인다",
+        summary:
+          "파일러의 NVIDIA 협력, 해외 파트너십 강화 및 신규 투자 라운드 논의를 다룬 기사입니다.",
+        url: "https://dealsite.co.kr/articles/159629",
+      },
+      {
+        source: "헬로티",
+        date: "2025.11.18",
+        title: "파일러, 엔비디아 인셉션 챌린지 1위...멀티모달AI로 T&S 혁신 제시",
+        summary:
+          "NVIDIA Inception Startup Grand Challenge 2025 1위 수상과 멀티모달 AI 기반 T&S 경쟁력을 다룬 기사입니다.",
+        url: "https://www.hellot.net/news/article.html?no=107265",
+      },
+      {
+        source: "이데일리",
+        date: "2026.04.29",
+        title: "파일러, 엔비디아 네모트론 해커톤 '우승'…비디오 안전 기술력 입증",
+        summary:
+          "NVIDIA Nemotron Developer Day Seoul 2026 해커톤 우승과 비디오 안전 분석 기술을 다룬 기사입니다.",
+        url: "https://www.edaily.co.kr/News/Read?newsId=03476806645421040&mediaCodeNo=257",
+      },
+    ],
+  };
+
   const pylerPortfolioRows = {
     en: {
       image: "pyler-logo.svg",
@@ -156,6 +211,7 @@
       business: pylerBusiness,
       overview: pylerOverview,
       detail: portfolioDetailFields.pyler.en,
+      articles: pylerArticles.en,
     },
     ko: {
       image: "pyler-logo.svg",
@@ -165,6 +221,7 @@
       business: pylerBusiness,
       overview: pylerOverview,
       detail: portfolioDetailFields.pyler.ko,
+      articles: pylerArticles.ko,
     },
   };
 
@@ -1280,7 +1337,7 @@
     return grid;
   }
 
-  function createRelatedArticles(lang) {
+  function createRelatedArticles(row, lang) {
     const section = document.createElement("section");
     section.className = "related-articles";
 
@@ -1288,20 +1345,78 @@
     title.className = "related-title";
     title.textContent = lang === "ko" ? "관련기사" : "Related Articles";
 
-    const article = document.createElement("article");
-    article.className = "article-card article-card--empty";
+    const articles = Array.isArray(row.articles) ? row.articles : [];
+    const list = document.createElement("div");
+    list.className = "article-list";
 
-    const imageSlot = document.createElement("div");
-    imageSlot.className = "article-image-slot";
+    if (!articles.length) {
+      const article = document.createElement("article");
+      article.className = "article-card article-card--empty";
 
-    const copySlot = document.createElement("div");
-    copySlot.className = "article-copy-slot";
+      const imageSlot = document.createElement("div");
+      imageSlot.className = "article-image-slot";
 
-    const linkSlot = document.createElement("div");
-    linkSlot.className = "article-link-slot";
+      const copySlot = document.createElement("div");
+      copySlot.className = "article-copy-slot";
 
-    article.append(imageSlot, copySlot, linkSlot);
-    section.append(title, article);
+      const linkSlot = document.createElement("div");
+      linkSlot.className = "article-link-slot";
+
+      article.append(imageSlot, copySlot, linkSlot);
+      list.appendChild(article);
+    } else {
+      articles.forEach(function (item) {
+        const article = document.createElement("article");
+        article.className = "article-card article-card--link";
+
+        const imageSlot = document.createElement("div");
+        imageSlot.className = "article-image-slot article-image-slot--source";
+
+        const source = document.createElement("span");
+        source.className = "article-source";
+        source.textContent = item.source;
+
+        const mediaLabel = document.createElement("span");
+        mediaLabel.className = "article-media-label";
+        mediaLabel.textContent = "Article";
+
+        imageSlot.append(source, mediaLabel);
+
+        const copySlot = document.createElement("div");
+        copySlot.className = "article-copy-slot";
+
+        const meta = document.createElement("div");
+        meta.className = "article-meta";
+        meta.textContent = item.date;
+
+        const articleTitle = document.createElement("h4");
+        articleTitle.className = "article-card-title";
+        articleTitle.textContent = item.title;
+
+        const summary = document.createElement("p");
+        summary.className = "article-summary";
+        summary.textContent = item.summary;
+
+        copySlot.append(meta, articleTitle, summary);
+
+        const linkSlot = document.createElement("div");
+        linkSlot.className = "article-link-slot";
+
+        const link = document.createElement("a");
+        link.className = "article-link";
+        link.href = item.url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.setAttribute("aria-label", item.title + " - " + (lang === "ko" ? "기사 보기" : "View Article"));
+        link.textContent = lang === "ko" ? "기사 보기" : "View Article";
+
+        linkSlot.appendChild(link);
+        article.append(imageSlot, copySlot, linkSlot);
+        list.appendChild(article);
+      });
+    }
+
+    section.append(title, list);
 
     return section;
   }
@@ -1321,7 +1436,7 @@
 
     const detail = document.createElement("div");
     detail.className = "portfolio-inline-detail";
-    detail.append(createInlineProjectFields(row.detail), createRelatedArticles(lang));
+    detail.append(createInlineProjectFields(row.detail), createRelatedArticles(row, lang));
 
     panel.appendChild(detail);
     td.appendChild(panel);
