@@ -661,9 +661,9 @@
         heroSub:
           "캔들스틱 PE는 기관전용 PEF를 설립·운용하고, 기업의 전략적·재무적 니즈에 맞춘 투자를 실행하는 사모펀드 운용사입니다.",
         introEyebrow: "기관전용 PEF 운용사",
-        introTitle: "기업의 니즈에 맞춘 PEF 기반 투자 솔루션",
+        introTitle: "기업의 성장과 투자자의 가치를 함께 설계하는 PEF 파트너",
         introLead:
-          "캔들스틱 PE는 기관전용 PEF의 업무집행사원(GP)으로서 펀드 결성, 투자 구조 설계, 투자 집행, 사후관리 및 회수까지의 전 과정을 검토합니다. 각 기업의 자금 수요, 주주 구성, 성장 전략, 회수 가능성을 종합적으로 고려하여 실질적인 투자 구조를 설계합니다.",
+          "캔들스틱 PE는 기관전용 PEF의 업무집행사원(GP)으로서 펀드 결성, 투자 구조 설계, 투자 집행, 사후관리 및 회수까지의 전 과정을 검토합니다.<br>각 기업의 자금 수요, 주주 구성, 성장 전략, 회수 가능성을 종합적으로 고려하여 실질적인 투자 구조를 설계합니다.",
         roleCards: [
           {
             title: "Investment Vehicle",
@@ -681,7 +681,7 @@
               "경영권 인수, M&A, Growth Capital, 재무구조 개선 등 기업의 주요 현안에 맞는 투자 기회를 검토합니다.",
             items: [
               "경영권 인수 및 M&A 투자",
-              "성장자금이 필요한 기업에 대한 Growth Capital 투자",
+              "자금이 필요한 기업에 대한 Growth Capital 투자",
               "재무구조 개선 및 주주구조 재편 거래",
             ],
           },
@@ -716,7 +716,7 @@
           {
             title: "가치제고",
             body:
-              "투자 이후 전략, 재무, 지배구조, 조직, 리스크 관리 측면의 개선 과제를 지원합니다.",
+              "이후 기업가치 제고를 위한<br>전략·재무·지배구조 등의<br>개선을 지원합니다.",
           },
           {
             title: "회수",
@@ -735,7 +735,7 @@
         ],
         closingTitle: "캔들스틱의 역할",
         closingText:
-          "캔들스틱 PE는 기관투자자의 자본과 기업의 니즈를 연결하는 GP이자 투자 파트너입니다. 원칙 있는 PEF 구조를 통해 투자를 실행하고, 투자대상회사의 지속가능한 기업가치 제고를 지원합니다.",
+          "캔들스틱 PE는 기관투자자의 자본과 기업의 니즈를 연결하는 GP이자 투자 파트너입니다. 신의성실의 원칙과 책임 있는 투자 철학을 바탕으로 원칙 있는 PEF 구조를 설계·실행하며, 투자대상회사의 지속가능한 기업가치 제고와 장기적 성장 기반 마련을 지원합니다.",
       },
     },
 
@@ -1382,7 +1382,7 @@
       const item = steps[index];
       if (!item) return;
       text(".flow-step-title", item.title, step);
-      text(".flow-step-body", item.body, step);
+      html(".flow-step-body", item.body, step);
     });
   }
 
@@ -1404,11 +1404,11 @@
     text(".hero-subtext", data.heroSub);
     text(".section-eyebrow", data.introEyebrow);
     text(".about-intro-title", data.introTitle);
-    text(".about-intro-lead", data.introLead);
+    html(".about-intro-lead", data.introLead);
     text(".about-flow-title", data.flowTitle);
     text(".about-solutions-title", data.solutionsTitle);
     text(".about-closing-title", data.closingTitle);
-    text(".about-closing-text", data.closingText);
+    html(".about-closing-text", data.closingText);
     renderAboutCards(data.roleCards);
     renderFlowSteps(data.flowSteps);
     renderSolutionChips(data.solutions);
