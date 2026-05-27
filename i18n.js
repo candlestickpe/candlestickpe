@@ -9,6 +9,9 @@
     about: "ko",
     portfolio: "ko",
     "project-pyler": "ko",
+    "project-optical": "ko",
+    "project-peoplebio-ma": "ko",
+    "project-edge-data-center": "ko",
     team: "ko",
     esg: "ko",
   };
@@ -89,44 +92,25 @@
       backLabel: "Back to Portfolio",
       eyebrow: "Portfolio Detail",
       heading: "Project PYLER",
-      lead:
-        "Project PYLER is an equity investment in PYLER, a Vision AI company that provides B2B solutions for brand safety and contextual video advertising.",
+      lead: "",
       fields: [
         ["Project Name", "Project PYLER"],
         ["Company / Target", "PYLER CO., LTD. / 주식회사 파일러"],
-        ["Sector", "Application software development and supply business (J58222); Ad-tech"],
-        ["Investment Type", "Investment through an institutional private equity fund"],
-        [
-          "Role",
-          "Candlestick PE acted as the sole GP, establishing an institutional private equity fund and executing the investment in PYLER through the fund.",
-        ],
-        ["Status", "Investment executed through an institutional private equity fund"],
+        ["Sector", "AI-based AdTech"],
+        ["Company Website", "https://pyler.tech/"],
       ],
       sections: [
         {
           title: "Project Overview",
-          paragraphs: [
-            "PYLER provides video analysis solutions based on multimodal AI that understands and reasons across video, audio, image, and text. The company focuses on helping advertisers avoid harmful or unsuitable content exposure and match advertising with content that fits brand context.",
-            "According to the provided materials, PYLER was established on November 10, 2021 and operates as an Ad-tech company providing harmful-content blocking and customized video advertising connection services.",
-          ],
+          paragraphs: [],
         },
         {
           title: "Investment Highlights",
-          items: [
-            "Provides AiD (Ads in Defense), a brand safety solution that blocks advertising exposure next to risky or unsuitable content.",
-            "Provides AiM (Ads in Match), a contextual advertising matching solution designed to connect ads with content situations likely to support advertising performance.",
-            "The materials state that PYLER won first place in the NVIDIA Inception Startup Grand Challenge 2025.",
-            "The materials state that PYLER secured official Google API access for YouTube video data and is working with Google on an AI-based automatic filtering system.",
-          ],
+          items: [],
         },
         {
           title: "Business / Technology Summary",
-          items: [
-            "Video, image, audio, and text analysis AI for brand safety and contextual advertising.",
-            "Core service areas include AiD for harmful-content ad blocking and AiM for brand-fit ad matching.",
-            "The investment review materials describe PYLER's video understanding approach using evidence reasoning, commonsense reasoning, and video summarization.",
-            "The company uses NVIDIA GPU and CUDA infrastructure in its Vision AI implementation, according to the provided materials.",
-          ],
+          items: [],
         },
       ],
     },
@@ -137,46 +121,145 @@
       backLabel: "포트폴리오로 돌아가기",
       eyebrow: "포트폴리오 상세",
       heading: "Project PYLER",
-      lead:
-        "Project PYLER는 브랜드 세이프티와 맞춤형 광고 솔루션을 제공하는 Vision AI 기업 파일러에 대한 투자 프로젝트입니다.",
+      lead: "",
       fields: [
         ["프로젝트명", "Project PYLER"],
         ["회사 / 투자대상", "주식회사 파일러 / PYLER CO., LTD."],
-        ["섹터", "응용 소프트웨어 개발 및 공급업(J58222); Ad-tech"],
-        ["투자 유형", "기관전용 PEF를 통한 투자"],
-        [
-          "담당 역할",
-          "캔들스틱 PE는 단독 GP로서 기관전용 PEF를 설립하고, 해당 PEF를 통해 PYLER에 대한 투자를 집행함.",
-        ],
-        ["현황", "기관전용 PEF를 통한 투자 집행"],
+        ["섹터", "AI기반 AdTech"],
+        ["회사 홈페이지", "https://pyler.tech/"],
       ],
       sections: [
         {
           title: "프로젝트 개요",
-          paragraphs: [
-            "파일러는 동영상·음성·이미지·텍스트를 통합적으로 이해하고 추론하는 멀티모달 AI를 기반으로 영상 분석 솔루션을 제공하는 기업입니다. 유해하거나 부적합한 콘텐츠 옆 광고 노출을 차단하고, 브랜드 맥락에 맞는 콘텐츠에 광고를 연결하는 사업을 영위합니다.",
-            "제공 자료 기준 파일러는 2021년 11월 10일 설립되었으며, 유해 콘텐츠 차단 및 맞춤형 동영상 광고 연결 서비스를 제공하는 Ad-tech 기업입니다.",
-          ],
+          paragraphs: [],
         },
         {
-          title: "투자 포인트",
-          items: [
-            "AiD(Ads in Defense)를 통해 위험·부적절 콘텐츠 옆 광고 노출을 자동 차단하는 브랜드 세이프티 솔루션을 제공.",
-            "AiM(Ads in Match)을 통해 광고 성과가 날 만한 콘텐츠 맥락에 광고를 정교하게 매칭.",
-            "제공 자료상 파일러는 NVIDIA Inception Startup Grand Challenge 2025에서 1위를 수상.",
-            "제공 자료상 유튜브 영상 데이터 접근을 위한 Google API를 공식 확보하고, Google과 AI 기반 자동 필터링 시스템을 공동 개발 중.",
-          ],
+          title: "투자포인트",
+          items: [],
         },
         {
-          title: "사업 / 기술 요약",
-          items: [
-            "영상·이미지·음성·텍스트 분석 AI를 활용한 브랜드 세이프티 및 맞춤형 광고 매칭.",
-            "주요 서비스는 유해 콘텐츠 광고 차단을 위한 AiD와 브랜드 적합 콘텐츠 매칭을 위한 AiM.",
-            "투자 검토 자료는 파일러의 영상 이해 접근 방식을 Evidence Reasoning, Commonsense Reasoning, Video Summarization으로 설명.",
-            "제공 자료 기준 NVIDIA GPU 및 CUDA 인프라를 활용한 Vision AI 구현 역량을 보유.",
-          ],
+          title: "사업/기술 요약",
+          items: [],
         },
       ],
+    },
+  };
+
+  const blankProjectSections = {
+    en: [
+      { title: "Project Overview", paragraphs: [] },
+      { title: "Investment Highlights", items: [] },
+      { title: "Business / Technology Summary", items: [] },
+    ],
+    ko: [
+      { title: "프로젝트 개요", paragraphs: [] },
+      { title: "투자포인트", items: [] },
+      { title: "사업/기술 요약", items: [] },
+    ],
+  };
+
+  const additionalProjectDetailPages = {
+    "project-optical": {
+      en: {
+        title: "Project Optical | CANDLESTICK PE",
+        heroTitle: "Project Optical",
+        heroSub: "",
+        backLabel: "Back to Portfolio",
+        eyebrow: "Portfolio Detail",
+        heading: "Project Optical",
+        lead: "",
+        fields: [
+          ["Project Name", "Project Optical"],
+          ["Company / Target", "주식회사 옵토마인드 / OPTO MIND CO.,LTD."],
+          ["Sector", "Optical communication and optical communication device manufacturing"],
+          ["Company Website", "https://www.optomindinc.com/"],
+        ],
+        sections: blankProjectSections.en,
+      },
+      ko: {
+        title: "Project Optical | CANDLESTICK PE",
+        heroTitle: "Project Optical",
+        heroSub: "",
+        backLabel: "포트폴리오로 돌아가기",
+        eyebrow: "포트폴리오 상세",
+        heading: "Project Optical",
+        lead: "",
+        fields: [
+          ["프로젝트명", "Project Optical"],
+          ["회사 / 투자대상", "주식회사 옵토마인드 / OPTO MIND CO.,LTD."],
+          ["섹터", "광통신 및 광통신장치 제조"],
+          ["회사 홈페이지", "https://www.optomindinc.com/"],
+        ],
+        sections: blankProjectSections.ko,
+      },
+    },
+    "project-peoplebio-ma": {
+      en: {
+        title: "PeopleBio M&A | CANDLESTICK PE",
+        heroTitle: "PeopleBio M&A",
+        heroSub: "",
+        backLabel: "Back to Portfolio",
+        eyebrow: "Portfolio Detail",
+        heading: "PeopleBio M&A",
+        lead: "",
+        fields: [
+          ["Project Name", "PeopleBio M&A"],
+          ["Company / Target", "주식회사 피플바이오 / PeopleBio Co., Ltd."],
+          ["Sector", "Pharmaceuticals / Bio"],
+          ["Company Website", "http://peoplebio.net"],
+        ],
+        sections: blankProjectSections.en,
+      },
+      ko: {
+        title: "피플바이오 M&A | CANDLESTICK PE",
+        heroTitle: "피플바이오 M&A",
+        heroSub: "",
+        backLabel: "포트폴리오로 돌아가기",
+        eyebrow: "포트폴리오 상세",
+        heading: "피플바이오 M&A",
+        lead: "",
+        fields: [
+          ["프로젝트명", "피플바이오 M&A"],
+          ["회사 / 투자대상", "주식회사 피플바이오 / PeopleBio Co., Ltd."],
+          ["섹터", "제약/바이오"],
+          ["회사 홈페이지", "http://peoplebio.net"],
+        ],
+        sections: blankProjectSections.ko,
+      },
+    },
+    "project-edge-data-center": {
+      en: {
+        title: "Daechi-dong Edge Data Center Development | CANDLESTICK PE",
+        heroTitle: "Daechi-dong Edge Data Center Development",
+        heroSub: "",
+        backLabel: "Back to Portfolio",
+        eyebrow: "Portfolio Detail",
+        heading: "Daechi-dong Edge Data Center Development",
+        lead: "",
+        fields: [
+          ["Project Name", "Daechi-dong Edge Data Center Development"],
+          ["Company / Target", "주식회사 이스턴네트웍스 / Eastern Networks Co., Ltd."],
+          ["Sector", "Wholesale of computers, peripherals, and software"],
+          ["Company Website", "https://www.east21.co.kr/main/"],
+        ],
+        sections: blankProjectSections.en,
+      },
+      ko: {
+        title: "대치동 Edge 데이터센터개발 | CANDLESTICK PE",
+        heroTitle: "대치동 Edge 데이터센터개발",
+        heroSub: "",
+        backLabel: "포트폴리오로 돌아가기",
+        eyebrow: "포트폴리오 상세",
+        heading: "대치동 Edge 데이터센터개발",
+        lead: "",
+        fields: [
+          ["프로젝트명", "대치동 Edge 데이터센터개발"],
+          ["회사 / 투자대상", "주식회사 이스턴네트웍스 / Eastern Networks Co., Ltd."],
+          ["섹터", "컴퓨터 및 주변장치, 소프트웨어 도매업"],
+          ["회사 홈페이지", "https://www.east21.co.kr/main/"],
+        ],
+        sections: blankProjectSections.ko,
+      },
     },
   };
 
@@ -388,6 +471,7 @@
                             "image": "Optomind.png",
                             "alt": "OPTOMIND",
                             "title": "Project Optical",
+                            "link": "project-optical.html",
                             "business": [
                                   "Optical communication solutions company serving U.S. data center demand",
                                   "Develops and supplies customized optical transceivers and AOC products",
@@ -406,6 +490,7 @@
                             "image": "PP.png",
                             "alt": "PeopleBio",
                             "title": "PeopleBio M&A",
+                            "link": "project-peoplebio-ma.html",
                             "business": [
                                   "Equity acquisition transaction in PeopleBio by Eastern Networks, a Dell top-tier partner",
                                   "Supported transaction structure design, funding roadmap planning, and execution aligned with the acquisition objective",
@@ -422,6 +507,7 @@
                             "image": "EN.png",
                             "alt": "Eastern Networks Advisory",
                             "title": "Daechi-dong Edge Data Center Development",
+                            "link": "project-edge-data-center.html",
                             "business": [
                                   "Edge data center development project based on real estate held by an Eastern Networks affiliate",
                                   "Designed transaction and financing structures for data center development",
@@ -454,6 +540,7 @@
                             "image": "Optomind.png",
                             "alt": "OPTOMIND",
                             "title": "Project Optical",
+                            "link": "project-optical.html",
                             "business": [
                                   "미국 데이터센터향 광통신 솔루션 기업",
                                   "고객 맞춤형 광트랜시버 및 AOC 제품 개발·공급",
@@ -472,6 +559,7 @@
                             "image": "PP.png",
                             "alt": "PeopleBio",
                             "title": "피플바이오 M&A",
+                            "link": "project-peoplebio-ma.html",
                             "business": [
                                   "Dell 최상위 파트너인 이스턴네트웍스의 피플바이오 지분 인수 거래",
                                   "인수 목적에 맞춘 거래 구조 설계, 자금집행 로드맵 수립 및 실행 지원",
@@ -488,6 +576,7 @@
                             "image": "EN.png",
                             "alt": "Eastern Networks Advisory",
                             "title": "대치동 Edge 데이터센터 개발",
+                            "link": "project-edge-data-center.html",
                             "business": [
                                   "이스턴네트웍스 계열사 보유 부동산을 기반으로 한 Edge 데이터센터 개발 프로젝트",
                                   "데이터센터 개발 거래 구조 및 금융 구조 설계",
@@ -805,6 +894,9 @@
   };
 
   pages["project-pyler"] = pylerDetailPages;
+  Object.keys(additionalProjectDetailPages).forEach(function (pageName) {
+    pages[pageName] = additionalProjectDetailPages[pageName];
+  });
 
   function getPageName() {
     const file = window.location.pathname.split("/").pop() || "index.html";
@@ -1135,14 +1227,41 @@
     text(".back-link", data.backLabel);
     text(".project-eyebrow", data.eyebrow);
     text(".project-heading-title", data.heading);
-    text(".project-heading-lead", data.lead);
+    const leadNode = document.querySelector(".project-heading-lead");
+    if (leadNode) {
+      leadNode.textContent = data.lead || "";
+      leadNode.hidden = !data.lead;
+    }
 
-    document.querySelectorAll("[data-project-field]").forEach(function (row, index) {
-      const item = data.fields[index];
-      if (!item) return;
-      text(".field-label", item[0], row);
-      text(".field-value", item[1], row);
-    });
+    const fields = document.querySelector(".project-fields");
+    if (fields) {
+      fields.replaceChildren();
+      data.fields.forEach(function (item) {
+        const row = document.createElement("div");
+        row.className = "field-row";
+        row.dataset.projectField = "";
+
+        const label = document.createElement("div");
+        label.className = "field-label";
+        label.textContent = item[0];
+
+        const value = document.createElement("div");
+        value.className = "field-value";
+        if (/^https?:\/\//.test(item[1])) {
+          const link = document.createElement("a");
+          link.href = item[1];
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+          link.textContent = item[1];
+          value.appendChild(link);
+        } else {
+          value.textContent = item[1];
+        }
+
+        row.append(label, value);
+        fields.appendChild(row);
+      });
+    }
 
     document.querySelectorAll("[data-project-section]").forEach(function (section, index) {
       const item = data.sections[index];
@@ -1264,7 +1383,7 @@
     if (pageName === "index") applyIndex(pageData);
     if (pageName === "about") applyAbout(pageData);
     if (pageName === "portfolio") renderPortfolio(pageData);
-    if (pageName === "project-pyler") applyProjectDetail(pageData);
+    if (document.querySelector("#project-detail")) applyProjectDetail(pageData);
     if (pageName === "team") applyTeam(pageData);
     if (pageName === "esg") applyEsg(pageData);
   }
