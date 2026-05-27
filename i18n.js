@@ -568,7 +568,7 @@
         cardText:
           "캔들스틱 PE는 대한민국의 유망 기업과 성장 산업에 투자하는 전문 투자회사입니다. 축적된 투자 경험과 산업에 대한 깊은 이해를 바탕으로 기업의 성장 전략을 지원하며, 투자자 및 파트너와 함께 지속 가능한 가치를 만들어갑니다.",
         footer:
-          '캔들스틱 PE<div class="hero-sub">이메일: <a href="mailto:jcjang@candlestickpe.com">jcjang@candlestickpe.com</a> / 주소: 서울특별시 강남구 강남대로118길 39, 3층 가-115호</div>',
+          'CANDLESTICK PE<div class="hero-sub">이메일: <a href="mailto:jcjang@candlestickpe.com">jcjang@candlestickpe.com</a> / 주소: 서울특별시 강남구 강남대로118길 39, 3층 가-115호</div>',
       },
     },
 
@@ -659,7 +659,7 @@
         title: "About Candlestick | CANDLESTICK PE",
         heroTitle: "About Candlestick",
         heroSub:
-          "캔들스틱 PE는 기관전용 PEF를 설립·운용하고, 기업의 전략적·재무적 니즈에 맞춘 투자를 실행하는 사모펀드 운용사입니다.",
+          "캔들스틱 PE는 기관전용 PEF를 설립·운용하며, 기업의 성장 니즈와 투자자의 장기적 가치를 함께 고려한 전략적 투자를 실행하는 사모펀드 운용사입니다.",
         introEyebrow: "기관전용 PEF 운용사",
         introTitle: "기업의 성장과 투자자의 가치를 함께 설계하는 PEF 파트너",
         introLead:
@@ -743,7 +743,7 @@
           "en": {
                 "title": "Portfolio | CANDLESTICK PE",
                 "heroTitle": "Portfolio",
-                "heroSub": "Selected transactions and advisory mandates led by Candlestick PE",
+                "heroSub": "",
                 "sectionTitle": "■ Portfolio",
                 "headers": [
                       "Project",
@@ -811,7 +811,7 @@
           "ko": {
                 "title": "Portfolio | CANDLESTICK PE",
                 "heroTitle": "포트폴리오",
-                "heroSub": "캔들스틱 PE가 주도한 주요 투자 및 자문 프로젝트",
+                "heroSub": "",
                 "sectionTitle": "■ 포트폴리오",
                 "headers": [
                       "Project",
@@ -979,7 +979,7 @@
       en: {
         title: "ESG / Stewardship Code | CANDLESTICK PE",
         heroTitle: "ESG / Stewardship Code",
-        heroSub: "Responsible investment principles for sustainable value creation",
+        heroSub: "",
         esgTitle: "Candlestick's ESG",
         esgLead: [
           "Candlestick Co., Ltd. recognizes that the sustainable growth and long-term corporate value enhancement of portfolio companies are directly connected to investors' interests. Accordingly, the Company seeks to consider environmental, social, and governance factors across investment review, decision-making, post-investment management, and exit processes.",
@@ -1083,7 +1083,7 @@
       ko: {
         title: "ESG / 스튜어드십 코드 | CANDLESTICK PE",
         heroTitle: "ESG / 스튜어드십 코드",
-        heroSub: "지속가능한 가치 창출을 위한 책임투자 원칙",
+        heroSub: "",
         esgTitle: "주식회사 캔들스틱의 ESG",
         esgLead: [
           "주식회사 캔들스틱(이하 “캔들스틱” 또는 “회사”)은 투자대상회사의 지속가능한 성장과 중장기적 기업가치 제고가 투자자의 이익과 직결된다는 점을 인식하고 있습니다. 이에 따라 회사는 투자 검토, 투자 의사결정, 사후관리 및 회수 과정 전반에서 환경(Environment), 사회(Social), 지배구조(Governance) 요소를 고려하고자 노력합니다.",
@@ -1361,7 +1361,12 @@
 
   function applyIndex(data) {
     setTitle(data.title);
-    text(".topbar h1", data.headline);
+    const logoLabel = document.querySelector(".site-logo-heading .visually-hidden");
+    if (logoLabel) {
+      logoLabel.textContent = data.headline + " 캔들스틱 PE";
+    } else {
+      text(".topbar h1", data.headline);
+    }
     text(".hero-card h2", data.cardTitle);
     text(".hero-card p", data.cardText);
     html(".hero-footer .footer-left", data.footer);

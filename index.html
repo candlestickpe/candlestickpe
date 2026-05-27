@@ -76,7 +76,7 @@
       --bar-alpha: .38;
       --topbar-h: clamp(72px, 12vh, 140px);
       --footer-h: clamp(72px, 10vh, 110px);
-      --hero-card-max: 420px;
+      --hero-card-max: 520px;
     }
 
     /* 히어로 */
@@ -132,19 +132,42 @@
       justify-content:center;
     }
 
-    /* 상단 타이틀 */
-    .topbar h1{
-      margin:0;
-      color:#fff;
-      text-shadow: 0 2px 6px rgba(0,0,0,.5);
-      font-weight: 300;
-      font-size: clamp(1.35rem, 2.4vw + 0.6rem, 3.4rem);
-      line-height: 1.1;
-      white-space: normal;
-      overflow-wrap: anywhere;
+    .topbar .container-fluid{
+      padding-right: 78px;
     }
-    @media (min-width: 992px){
-      .topbar h1{ white-space: nowrap; }
+
+    /* 상단 로고 */
+    .site-logo-heading{
+      margin:0;
+    }
+    .site-logo-link{
+      display:inline-flex;
+      align-items:center;
+      max-width:min(66vw, 760px);
+      padding:8px 12px;
+      border-radius:6px;
+      background:rgba(255,255,255,.78);
+      backdrop-filter:blur(3px);
+      box-shadow:0 8px 22px rgba(0,0,0,.16);
+    }
+    .site-logo-img{
+      display:block;
+      width:auto;
+      max-width:100%;
+      height:clamp(56px, 9vh, 108px);
+      object-fit:contain;
+    }
+    @media (max-width: 576px){
+      .topbar .container-fluid{
+        padding-right: 64px;
+      }
+      .site-logo-link{
+        max-width:60vw;
+        padding:6px 8px;
+      }
+      .site-logo-img{
+        height:44px;
+      }
     }
 
     /* 햄버거 버튼 */
@@ -188,9 +211,32 @@
       padding: clamp(1.25rem, 3vw, 3rem);
       margin-top: clamp(0rem, 2vh, 2.5rem);
     }
+    .hero-card h2{
+      word-break: keep-all;
+      overflow-wrap: normal;
+      line-height: 1.18 !important;
+    }
+    .hero-card p{
+      max-width: 42rem;
+      margin-bottom: 0;
+      line-height: 1.72;
+      word-break: keep-all;
+      overflow-wrap: normal;
+      white-space: normal;
+    }
 
     @media (min-width: 992px){
       .hero-card{ margin-left: 0; }
+    }
+    @media (max-width: 576px){
+      .hero-card{
+        width: min(94vw, var(--hero-card-max));
+        padding: 1.25rem;
+      }
+      .hero-card p{
+        font-size: .86rem;
+        line-height: 1.68;
+      }
     }
 
     /* ✅ footer 내부: "블록은 가운데", "문장들은 왼쪽 맞춤" */
@@ -211,7 +257,12 @@
 
     <div class="topbar">
       <div class="container-fluid px-0">
-        <h1 class="display-4">CANDLESTICK PRIVATE EQUITY <span class="visually-hidden">캔들스틱 PE</span></h1>
+        <h1 class="site-logo-heading">
+          <a class="site-logo-link" href="index.html" aria-label="CANDLESTICK PRIVATE EQUITY">
+            <img class="site-logo-img" src="candlestick-logo.png" alt="CANDLESTICK PRIVATE EQUITY">
+          </a>
+          <span class="visually-hidden">CANDLESTICK PRIVATE EQUITY 캔들스틱 PE</span>
+        </h1>
       </div>
     </div>
 
@@ -240,7 +291,7 @@
     <div class="hero-footer">
       <div class="container">
         <div class="fw-semibold footer-left">
-          CANDLESTICK PE / 캔들스틱 PE
+          CANDLESTICK PE
           <div class="hero-sub">
             E-mail: <a href="mailto:jcjang@candlestickpe.com">jcjang@candlestickpe.com</a>
             / Address: Unit Ga-115, 3rd Floor, 39, Gangnam-daero 118-gil, Gangnam-gu, Seoul, Republic of Korea
@@ -266,6 +317,6 @@
       </ul>
     </div>
   </div>
-  <script src="i18n.js?v=20260527-portfolio"></script>
+  <script src="i18n.js?v=20260527-site-copy"></script>
 </body>
 </html>
