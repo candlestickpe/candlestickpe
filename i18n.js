@@ -88,24 +88,83 @@
     "차주 콜옵션 또는 담보자산 매각을 통한 Exit 추진 예정",
   ];
 
+  const portfolioDetailFields = {
+    pyler: {
+      en: [
+        ["Project Name", "Project Vision AI — PYLER"],
+        ["Company / Target", "PYLER CO., LTD. / 주식회사 파일러"],
+        ["Sector", "AI-based AdTech"],
+        ["Company Website", "https://pyler.tech/"],
+      ],
+      ko: [
+        ["프로젝트명", "Project Vision AI — PYLER"],
+        ["회사 / 투자대상", "주식회사 파일러 / PYLER CO., LTD."],
+        ["섹터", "AI기반 AdTech"],
+        ["회사 홈페이지", "https://pyler.tech/"],
+      ],
+    },
+    optical: {
+      en: [
+        ["Project Name", "Project Optical — Optomind"],
+        ["Company / Target", "주식회사 옵토마인드 / OPTO MIND CO.,LTD."],
+        ["Sector", "Optical communication and optical communication device manufacturing"],
+        ["Company Website", "https://www.optomindinc.com/"],
+      ],
+      ko: [
+        ["프로젝트명", "Project Optical — Optomind"],
+        ["회사 / 투자대상", "주식회사 옵토마인드 / OPTO MIND CO.,LTD."],
+        ["섹터", "광통신 및 광통신장치 제조"],
+        ["회사 홈페이지", "https://www.optomindinc.com/"],
+      ],
+    },
+    peoplebio: {
+      en: [
+        ["Project Name", "PeopleBio M&A"],
+        ["Company / Target", "주식회사 피플바이오 / PeopleBio Co., Ltd."],
+        ["Sector", "Pharmaceuticals / Bio"],
+        ["Company Website", "http://peoplebio.net"],
+      ],
+      ko: [
+        ["프로젝트명", "피플바이오 M&A"],
+        ["회사 / 투자대상", "주식회사 피플바이오 / PeopleBio Co., Ltd."],
+        ["섹터", "제약/바이오"],
+        ["회사 홈페이지", "http://peoplebio.net"],
+      ],
+    },
+    edge: {
+      en: [
+        ["Project Name", "Daechi-dong Edge Data Center Development"],
+        ["Company / Target", "주식회사 이스턴네트웍스 / Eastern Networks Co., Ltd."],
+        ["Sector", "Wholesale of computers, peripherals, and software"],
+        ["Company Website", "https://www.east21.co.kr/main/"],
+      ],
+      ko: [
+        ["프로젝트명", "대치동 Edge 데이터센터개발"],
+        ["회사 / 투자대상", "주식회사 이스턴네트웍스 / Eastern Networks Co., Ltd."],
+        ["섹터", "컴퓨터 및 주변장치, 소프트웨어 도매업"],
+        ["회사 홈페이지", "https://www.east21.co.kr/main/"],
+      ],
+    },
+  };
+
   const pylerPortfolioRows = {
     en: {
       image: "pyler-logo.svg",
       alt: "PYLER",
       title: "Project Vision AI — PYLER",
-      link: "project-pyler.html",
       logoWide: true,
       business: pylerBusiness,
       overview: pylerOverview,
+      detail: portfolioDetailFields.pyler.en,
     },
     ko: {
       image: "pyler-logo.svg",
       alt: "PYLER",
       title: "Project Vision AI — PYLER",
-      link: "project-pyler.html",
       logoWide: true,
       business: pylerBusiness,
       overview: pylerOverview,
+      detail: portfolioDetailFields.pyler.ko,
     },
   };
 
@@ -506,9 +565,9 @@
                             "image": "Optomind.png",
                             "alt": "OPTOMIND",
                             "title": "Project Optical — Optomind",
-                            "link": "project-optical.html",
                             "business": opticalBusiness,
-                            "overview": opticalOverview
+                            "overview": opticalOverview,
+                            "detail": portfolioDetailFields.optical.en
                       },
                       {
                             "alt": "Project NPL",
@@ -521,7 +580,7 @@
                             "image": "PP.png",
                             "alt": "PeopleBio",
                             "title": "PeopleBio M&A",
-                            "link": "project-peoplebio-ma.html",
+                            "detail": portfolioDetailFields.peoplebio.en,
                             "business": [
                                   "Equity acquisition transaction in PeopleBio by Eastern Networks, a Dell top-tier partner",
                                   "Supported transaction structure design, funding roadmap planning, and execution aligned with the acquisition objective",
@@ -538,7 +597,7 @@
                             "image": "EN.png",
                             "alt": "Eastern Networks Advisory",
                             "title": "Daechi-dong Edge Data Center Development",
-                            "link": "project-edge-data-center.html",
+                            "detail": portfolioDetailFields.edge.en,
                             "business": [
                                   "Edge data center development project based on real estate held by an Eastern Networks affiliate",
                                   "Designed transaction and financing structures for data center development",
@@ -571,9 +630,9 @@
                             "image": "Optomind.png",
                             "alt": "OPTOMIND",
                             "title": "Project Optical — Optomind",
-                            "link": "project-optical.html",
                             "business": opticalBusiness,
-                            "overview": opticalOverview
+                            "overview": opticalOverview,
+                            "detail": portfolioDetailFields.optical.ko
                       },
                       {
                             "alt": "Project NPL",
@@ -586,7 +645,7 @@
                             "image": "PP.png",
                             "alt": "PeopleBio",
                             "title": "피플바이오 M&A",
-                            "link": "project-peoplebio-ma.html",
+                            "detail": portfolioDetailFields.peoplebio.ko,
                             "business": [
                                   "Dell 최상위 파트너인 이스턴네트웍스의 피플바이오 지분 인수 거래",
                                   "인수 목적에 맞춘 거래 구조 설계, 자금집행 로드맵 수립 및 실행 지원",
@@ -603,7 +662,7 @@
                             "image": "EN.png",
                             "alt": "Eastern Networks Advisory",
                             "title": "대치동 Edge 데이터센터 개발",
-                            "link": "project-edge-data-center.html",
+                            "detail": portfolioDetailFields.edge.ko,
                             "business": [
                                   "이스턴네트웍스 계열사 보유 부동산을 기반으로 한 Edge 데이터센터 개발 프로젝트",
                                   "데이터센터 개발 거래 구조 및 금융 구조 설계",
@@ -1189,6 +1248,88 @@
     return wrapper;
   }
 
+  function createInlineProjectFields(fields) {
+    const grid = document.createElement("div");
+    grid.className = "project-fields project-fields--inline";
+
+    fields.forEach(function (item) {
+      const row = document.createElement("div");
+      row.className = "field-row";
+
+      const label = document.createElement("div");
+      label.className = "field-label";
+      label.textContent = item[0];
+
+      const value = document.createElement("div");
+      value.className = "field-value";
+      if (/^https?:\/\//.test(item[1])) {
+        const link = document.createElement("a");
+        link.href = item[1];
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.textContent = item[1];
+        value.appendChild(link);
+      } else {
+        value.textContent = item[1];
+      }
+
+      row.append(label, value);
+      grid.appendChild(row);
+    });
+
+    return grid;
+  }
+
+  function createRelatedArticles(lang) {
+    const section = document.createElement("section");
+    section.className = "related-articles";
+
+    const title = document.createElement("h3");
+    title.className = "related-title";
+    title.textContent = lang === "ko" ? "관련기사" : "Related Articles";
+
+    const article = document.createElement("article");
+    article.className = "article-card article-card--empty";
+
+    const imageSlot = document.createElement("div");
+    imageSlot.className = "article-image-slot";
+
+    const copySlot = document.createElement("div");
+    copySlot.className = "article-copy-slot";
+
+    const linkSlot = document.createElement("div");
+    linkSlot.className = "article-link-slot";
+
+    article.append(imageSlot, copySlot, linkSlot);
+    section.append(title, article);
+
+    return section;
+  }
+
+  function createPortfolioExpandedRow(row, index, lang) {
+    const tr = document.createElement("tr");
+    tr.className = "portfolio-expand-row";
+    tr.id = "portfolio-detail-" + index;
+    tr.setAttribute("aria-hidden", "true");
+
+    const td = document.createElement("td");
+    td.className = "portfolio-expand-cell";
+    td.colSpan = 2;
+
+    const panel = document.createElement("div");
+    panel.className = "portfolio-expand-panel";
+
+    const detail = document.createElement("div");
+    detail.className = "portfolio-inline-detail";
+    detail.append(createInlineProjectFields(row.detail), createRelatedArticles(lang));
+
+    panel.appendChild(detail);
+    td.appendChild(panel);
+    tr.appendChild(td);
+
+    return tr;
+  }
+
   function renderPortfolio(data) {
     setTitle(data.title);
     text(".hero-title", data.heroTitle);
@@ -1206,7 +1347,7 @@
     const lang = document.documentElement.lang === "ko" ? "ko" : "en";
     const rows = pylerPortfolioRows[lang] ? [pylerPortfolioRows[lang]].concat(data.rows) : data.rows;
 
-    rows.forEach(function (row) {
+    rows.forEach(function (row, index) {
       const tr = document.createElement("tr");
       tr.className = "portfolio-row";
 
@@ -1230,11 +1371,36 @@
         logo.textContent = row.logoText || row.alt || row.title;
         thumbWrap.appendChild(logo);
       }
-      const title = document.createElement(row.link ? "a" : "span");
-      title.className = row.link ? "p-title p-title-link" : "p-title";
+      const title = document.createElement("span");
+      title.className = "p-title";
       title.textContent = row.title;
-      if (row.link) title.href = row.link;
       nameWrap.append(thumbWrap, title);
+
+      let expandedRow = null;
+      if (Array.isArray(row.detail) && row.detail.length) {
+        expandedRow = createPortfolioExpandedRow(row, index, lang);
+
+        const toggle = document.createElement("button");
+        toggle.className = "p-toggle";
+        toggle.type = "button";
+        toggle.setAttribute("aria-label", row.title + " detail");
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.setAttribute("aria-controls", expandedRow.id);
+
+        const icon = document.createElement("span");
+        icon.className = "p-toggle-icon";
+        icon.setAttribute("aria-hidden", "true");
+        toggle.appendChild(icon);
+
+        toggle.addEventListener("click", function () {
+          const isOpen = toggle.getAttribute("aria-expanded") === "true";
+          toggle.setAttribute("aria-expanded", String(!isOpen));
+          expandedRow.classList.toggle("is-open", !isOpen);
+          expandedRow.setAttribute("aria-hidden", String(isOpen));
+        });
+
+        nameWrap.appendChild(toggle);
+      }
       nameTd.appendChild(nameWrap);
 
       const detailTd = document.createElement("td");
@@ -1244,6 +1410,7 @@
 
       tr.append(nameTd, detailTd);
       tbody.appendChild(tr);
+      if (expandedRow) tbody.appendChild(expandedRow);
     });
   }
 
