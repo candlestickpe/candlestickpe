@@ -202,6 +202,93 @@
     ],
   };
 
+  const portfolioArticles = {
+    optical: {
+      en: [
+        {
+          source: "TechWorld",
+          date: "2025.02.13",
+          title:
+            "Optomind gains attention in high-speed optical transceivers, supplying large U.S. data centers",
+          summary:
+            "Covers Optomind's high-speed optical transceiver supply, domestic and overseas data center references, and positioning for AI network demand.",
+          url: "https://www.epnc.co.kr/news/articleView.html?idxno=312572",
+        },
+        {
+          source: "Optomind",
+          date: "2026.03.10",
+          title: "Visit Optomind at OFC 2026",
+          summary:
+            "Announces Optomind's OFC 2026 exhibition and live demonstrations of high-speed optical interconnect solutions for AI and data center networks.",
+          url: "https://optomindinc.com/news_detail.php?idx=140",
+        },
+      ],
+      ko: [
+        {
+          source: "테크월드",
+          date: "2025.02.13",
+          title: "옵토마인드, 초고속 광트랜시버 시장서 주목…美 대형 데이터센터에 공급",
+          summary:
+            "옵토마인드의 초고속 광트랜시버 공급, 국내외 데이터센터 레퍼런스 및 AI 네트워크 수요 대응을 다룬 기사입니다.",
+          url: "https://www.epnc.co.kr/news/articleView.html?idxno=312572",
+        },
+        {
+          source: "옵토마인드",
+          date: "2026.03.10",
+          title: "Visit Optomind at OFC 2026",
+          summary:
+            "OFC 2026 참가와 AI·데이터센터 네트워크용 고속 광 인터커넥트 솔루션 전시 계획을 다룬 회사 소식입니다.",
+          url: "https://optomindinc.com/news_detail.php?idx=140",
+        },
+      ],
+    },
+    peoplebio: {
+      en: [
+        {
+          source: "Edaily",
+          date: "2025.11.13",
+          title: "PeopleBio changes largest shareholder and secures KRW 36 billion strategic investment",
+          summary:
+            "Covers PeopleBio's strategic investment, largest shareholder change, and business expansion direction with Eastern Networks.",
+          url: "https://www.edaily.co.kr/News/Read?newsId=04172166642365392&mediaCodeNo=257&OutLnkChk=Y",
+        },
+      ],
+      ko: [
+        {
+          source: "이데일리",
+          date: "2025.11.13",
+          title: "피플바이오, 최대주주 변경… “360억원 전략투자 유치”",
+          summary:
+            "피플바이오의 전략적 투자 유치, 최대주주 변경 및 이스턴네트웍스와의 사업 확장 방향을 다룬 기사입니다.",
+          url: "https://www.edaily.co.kr/News/Read?newsId=04172166642365392&mediaCodeNo=257&OutLnkChk=Y",
+        },
+      ],
+    },
+    edge: {
+      en: [
+        {
+          source: "Edaily",
+          date: "2025.11.20",
+          title:
+            "Eastern Networks moves to build an AI-dedicated edge data center in Seoul",
+          summary:
+            "Discusses Eastern Networks' AI edge data center project, development scale, and planned operating direction.",
+          url: "https://n.news.naver.com/mnews/article/018/0006268017",
+        },
+      ],
+      ko: [
+        {
+          source: "이데일리",
+          date: "2025.11.20",
+          title: "이스턴네트웍스, 삼성동 국제업무지구에 국내 최초 ‘AI 전용 엣지 데이터센터’ 건립 나서",
+          summary:
+            "이스턴네트웍스의 AI 전용 엣지 데이터센터 사업 추진, 개발 규모 및 운영 방향을 다룬 기사입니다.",
+          url: "https://n.news.naver.com/mnews/article/018/0006268017",
+        },
+      ],
+    },
+  };
+
   const pylerPortfolioRows = {
     en: {
       image: "pyler-logo.svg",
@@ -624,7 +711,8 @@
                             "title": "Project Optical — Optomind",
                             "business": opticalBusiness,
                             "overview": opticalOverview,
-                            "detail": portfolioDetailFields.optical.en
+                            "detail": portfolioDetailFields.optical.en,
+                            "articles": portfolioArticles.optical.en
                       },
                       {
                             "alt": "Project NPL",
@@ -638,6 +726,7 @@
                             "alt": "PeopleBio",
                             "title": "PeopleBio M&A",
                             "detail": portfolioDetailFields.peoplebio.en,
+                            "articles": portfolioArticles.peoplebio.en,
                             "business": [
                                   "Equity acquisition transaction in PeopleBio by Eastern Networks, a Dell top-tier partner",
                                   "Supported transaction structure design, funding roadmap planning, and execution aligned with the acquisition objective",
@@ -655,6 +744,7 @@
                             "alt": "Eastern Networks Advisory",
                             "title": "Daechi-dong Edge Data Center Development",
                             "detail": portfolioDetailFields.edge.en,
+                            "articles": portfolioArticles.edge.en,
                             "business": [
                                   "Edge data center development project based on real estate held by an Eastern Networks affiliate",
                                   "Designed transaction and financing structures for data center development",
@@ -689,7 +779,8 @@
                             "title": "Project Optical — Optomind",
                             "business": opticalBusiness,
                             "overview": opticalOverview,
-                            "detail": portfolioDetailFields.optical.ko
+                            "detail": portfolioDetailFields.optical.ko,
+                            "articles": portfolioArticles.optical.ko
                       },
                       {
                             "alt": "Project NPL",
@@ -703,6 +794,7 @@
                             "alt": "PeopleBio",
                             "title": "피플바이오 M&A",
                             "detail": portfolioDetailFields.peoplebio.ko,
+                            "articles": portfolioArticles.peoplebio.ko,
                             "business": [
                                   "Dell 최상위 파트너인 이스턴네트웍스의 피플바이오 지분 인수 거래",
                                   "인수 목적에 맞춘 거래 구조 설계, 자금집행 로드맵 수립 및 실행 지원",
@@ -720,6 +812,7 @@
                             "alt": "Eastern Networks Advisory",
                             "title": "대치동 Edge 데이터센터 개발",
                             "detail": portfolioDetailFields.edge.ko,
+                            "articles": portfolioArticles.edge.ko,
                             "business": [
                                   "이스턴네트웍스 계열사 보유 부동산을 기반으로 한 Edge 데이터센터 개발 프로젝트",
                                   "데이터센터 개발 거래 구조 및 금융 구조 설계",
