@@ -45,101 +45,118 @@
     },
   };
 
+  const pylerBusiness = [
+    "Vision AI 기반의 Ad-Tech 기업으로, 브랜드 세이프티 및 광고 효율화 솔루션인 AiD와 AiM을 제공함.",
+    "NVIDIA AI 인프라를 기반으로 영상·이미지·음성·텍스트 및 콘텐츠 맥락 정보를 통합 분석하는 멀티모달 AI 기술을 구현하고 있음.",
+    "2025년 NVIDIA Inception 대회 1위 수상을 통해 Vision AI 기술력을 입증하며 NVIDIA 생태계 내 협력 기반을 확보함.",
+    "2026년 미국 시장 진출을 기점으로 NVIDIA 생태계와의 협력을 확대하고 있으며, 글로벌 사업 확장 및 전략적 투자 유치 가능성을 검토 중임.",
+  ];
+
+  const pylerOverview = [
+    "보통주 및 RCPS 지분 인수 건임.",
+    "2026년 4월 투자 집행 완료.",
+    "PEF의 GP로서 딜 리드 및 투자 집행을 완료.",
+    "2028년 유니콘 밸류에이션 기반 Exit을 목표로 투자전략 및 Exit 전략을 수립.",
+  ];
+
+  const opticalBusiness = [
+    "미국 데이터센터향 광트랜시버 및 AOC를 개발·제조하는 광통신 핵심부품 기업.",
+    "고객 맞춤형 광트랜시버와 AOC 제품을 공급하며, AI 데이터센터의 고속·저지연 네트워크 인프라 확대에 대응하는 기술력 보유.",
+    "Coherent, Halo, Lumentum, Cadence 등 글로벌 광통신·데이터센터 생태계 주요 기업과의 협력 및 판매 레퍼런스를 기반으로 북미 시장 사업 기반 확대.",
+    "차세대 광통신 수요에 대응하기 위해 1.6T 및 DR 제품 개발을 완료하고, 다수 고객사와 상용화 및 공급 협의 진행 중.",
+  ];
+
+  const opticalOverview = [
+    "신규 CB 발행 및 인수 건.",
+    "2025년 4월 투자 집행 완료.",
+    "신기술사업투자조합의 공동 GP로서 투자 구조 설계 및 집행 참여.",
+    "수성에셋인베스트먼트, IMM인베스트먼트 등 공동투자자 유치 및 투자자 협업을 주도.",
+    "AI 데이터센터 성장성, 글로벌 레퍼런스, 차세대 제품 경쟁력 및 IPO 가능성을 반영한 구조화 투자.",
+    "2027년 상반기 IPO를 통한 Exit 예정.",
+  ];
+
+  const nplBusiness = [
+    "강남구 역삼동 소재 오피스텔 및 근린생활시설을 기초자산으로 한 부동산 NPL 투자 프로젝트",
+    "담보신탁 1순위 우선수익권, 임대수입 및 담보가치를 기반으로 투자금 회수 안정성 확보 추진",
+    "선순위 차입금과 수익증권을 결합한 구조화 부동산 투자 모델 검토",
+  ];
+
+  const nplOverview = [
+    "역삼동 706-12 담보신탁 1순위 우선수익권 인수 건",
+    "총 투자규모 150억원, 선순위 차입금 120억원 및 수익증권 30억원 구조",
+    "금전채권신탁을 통한 임대수입 통제 및 채권보전 구조 설계",
+    "차주 콜옵션 또는 담보자산 매각을 통한 Exit 추진 예정",
+  ];
+
   const pylerPortfolioRows = {
-  "en": {
-    "image": "pyler-logo.svg",
-    "alt": "PYLER",
-    "title": "Project PYLER",
-    "link": "project-pyler.html",
-    "logoWide": true,
-    "business": [
-      "Provider of Vision AI-based brand safety and customized advertising solutions",
-      "Implements multimodal AI technology that analyzes video, image, audio, text, and contextual information based on NVIDIA infrastructure",
-      "Provides brand safety, content-context analysis, and advertising efficiency solutions as a technology partner within the NVIDIA ecosystem"
-    ],
-    "overview": [
-      "Acquisition of common shares and convertible bonds",
-      "Investment execution completed in April 2026",
-      "Led the transaction and completed investment execution as the sole GP of an institutional PEF",
-      "Exit planned by 2028 based on a unicorn valuation target"
-    ]
-  },
-  "ko": {
-    "image": "pyler-logo.svg",
-    "alt": "PYLER",
-    "title": "Project PYLER",
-    "link": "project-pyler.html",
-    "logoWide": true,
-    "business": [
-      "Vision AI 기반 브랜드 세이프티 및 맞춤형 광고 솔루션 제공 업체",
-      "NVIDIA 인프라를 기반으로 영상·이미지·음성·텍스트 및 맥락 정보를 분석하는 멀티모달 AI 기술 구현",
-      "고도화된 Vision AI 구현 역량을 바탕으로 NVIDIA 생태계 내 주요 기술 파트너로서 브랜드 세이프티, 콘텐츠 맥락 분석 및 광고 효율화 솔루션 제공"
-    ],
-    "overview": [
-      "보통주 및 CB 지분 인수 건",
-      "2026년 4월 투자 집행 완료",
-      "기관전용 PEF의 단독 GP로서 딜 리드 및 투자 집행 완료",
-      "2028년까지 유니콘 밸류에이션 기반 Exit 추진 예정"
-    ]
-  }
-};
+    en: {
+      image: "pyler-logo.svg",
+      alt: "PYLER",
+      title: "Project Vision AI — PYLER",
+      link: "project-pyler.html",
+      logoWide: true,
+      business: pylerBusiness,
+      overview: pylerOverview,
+    },
+    ko: {
+      image: "pyler-logo.svg",
+      alt: "PYLER",
+      title: "Project Vision AI — PYLER",
+      link: "project-pyler.html",
+      logoWide: true,
+      business: pylerBusiness,
+      overview: pylerOverview,
+    },
+  };
 
   const pylerDetailPages = {
     en: {
-      title: "Project PYLER | CANDLESTICK PE",
-      heroTitle: "Project PYLER",
-      heroSub: "Vision AI-based Ad-tech investment through an institutional private equity fund",
+      title: "Project Vision AI — PYLER | CANDLESTICK PE",
+      heroTitle: "Project Vision AI — PYLER",
+      heroSub: "",
       backLabel: "Back to Portfolio",
       eyebrow: "Portfolio Detail",
-      heading: "Project PYLER",
+      heading: "Project Vision AI — PYLER",
       lead: "",
       fields: [
-        ["Project Name", "Project PYLER"],
+        ["Project Name", "Project Vision AI — PYLER"],
         ["Company / Target", "PYLER CO., LTD. / 주식회사 파일러"],
         ["Sector", "AI-based AdTech"],
         ["Company Website", "https://pyler.tech/"],
       ],
       sections: [
         {
+          title: "Business",
+          items: pylerBusiness,
+        },
+        {
           title: "Project Overview",
-          paragraphs: [],
-        },
-        {
-          title: "Investment Highlights",
-          items: [],
-        },
-        {
-          title: "Business / Technology Summary",
-          items: [],
+          items: pylerOverview,
         },
       ],
     },
     ko: {
-      title: "Project PYLER | CANDLESTICK PE",
-      heroTitle: "Project PYLER",
-      heroSub: "기관전용 PEF를 통한 Vision AI 기반 Ad-tech 투자",
+      title: "Project Vision AI — PYLER | CANDLESTICK PE",
+      heroTitle: "Project Vision AI — PYLER",
+      heroSub: "",
       backLabel: "포트폴리오로 돌아가기",
       eyebrow: "포트폴리오 상세",
-      heading: "Project PYLER",
+      heading: "Project Vision AI — PYLER",
       lead: "",
       fields: [
-        ["프로젝트명", "Project PYLER"],
+        ["프로젝트명", "Project Vision AI — PYLER"],
         ["회사 / 투자대상", "주식회사 파일러 / PYLER CO., LTD."],
         ["섹터", "AI기반 AdTech"],
         ["회사 홈페이지", "https://pyler.tech/"],
       ],
       sections: [
         {
-          title: "프로젝트 개요",
-          paragraphs: [],
+          title: "Business",
+          items: pylerBusiness,
         },
         {
-          title: "투자포인트",
-          items: [],
-        },
-        {
-          title: "사업/기술 요약",
-          items: [],
+          title: "Project Overview",
+          items: pylerOverview,
         },
       ],
     },
@@ -161,36 +178,54 @@
   const additionalProjectDetailPages = {
     "project-optical": {
       en: {
-        title: "Project Optical | CANDLESTICK PE",
-        heroTitle: "Project Optical",
+        title: "Project Optical — Optomind | CANDLESTICK PE",
+        heroTitle: "Project Optical — Optomind",
         heroSub: "",
         backLabel: "Back to Portfolio",
         eyebrow: "Portfolio Detail",
-        heading: "Project Optical",
+        heading: "Project Optical — Optomind",
         lead: "",
         fields: [
-          ["Project Name", "Project Optical"],
+          ["Project Name", "Project Optical — Optomind"],
           ["Company / Target", "주식회사 옵토마인드 / OPTO MIND CO.,LTD."],
           ["Sector", "Optical communication and optical communication device manufacturing"],
           ["Company Website", "https://www.optomindinc.com/"],
         ],
-        sections: blankProjectSections.en,
+        sections: [
+          {
+            title: "Business",
+            items: opticalBusiness,
+          },
+          {
+            title: "Project Overview",
+            items: opticalOverview,
+          },
+        ],
       },
       ko: {
-        title: "Project Optical | CANDLESTICK PE",
-        heroTitle: "Project Optical",
+        title: "Project Optical — Optomind | CANDLESTICK PE",
+        heroTitle: "Project Optical — Optomind",
         heroSub: "",
         backLabel: "포트폴리오로 돌아가기",
         eyebrow: "포트폴리오 상세",
-        heading: "Project Optical",
+        heading: "Project Optical — Optomind",
         lead: "",
         fields: [
-          ["프로젝트명", "Project Optical"],
+          ["프로젝트명", "Project Optical — Optomind"],
           ["회사 / 투자대상", "주식회사 옵토마인드 / OPTO MIND CO.,LTD."],
           ["섹터", "광통신 및 광통신장치 제조"],
           ["회사 홈페이지", "https://www.optomindinc.com/"],
         ],
-        sections: blankProjectSections.ko,
+        sections: [
+          {
+            title: "Business",
+            items: opticalBusiness,
+          },
+          {
+            title: "Project Overview",
+            items: opticalOverview,
+          },
+        ],
       },
     },
     "project-peoplebio-ma": {
@@ -470,21 +505,17 @@
                       {
                             "image": "Optomind.png",
                             "alt": "OPTOMIND",
-                            "title": "Project Optical",
+                            "title": "Project Optical — Optomind",
                             "link": "project-optical.html",
-                            "business": [
-                                  "Optical communication solutions company serving U.S. data center demand",
-                                  "Develops and supplies customized optical transceivers and AOC products",
-                                  "Maintains collaboration and sales references with key global optical communication and data center ecosystem companies including Coherent, Halo, Lumentum, and Cadence",
-                                  "Completed development of 1.6T and DR products and is pursuing commercialization and supply discussions with multiple customers"
-                            ],
-                            "overview": [
-                                  "New convertible bond issuance and acquisition transaction",
-                                  "Investment executed in April 2025",
-                                  "Participated in investment structure design and execution as a co-GP of a new technology business investment association",
-                                  "Led co-investor attraction and investor collaboration with Suseong Asset Investment, IMM Investment, and other co-investors",
-                                  "Exit planned through an IPO targeted for the first half of 2027"
-                            ]
+                            "business": opticalBusiness,
+                            "overview": opticalOverview
+                      },
+                      {
+                            "alt": "Project NPL",
+                            "logoText": "NPL",
+                            "title": "Project NPL",
+                            "business": nplBusiness,
+                            "overview": nplOverview
                       },
                       {
                             "image": "PP.png",
@@ -539,21 +570,17 @@
                       {
                             "image": "Optomind.png",
                             "alt": "OPTOMIND",
-                            "title": "Project Optical",
+                            "title": "Project Optical — Optomind",
                             "link": "project-optical.html",
-                            "business": [
-                                  "미국 데이터센터향 광통신 솔루션 기업",
-                                  "고객 맞춤형 광트랜시버 및 AOC 제품 개발·공급",
-                                  "Coherent, Halo, Lumentum, Cadence 등 글로벌 광통신 및 데이터센터 생태계 주요 기업과 협력·판매 레퍼런스 보유",
-                                  "1.6T 제품 및 DR 제품 개발을 완료하고, 다수의 고객사와 상용화 및 공급 협의 진행 중"
-                            ],
-                            "overview": [
-                                  "신규 CB 발행 및 인수 건",
-                                  "2025년 4월 투자 집행",
-                                  "신기술사업투자조합의 공동 GP로서 투자 구조 설계 및 집행 참여",
-                                  "수성에셋인베스트먼트, IMM인베스트먼트 등 공동투자자 유치 및 투자자 협업 주도",
-                                  "2027년 상반기 IPO를 통한 Exit 추진 예정"
-                            ]
+                            "business": opticalBusiness,
+                            "overview": opticalOverview
+                      },
+                      {
+                            "alt": "Project NPL",
+                            "logoText": "NPL",
+                            "title": "Project NPL",
+                            "business": nplBusiness,
+                            "overview": nplOverview
                       },
                       {
                             "image": "PP.png",
@@ -1265,22 +1292,39 @@
 
     document.querySelectorAll("[data-project-section]").forEach(function (section, index) {
       const item = data.sections[index];
-      if (!item) return;
-      text(".detail-block-title", item.title, section);
+      if (!item) {
+        section.hidden = true;
+        return;
+      }
 
-      const paragraphsNode = section.querySelector(".detail-paragraphs");
-      if (paragraphsNode && Array.isArray(item.paragraphs)) {
-        paragraphsNode.replaceChildren();
+      section.hidden = false;
+      section.replaceChildren();
+
+      const heading = document.createElement("h3");
+      heading.className = "detail-block-title";
+      heading.textContent = item.title;
+      section.appendChild(heading);
+
+      if (Array.isArray(item.paragraphs)) {
+        const paragraphsNode = document.createElement("div");
+        paragraphsNode.className = "detail-paragraphs";
         item.paragraphs.forEach(function (paragraph) {
           const p = document.createElement("p");
           p.textContent = paragraph;
           paragraphsNode.appendChild(p);
         });
+        section.appendChild(paragraphsNode);
       }
 
-      const listNode = section.querySelector(".detail-list");
-      if (listNode && Array.isArray(item.items)) {
-        list(".detail-list", item.items, section);
+      if (Array.isArray(item.items)) {
+        const listNode = document.createElement("ul");
+        listNode.className = "detail-list";
+        item.items.forEach(function (entry) {
+          const li = document.createElement("li");
+          li.textContent = entry;
+          listNode.appendChild(li);
+        });
+        section.appendChild(listNode);
       }
     });
   }
