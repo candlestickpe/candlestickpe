@@ -45,54 +45,103 @@
     },
   };
 
-  const pylerBusiness = [
-    "Vision AI 기반의 Ad-Tech 기업으로, 브랜드 세이프티 및 광고 효율화 솔루션인 AiD와 AiM을 제공함.",
-    "NVIDIA AI 인프라를 기반으로 영상·이미지·음성·텍스트 및 콘텐츠 맥락 정보를 통합 분석하는 멀티모달 AI 기술을 구현하고 있음.",
-    "2025년 NVIDIA Inception 대회 1위 수상을 통해 Vision AI 기술력을 입증하며 NVIDIA 생태계 내 협력 기반을 확보함.",
-    "2026년 미국 시장 진출을 기점으로 NVIDIA 생태계와의 협력을 확대하고 있으며, 글로벌 사업 확장 및 전략적 투자 유치 가능성을 검토 중임.",
-  ];
+  const pylerBusiness = {
+    en: [
+      "Vision AI-based AdTech company providing brand safety and advertising optimization solutions, including AiD and AiM.",
+      "Implements multimodal AI technology that analyzes video, image, audio, text, and contextual information using NVIDIA AI infrastructure.",
+      "Demonstrated Vision AI capabilities by winning first place in the 2025 NVIDIA Inception competition, building collaboration foundations within the NVIDIA ecosystem.",
+      "Expanding collaboration with the NVIDIA ecosystem alongside planned U.S. market entry in 2026, while reviewing global expansion and strategic investment opportunities.",
+    ],
+    ko: [
+      "Vision AI 기반의 Ad-Tech 기업으로, 브랜드 세이프티 및 광고 효율화 솔루션인 AiD와 AiM을 제공함.",
+      "NVIDIA AI 인프라를 기반으로 영상·이미지·음성·텍스트 및 콘텐츠 맥락 정보를 통합 분석하는 멀티모달 AI 기술을 구현하고 있음.",
+      "2025년 NVIDIA Inception 대회 1위 수상을 통해 Vision AI 기술력을 입증하며 NVIDIA 생태계 내 협력 기반을 확보함.",
+      "2026년 미국 시장 진출을 기점으로 NVIDIA 생태계와의 협력을 확대하고 있으며, 글로벌 사업 확장 및 전략적 투자 유치 가능성을 검토 중임.",
+    ],
+  };
 
-  const pylerOverview = [
-    "보통주 및 RCPS 지분 인수 건임.",
-    "2026년 4월 투자 집행 완료.",
-    "PEF의 GP로서 딜 리드 및 투자 집행을 완료.",
-    "2028년 유니콘 밸류에이션 기반 Exit을 목표로 투자전략 및 Exit 전략을 수립.",
-  ];
+  const pylerOverview = {
+    en: [
+      "Acquisition of common shares and RCPS.",
+      "Investment execution completed in April 2026.",
+      "Led the deal and completed investment execution as GP of the PEF.",
+      "Established investment and exit strategies targeting an exit based on unicorn valuation by 2028.",
+    ],
+    ko: [
+      "보통주 및 RCPS 지분 인수 건임.",
+      "2026년 4월 투자 집행 완료.",
+      "PEF의 GP로서 딜 리드 및 투자 집행을 완료.",
+      "2028년 유니콘 밸류에이션 기반 Exit을 목표로 투자전략 및 Exit 전략을 수립.",
+    ],
+  };
 
-  const opticalBusiness = [
-    "미국 데이터센터향 광트랜시버 및 AOC를 개발·제조하는 광통신 핵심부품 기업.",
-    "고객 맞춤형 광트랜시버와 AOC 제품을 공급하며, AI 데이터센터의 고속·저지연 네트워크 인프라 확대에 대응하는 기술력 보유.",
-    "Coherent, Halo, Lumentum, Cadence 등 글로벌 광통신·데이터센터 생태계 주요 기업과의 협력 및 판매 레퍼런스를 기반으로 북미 시장 사업 기반 확대.",
-    "차세대 광통신 수요에 대응하기 위해 1.6T 및 DR 제품 개발을 완료하고, 다수 고객사와 상용화 및 공급 협의 진행 중.",
-  ];
+  const opticalBusiness = {
+    en: [
+      "Optical communications component company developing and manufacturing optical transceivers and AOC products for U.S. data centers.",
+      "Supplies customized optical transceivers and AOC products, with technology positioned for high-speed, low-latency AI data center network infrastructure.",
+      "Expanding North American business based on collaboration and sales references with Coherent, Halo, Lumentum, Cadence, and other optical communications and data center ecosystem companies.",
+      "Completed development of 1.6T and DR products, with commercialization and supply discussions underway with multiple customers.",
+    ],
+    ko: [
+      "미국 데이터센터향 광트랜시버 및 AOC를 개발·제조하는 광통신 핵심부품 기업.",
+      "고객 맞춤형 광트랜시버와 AOC 제품을 공급하며, AI 데이터센터의 고속·저지연 네트워크 인프라 확대에 대응하는 기술력 보유.",
+      "Coherent, Halo, Lumentum, Cadence 등 글로벌 광통신·데이터센터 생태계 주요 기업과의 협력 및 판매 레퍼런스를 기반으로 북미 시장 사업 기반 확대.",
+      "차세대 광통신 수요에 대응하기 위해 1.6T 및 DR 제품 개발을 완료하고, 다수 고객사와 상용화 및 공급 협의 진행 중.",
+    ],
+  };
 
-  const opticalOverview = [
-    "신규 CB 발행 및 인수 건.",
-    "2025년 4월 투자 집행 완료.",
-    "신기술사업투자조합의 공동 GP로서 투자 구조 설계 및 집행 참여.",
-    "수성에셋인베스트먼트, IMM인베스트먼트 등 공동투자자 유치 및 투자자 협업을 주도.",
-    "AI 데이터센터 성장성, 글로벌 레퍼런스, 차세대 제품 경쟁력 및 IPO 가능성을 반영한 구조화 투자.",
-    "2027년 상반기 IPO를 통한 Exit 예정.",
-  ];
+  const opticalOverview = {
+    en: [
+      "New CB issuance and subscription.",
+      "Investment execution completed in April 2025.",
+      "Participated in investment structure design and execution as co-GP of a New Technology Business Investment Association.",
+      "Led co-investor attraction and investor collaboration with Suseong Asset Investment, IMM Investment, and others.",
+      "Structured investment reflecting AI data center growth, global references, next-generation product competitiveness, and IPO potential.",
+      "Exit expected through IPO in the first half of 2027.",
+    ],
+    ko: [
+      "신규 CB 발행 및 인수 건.",
+      "2025년 4월 투자 집행 완료.",
+      "신기술사업투자조합의 공동 GP로서 투자 구조 설계 및 집행 참여.",
+      "수성에셋인베스트먼트, IMM인베스트먼트 등 공동투자자 유치 및 투자자 협업을 주도.",
+      "AI 데이터센터 성장성, 글로벌 레퍼런스, 차세대 제품 경쟁력 및 IPO 가능성을 반영한 구조화 투자.",
+      "2027년 상반기 IPO를 통한 Exit 예정.",
+    ],
+  };
 
-  const nplBusiness = [
-    "강남구 역삼동 소재 오피스텔 및 근린생활시설을 기초자산으로 한 부동산 NPL 투자 프로젝트",
-    "담보신탁 1순위 우선수익권, 임대수입 및 담보가치를 기반으로 투자금 회수 안정성 확보 추진",
-    "선순위 차입금과 수익증권을 결합한 구조화 부동산 투자 모델 검토",
-  ];
+  const nplBusiness = {
+    en: [
+      "Real estate NPL investment project backed by an officetel and neighborhood commercial facility in Yeoksam-dong, Gangnam-gu.",
+      "Seeking investment recovery stability based on first-priority beneficiary rights under a collateral trust, rental income, and collateral value.",
+      "Reviewing a structured real estate investment model combining senior debt and beneficiary certificates.",
+    ],
+    ko: [
+      "강남구 역삼동 소재 오피스텔 및 근린생활시설을 기초자산으로 한 부동산 NPL 투자 프로젝트",
+      "담보신탁 1순위 우선수익권, 임대수입 및 담보가치를 기반으로 투자금 회수 안정성 확보 추진",
+      "선순위 차입금과 수익증권을 결합한 구조화 부동산 투자 모델 검토",
+    ],
+  };
 
-  const nplOverview = [
-    "역삼동 706-12 담보신탁 1순위 우선수익권 인수 건",
-    "총 투자규모 150억원, 선순위 차입금 120억원 및 수익증권 30억원 구조",
-    "금전채권신탁을 통한 임대수입 통제 및 채권보전 구조 설계",
-    "차주 콜옵션 또는 담보자산 매각을 통한 Exit 추진 예정",
-  ];
+  const nplOverview = {
+    en: [
+      "Acquisition of first-priority beneficiary rights under collateral trust for Yeoksam-dong 706-12.",
+      "Total investment size of KRW 15.0 billion, structured with KRW 12.0 billion senior debt and KRW 3.0 billion beneficiary certificates.",
+      "Designed rental income control and creditor protection structure through a monetary claim trust.",
+      "Exit expected through borrower call option or sale of collateral assets.",
+    ],
+    ko: [
+      "역삼동 706-12 담보신탁 1순위 우선수익권 인수 건",
+      "총 투자규모 150억원, 선순위 차입금 120억원 및 수익증권 30억원 구조",
+      "금전채권신탁을 통한 임대수입 통제 및 채권보전 구조 설계",
+      "차주 콜옵션 또는 담보자산 매각을 통한 Exit 추진 예정",
+    ],
+  };
 
   const portfolioDetailFields = {
     pyler: {
       en: [
         ["Project Name", "Project Vision AI — PYLER"],
-        ["Company / Target", "PYLER CO., LTD. / 주식회사 파일러"],
+        ["Company / Target", "PYLER CO., LTD."],
         ["Sector", "AI-based AdTech"],
         ["Company Website", "https://pyler.tech/"],
       ],
@@ -106,7 +155,7 @@
     optical: {
       en: [
         ["Project Name", "Project Optical — Optomind"],
-        ["Company / Target", "주식회사 옵토마인드 / OPTO MIND CO.,LTD."],
+        ["Company / Target", "OPTO MIND CO., LTD."],
         ["Sector", "Optical communication and optical communication device manufacturing"],
         ["Company Website", "https://www.optomindinc.com/"],
       ],
@@ -120,7 +169,7 @@
     peoplebio: {
       en: [
         ["Project Name", "PeopleBio M&A"],
-        ["Company / Target", "주식회사 피플바이오 / PeopleBio Co., Ltd."],
+        ["Company / Target", "PeopleBio Co., Ltd."],
         ["Sector", "Pharmaceuticals / Bio"],
         ["Company Website", "http://peoplebio.net"],
       ],
@@ -134,7 +183,7 @@
     edge: {
       en: [
         ["Project Name", "Daechi-dong Edge Data Center Development"],
-        ["Company / Target", "주식회사 이스턴네트웍스 / Eastern Networks Co., Ltd."],
+        ["Company / Target", "Eastern Networks Co., Ltd."],
         ["Sector", "Wholesale of computers, peripherals, and software"],
         ["Company Website", "https://www.east21.co.kr/main/"],
       ],
@@ -295,8 +344,8 @@
       alt: "PYLER",
       title: "Project Vision AI — PYLER",
       logoWide: true,
-      business: pylerBusiness,
-      overview: pylerOverview,
+      business: pylerBusiness.en,
+      overview: pylerOverview.en,
       detail: portfolioDetailFields.pyler.en,
       articles: pylerArticles.en,
     },
@@ -305,8 +354,8 @@
       alt: "PYLER",
       title: "Project Vision AI — PYLER",
       logoWide: true,
-      business: pylerBusiness,
-      overview: pylerOverview,
+      business: pylerBusiness.ko,
+      overview: pylerOverview.ko,
       detail: portfolioDetailFields.pyler.ko,
       articles: pylerArticles.ko,
     },
@@ -323,18 +372,18 @@
       lead: "",
       fields: [
         ["Project Name", "Project Vision AI — PYLER"],
-        ["Company / Target", "PYLER CO., LTD. / 주식회사 파일러"],
+        ["Company / Target", "PYLER CO., LTD."],
         ["Sector", "AI-based AdTech"],
         ["Company Website", "https://pyler.tech/"],
       ],
       sections: [
         {
           title: "Business",
-          items: pylerBusiness,
+          items: pylerBusiness.en,
         },
         {
           title: "Project Overview",
-          items: pylerOverview,
+          items: pylerOverview.en,
         },
       ],
     },
@@ -355,11 +404,11 @@
       sections: [
         {
           title: "Business",
-          items: pylerBusiness,
+          items: pylerBusiness.ko,
         },
         {
           title: "Project Overview",
-          items: pylerOverview,
+          items: pylerOverview.ko,
         },
       ],
     },
@@ -390,18 +439,18 @@
         lead: "",
         fields: [
           ["Project Name", "Project Optical — Optomind"],
-          ["Company / Target", "주식회사 옵토마인드 / OPTO MIND CO.,LTD."],
+          ["Company / Target", "OPTO MIND CO., LTD."],
           ["Sector", "Optical communication and optical communication device manufacturing"],
           ["Company Website", "https://www.optomindinc.com/"],
         ],
         sections: [
           {
             title: "Business",
-            items: opticalBusiness,
+            items: opticalBusiness.en,
           },
           {
             title: "Project Overview",
-            items: opticalOverview,
+            items: opticalOverview.en,
           },
         ],
       },
@@ -422,11 +471,11 @@
         sections: [
           {
             title: "Business",
-            items: opticalBusiness,
+            items: opticalBusiness.ko,
           },
           {
             title: "Project Overview",
-            items: opticalOverview,
+            items: opticalOverview.ko,
           },
         ],
       },
@@ -442,7 +491,7 @@
         lead: "",
         fields: [
           ["Project Name", "PeopleBio M&A"],
-          ["Company / Target", "주식회사 피플바이오 / PeopleBio Co., Ltd."],
+          ["Company / Target", "PeopleBio Co., Ltd."],
           ["Sector", "Pharmaceuticals / Bio"],
           ["Company Website", "http://peoplebio.net"],
         ],
@@ -476,7 +525,7 @@
         lead: "",
         fields: [
           ["Project Name", "Daechi-dong Edge Data Center Development"],
-          ["Company / Target", "주식회사 이스턴네트웍스 / Eastern Networks Co., Ltd."],
+          ["Company / Target", "Eastern Networks Co., Ltd."],
           ["Sector", "Wholesale of computers, peripherals, and software"],
           ["Company Website", "https://www.east21.co.kr/main/"],
         ],
@@ -709,8 +758,8 @@
                             "image": "Optomind.png",
                             "alt": "OPTOMIND",
                             "title": "Project Optical — Optomind",
-                            "business": opticalBusiness,
-                            "overview": opticalOverview,
+                            "business": opticalBusiness.en,
+                            "overview": opticalOverview.en,
                             "detail": portfolioDetailFields.optical.en,
                             "articles": portfolioArticles.optical.en
                       },
@@ -718,8 +767,8 @@
                             "alt": "Project NPL",
                             "logoText": "NPL",
                             "title": "Project NPL",
-                            "business": nplBusiness,
-                            "overview": nplOverview
+                            "business": nplBusiness.en,
+                            "overview": nplOverview.en
                       },
                       {
                             "image": "PP.png",
@@ -777,8 +826,8 @@
                             "image": "Optomind.png",
                             "alt": "OPTOMIND",
                             "title": "Project Optical — Optomind",
-                            "business": opticalBusiness,
-                            "overview": opticalOverview,
+                            "business": opticalBusiness.ko,
+                            "overview": opticalOverview.ko,
                             "detail": portfolioDetailFields.optical.ko,
                             "articles": portfolioArticles.optical.ko
                       },
@@ -786,8 +835,8 @@
                             "alt": "Project NPL",
                             "logoText": "NPL",
                             "title": "Project NPL",
-                            "business": nplBusiness,
-                            "overview": nplOverview
+                            "business": nplBusiness.ko,
+                            "overview": nplOverview.ko
                       },
                       {
                             "image": "PP.png",
