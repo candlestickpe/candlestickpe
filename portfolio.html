@@ -152,6 +152,9 @@
 
     .portfolio-table th:nth-child(1), .portfolio-table td:nth-child(1){ width:30%; }
     .portfolio-table th:nth-child(2), .portfolio-table td:nth-child(2){ width:70%; }
+    .portfolio-table td.col-name{
+      text-align:center;
+    }
 
     /* 첫번째 칸: 이미지 + 텍스트 세로 배치 */
     .p-name{
@@ -267,7 +270,14 @@
         font-weight:800;
         color:var(--text-dark);
       }
-      .p-name{ text-align:left; align-items:flex-start; }
+      .portfolio-table tbody td.col-name{
+        align-items:center;
+      }
+      .portfolio-table tbody td.col-name .p-name{
+        text-align:center;
+        align-items:center;
+        flex:1 1 auto;
+      }
 
       /* ✅ 모바일에서도 아이콘 조금 더 크게 */
       .p-thumb-wrap{
