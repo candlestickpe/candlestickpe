@@ -43,52 +43,56 @@
   };
 
   const pylerPortfolioRows = {
-    en: {
-      logoText: "PYLER",
-      alt: "PYLER",
-      title: "Project Vision AI (PYLER)",
-      link: "project-pyler.html",
-      desc: [
-        "Equity investment in PYLER, a Vision AI-based Ad-tech company providing brand safety and contextual video advertising solutions",
-        "PYLER provides AiD and AiM solutions based on video, image, audio, and text analysis",
-        "Fund formation and investment execution completed in April 2026",
-        "Growth capital investment deal targeting exit at unicorn valuation by 2028",
-      ],
-      role: [
-        "Established investment strategy and exit strategy based on industry and company analysis",
-        "Candlestick PE acted as the sole GP, establishing an institutional private equity fund and executing the investment in PYLER through the fund.",
-      ],
-    },
-    ko: {
-      logoText: "PYLER",
-      alt: "PYLER",
-      title: "Project Vision AI (파일러)",
-      link: "project-pyler.html",
-      desc: [
-        "Vision AI 기반 브랜드 세이프티 및 맞춤형 동영상 광고 솔루션을 제공하는 Ad-tech 기업 파일러에 대한 지분 투자",
-        "파일러는 영상·이미지·음성·텍스트 분석 기반의 AiD 및 AiM 솔루션을 제공",
-        "2026년 4월 펀드 결성 및 투자 집행 완료",
-        "2028년까지 유니콘 Value 청산 목표 Growth capital 투자 딜",
-      ],
-      role: [
-        "산업/기업 분석 기반 투자전략 및 Exit 전략 수립",
-        "캔들스틱 PE는 단독 GP로서 기관전용 PEF를 설립하고, 해당 PEF를 통해 PYLER에 대한 투자를 집행함.",
-      ],
-    },
-  };
+  "en": {
+    "image": "pyler-logo.svg",
+    "alt": "PYLER",
+    "title": "Project PYLER",
+    "link": "project-pyler.html",
+    "logoWide": true,
+    "business": [
+      "Provider of Vision AI-based brand safety and customized advertising solutions",
+      "Implements multimodal AI technology that analyzes video, image, audio, text, and contextual information based on NVIDIA infrastructure",
+      "Provides brand safety, content-context analysis, and advertising efficiency solutions as a technology partner within the NVIDIA ecosystem"
+    ],
+    "overview": [
+      "Acquisition of common shares and convertible bonds",
+      "Investment execution completed in April 2026",
+      "Led the transaction and completed investment execution as the sole GP of an institutional PEF",
+      "Exit planned by 2028 based on a unicorn valuation target"
+    ]
+  },
+  "ko": {
+    "image": "pyler-logo.svg",
+    "alt": "PYLER",
+    "title": "Project PYLER",
+    "link": "project-pyler.html",
+    "logoWide": true,
+    "business": [
+      "Vision AI 기반 브랜드 세이프티 및 맞춤형 광고 솔루션 제공 업체",
+      "NVIDIA 인프라를 기반으로 영상·이미지·음성·텍스트 및 맥락 정보를 분석하는 멀티모달 AI 기술 구현",
+      "고도화된 Vision AI 구현 역량을 바탕으로 NVIDIA 생태계 내 주요 기술 파트너로서 브랜드 세이프티, 콘텐츠 맥락 분석 및 광고 효율화 솔루션 제공"
+    ],
+    "overview": [
+      "보통주 및 CB 지분 인수 건",
+      "2026년 4월 투자 집행 완료",
+      "기관전용 PEF의 단독 GP로서 딜 리드 및 투자 집행 완료",
+      "2028년까지 유니콘 밸류에이션 기반 Exit 추진 예정"
+    ]
+  }
+};
 
   const pylerDetailPages = {
     en: {
-      title: "Project Vision AI (PYLER) | CANDLESTICK PE",
-      heroTitle: "Project Vision AI (PYLER)",
+      title: "Project PYLER | CANDLESTICK PE",
+      heroTitle: "Project PYLER",
       heroSub: "Vision AI-based Ad-tech investment through an institutional private equity fund",
       backLabel: "Back to Portfolio",
       eyebrow: "Portfolio Detail",
-      heading: "Project Vision AI (PYLER)",
+      heading: "Project PYLER",
       lead:
-        "Project Vision AI is an equity investment in PYLER, a Vision AI company that provides B2B solutions for brand safety and contextual video advertising.",
+        "Project PYLER is an equity investment in PYLER, a Vision AI company that provides B2B solutions for brand safety and contextual video advertising.",
       fields: [
-        ["Project Name", "Project Vision AI (PYLER)"],
+        ["Project Name", "Project PYLER"],
         ["Company / Target", "PYLER CO., LTD. / 주식회사 파일러"],
         ["Sector", "Application software development and supply business (J58222); Ad-tech"],
         ["Investment Type", "Investment through an institutional private equity fund"],
@@ -127,16 +131,16 @@
       ],
     },
     ko: {
-      title: "Project Vision AI (파일러) | CANDLESTICK PE",
-      heroTitle: "Project Vision AI (파일러)",
+      title: "Project PYLER | CANDLESTICK PE",
+      heroTitle: "Project PYLER",
       heroSub: "기관전용 PEF를 통한 Vision AI 기반 Ad-tech 투자",
       backLabel: "포트폴리오로 돌아가기",
       eyebrow: "포트폴리오 상세",
-      heading: "Project Vision AI (파일러)",
+      heading: "Project PYLER",
       lead:
-        "Project Vision AI는 브랜드 세이프티와 맞춤형 동영상 광고 솔루션을 제공하는 Vision AI 기업 파일러에 대한 지분 투자 프로젝트입니다.",
+        "Project PYLER는 브랜드 세이프티와 맞춤형 광고 솔루션을 제공하는 Vision AI 기업 파일러에 대한 투자 프로젝트입니다.",
       fields: [
-        ["프로젝트명", "Project Vision AI (파일러)"],
+        ["프로젝트명", "Project PYLER"],
         ["회사 / 투자대상", "주식회사 파일러 / PYLER CO., LTD."],
         ["섹터", "응용 소프트웨어 개발 및 공급업(J58222); Ad-tech"],
         ["투자 유형", "기관전용 PEF를 통한 투자"],
@@ -366,120 +370,138 @@
     },
 
     portfolio: {
-      en: {
-        title: "Portfolio | CANDLESTICK PE",
-        heroTitle: "Portfolio",
-        heroSub: "Selected transactions and advisory mandates led by Candlestick PE",
-        sectionTitle: "■ Portfolio",
-        headers: ["Project", "Project Description", "Role"],
-        rowLabels: ["Project", "Project Description", "Role"],
-        rows: [
-          {
-            image: "Optomind.png",
-            alt: "OPTOMIND",
-            title: "Project Optical (Optomind)",
-            desc: [
-              "Investment in new convertible bonds issued by Optomind, a supplier of optical transceivers for U.S. data centers",
-              "Fund formation and investment execution completed in April 2025",
-              "Structured investment deal based on a planned IPO in the first half of 2027",
-            ],
-            role: [
-              {
-                text: "Established an investment strategy based on industry and company analysis, and designed investor-favorable structure and terms",
-                keep: "(including tag-along rights, key CB terms, and investor protections)",
-              },
-              "Supported LP sales and decision-making for fundraising",
-              "Led co-investor attraction and investor collaboration, including IMM Investment",
-            ],
+          "en": {
+                "title": "Portfolio | CANDLESTICK PE",
+                "heroTitle": "Portfolio",
+                "heroSub": "Selected transactions and advisory mandates led by Candlestick PE",
+                "sectionTitle": "■ Portfolio",
+                "headers": [
+                      "Project",
+                      "Business / Project Overview"
+                ],
+                "rowLabels": [
+                      "Project",
+                      "Business / Project Overview"
+                ],
+                "rows": [
+                      {
+                            "image": "Optomind.png",
+                            "alt": "OPTOMIND",
+                            "title": "Project Optical",
+                            "business": [
+                                  "Optical communication solutions company serving U.S. data center demand",
+                                  "Develops and supplies customized optical transceivers and AOC products",
+                                  "Maintains collaboration and sales references with key global optical communication and data center ecosystem companies including Coherent, Halo, Lumentum, and Cadence",
+                                  "Completed development of 1.6T and DR products and is pursuing commercialization and supply discussions with multiple customers"
+                            ],
+                            "overview": [
+                                  "New convertible bond issuance and acquisition transaction",
+                                  "Investment executed in April 2025",
+                                  "Participated in investment structure design and execution as a co-GP of a new technology business investment association",
+                                  "Led co-investor attraction and investor collaboration with Suseong Asset Investment, IMM Investment, and other co-investors",
+                                  "Exit planned through an IPO targeted for the first half of 2027"
+                            ]
+                      },
+                      {
+                            "image": "PP.png",
+                            "alt": "PeopleBio",
+                            "title": "PeopleBio M&A",
+                            "business": [
+                                  "Equity acquisition transaction in PeopleBio by Eastern Networks, a Dell top-tier partner",
+                                  "Supported transaction structure design, funding roadmap planning, and execution aligned with the acquisition objective",
+                                  "Executed M&A using a combined structure including equity acquisition, paid-in capital increase, and in-kind contribution"
+                            ],
+                            "overview": [
+                                  "Designed and managed transaction structure, execution strategy, timeline, and key risks in an integrated manner",
+                                  "Designed real estate in-kind contribution and paid-in capital increase structure",
+                                  "Performed PM role for transaction execution",
+                                  "Supported design and execution of core transaction terms including issuance terms and closing conditions"
+                            ]
+                      },
+                      {
+                            "image": "EN.png",
+                            "alt": "Eastern Networks Advisory",
+                            "title": "Daechi-dong Edge Data Center Development",
+                            "business": [
+                                  "Edge data center development project based on real estate held by an Eastern Networks affiliate",
+                                  "Designed transaction and financing structures for data center development",
+                                  "Established phase-by-phase execution roadmap and funding strategy"
+                            ],
+                            "overview": [
+                                  "Designed SPC formation, equity, and debt structures",
+                                  "Estimated phase-by-phase capital requirements and built cash management scenarios",
+                                  "Reviewed development risk, funding execution risk, and investment recovery structure",
+                                  "Supported investment structuring and key term discussions with investors and lenders"
+                            ]
+                      }
+                ]
           },
-          {
-            image: "PP.png",
-            alt: "PeopleBio",
-            title: "PeopleBio M&A",
-            desc: [
-              "Led Eastern Networks' acquisition of an equity stake in PeopleBio",
-              "Designed the transaction structure and funding execution roadmap aligned with the acquisition purpose",
-            ],
-            role: [
-              "Managed structure, terms, timeline, and risk in an integrated manner and drove decision-making",
-              "Designed and managed the in-kind contribution of KRW 35.6 billion and paid-in capital increase structure as PM",
-              "Aligned process, documentation, approval framework, and milestones",
-              "Negotiated key issuance and closing terms and resolved execution issues",
-            ],
-          },
-          {
-            image: "EN.png",
-            alt: "Eastern Networks Advisory",
-            title: "Daechi-dong Edge Data Center Development",
-            desc: [
-              "Led the transaction structure design and execution roadmap for data center development based on real estate held by Eastern Networks",
-            ],
-            role: [
-              "Designed the SPC, equity, and debt structure framework",
-              "Built staged funding estimates and operating scenarios for equity, mezzanine, and debt, with risk management",
-              "Managed schedule and closing based on permitting, design, construction, and funding milestones",
-              "Structured the investment for investors and lenders",
-            ],
-          },
-        ],
-      },
-      ko: {
-        title: "포트폴리오 | CANDLESTICK PE",
-        heroTitle: "포트폴리오",
-        heroSub: "캔들스틱 PE가 주도한 주요 투자 및 자문 사례",
-        sectionTitle: "■ 포트폴리오",
-        headers: ["프로젝트명", "프로젝트 내용", "담당 역할"],
-        rowLabels: ["프로젝트명", "프로젝트 내용", "담당 역할"],
-        rows: [
-          {
-            image: "Optomind.png",
-            alt: "OPTOMIND",
-            title: "Project Optical (옵토마인드)",
-            desc: [
-              "미국 데이터센터向 광트랜시버 공급업체 옵토마인드 대상 신규 전환사채(CB) 투자",
-              "2025년 4월 펀드 결성 및 투자 집행 완료",
-              "2027년 상반기 IPO를 전제로 한 구조화 투자 딜",
-            ],
-            role: [
-              {
-                text: "산업/기업 분석 기반 투자전략 수립 및 투자자 우위의 구조·조건 설계",
-                keep: "(Tag-along 포함, CB 핵심 조항·보호장치 협의)",
-              },
-              "자금조달을 위한 LP 세일즈, 의사결정 지원",
-              "IMM인베스트먼트 등 공동투자자 유치 및 투자자 협업 주도",
-            ],
-          },
-          {
-            image: "PP.png",
-            alt: "PeopleBio",
-            title: "피플바이오 M&A",
-            desc: [
-              "이스턴네트웍스의 피플바이오 지분 인수 딜 리드",
-              "인수 목적에 맞춘 구조 설계 및 자금집행 로드맵 수립·실행",
-            ],
-            role: [
-              "구조·조건·일정·리스크 통합 관리 및 의사결정 드라이브",
-              "현물출자(356억원), 유상증자 구조 설계 및 실행 PM",
-              "절차/문서/승인체계 정렬 및 마일스톤 관리",
-              "발행·클로징 조건 등 핵심 조건 협의 및 실행 이슈 해소",
-            ],
-          },
-          {
-            image: "EN.png",
-            alt: "Eastern Networks Advisory",
-            title: "대치동 Edge 데이터센터 개발",
-            desc: [
-              "이스턴네트웍스 보유 부동산 기반 데이터센터 개발의 거래구조 설계 및 실행 로드맵 리드",
-            ],
-            role: [
-              "SPC·지분/차입 구조 프레임 설계",
-              "단계별 소요자금 산정·자금운영 시나리오(Equity/Mezz/Debt) 구성 및 리스크 관리",
-              "인허가·설계·시공·자금집행 마일스톤 기반 일정 및 클로징 관리",
-              "투자자·대주단 대상 투자 구조화",
-            ],
-          },
-        ],
-      },
+          "ko": {
+                "title": "Portfolio | CANDLESTICK PE",
+                "heroTitle": "포트폴리오",
+                "heroSub": "캔들스틱 PE가 주도한 주요 투자 및 자문 프로젝트",
+                "sectionTitle": "■ 포트폴리오",
+                "headers": [
+                      "Project",
+                      "Business / Project Overview"
+                ],
+                "rowLabels": [
+                      "Project",
+                      "Business / Project Overview"
+                ],
+                "rows": [
+                      {
+                            "image": "Optomind.png",
+                            "alt": "OPTOMIND",
+                            "title": "Project Optical",
+                            "business": [
+                                  "미국 데이터센터향 광통신 솔루션 기업",
+                                  "고객 맞춤형 광트랜시버 및 AOC 제품 개발·공급",
+                                  "Coherent, Halo, Lumentum, Cadence 등 글로벌 광통신 및 데이터센터 생태계 주요 기업과 협력·판매 레퍼런스 보유",
+                                  "1.6T 제품 및 DR 제품 개발을 완료하고, 다수의 고객사와 상용화 및 공급 협의 진행 중"
+                            ],
+                            "overview": [
+                                  "신규 CB 발행 및 인수 건",
+                                  "2025년 4월 투자 집행",
+                                  "신기술사업투자조합의 공동 GP로서 투자 구조 설계 및 집행 참여",
+                                  "수성에셋인베스트먼트, IMM인베스트먼트 등 공동투자자 유치 및 투자자 협업 주도",
+                                  "2027년 상반기 IPO를 통한 Exit 추진 예정"
+                            ]
+                      },
+                      {
+                            "image": "PP.png",
+                            "alt": "PeopleBio",
+                            "title": "피플바이오 M&A",
+                            "business": [
+                                  "Dell 최상위 파트너인 이스턴네트웍스의 피플바이오 지분 인수 거래",
+                                  "인수 목적에 맞춘 거래 구조 설계, 자금집행 로드맵 수립 및 실행 지원",
+                                  "지분 인수, 유상증자, 현물출자 등 복합 구조를 활용한 M&A 실행"
+                            ],
+                            "overview": [
+                                  "거래 구조, 실행 전략, 일정, 리스크를 통합적으로 설계 및 관리",
+                                  "부동산 현물출자 및 유상증자 구조 설계",
+                                  "거래 실행을 위한 PM 역할 수행",
+                                  "발행 조건, 클로징 조건 등 핵심 거래 조건 설계 및 실행 지원"
+                            ]
+                      },
+                      {
+                            "image": "EN.png",
+                            "alt": "Eastern Networks Advisory",
+                            "title": "대치동 Edge 데이터센터 개발",
+                            "business": [
+                                  "이스턴네트웍스 계열사 보유 부동산을 기반으로 한 Edge 데이터센터 개발 프로젝트",
+                                  "데이터센터 개발 거래 구조 및 금융 구조 설계",
+                                  "개발 단계별 실행 로드맵 및 자금 조달 전략 수립"
+                            ],
+                            "overview": [
+                                  "SPC 설립 구조 및 지분·차입 구조 설계",
+                                  "단계별 소요자금 산정 및 자금운영 시나리오 구성",
+                                  "개발 리스크, 자금집행 리스크 및 투자 회수 구조 검토",
+                                  "투자자 및 대주단 대상 투자 구조화와 주요 조건 협의 지원"
+                            ]
+                      }
+                ]
+          }
     },
 
     team: {
@@ -1015,6 +1037,39 @@
     renderSolutionChips(data.solutions);
   }
 
+  function appendBullets(root, items) {
+    const ul = document.createElement("ul");
+    items.forEach(function (item) {
+      const li = document.createElement("li");
+      li.textContent = item;
+      ul.appendChild(li);
+    });
+    root.appendChild(ul);
+  }
+
+  function createPortfolioDetail(row) {
+    const wrapper = document.createElement("div");
+    wrapper.className = "portfolio-detail";
+
+    [
+      ["Business", row.business],
+      ["Project Overview", row.overview],
+    ].forEach(function (section) {
+      const items = section[1];
+      if (!Array.isArray(items) || !items.length) return;
+      const block = document.createElement("section");
+      block.className = "portfolio-subsection";
+      const heading = document.createElement("h3");
+      heading.className = "portfolio-subheading";
+      heading.textContent = section[0];
+      block.appendChild(heading);
+      appendBullets(block, items);
+      wrapper.appendChild(block);
+    });
+
+    return wrapper;
+  }
+
   function renderPortfolio(data) {
     setTitle(data.title);
     text(".hero-title", data.heroTitle);
@@ -1043,7 +1098,7 @@
       const nameWrap = document.createElement("div");
       nameWrap.className = "p-name";
       const thumbWrap = document.createElement("div");
-      thumbWrap.className = "p-thumb-wrap";
+      thumbWrap.className = row.logoWide ? "p-thumb-wrap p-thumb-wrap--wide" : "p-thumb-wrap";
       if (row.image) {
         const img = document.createElement("img");
         img.className = "p-thumb";
@@ -1063,40 +1118,12 @@
       nameWrap.append(thumbWrap, title);
       nameTd.appendChild(nameWrap);
 
-      const descTd = document.createElement("td");
-      descTd.className = "col-desc";
-      descTd.dataset.label = data.rowLabels[1];
-      const descList = document.createElement("ul");
-      row.desc.forEach(function (item) {
-        const li = document.createElement("li");
-        li.textContent = item;
-        descList.appendChild(li);
-      });
-      descTd.appendChild(descList);
+      const detailTd = document.createElement("td");
+      detailTd.className = "col-overview";
+      detailTd.dataset.label = data.rowLabels[1];
+      detailTd.appendChild(createPortfolioDetail(row));
 
-      const roleTd = document.createElement("td");
-      roleTd.className = "col-role";
-      roleTd.dataset.label = data.rowLabels[2];
-      const roleList = document.createElement("ul");
-      row.role.forEach(function (item) {
-        const li = document.createElement("li");
-        if (typeof item === "string") {
-          li.textContent = item;
-        } else {
-          li.textContent = item.text;
-          if (item.keep) {
-            li.appendChild(document.createTextNode(" "));
-            const span = document.createElement("span");
-            span.className = "keep-together";
-            span.textContent = item.keep;
-            li.appendChild(span);
-          }
-        }
-        roleList.appendChild(li);
-      });
-      roleTd.appendChild(roleList);
-
-      tr.append(nameTd, descTd, roleTd);
+      tr.append(nameTd, detailTd);
       tbody.appendChild(tr);
     });
   }

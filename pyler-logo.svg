@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 170" role="img" aria-label="PYLER logo">
+  <defs>
+    <linearGradient id="pylerOrb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#85a8dc"/>
+      <stop offset="1" stop-color="#c8b4df"/>
+    </linearGradient>
+  </defs>
+  <rect width="560" height="170" fill="#fff"/>
+  <circle cx="86" cy="85" r="70" fill="url(#pylerOrb)"/>
+  <path d="M39 98 C57 104 78 105 102 99 C132 92 149 77 145 57 C141 37 116 31 92 44 L92 128" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  <path d="M86 32 L86 136 M35 106 H153 M57 124 H135" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".92"/>
+  <g fill="#050505" font-family="Pretendard, Arial, Helvetica, sans-serif" font-weight="800" font-size="82" letter-spacing="2">
+    <text x="205" y="111">PYL</text>
+    <text x="404" y="111">R</text>
+  </g>
+  <rect x="349" y="49" width="70" height="10" fill="#6f95cc"/>
+  <rect x="349" y="86" width="70" height="10" fill="#b99ccc"/>
+</svg>

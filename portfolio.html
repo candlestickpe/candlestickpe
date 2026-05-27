@@ -138,7 +138,7 @@
     .portfolio-table thead th:last-child{ border-right:none; }
 
     .portfolio-table tbody td{
-      vertical-align: middle;
+      vertical-align: top;
       padding:22px 22px;
       border-top:1px solid var(--line-gray);
       border-right:1px solid #f2f4f7;
@@ -150,10 +150,8 @@
     .portfolio-table tbody tr:first-child td{ border-top:1px solid var(--line-gray); }
     .portfolio-table tbody td:last-child{ border-right:none; }
 
-    /* 컬럼 너비 */
-    .portfolio-table th:nth-child(1), .portfolio-table td:nth-child(1){ width:26%; }
-    .portfolio-table th:nth-child(2), .portfolio-table td:nth-child(2){ width:37%; }
-    .portfolio-table th:nth-child(3), .portfolio-table td:nth-child(3){ width:37%; }
+    .portfolio-table th:nth-child(1), .portfolio-table td:nth-child(1){ width:30%; }
+    .portfolio-table th:nth-child(2), .portfolio-table td:nth-child(2){ width:70%; }
 
     /* 첫번째 칸: 이미지 + 텍스트 세로 배치 */
     .p-name{
@@ -201,6 +199,13 @@
       letter-spacing:.08em;
       color:var(--brand-blue);
     }
+    .p-thumb-wrap--wide{
+      max-width: clamp(150px, 14vw, 220px);
+      height: clamp(56px, 5.4vw, 78px);
+      border-radius:8px;
+      padding:6px 10px;
+      background:#fff;
+    }
 
     .p-title{
       display:block;
@@ -217,6 +222,20 @@
       text-underline-offset:3px;
     }
 
+    .portfolio-detail{
+      display:grid;
+      gap:18px;
+    }
+    .portfolio-subsection{
+      margin:0;
+    }
+    .portfolio-subheading{
+      margin:0 0 8px;
+      color:var(--brand-blue);
+      font-size:.98rem;
+      font-weight:900;
+      letter-spacing:0;
+    }
     .portfolio-table ul{ margin:0; padding-left:1.2em; }
     .portfolio-table li{
       margin:.5em 0;
@@ -332,124 +351,139 @@
         <table class="portfolio-table" role="table" aria-label="Candlestick PE Portfolio">
           <thead>
             <tr>
-              <th scope="col">프로젝트명</th>
-              <th scope="col">프로젝트 내용</th>
-              <th scope="col">담당 역할</th>
+              <th scope="col">Project</th>
+              <th scope="col">Business / Project Overview</th>
             </tr>
           </thead>
 
           <tbody>
-            <!-- 1) Project Vision AI (파일러) -->
             <tr class="portfolio-row">
-              <td class="col-name" data-label="프로젝트명">
+              <td class="col-name" data-label="Project">
                 <div class="p-name">
-                  <div class="p-thumb-wrap">
-                    <span class="p-logo-text">PYLER</span>
+                  <div class="p-thumb-wrap p-thumb-wrap--wide">
+                    <img class="p-thumb" src="pyler-logo.svg" alt="PYLER" />
                   </div>
-                  <a class="p-title p-title-link" href="project-pyler.html">Project Vision AI (파일러)</a>
+                  <a class="p-title p-title-link" href="project-pyler.html">Project PYLER</a>
                 </div>
               </td>
-
-              <td class="col-desc" data-label="프로젝트 내용">
-                <ul>
-                  <li>Vision AI 기반 브랜드 세이프티 및 맞춤형 동영상 광고 솔루션을 제공하는 Ad-tech 기업 파일러에 대한 지분 투자</li>
-                  <li>파일러는 영상·이미지·음성·텍스트 분석 기반의 AiD 및 AiM 솔루션을 제공</li>
-                  <li>2026년 4월 펀드 결성 및 투자 집행 완료</li>
-                  <li>2028년까지 유니콘 Value 청산 목표 Growth capital 투자 딜</li>
-                </ul>
-              </td>
-
-              <td class="col-role" data-label="담당 역할">
-                <ul>
-                  <li>산업/기업 분석 기반 투자전략 및 Exit 전략 수립</li>
-                  <li>캔들스틱 PE는 단독 GP로서 기관전용 PEF를 설립하고, 해당 PEF를 통해 PYLER에 대한 투자를 집행함.</li>
-                </ul>
+              <td class="col-overview" data-label="Business / Project Overview">
+                <div class="portfolio-detail">
+                  <section class="portfolio-subsection">
+                    <h3 class="portfolio-subheading">Business</h3>
+                    <ul>
+                        <li>Vision AI 기반 브랜드 세이프티 및 맞춤형 광고 솔루션 제공 업체</li>
+                        <li>NVIDIA 인프라를 기반으로 영상·이미지·음성·텍스트 및 맥락 정보를 분석하는 멀티모달 AI 기술 구현</li>
+                        <li>고도화된 Vision AI 구현 역량을 바탕으로 NVIDIA 생태계 내 주요 기술 파트너로서 브랜드 세이프티, 콘텐츠 맥락 분석 및 광고 효율화 솔루션 제공</li>
+                    </ul>
+                  </section>
+                  <section class="portfolio-subsection">
+                    <h3 class="portfolio-subheading">Project Overview</h3>
+                    <ul>
+                        <li>보통주 및 CB 지분 인수 건</li>
+                        <li>2026년 4월 투자 집행 완료</li>
+                        <li>기관전용 PEF의 단독 GP로서 딜 리드 및 투자 집행 완료</li>
+                        <li>2028년까지 유니콘 밸류에이션 기반 Exit 추진 예정</li>
+                    </ul>
+                  </section>
+                </div>
               </td>
             </tr>
 
-            <!-- 2) Project Optical (옵토마인드) -->
             <tr class="portfolio-row">
-              <td class="col-name" data-label="프로젝트명">
+              <td class="col-name" data-label="Project">
                 <div class="p-name">
                   <div class="p-thumb-wrap">
                     <img class="p-thumb" src="Optomind.png" alt="OPTOMIND" />
                   </div>
-                  <span class="p-title">Project Optical (옵토마인드)</span>
+                  <span class="p-title">Project Optical</span>
                 </div>
               </td>
-
-              <td class="col-desc" data-label="프로젝트 내용">
-                <ul>
-                  <li>미국 데이터센터向 광트랜시버 공급업체 옵토마인드 대상 신규 전환사채(CB) 투자</li>
-                  <li>2025년 4월 펀드 결성 및 투자 집행 완료</li>
-                  <li>2027년 상반기 IPO를 전제로 한 구조화 투자 딜</li>
-                </ul>
-              </td>
-
-              <td class="col-role" data-label="담당 역할">
-                <ul>
-                  <li>산업/기업 분석 기반 투자전략 수립 및 투자자 우위의 구조·조건 설계
-
-                    <span class="keep-together">(Tag-along 포함, CB 핵심 조항·보호장치 협의)</span>
-                  </li>
-                  <li>자금조달을 위한 LP 세일즈, 의사결정 지원</li>
-                  <li>IMM인베스트먼트 등 공동투자자 유치 및 투자자 협업 주도</li>
-                </ul>
+              <td class="col-overview" data-label="Business / Project Overview">
+                <div class="portfolio-detail">
+                  <section class="portfolio-subsection">
+                    <h3 class="portfolio-subheading">Business</h3>
+                    <ul>
+                        <li>미국 데이터센터향 광통신 솔루션 기업</li>
+                        <li>고객 맞춤형 광트랜시버 및 AOC 제품 개발·공급</li>
+                        <li>Coherent, Halo, Lumentum, Cadence 등 글로벌 광통신 및 데이터센터 생태계 주요 기업과 협력·판매 레퍼런스 보유</li>
+                        <li>1.6T 제품 및 DR 제품 개발을 완료하고, 다수의 고객사와 상용화 및 공급 협의 진행 중</li>
+                    </ul>
+                  </section>
+                  <section class="portfolio-subsection">
+                    <h3 class="portfolio-subheading">Project Overview</h3>
+                    <ul>
+                        <li>신규 CB 발행 및 인수 건</li>
+                        <li>2025년 4월 투자 집행</li>
+                        <li>신기술사업투자조합의 공동 GP로서 투자 구조 설계 및 집행 참여</li>
+                        <li>수성에셋인베스트먼트, IMM인베스트먼트 등 공동투자자 유치 및 투자자 협업 주도</li>
+                        <li>2027년 상반기 IPO를 통한 Exit 추진 예정</li>
+                    </ul>
+                  </section>
+                </div>
               </td>
             </tr>
 
-            <!-- 3) 피플바이오 M&A 컨설팅 -->
             <tr class="portfolio-row">
-              <td class="col-name" data-label="프로젝트명">
+              <td class="col-name" data-label="Project">
                 <div class="p-name">
                   <div class="p-thumb-wrap">
                     <img class="p-thumb" src="PP.png" alt="PeopleBio" />
                   </div>
-                  <span class="p-title">피플바이오 M&A</span>
+                  <span class="p-title">피플바이오 M&amp;A</span>
                 </div>
               </td>
-
-              <td class="col-desc" data-label="프로젝트 내용">
-                <ul>
-                  <li>이스턴네트웍스의 피플바이오 지분 인수 딜 리드</li>
-                  <li>인수 목적에 맞춘 구조 설계 및 자금집행 로드맵 수립·실행</li>
-                </ul>
-              </td>
-
-              <td class="col-role" data-label="담당 역할">
-                <ul>
-                  <li>구조·조건·일정·리스크 통합 관리 및 의사결정 드라이브</li>
-                  <li>현물출자(356억원), 유상증자 구조 설계 및 실행 PM</li>
-                  <li>절차/문서/승인체계 정렬 및 마일스톤 관리</li>
-                  <li>발행·클로징 조건 등 핵심 조건 협의 및 실행 이슈 해소 </li>
-                </ul>
+              <td class="col-overview" data-label="Business / Project Overview">
+                <div class="portfolio-detail">
+                  <section class="portfolio-subsection">
+                    <h3 class="portfolio-subheading">Business</h3>
+                    <ul>
+                        <li>Dell 최상위 파트너인 이스턴네트웍스의 피플바이오 지분 인수 거래</li>
+                        <li>인수 목적에 맞춘 거래 구조 설계, 자금집행 로드맵 수립 및 실행 지원</li>
+                        <li>지분 인수, 유상증자, 현물출자 등 복합 구조를 활용한 M&amp;A 실행</li>
+                    </ul>
+                  </section>
+                  <section class="portfolio-subsection">
+                    <h3 class="portfolio-subheading">Project Overview</h3>
+                    <ul>
+                        <li>거래 구조, 실행 전략, 일정, 리스크를 통합적으로 설계 및 관리</li>
+                        <li>부동산 현물출자 및 유상증자 구조 설계</li>
+                        <li>거래 실행을 위한 PM 역할 수행</li>
+                        <li>발행 조건, 클로징 조건 등 핵심 거래 조건 설계 및 실행 지원</li>
+                    </ul>
+                  </section>
+                </div>
               </td>
             </tr>
 
-            <!-- 4) 대치동 Edge 데이터센터 개발 컨설팅 -->
             <tr class="portfolio-row">
-              <td class="col-name" data-label="프로젝트명">
+              <td class="col-name" data-label="Project">
                 <div class="p-name">
                   <div class="p-thumb-wrap">
-                    <img class="p-thumb" src="EN.png" alt="EASTERN NETWORKS Advisory" />
+                    <img class="p-thumb" src="EN.png" alt="Eastern Networks Advisory" />
                   </div>
                   <span class="p-title">대치동 Edge 데이터센터 개발</span>
                 </div>
               </td>
-
-              <td class="col-desc" data-label="프로젝트 내용">
-                <ul>
-                  <li>이스턴네트웍스 보유 부동산 기반 데이터센터 개발의 거래구조 설계 및 실행 로드맵 리드</li>
-                </ul>
-              </td>
-
-              <td class="col-role" data-label="담당 역할">
-                <ul>
-                  <li>SPC·지분/차입 구조 프레임 설계</li>
-                  <li>단계별 소요자금 산정·자금운영 시나리오(Equity/Mezz/Debt) 구성 및 리스크 관리</li>
-                  <li>인허가·설계·시공·자금집행 마일스톤 기반 일정 및 클로징 관리</li>
-                  <li>투자자·대주단 대상 투자 구조화 </li>
-                </ul>
+              <td class="col-overview" data-label="Business / Project Overview">
+                <div class="portfolio-detail">
+                  <section class="portfolio-subsection">
+                    <h3 class="portfolio-subheading">Business</h3>
+                    <ul>
+                        <li>이스턴네트웍스 계열사 보유 부동산을 기반으로 한 Edge 데이터센터 개발 프로젝트</li>
+                        <li>데이터센터 개발 거래 구조 및 금융 구조 설계</li>
+                        <li>개발 단계별 실행 로드맵 및 자금 조달 전략 수립</li>
+                    </ul>
+                  </section>
+                  <section class="portfolio-subsection">
+                    <h3 class="portfolio-subheading">Project Overview</h3>
+                    <ul>
+                        <li>SPC 설립 구조 및 지분·차입 구조 설계</li>
+                        <li>단계별 소요자금 산정 및 자금운영 시나리오 구성</li>
+                        <li>개발 리스크, 자금집행 리스크 및 투자 회수 구조 검토</li>
+                        <li>투자자 및 대주단 대상 투자 구조화와 주요 조건 협의 지원</li>
+                    </ul>
+                  </section>
+                </div>
               </td>
             </tr>
           </tbody>
@@ -463,6 +497,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
           crossorigin="anonymous"></script>
-  <script src="i18n.js?v=20260527-brand-en"></script>
+  <script src="i18n.js?v=20260527-portfolio"></script>
 </body>
 </html>
