@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>투자철학 | CANDLESTICK PE</title>
+  <meta name="description" content="캔들스틱 PE의 투자철학과 장기적 파트너십 원칙을 소개합니다." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://candlestickpe.com/philosophy.html" />
+  <link rel="alternate" hreflang="ko" href="https://candlestickpe.com/philosophy.html" />
+  <link rel="alternate" hreflang="x-default" href="https://candlestickpe.com/philosophy.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CANDLESTICK PE" />
+  <meta property="og:title" content="투자철학 | CANDLESTICK PE" />
+  <meta property="og:description" content="캔들스틱 PE의 투자철학과 장기적 파트너십 원칙을 소개합니다." />
+  <meta property="og:url" content="https://candlestickpe.com/philosophy.html" />
+  <meta property="og:image" content="https://candlestickpe.com/high.PNG" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="투자철학 | CANDLESTICK PE" />
+  <meta name="twitter:description" content="캔들스틱 PE의 투자철학과 장기적 파트너십 원칙을 소개합니다." />
+  <meta name="twitter:image" content="https://candlestickpe.com/high.PNG" />
+
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+        crossorigin="anonymous">
+  <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+
+  <style>
+    :root{
+      --hero-h: clamp(250px, 40vw, 400px);
+      --hero-focus-y: 40%;
+      --section-max-w: 1200px;
+      --section-x-pad: 24px;
+      --brand-blue: #0b1140;
+      --line-gray: #e5e7eb;
+      --text-dark: #111827;
+      --text-mid: #374151;
+    }
+
+    html,
+    body,
+    button,
+    input,
+    textarea,
+    select{
+      font-family: Pretendard, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+                   "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+      color: var(--text-dark);
+      background: #f6f5f1;
+    }
+
+    .hero{
+      position: relative;
+      min-height: var(--hero-h);
+      background: #333 url('high.PNG') no-repeat 50% var(--hero-focus-y)/cover;
+    }
+    .hero::before{
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,.38), rgba(0,0,0,.18));
+    }
+    .hero > .container-fluid{ position: relative; z-index: 1; }
+    @media (max-width: 768px){ :root{ --hero-focus-y: 88%; } }
+
+    .brand{
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      z-index: 2;
+      font-weight: 700;
+      color: #fff;
+      font-size: 1.1rem;
+      letter-spacing: .5px;
+    }
+    .hero-title{
+      margin: 0;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+    .hero-subtext{
+      margin: 25px auto 0;
+      max-width: 920px;
+      color: #fff;
+      font-size: 1rem;
+      line-height: 1.55;
+      text-shadow: 0 1px 2px rgba(0,0,0,.35);
+      word-break: keep-all;
+    }
+    .center-wrap{
+      text-align: center;
+      padding-top: calc(var(--hero-h) * .28);
+      padding-bottom: calc(var(--hero-h) * .12);
+    }
+
+    .content-section{
+      padding: 92px 0;
+      background:#f6f5f1;
+    }
+    .content-inner{
+      width: min(var(--section-max-w), 100%);
+      margin: 0 auto;
+      padding: 0 var(--section-x-pad);
+    }
+    .philosophy-panel{
+      background:linear-gradient(135deg, rgba(255,255,255,.92), rgba(237,233,220,.72));
+      border:1px solid rgba(11,17,64,.1);
+      border-radius:8px;
+      box-shadow:0 18px 42px rgba(11,17,64,.08);
+      padding:clamp(26px, 5vw, 54px);
+    }
+    .philosophy-header{
+      display:grid;
+      grid-template-columns:minmax(220px, 360px) minmax(0, 1fr);
+      gap:clamp(24px, 5vw, 56px);
+      align-items:center;
+    }
+    .philosophy-logo-wrap{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:150px;
+      padding:24px;
+      border-radius:8px;
+      background:rgba(11,17,64,.035);
+      border:1px solid rgba(11,17,64,.08);
+    }
+    .philosophy-logo{
+      display:block;
+      width:100%;
+      max-width:320px;
+      height:auto;
+      object-fit:contain;
+    }
+    .philosophy-copy{
+      min-width:0;
+    }
+    .philosophy-title{
+      margin:0 0 14px;
+      color:var(--brand-blue);
+      font-size:clamp(1.25rem, 2.3vw, 2rem);
+      font-weight:900;
+      letter-spacing:0;
+      word-break:keep-all;
+    }
+    .philosophy-english{
+      margin:0 0 20px;
+      color:#4b5563;
+      font-size:clamp(.95rem, 1.4vw, 1.08rem);
+      line-height:1.65;
+      word-break:keep-all;
+    }
+    .philosophy-headline{
+      margin:0;
+      color:#111827;
+      font-size:clamp(1.5rem, 3vw, 2.5rem);
+      font-weight:900;
+      line-height:1.18;
+      letter-spacing:0;
+      word-break:keep-all;
+    }
+    .philosophy-body{
+      max-width:980px;
+      margin:38px auto 0;
+      color:var(--text-mid);
+      font-size:1rem;
+      line-height:1.92;
+      word-break:keep-all;
+    }
+    .philosophy-body p{
+      margin:0 0 20px;
+      white-space:pre-line;
+    }
+    .philosophy-body p:last-child{
+      margin-bottom:0;
+    }
+
+    .navbar--floating{
+      position: absolute;
+      top: 14px;
+      right: 16px;
+      background: transparent !important;
+      padding: 0 !important;
+      z-index: 1000;
+    }
+    .navbar--floating .navbar-toggler{
+      position: static !important;
+      transform: none !important;
+      margin: 0;
+    }
+
+    @media (max-width: 980px){
+      .philosophy-header{ grid-template-columns: 1fr; }
+      .content-section{ padding-top: 72px; }
+    }
+    @media (max-width: 560px){
+      .brand{ left: 14px; font-size: 1rem; }
+      .navbar--floating{ top: 12px; right: 12px; }
+      .philosophy-panel{ padding:22px; }
+      .philosophy-logo-wrap{ min-height:118px; padding:18px; }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark navbar--floating" aria-label="Main navigation">
+    <button class="navbar-toggler border-0" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+            aria-controls="offcanvasMenu" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1"
+       id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel"
+       style="--bs-offcanvas-width:300px;">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="about.html">About Candlestick</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html">포트폴리오</a></li>
+        <li class="nav-item"><a class="nav-link" href="team.html">핵심운용인력</a></li>
+        <li class="nav-item"><a class="nav-link" href="philosophy.html">투자철학</a></li>
+        <li class="nav-item"><a class="nav-link" href="esg.html">ESG / 스튜어드십 코드</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="hero">
+    <a href="index.html"
+       class="brand"
+       style="text-decoration:none !important; color:#fff; cursor:pointer"
+       aria-label="Go to Home">
+      CANDLESTICK PE
+    </a>
+
+    <div class="container-fluid px-4 center-wrap">
+      <h1 class="display-4 hero-title">투자철학</h1>
+      <div class="hero-subtext">A Light for Trusted Partnership</div>
+    </div>
+  </div>
+
+  <main>
+    <section class="content-section" id="philosophy">
+      <div class="content-inner">
+        <div class="philosophy-panel">
+          <div class="philosophy-header">
+            <div class="philosophy-logo-wrap">
+              <img class="philosophy-logo" src="candlestick-logo.png" alt="CANDLESTICK PRIVATE EQUITY">
+            </div>
+            <div class="philosophy-copy">
+              <h2 class="philosophy-title">투자철학 (Philosophy)</h2>
+              <p class="philosophy-english">Candlestick PE seeks to be a trusted light for long-term partnership.</p>
+              <p class="philosophy-headline">A Light for Trusted Partnership</p>
+            </div>
+          </div>
+          <div class="philosophy-body">
+            <p>캔들스틱PE는 투자란 단순한 자본의 투입과 회수가 아니라,
+맡겨진 자본을 책임 있게 관리하고 기업과 투자자가 함께 성장하도록 돕는 신뢰의 여정이라고 생각합니다.</p>
+            <p>우리는 자본의 힘보다 먼저 신뢰의 힘을 믿습니다.</p>
+            <p>정직하고 투명한 의사결정, 절제된 투자 판단, 책임 있는 운용, 그리고 장기적인 파트너십은
+캔들스틱PE가 모든 투자 과정에서 지키고자 하는 기본 원칙입니다.</p>
+            <p>캔들스틱이라는 이름에는
+어두운 길 위에서 조용히 방향을 비추는 작은 빛처럼,
+기업의 가능성을 발견하고 투자자와 파트너들이 올바른 방향으로 나아갈 수 있도록 돕겠다는 뜻이 담겨 있습니다.</p>
+            <p>우리는 투자자로부터 맡겨진 자본을 단순한 금융자산이 아니라
+책임 있게 관리해야 할 신뢰의 위임으로 바라봅니다.</p>
+            <p>좋은 기업이 더 건강한 기업으로 성장하도록 돕고,
+그 성장의 결실이 투자자, 기업, 임직원과 이해관계자 모두에게 돌아가는 선순환을 만드는 것이
+캔들스틱PE가 추구하는 투자입니다.</p>
+            <p>캔들스틱PE는 앞으로도
+정직, 책임, 절제, 장기적 가치 창출이라는 원칙 아래
+투자자와 기업이 함께 나아갈 방향을 비추는
+신뢰받는 투자 파트너가 되겠습니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+          crossorigin="anonymous"></script>
+  <script src="i18n.js?v=20260528-philosophy-menu"></script>
+</body>
+</html>

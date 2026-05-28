@@ -13,6 +13,7 @@
     "project-peoplebio-ma": "ko",
     "project-edge-data-center": "ko",
     team: "ko",
+    philosophy: "ko",
     esg: "ko",
   };
 
@@ -23,6 +24,7 @@
         about: "About Candlestick",
         portfolio: "Portfolio",
         team: "Key Personnel",
+        philosophy: "Philosophy",
         esg: "ESG / Stewardship Code",
       },
       close: "Close",
@@ -36,6 +38,7 @@
         about: "About Candlestick",
         portfolio: "포트폴리오",
         team: "핵심운용인력",
+        philosophy: "투자철학",
         esg: "ESG / 스튜어드십 코드",
       },
       close: "닫기",
@@ -582,20 +585,6 @@
         introTitle: "Private equity solutions built around each company's needs",
         introLead:
           "As the general partner of institutional private equity funds, Candlestick PE reviews each transaction from the perspective of fund formation, investment execution, post-investment value creation, and exit. We focus on building practical investment structures that reflect the company's capital needs, shareholder objectives, growth strategy, and recoverability.",
-        philosophy: {
-          title: "투자철학 (Philosophy)",
-          english: "Candlestick PE seeks to be a trusted light for long-term partnership.",
-          headline: "A Light for Trusted Partnership",
-          body: [
-            "캔들스틱PE는 투자란 단순한 자본의 투입과 회수가 아니라,\n맡겨진 자본을 책임 있게 관리하고 기업과 투자자가 함께 성장하도록 돕는 신뢰의 여정이라고 생각합니다.",
-            "우리는 자본의 힘보다 먼저 신뢰의 힘을 믿습니다.",
-            "정직하고 투명한 의사결정, 절제된 투자 판단, 책임 있는 운용, 그리고 장기적인 파트너십은\n캔들스틱PE가 모든 투자 과정에서 지키고자 하는 기본 원칙입니다.",
-            "캔들스틱이라는 이름에는\n어두운 길 위에서 조용히 방향을 비추는 작은 빛처럼,\n기업의 가능성을 발견하고 투자자와 파트너들이 올바른 방향으로 나아갈 수 있도록 돕겠다는 뜻이 담겨 있습니다.",
-            "우리는 투자자로부터 맡겨진 자본을 단순한 금융자산이 아니라\n책임 있게 관리해야 할 신뢰의 위임으로 바라봅니다.",
-            "좋은 기업이 더 건강한 기업으로 성장하도록 돕고,\n그 성장의 결실이 투자자, 기업, 임직원과 이해관계자 모두에게 돌아가는 선순환을 만드는 것이\n캔들스틱PE가 추구하는 투자입니다.",
-            "캔들스틱PE는 앞으로도\n정직, 책임, 절제, 장기적 가치 창출이라는 원칙 아래\n투자자와 기업이 함께 나아갈 방향을 비추는\n신뢰받는 투자 파트너가 되겠습니다.",
-          ],
-        },
         roleCards: [
           {
             title: "Investment Vehicle",
@@ -678,20 +667,6 @@
         introTitle: "기업의 성장과 투자자의 가치를 함께 설계하는 PEF 파트너",
         introLead:
           "캔들스틱 PE는 기관전용 PEF의 업무집행사원(GP)으로서 펀드 결성, 투자 구조 설계, 투자 집행, 사후관리 및 회수까지의 전 과정을 검토합니다.<br>각 기업의 자금 수요, 주주 구성, 성장 전략, 회수 가능성을 종합적으로 고려하여 실질적인 투자 구조를 설계합니다.",
-        philosophy: {
-          title: "투자철학 (Philosophy)",
-          english: "Candlestick PE seeks to be a trusted light for long-term partnership.",
-          headline: "A Light for Trusted Partnership",
-          body: [
-            "캔들스틱PE는 투자란 단순한 자본의 투입과 회수가 아니라,\n맡겨진 자본을 책임 있게 관리하고 기업과 투자자가 함께 성장하도록 돕는 신뢰의 여정이라고 생각합니다.",
-            "우리는 자본의 힘보다 먼저 신뢰의 힘을 믿습니다.",
-            "정직하고 투명한 의사결정, 절제된 투자 판단, 책임 있는 운용, 그리고 장기적인 파트너십은\n캔들스틱PE가 모든 투자 과정에서 지키고자 하는 기본 원칙입니다.",
-            "캔들스틱이라는 이름에는\n어두운 길 위에서 조용히 방향을 비추는 작은 빛처럼,\n기업의 가능성을 발견하고 투자자와 파트너들이 올바른 방향으로 나아갈 수 있도록 돕겠다는 뜻이 담겨 있습니다.",
-            "우리는 투자자로부터 맡겨진 자본을 단순한 금융자산이 아니라\n책임 있게 관리해야 할 신뢰의 위임으로 바라봅니다.",
-            "좋은 기업이 더 건강한 기업으로 성장하도록 돕고,\n그 성장의 결실이 투자자, 기업, 임직원과 이해관계자 모두에게 돌아가는 선순환을 만드는 것이\n캔들스틱PE가 추구하는 투자입니다.",
-            "캔들스틱PE는 앞으로도\n정직, 책임, 절제, 장기적 가치 창출이라는 원칙 아래\n투자자와 기업이 함께 나아갈 방향을 비추는\n신뢰받는 투자 파트너가 되겠습니다.",
-          ],
-        },
         roleCards: [
           {
             title: "Investment Vehicle",
@@ -764,6 +739,43 @@
         closingTitle: "캔들스틱의 역할",
         closingText:
           "캔들스틱 PE는 기관투자자의 자본과 기업의 니즈를 연결하는 GP이자 투자 파트너입니다. 신의성실의 원칙과 책임 있는 투자 철학을 바탕으로 원칙 있는 PEF 구조를 설계·실행하며, 투자대상회사의 지속가능한 기업가치 제고와 장기적 성장 기반 마련을 지원합니다.",
+      },
+    },
+
+    philosophy: {
+      en: {
+        title: "Philosophy | CANDLESTICK PE",
+        heroTitle: "Philosophy",
+        heroSub: "A Light for Trusted Partnership",
+        sectionTitle: "투자철학 (Philosophy)",
+        english: "Candlestick PE seeks to be a trusted light for long-term partnership.",
+        headline: "A Light for Trusted Partnership",
+        body: [
+          "캔들스틱PE는 투자란 단순한 자본의 투입과 회수가 아니라,\n맡겨진 자본을 책임 있게 관리하고 기업과 투자자가 함께 성장하도록 돕는 신뢰의 여정이라고 생각합니다.",
+          "우리는 자본의 힘보다 먼저 신뢰의 힘을 믿습니다.",
+          "정직하고 투명한 의사결정, 절제된 투자 판단, 책임 있는 운용, 그리고 장기적인 파트너십은\n캔들스틱PE가 모든 투자 과정에서 지키고자 하는 기본 원칙입니다.",
+          "캔들스틱이라는 이름에는\n어두운 길 위에서 조용히 방향을 비추는 작은 빛처럼,\n기업의 가능성을 발견하고 투자자와 파트너들이 올바른 방향으로 나아갈 수 있도록 돕겠다는 뜻이 담겨 있습니다.",
+          "우리는 투자자로부터 맡겨진 자본을 단순한 금융자산이 아니라\n책임 있게 관리해야 할 신뢰의 위임으로 바라봅니다.",
+          "좋은 기업이 더 건강한 기업으로 성장하도록 돕고,\n그 성장의 결실이 투자자, 기업, 임직원과 이해관계자 모두에게 돌아가는 선순환을 만드는 것이\n캔들스틱PE가 추구하는 투자입니다.",
+          "캔들스틱PE는 앞으로도\n정직, 책임, 절제, 장기적 가치 창출이라는 원칙 아래\n투자자와 기업이 함께 나아갈 방향을 비추는\n신뢰받는 투자 파트너가 되겠습니다.",
+        ],
+      },
+      ko: {
+        title: "투자철학 | CANDLESTICK PE",
+        heroTitle: "투자철학",
+        heroSub: "A Light for Trusted Partnership",
+        sectionTitle: "투자철학 (Philosophy)",
+        english: "Candlestick PE seeks to be a trusted light for long-term partnership.",
+        headline: "A Light for Trusted Partnership",
+        body: [
+          "캔들스틱PE는 투자란 단순한 자본의 투입과 회수가 아니라,\n맡겨진 자본을 책임 있게 관리하고 기업과 투자자가 함께 성장하도록 돕는 신뢰의 여정이라고 생각합니다.",
+          "우리는 자본의 힘보다 먼저 신뢰의 힘을 믿습니다.",
+          "정직하고 투명한 의사결정, 절제된 투자 판단, 책임 있는 운용, 그리고 장기적인 파트너십은\n캔들스틱PE가 모든 투자 과정에서 지키고자 하는 기본 원칙입니다.",
+          "캔들스틱이라는 이름에는\n어두운 길 위에서 조용히 방향을 비추는 작은 빛처럼,\n기업의 가능성을 발견하고 투자자와 파트너들이 올바른 방향으로 나아갈 수 있도록 돕겠다는 뜻이 담겨 있습니다.",
+          "우리는 투자자로부터 맡겨진 자본을 단순한 금융자산이 아니라\n책임 있게 관리해야 할 신뢰의 위임으로 바라봅니다.",
+          "좋은 기업이 더 건강한 기업으로 성장하도록 돕고,\n그 성장의 결실이 투자자, 기업, 임직원과 이해관계자 모두에게 돌아가는 선순환을 만드는 것이\n캔들스틱PE가 추구하는 투자입니다.",
+          "캔들스틱PE는 앞으로도\n정직, 책임, 절제, 장기적 가치 창출이라는 원칙 아래\n투자자와 기업이 함께 나아갈 방향을 비추는\n신뢰받는 투자 파트너가 되겠습니다.",
+        ],
       },
     },
 
@@ -918,12 +930,21 @@
         people: [
           {
             name: "Hong Gap-Pyo",
-            title: "",
-            alt: "Hong Gap-Pyo",
-            experience: [],
+            title: "CEO",
+            alt: "Hong Gap-Pyo, CEO",
+            experience: [
+              "CEO, Candlestick PE Co., Ltd.",
+              "CEO, Mobidick Asset Management",
+              "CEO and Head of Management Division, KPH Asset Management",
+              "Head of East Asia Asset Management, LDS Presiding Bishopric Office",
+              "Ensign Peak Advisors, SLC office",
+            ],
             trackRecord: [
               "2026 investment in PYLER, a Vision AI company",
               "2025 investment in Optomind, an optical communications company for U.S. data centers",
+              "2023 acquisition advisory for Quro CC by Daekwang E&C",
+              "Managed Pre-IPO funds from 2016 to 2024, completing investments in eight companies including APR",
+              "Managed futures/options CTA strategy funds including Bountiful, PSY, and Hana in 2017, with additional track records",
             ],
           },
           {
@@ -931,11 +952,20 @@
             title: "Director, KICPA",
             alt: "Min Byung-Sun, Director",
             experience: [
+              "Head of Investment Division, Candlestick PE Co., Ltd.",
+              "Head of Investment Division, Mobidick Asset Management",
               "Head of Investment Finance Department, DGB Capital, Hyosung Capital, and M Capital",
+              "Deal Division, PwC Samil Accounting Corp.",
             ],
             trackRecord: [
               "2026 investment in PYLER, a Vision AI company",
               "2025 investment in Optomind, an optical communications company for U.S. data centers",
+              "2023 acquisition advisory for Quro CC by Daekwang E&C",
+              "2022 Co-GP for acquisition of Doosan Machine Tools management rights with Korea Investment PE; 2021 Co-GP for acquisition of ISC management rights with Helios PE",
+              "Multiple LP investments from 2021 to 2022, including EcoPro, Chunbo, Samsung Heavy Industries, and Payletter",
+              "Multiple LP investments from 2017 to 2020, including Cell Bio Human Tech, Pungwon Precision, RIDI, V-OL, and HD Hyundai Heavy Industries",
+              "2016 sale advisory for Cheongwoo GC in Wonju, Gangwon-do and Maestro CC in Anseong, Gyeonggi-do",
+              "2010 sale advisory for Hyeonyang, an auto parts company, and 2013 sale advisory for Korea Line Corporation",
             ],
           },
         ],
@@ -951,12 +981,21 @@
         people: [
           {
             name: "홍갑표",
-            title: "",
-            alt: "홍갑표 증명사진",
-            experience: [],
+            title: "대표이사",
+            alt: "홍갑표 대표이사 증명사진",
+            experience: [
+              "(주)캔들스틱 PE 대표",
+              "모비딕 자산운용 대표",
+              "KPH자산운용 대표, 운용본부장",
+              "LDS Presiding Bishopric Office 동아시아 자산관리 본부장",
+              "Ensign Peak Advisors, SLC office",
+            ],
             trackRecord: [
               "2026년 비전 AI 업체 파일러 투자",
               "2025년 미국 데이터센터향 광통신 업체 옵토마인드 투자",
+              "2023년 대광건영의 큐로CC 인수자문",
+              "2016~2024년 Pre-IPO 펀드운용(에이피알 등 8개사 투자완료)",
+              "2017년 선물/옵션 CTA 전략 펀드(바운티풀, PSY, 하나) 운용 등 추가 실적 다수",
             ],
           },
           {
@@ -964,11 +1003,20 @@
             title: "이사, KICPA",
             alt: "민병선 이사 증명사진",
             experience: [
+              "(주)캔들스틱 PE 투자본부장",
+              "모비딕자산운용 투자본부장",
               "DGB캐피탈, 효성캐피탈, 엠캐피탈 투자금융부 부서장",
+              "PwC 삼일회계법인 Deal 본부",
             ],
             trackRecord: [
               "2026년 비전 AI 업체 파일러 투자",
               "2025년 미국 데이터센터향 광통신 업체 옵토마인드 투자",
+              "2023년 대광건영의 큐로CC 인수자문",
+              "2022년 두산공작기계 경영권 인수 Co-GP (한투 PE)/ 2021년 코스닥상장사 ISC 경영권 인수 Co-GP (헬리오스 PE)",
+              "2021년~2022년 에코프로, 천보, 삼성중공업, 페이레터 등 다수 LP 투자",
+              "2017년~2020년 셀바이오휴먼텍, 풍원정밀, 리디, 비올, 현대힘스 등 다수 LP 투자",
+              "2016년 강원도 원주 청우 GC, 경기도 안성 마에스트로CC 매각 자문",
+              "2010년 신일정공 현양(자동차 부품) 매각 자문 / 2013년 대한해운(해운업) 매각 자문",
             ],
           },
         ],
@@ -1338,6 +1386,7 @@
       if (href.includes("about.html")) link.textContent = c.nav.about;
       if (href.includes("portfolio.html")) link.textContent = c.nav.portfolio;
       if (href.includes("team.html")) link.textContent = c.nav.team;
+      if (href.includes("philosophy.html")) link.textContent = c.nav.philosophy;
       if (href.includes("esg.html")) link.textContent = c.nav.esg;
     });
   }
@@ -1419,12 +1468,6 @@
     text(".section-eyebrow", data.introEyebrow);
     text(".about-intro-title", data.introTitle);
     html(".about-intro-lead", data.introLead);
-    if (data.philosophy) {
-      text(".philosophy-title", data.philosophy.title);
-      text(".philosophy-english", data.philosophy.english);
-      text(".philosophy-headline", data.philosophy.headline);
-      paragraphs(".philosophy-body", data.philosophy.body);
-    }
     text(".about-flow-title", data.flowTitle);
     text(".about-solutions-title", data.solutionsTitle);
     text(".about-closing-title", data.closingTitle);
@@ -1432,6 +1475,16 @@
     renderAboutCards(data.roleCards);
     renderFlowSteps(data.flowSteps);
     renderSolutionChips(data.solutions);
+  }
+
+  function applyPhilosophy(data) {
+    setTitle(data.title);
+    text(".hero-title", data.heroTitle);
+    text(".hero-subtext", data.heroSub);
+    text(".philosophy-title", data.sectionTitle);
+    text(".philosophy-english", data.english);
+    text(".philosophy-headline", data.headline);
+    paragraphs(".philosophy-body", data.body);
   }
 
   function appendBullets(root, items) {
@@ -1879,6 +1932,7 @@
 
     if (pageName === "index") applyIndex(pageData);
     if (pageName === "about") applyAbout(pageData);
+    if (pageName === "philosophy") applyPhilosophy(pageData);
     if (pageName === "portfolio") renderPortfolio(pageData);
     if (document.querySelector("#project-detail")) applyProjectDetail(pageData);
     if (pageName === "team") applyTeam(pageData);
