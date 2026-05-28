@@ -583,9 +583,9 @@
       ko: {
         title: "CANDLESTICK PE | 캔들스틱 PE",
         headline: "CANDLESTICK PRIVATE EQUITY",
-        cardTitle: "캔들스틱 PE",
+        cardTitle: "CANDLESTICK PE",
         cardText:
-          "캔들스틱 PE는 대한민국의 유망 기업과 성장 산업에 투자하는 전문 투자회사입니다. 축적된 투자 경험과 산업에 대한 깊은 이해를 바탕으로 기업의 성장 전략을 지원하며, 투자자 및 파트너와 함께 지속 가능한 가치를 만들어갑니다.",
+          "CANDLESTICK PE는 대한민국의 유망 기업과 성장 산업에 투자하는 전문 투자회사입니다. 축적된 투자 경험과 산업에 대한 깊은 이해를 바탕으로 기업의 성장 전략을 지원하며, 투자자 및 파트너와 함께 지속 가능한 가치를 만들어갑니다.",
         footer:
           'CANDLESTICK PE<div class="hero-sub">이메일: <a href="mailto:jcjang@candlestickpe.com">jcjang@candlestickpe.com</a> / 주소: 서울특별시 강남구 강남대로118길 39, 3층 가-115호</div>',
       },
