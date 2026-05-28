@@ -1317,15 +1317,16 @@
       }
       @media (max-width:576px){
         .navbar--floating{
-          right:max(8px, env(safe-area-inset-right)) !important;
+          top:10px !important;
+          right:max(10px, env(safe-area-inset-right)) !important;
           left:auto !important;
-          gap:5px !important;
-          width:auto !important;
-          min-width:0 !important;
-          max-width:calc(100vw - 16px) !important;
-          transform:translateX(-118px) !important;
+          gap:6px !important;
+          width:max-content !important;
+          min-width:max-content !important;
+          max-width:calc(100vw - 20px) !important;
+          transform:none !important;
         }
-        .language-toggle{ height:30px; padding:0 7px; font-size:.72rem; }
+        .language-toggle{ height:30px; padding:0 8px; font-size:.72rem; }
         .navbar--floating .navbar-toggler{
           width:36px !important;
           height:36px !important;
