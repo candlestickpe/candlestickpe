@@ -71,7 +71,7 @@
       "Established investment and exit strategies targeting an exit based on unicorn valuation by 2028.",
     ],
     ko: [
-      "보통주 및 RCPS 지분 인수 건임.",
+      "보통주 및 RCPS 지분 인수 건.",
       "2026년 4월 투자 집행 완료.",
       "PEF의 GP로서 딜 리드 및 투자 집행을 완료.",
       "2028년 유니콘 밸류에이션 기반 Exit을 목표로 투자전략 및 Exit 전략을 수립.",
@@ -304,6 +304,14 @@
             "Covers PeopleBio's strategic investment, largest shareholder change, and business expansion direction with Eastern Networks.",
           url: "https://www.edaily.co.kr/News/Read?newsId=04172166642365392&mediaCodeNo=257&OutLnkChk=Y",
         },
+        {
+          source: "Edaily",
+          date: "2026.05.21",
+          title: "PeopleBio rises on plans to pursue U.S. FDA Breakthrough Device designation",
+          summary:
+            "Covers market reaction to PeopleBio's plan to pursue U.S. FDA Breakthrough Device designation.",
+          url: "https://n.news.naver.com/mnews/article/018/0006286607",
+        },
       ],
       ko: [
         {
@@ -313,6 +321,14 @@
           summary:
             "피플바이오의 전략적 투자 유치, 최대주주 변경 및 이스턴네트웍스와의 사업 확장 방향을 다룬 기사입니다.",
           url: "https://www.edaily.co.kr/News/Read?newsId=04172166642365392&mediaCodeNo=257&OutLnkChk=Y",
+        },
+        {
+          source: "이데일리",
+          date: "2026.05.21",
+          title: "美 FDA 혁신의료기기 지정 추진…피플바이오 9%↑[특징주]",
+          summary:
+            "피플바이오의 미국 FDA 혁신의료기기 지정 추진 계획과 시장 반응을 다룬 기사입니다.",
+          url: "https://n.news.naver.com/mnews/article/018/0006286607",
         },
       ],
     },
@@ -747,17 +763,17 @@
         title: "Philosophy | CANDLESTICK PE",
         heroTitle: "Philosophy",
         heroSub: "A Light for Trusted Partnership",
-        sectionTitle: "투자철학 (Philosophy)",
+        sectionTitle: "Philosophy",
         english: "Candlestick PE seeks to be a trusted light for long-term partnership.",
         headline: "A Light for Trusted Partnership",
         body: [
-          "캔들스틱PE는 투자란 단순한 자본의 투입과 회수가 아니라,\n맡겨진 자본을 책임 있게 관리하고 기업과 투자자가 함께 성장하도록 돕는 신뢰의 여정이라고 생각합니다.",
-          "우리는 자본의 힘보다 먼저 신뢰의 힘을 믿습니다.",
-          "정직하고 투명한 의사결정, 절제된 투자 판단, 책임 있는 운용, 그리고 장기적인 파트너십은\n캔들스틱PE가 모든 투자 과정에서 지키고자 하는 기본 원칙입니다.",
-          "캔들스틱이라는 이름에는\n어두운 길 위에서 조용히 방향을 비추는 작은 빛처럼,\n기업의 가능성을 발견하고 투자자와 파트너들이 올바른 방향으로 나아갈 수 있도록 돕겠다는 뜻이 담겨 있습니다.",
-          "우리는 투자자로부터 맡겨진 자본을 단순한 금융자산이 아니라\n책임 있게 관리해야 할 신뢰의 위임으로 바라봅니다.",
-          "좋은 기업이 더 건강한 기업으로 성장하도록 돕고,\n그 성장의 결실이 투자자, 기업, 임직원과 이해관계자 모두에게 돌아가는 선순환을 만드는 것이\n캔들스틱PE가 추구하는 투자입니다.",
-          "캔들스틱PE는 앞으로도\n정직, 책임, 절제, 장기적 가치 창출이라는 원칙 아래\n투자자와 기업이 함께 나아갈 방향을 비추는\n신뢰받는 투자 파트너가 되겠습니다.",
+          "Candlestick PE believes that investment is not merely the deployment and recovery of capital, but a journey of trust: managing entrusted capital responsibly and helping companies and investors grow together.",
+          "We believe in the power of trust before the power of capital.",
+          "Honest and transparent decision-making, disciplined investment judgment, responsible management, and long-term partnership are the core principles Candlestick PE seeks to uphold throughout every investment process.",
+          "The name Candlestick reflects our intention to act like a quiet light on a dark path: discovering the potential of companies and helping investors and partners move in the right direction.",
+          "We view capital entrusted by investors not simply as a financial asset, but as a mandate of trust that must be managed responsibly.",
+          "Our investment approach is to help good companies become healthier businesses and to create a virtuous cycle in which the outcomes of growth are shared by investors, companies, employees, and stakeholders.",
+          "Under the principles of integrity, responsibility, discipline, and long-term value creation, Candlestick PE will continue to be a trusted investment partner that lights the direction for investors and companies.",
         ],
       },
       ko: {
