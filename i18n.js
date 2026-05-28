@@ -1309,6 +1309,12 @@
       .navbar--floating .navbar-toggler{
         flex:0 0 auto !important;
       }
+      .hero .hero-subtext{
+        font-size:.9rem !important;
+        line-height:1.58 !important;
+        max-width:min(920px, calc(100vw - 32px)) !important;
+        word-break:keep-all !important;
+      }
       @media (max-width:576px){
         .navbar--floating{
           right:max(8px, env(safe-area-inset-right)) !important;
@@ -1323,6 +1329,12 @@
         .navbar--floating .navbar-toggler{
           width:36px !important;
           height:36px !important;
+        }
+        .hero .hero-subtext{
+          margin-top:14px !important;
+          font-size:.78rem !important;
+          line-height:1.55 !important;
+          max-width:calc(100vw - 36px) !important;
         }
       }
     `;

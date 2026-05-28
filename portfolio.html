@@ -119,6 +119,10 @@
       overflow:hidden;
       background:#fff;
     }
+    .portfolio-wrap,
+    .portfolio-wrap *{
+      box-sizing:border-box;
+    }
     .portfolio-table{
       width:100%;
       border-collapse:separate;
@@ -558,6 +562,171 @@
     }
 
     /* ===== 떠 있는(투명) 네비게이션 ===== */
+    @media (max-width: 900px){
+      .content-section{ padding:76px 0 46px; }
+      .content-inner{ padding:0 14px; }
+      .section-title.size-lg{ --subhead-size:1.45rem; }
+      .portfolio-wrap{
+        margin-top:18px;
+        border:none;
+        border-radius:0;
+        box-shadow:none;
+        overflow:visible;
+        background:transparent;
+      }
+      .portfolio-table,
+      .portfolio-table tbody,
+      .portfolio-table tr,
+      .portfolio-table td{
+        display:block;
+        width:100%;
+      }
+      .portfolio-table th:nth-child(1),
+      .portfolio-table th:nth-child(2),
+      .portfolio-table td:nth-child(1),
+      .portfolio-table td:nth-child(2){
+        width:100% !important;
+      }
+      .portfolio-table tr.portfolio-row{
+        margin:0 0 14px;
+        border:1px solid var(--line-gray);
+        border-radius:12px;
+        box-shadow:0 8px 22px rgba(12,18,46,.08);
+        overflow:hidden;
+        background:#fff;
+      }
+      .portfolio-table tbody td{
+        display:block;
+        padding:0;
+        border-top:none;
+        border-right:none;
+        background:#fff;
+      }
+      .portfolio-table tbody td::before{
+        display:block;
+        flex:none;
+      }
+      .portfolio-table tbody td.col-name{
+        min-height:0;
+        padding:20px 16px 16px;
+      }
+      .portfolio-table tbody td.col-name .p-name{
+        flex:initial;
+        gap:10px;
+      }
+      .portfolio-table tbody td.col-overview{
+        padding:16px 24px 18px 16px;
+        border-top:1px solid #eef1f5;
+      }
+      .portfolio-table tbody td.col-overview::before{
+        margin-bottom:12px;
+        color:#6b7280;
+        font-size:.76rem;
+        letter-spacing:.04em;
+        text-transform:uppercase;
+      }
+      .p-thumb-wrap{
+        width:min(100%, 160px);
+        max-width:160px;
+        height:76px;
+        padding:10px 12px;
+        border-radius:10px;
+      }
+      .p-title{
+        font-size:.96rem;
+        line-height:1.35;
+      }
+      .p-toggle{
+        height:29px;
+        padding:0 11px;
+        font-size:.75rem;
+      }
+      .portfolio-inline-detail{
+        margin:-6px 0 16px;
+        padding:16px;
+        border-radius:12px;
+      }
+      .portfolio-detail{ gap:14px; }
+      .portfolio-subheading{
+        font-size:.9rem;
+        margin-bottom:7px;
+      }
+      .portfolio-table ul{ padding-left:1.05rem; }
+      .portfolio-table li{
+        margin:.42em 0;
+        font-size:.82rem;
+        line-height:1.6;
+        word-break:break-all;
+        overflow-wrap:anywhere;
+      }
+      .portfolio-subheading,
+      .field-value,
+      .article-card-title,
+      .article-summary{
+        word-break:break-all;
+        overflow-wrap:anywhere;
+      }
+      .field-row{
+        grid-template-columns:1fr;
+        min-height:0;
+      }
+      .field-label{
+        padding:12px 14px;
+        font-size:.86rem;
+      }
+      .field-value{
+        padding:12px 14px;
+        font-size:.88rem;
+        line-height:1.55;
+      }
+      .related-articles{
+        margin-top:22px;
+        padding-top:20px;
+      }
+      .related-title{
+        margin-bottom:12px;
+        font-size:.98rem;
+      }
+      .article-card{
+        gap:10px;
+        padding:12px;
+        min-height:0;
+      }
+      .article-image-slot{ min-height:76px; }
+      .article-image-slot--source{
+        min-height:74px;
+        padding:13px;
+      }
+      .article-source{ font-size:.92rem; }
+      .article-card-title{
+        font-size:.9rem;
+        line-height:1.45;
+      }
+      .article-summary{
+        font-size:.84rem;
+        line-height:1.55;
+      }
+      .article-link{
+        min-height:34px;
+        padding:0 12px;
+        font-size:.8rem;
+      }
+    }
+
+    @media (max-width: 520px){
+      .content-inner{ padding:0 12px; }
+      .portfolio-table tbody td.col-name{ padding:18px 14px 14px; }
+      .portfolio-table tbody td.col-overview{ padding:15px 22px 17px 14px; }
+      .p-thumb-wrap{
+        max-width:148px;
+        height:70px;
+      }
+      .portfolio-table li{
+        font-size:.8rem;
+        line-height:1.58;
+      }
+    }
+
     .navbar--floating{
       position: absolute;
       top: 14px;
@@ -807,6 +976,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
           crossorigin="anonymous"></script>
-  <script src="i18n.js?v=20260528-mobile-main-v2"></script>
+  <script src="i18n.js?v=20260528-mobile-portfolio-v1"></script>
 </body>
 </html>
