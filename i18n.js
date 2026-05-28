@@ -578,7 +578,7 @@
         cardText:
           "Candlestick PE is a professional investment firm investing in promising companies and growth industries in Korea. Based on accumulated investment experience and deep industry understanding, we support corporate growth strategies and create sustainable value together with investors and partners.",
         footer:
-          'CANDLESTICK PE<div class="hero-sub">E-mail: <a href="mailto:jcjang@candlestickpe.com">jcjang@candlestickpe.com</a> / Address: Unit Ga-115, 3rd Floor, 39, Gangnam-daero 118-gil, Gangnam-gu, Seoul, Republic of Korea</div>',
+          'CANDLESTICK PE<div class="hero-sub"><span class="footer-email">E-mail: <a href="mailto:jcjang@candlestickpe.com">jcjang@candlestickpe.com</a></span><span class="footer-divider"> / </span><span class="footer-address">Address: Unit Ga-115, 3rd Floor, 39, Gangnam-daero 118-gil, Gangnam-gu, Seoul, Republic of Korea</span></div>',
       },
       ko: {
         title: "CANDLESTICK PE | 캔들스틱 PE",
@@ -587,7 +587,7 @@
         cardText:
           "CANDLESTICK PE는 대한민국의 유망 기업과 성장 산업에 투자하는 전문 투자회사입니다. 축적된 투자 경험과 산업에 대한 깊은 이해를 바탕으로 기업의 성장 전략을 지원하며, 투자자 및 파트너와 함께 지속 가능한 가치를 만들어갑니다.",
         footer:
-          'CANDLESTICK PE<div class="hero-sub">이메일: <a href="mailto:jcjang@candlestickpe.com">jcjang@candlestickpe.com</a> / 주소: 서울특별시 강남구 강남대로118길 39, 3층 가-115호</div>',
+          'CANDLESTICK PE<div class="hero-sub"><span class="footer-email">이메일: <a href="mailto:jcjang@candlestickpe.com">jcjang@candlestickpe.com</a></span><span class="footer-divider"> / </span><span class="footer-address">주소: 서울특별시 강남구 강남대로118길 39, 3층 가-115호</span></div>',
       },
     },
 
@@ -1309,9 +1309,21 @@
       .navbar--floating .navbar-toggler{
         flex:0 0 auto !important;
       }
-      @media (max-width:480px){
-        .navbar--floating{ right:10px !important; gap:6px !important; }
-        .language-toggle{ height:32px; padding:0 8px; font-size:.74rem; }
+      @media (max-width:576px){
+        .navbar--floating{
+          right:max(8px, env(safe-area-inset-right)) !important;
+          left:auto !important;
+          gap:5px !important;
+          width:auto !important;
+          min-width:0 !important;
+          max-width:calc(100vw - 16px) !important;
+          transform:translateX(-118px) !important;
+        }
+        .language-toggle{ height:30px; padding:0 7px; font-size:.72rem; }
+        .navbar--floating .navbar-toggler{
+          width:36px !important;
+          height:36px !important;
+        }
       }
     `;
     document.head.appendChild(style);
