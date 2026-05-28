@@ -700,7 +700,7 @@
               "경영권 인수, M&A, Growth Capital, 재무구조 개선 등 기업의 주요 현안에 맞는 투자 기회를 검토합니다.",
             items: [
               "경영권 인수 및 M&A 투자",
-              "자금이 필요한 기업에 대한 Growth Capital 투자",
+              "자금이 필요한 기업에 Growth Capital 투자",
               "재무구조 개선 및 주주구조 재편 거래",
             ],
           },
@@ -1736,7 +1736,10 @@
         const icon = document.createElement("span");
         icon.className = "p-toggle-icon";
         icon.setAttribute("aria-hidden", "true");
-        toggle.appendChild(icon);
+        const label = document.createElement("span");
+        label.className = "p-toggle-label";
+        label.textContent = "Read More";
+        toggle.append(label, icon);
 
         toggle.addEventListener("click", function () {
           const isOpen = toggle.getAttribute("aria-expanded") === "true";
