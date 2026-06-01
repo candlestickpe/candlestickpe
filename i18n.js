@@ -21,7 +21,7 @@
     en: {
       menu: "Menu",
       nav: {
-        about: "About Candlestick PE",
+        about: "About Candlestick",
         portfolio: "Portfolio",
         team: "Key Personnel",
         philosophy: "Philosophy",
@@ -35,7 +35,7 @@
     ko: {
       menu: "메뉴",
       nav: {
-        about: "About Candlestick PE",
+        about: "About Candlestick",
         portfolio: "포트폴리오",
         team: "핵심운용인력",
         philosophy: "투자철학",
@@ -576,7 +576,7 @@
         headline: "CANDLESTICK PRIVATE EQUITY",
         cardTitle: "CANDLESTICK PE",
         cardText:
-          "Candlestick PE is a Korea-based private equity firm investing in high-potential companies across growth sectors. With disciplined investment judgment and deep sector insight, we partner with companies, investors, and strategic stakeholders to create sustainable long-term value.",
+          "Candlestick PE is a professional investment firm investing in promising companies and growth industries in Korea. Based on accumulated investment experience and deep industry understanding, we support corporate growth strategies and create sustainable value together with investors and partners.",
         footer:
           'CANDLESTICK PE<div class="hero-sub"><span class="footer-email">E-mail: <a href="mailto:jcjang@candlestickpe.com">jcjang@candlestickpe.com</a></span><span class="footer-divider"> / </span><span class="footer-address">Address: Unit Ga-115, 3rd Floor, 39, Gangnam-daero 118-gil, Gangnam-gu, Seoul, Republic of Korea</span></div>',
       },
@@ -1315,25 +1315,6 @@
         max-width:min(920px, calc(100vw - 32px)) !important;
         word-break:keep-all !important;
       }
-      body[data-page]:not([data-page="index"]) .hero{
-        position:sticky !important;
-        top:0 !important;
-        z-index:900 !important;
-        background-position:50% 78% !important;
-        box-shadow:0 8px 22px rgba(0,0,0,.16);
-      }
-      body[data-page]:not([data-page="index"]) .hero-title{
-        max-width:min(960px, calc(100vw - 48px)) !important;
-        margin-inline:auto !important;
-        white-space:normal !important;
-        word-break:keep-all !important;
-        overflow-wrap:anywhere !important;
-      }
-      body[data-page]:not([data-page="index"]) .hero-subtext{
-        margin-top:10px !important;
-        font-size:.82rem !important;
-        line-height:1.5 !important;
-      }
       @media (max-width:576px){
         .navbar--floating{
           top:10px !important;
@@ -1355,18 +1336,6 @@
           font-size:.78rem !important;
           line-height:1.55 !important;
           max-width:calc(100vw - 36px) !important;
-        }
-        body[data-page]:not([data-page="index"]) .hero-title{
-          max-width:calc(100vw - 42px) !important;
-        }
-        body[data-page]:not([data-page="index"]) .hero{
-          background-position:50% 96% !important;
-        }
-        body[data-page]:not([data-page="index"]) .hero-subtext{
-          margin-top:8px !important;
-          font-size:.68rem !important;
-          line-height:1.42 !important;
-          max-width:calc(100vw - 40px) !important;
         }
       }
     `;
@@ -2002,7 +1971,6 @@
 
     document.documentElement.lang = lang;
     document.body.dataset.lang = lang;
-    document.body.dataset.page = pageName;
     setCommon(lang);
     ensureLanguageToggle(lang);
 
