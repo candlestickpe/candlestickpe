@@ -21,7 +21,7 @@
     en: {
       menu: "Menu",
       nav: {
-        about: "About Candlestick",
+        about: "About Candlestick PE",
         portfolio: "Portfolio",
         team: "Key Personnel",
         philosophy: "Philosophy",
@@ -35,7 +35,7 @@
     ko: {
       menu: "메뉴",
       nav: {
-        about: "About Candlestick",
+        about: "About Candlestick PE",
         portfolio: "포트폴리오",
         team: "핵심운용인력",
         philosophy: "투자철학",
