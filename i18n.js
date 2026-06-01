@@ -576,7 +576,7 @@
         headline: "CANDLESTICK PRIVATE EQUITY",
         cardTitle: "CANDLESTICK PE",
         cardText:
-          "Candlestick PE is a professional investment firm investing in promising companies and growth industries in Korea. Based on accumulated investment experience and deep industry understanding, we support corporate growth strategies and create sustainable value together with investors and partners.",
+          "Candlestick PE is a Korea-based private equity firm investing in high-potential companies across growth sectors. With disciplined investment judgment and deep sector insight, we partner with companies, investors, and strategic stakeholders to create sustainable long-term value.",
         footer:
           'CANDLESTICK PE<div class="hero-sub"><span class="footer-email">E-mail: <a href="mailto:jcjang@candlestickpe.com">jcjang@candlestickpe.com</a></span><span class="footer-divider"> / </span><span class="footer-address">Address: Unit Ga-115, 3rd Floor, 39, Gangnam-daero 118-gil, Gangnam-gu, Seoul, Republic of Korea</span></div>',
       },
