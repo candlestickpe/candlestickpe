@@ -1319,12 +1319,12 @@
         position:sticky !important;
         top:0 !important;
         z-index:900 !important;
-        min-height:clamp(170px, 24vw, 240px) !important;
+        min-height:clamp(245px, 34vw, 340px) !important;
         box-shadow:0 8px 22px rgba(0,0,0,.16);
       }
       body[data-page]:not([data-page="index"]) .center-wrap{
-        padding-top:clamp(78px, 10vw, 110px) !important;
-        padding-bottom:clamp(34px, 5vw, 58px) !important;
+        padding-top:clamp(104px, 13vw, 145px) !important;
+        padding-bottom:clamp(54px, 7vw, 88px) !important;
       }
       body[data-page]:not([data-page="index"]) .hero-title{
         font-size:clamp(1.85rem, 4vw, 3rem) !important;
@@ -1363,11 +1363,11 @@
           max-width:calc(100vw - 36px) !important;
         }
         body[data-page]:not([data-page="index"]) .hero{
-          min-height:148px !important;
+          min-height:218px !important;
         }
         body[data-page]:not([data-page="index"]) .center-wrap{
-          padding-top:62px !important;
-          padding-bottom:26px !important;
+          padding-top:82px !important;
+          padding-bottom:44px !important;
         }
         body[data-page]:not([data-page="index"]) .hero-title{
           font-size:clamp(1.35rem, 6.6vw, 1.85rem) !important;
