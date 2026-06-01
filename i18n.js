@@ -1315,6 +1315,31 @@
         max-width:min(920px, calc(100vw - 32px)) !important;
         word-break:keep-all !important;
       }
+      body[data-page]:not([data-page="index"]) .hero{
+        position:sticky !important;
+        top:0 !important;
+        z-index:900 !important;
+        min-height:clamp(170px, 24vw, 240px) !important;
+        box-shadow:0 8px 22px rgba(0,0,0,.16);
+      }
+      body[data-page]:not([data-page="index"]) .center-wrap{
+        padding-top:clamp(78px, 10vw, 110px) !important;
+        padding-bottom:clamp(34px, 5vw, 58px) !important;
+      }
+      body[data-page]:not([data-page="index"]) .hero-title{
+        font-size:clamp(1.85rem, 4vw, 3rem) !important;
+        line-height:1.16 !important;
+        max-width:min(960px, calc(100vw - 48px)) !important;
+        margin-inline:auto !important;
+        white-space:normal !important;
+        word-break:keep-all !important;
+        overflow-wrap:anywhere !important;
+      }
+      body[data-page]:not([data-page="index"]) .hero-subtext{
+        margin-top:10px !important;
+        font-size:.82rem !important;
+        line-height:1.5 !important;
+      }
       @media (max-width:576px){
         .navbar--floating{
           top:10px !important;
@@ -1336,6 +1361,23 @@
           font-size:.78rem !important;
           line-height:1.55 !important;
           max-width:calc(100vw - 36px) !important;
+        }
+        body[data-page]:not([data-page="index"]) .hero{
+          min-height:148px !important;
+        }
+        body[data-page]:not([data-page="index"]) .center-wrap{
+          padding-top:62px !important;
+          padding-bottom:26px !important;
+        }
+        body[data-page]:not([data-page="index"]) .hero-title{
+          font-size:clamp(1.35rem, 6.6vw, 1.85rem) !important;
+          max-width:calc(100vw - 42px) !important;
+        }
+        body[data-page]:not([data-page="index"]) .hero-subtext{
+          margin-top:8px !important;
+          font-size:.68rem !important;
+          line-height:1.42 !important;
+          max-width:calc(100vw - 40px) !important;
         }
       }
     `;
@@ -1971,6 +2013,7 @@
 
     document.documentElement.lang = lang;
     document.body.dataset.lang = lang;
+    document.body.dataset.page = pageName;
     setCommon(lang);
     ensureLanguageToggle(lang);
 
