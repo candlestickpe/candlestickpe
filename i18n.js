@@ -1319,6 +1319,7 @@
         position:sticky !important;
         top:0 !important;
         z-index:900 !important;
+        background-position:50% 78% !important;
         box-shadow:0 8px 22px rgba(0,0,0,.16);
       }
       body[data-page]:not([data-page="index"]) .hero-title{
@@ -1357,6 +1358,9 @@
         }
         body[data-page]:not([data-page="index"]) .hero-title{
           max-width:calc(100vw - 42px) !important;
+        }
+        body[data-page]:not([data-page="index"]) .hero{
+          background-position:50% 96% !important;
         }
         body[data-page]:not([data-page="index"]) .hero-subtext{
           margin-top:8px !important;
