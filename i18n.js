@@ -1319,16 +1319,9 @@
         position:sticky !important;
         top:0 !important;
         z-index:900 !important;
-        min-height:clamp(245px, 34vw, 340px) !important;
         box-shadow:0 8px 22px rgba(0,0,0,.16);
       }
-      body[data-page]:not([data-page="index"]) .center-wrap{
-        padding-top:clamp(104px, 13vw, 145px) !important;
-        padding-bottom:clamp(54px, 7vw, 88px) !important;
-      }
       body[data-page]:not([data-page="index"]) .hero-title{
-        font-size:clamp(1.85rem, 4vw, 3rem) !important;
-        line-height:1.16 !important;
         max-width:min(960px, calc(100vw - 48px)) !important;
         margin-inline:auto !important;
         white-space:normal !important;
@@ -1362,15 +1355,7 @@
           line-height:1.55 !important;
           max-width:calc(100vw - 36px) !important;
         }
-        body[data-page]:not([data-page="index"]) .hero{
-          min-height:218px !important;
-        }
-        body[data-page]:not([data-page="index"]) .center-wrap{
-          padding-top:82px !important;
-          padding-bottom:44px !important;
-        }
         body[data-page]:not([data-page="index"]) .hero-title{
-          font-size:clamp(1.35rem, 6.6vw, 1.85rem) !important;
           max-width:calc(100vw - 42px) !important;
         }
         body[data-page]:not([data-page="index"]) .hero-subtext{
