@@ -112,6 +112,34 @@
     ],
   };
 
+  const ecoworldBusiness = {
+    en: [
+      "Bio healthcare company developing sulforaphane-based slow-aging and antioxidant solutions, while expanding into cancer-related solutions.",
+      "Based on the antioxidant and anti-inflammatory properties of sulforaphane, the company is conducting cancer-related clinical trials in collaboration with Seoul National University and Seoul National University Hospital, and plans to expand its Medicare product lineup based on the results.",
+      "Through cooperation with Damyang-gun and local agricultural corporations, the company has secured a sulforaphane mass-production base in the Damyang Eco Industrial Complex in Jeonnam and established a stable production foundation.",
+    ],
+    ko: [
+      "설포라판 기반의 저속노화·항산화 솔루션을 넘어, 항암 관련 솔루션까지 개발하고 있는 바이오 헬스케어 기업.",
+      "현재 설포라판의 항산화·항염 특성을 기반으로 서울대학교 및 서울대병원과 협업하는 항암 관련 임상시험을 진행 중이며, 향후 해당 결과를 바탕으로 메디케어 제품군을 확대할 계획임.",
+      "또한 담양군 및 지역 농업법인과의 협력을 통해 전남 담양 에코산단 내 설포라판 양산 거점을 확보하고, 안정적인 생산 기반을 구축함.",
+    ],
+  };
+
+  const ecoworldOverview = {
+    en: [
+      "New convertible bond (CB) issuance and subscription.",
+      "Investment execution through proprietary capital completed in December 2025.",
+      "Investment proceeds are expected to be used for sulforaphane cancer-related clinical trials in collaboration with Seoul National University Hospital and for building a sales organization targeting hospitals and cancer-related medical facilities after the clinical phase.",
+      "Exit strategy centered on expanding the sulforaphane-based biomaterials business, entering medical and wellness channels, and potential IPO opportunities.",
+    ],
+    ko: [
+      "신규 전환사채(CB) 발행 및 인수 건임.",
+      "2025년 12월 고유자금을 통한 투자 집행을 완료함.",
+      "투자금은 서울대병원과 협업하는 설포라판 항암 관련 임상시험, 임상 이후 병원 및 암 관련 의료시설 대상 영업조직 구축 등에 활용될 예정임.",
+      "설포라판 기반 바이오 소재 사업 확대, 의료·웰니스 채널 진출, 향후 IPO 가능성을 중심으로 Exit 전략을 수립함.",
+    ],
+  };
+
   const nplBusiness = {
     en: [
       "Real estate NPL investment project backed by an officetel and neighborhood commercial facility in Yeoksam-dong, Gangnam-gu.",
@@ -167,6 +195,20 @@
         ["회사 / 투자대상", "주식회사 옵토마인드 / OPTO MIND CO.,LTD."],
         ["섹터", "광통신 및 광통신장치 제조"],
         ["회사 홈페이지", "https://www.optomindinc.com/"],
+      ],
+    },
+    ecoworld: {
+      en: [
+        ["Project Name", "Ecoworld Pharm"],
+        ["Company / Target", "Ecoworld Pharm Co., Ltd. / ECO WORLD PHARM"],
+        ["Sector", "Bio Healthcare"],
+        ["Company Website", "TBD"],
+      ],
+      ko: [
+        ["프로젝트명", "에코월드팜"],
+        ["회사 / 투자대상", "주식회사 에코월드팜 / ECO WORLD PHARM"],
+        ["섹터", "바이오 헬스케어"],
+        ["회사 홈페이지", "TBD"],
       ],
     },
     peoplebio: {
@@ -291,6 +333,60 @@
           summary:
             "OFC 2026 참가와 AI·데이터센터 네트워크용 고속 광 인터커넥트 솔루션 전시 계획을 다룬 회사 소식입니다.",
           url: "https://optomindinc.com/news_detail.php?idx=140",
+        },
+      ],
+    },
+    ecoworld: {
+      en: [
+        {
+          source: "Finance Today",
+          date: "2024.01.31",
+          title: "Damyang-gun signs MOU with Ecoworld Pharm and BJ for sulforaphane production business",
+          summary:
+            "Covers the MOU among Damyang-gun, Ecoworld Pharm, and BJ for a sulforaphane production business.",
+          url: "https://www.fntoday.co.kr/news/articleView.html?idxno=313259",
+        },
+        {
+          source: "Economy Science",
+          date: "2025.04.11",
+          title: "Ecoworld Pharm launches 'Dr. Lee Si-hyung's Sulforaphane'",
+          summary:
+            "Covers Ecoworld Pharm's launch of a premium sulforaphane health food product.",
+          url: "https://www.e-science.co.kr/news/articleView.html?idxno=104125",
+        },
+        {
+          source: "Dong-A Ilbo",
+          date: "2025.03.25",
+          title: "Ecoworld Pharm signs lead manager agreement for KOSDAQ listing",
+          summary:
+            "Covers Ecoworld Pharm's listing preparation through a lead manager agreement with BNK Investment & Securities.",
+          url: "https://www.donga.com/news/Economy/article/all/20250325/131277008/1",
+        },
+      ],
+      ko: [
+        {
+          source: "파이낸스투데이",
+          date: "2024.01.31",
+          title: "담양군, ㈜에코월드팜·㈜비제이와 ‘설포라판’ 생산 사업 업무협약",
+          summary:
+            "담양군, 에코월드팜, 비제이의 설포라판 생산 사업 업무협약을 다룬 기사입니다.",
+          url: "https://www.fntoday.co.kr/news/articleView.html?idxno=313259",
+        },
+        {
+          source: "이코노미사이언스",
+          date: "2025.04.11",
+          title: "에코월드팜, '이시형 박사의 설포라판' 출시",
+          summary:
+            "에코월드팜의 설포라판 기반 프리미엄 건강식품 출시를 다룬 기사입니다.",
+          url: "https://www.e-science.co.kr/news/articleView.html?idxno=104125",
+        },
+        {
+          source: "동아일보",
+          date: "2025.03.25",
+          title: "에코월드팜, 코스닥 상장 대표주관계약 체결",
+          summary:
+            "에코월드팜의 BNK투자증권 대표주관계약 체결 및 상장 준비를 다룬 기사입니다.",
+          url: "https://www.donga.com/news/Economy/article/all/20250325/131277008/1",
         },
       ],
     },
@@ -820,6 +916,16 @@
                             "articles": portfolioArticles.optical.en
                       },
                       {
+                            "image": "ecoworldpharm-logo.svg",
+                            "alt": "ECO WORLD PHARM",
+                            "title": "Ecoworld Pharm",
+                            "logoWide": true,
+                            "business": ecoworldBusiness.en,
+                            "overview": ecoworldOverview.en,
+                            "detail": portfolioDetailFields.ecoworld.en,
+                            "articles": portfolioArticles.ecoworld.en
+                      },
+                      {
                             "alt": "Project NPL",
                             "logoText": "NPL",
                             "title": "Project NPL",
@@ -886,6 +992,16 @@
                             "overview": opticalOverview.ko,
                             "detail": portfolioDetailFields.optical.ko,
                             "articles": portfolioArticles.optical.ko
+                      },
+                      {
+                            "image": "ecoworldpharm-logo.svg",
+                            "alt": "ECO WORLD PHARM",
+                            "title": "에코월드팜",
+                            "logoWide": true,
+                            "business": ecoworldBusiness.ko,
+                            "overview": ecoworldOverview.ko,
+                            "detail": portfolioDetailFields.ecoworld.ko,
+                            "articles": portfolioArticles.ecoworld.ko
                       },
                       {
                             "alt": "Project NPL",
@@ -1263,6 +1379,10 @@
     style.id = "i18n-language-styles";
     style.textContent = `
       .navbar--floating{
+        position:fixed !important;
+        top:14px !important;
+        right:16px !important;
+        z-index:1050 !important;
         display:inline-flex !important;
         align-items:center !important;
         justify-content:flex-end !important;
