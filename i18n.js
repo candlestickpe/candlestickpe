@@ -134,7 +134,7 @@
     ],
     ko: [
       "신규 전환사채(CB) 발행 및 인수 건.",
-      "2025년 12월 고유자금을 통한 투자 집행을 완료함.",
+      "2025년 12월 고유자금을 통한 투자 집행을 완료.",
       "투자금은 서울대병원과 협업하는 설포라판 항암 관련 임상시험, 임상 이후 병원 및 암 관련 의료시설 대상 영업조직 구축 등에 활용 예정.",
       "설포라판 기반 바이오 소재 사업 확대, 의료·웰니스 채널 진출 및 향후 IPO 가능성을 중심으로 Exit 전략 수립.",
     ],
@@ -201,14 +201,14 @@
       en: [
         ["Project Name", "Ecoworld Pharm"],
         ["Company / Target", "Ecoworld Pharm Co., Ltd. / ECO WORLD PHARM"],
-        ["Sector", "Bio Healthcare"],
-        ["Company Website", "TBD"],
+        ["Sector", "Pharmaceuticals / Bio"],
+        ["Company Website", "https://www.ecoworldpharm.com/kr/intro.asp"],
       ],
       ko: [
         ["프로젝트명", "에코월드팜"],
         ["회사 / 투자대상", "주식회사 에코월드팜 / ECO WORLD PHARM"],
-        ["섹터", "바이오 헬스케어"],
-        ["회사 홈페이지", "TBD"],
+        ["섹터", "제약/바이오"],
+        ["회사 홈페이지", "https://www.ecoworldpharm.com/kr/intro.asp"],
       ],
     },
     peoplebio: {
