@@ -127,16 +127,14 @@
 
   const ecoworldOverview = {
     en: [
-      "New convertible bond (CB) issuance and subscription.",
-      "Investment execution through proprietary capital completed in December 2025.",
-      "Investment proceeds are expected to be used for sulforaphane cancer-related clinical trials in collaboration with Seoul National University Hospital and for building a sales organization targeting hospitals and cancer-related medical facilities after the clinical phase.",
-      "Exit strategy centered on expanding the sulforaphane-based biomaterials business, entering medical and wellness channels, and potential IPO opportunities.",
+      "Completed a preliminary proprietary-capital investment in December 2025, and completed the acquisition of existing shares and newly issued convertible bonds (CBs) through a fund in 2026.",
+      "Investment proceeds are being used for sulforaphane-based cancer-related clinical research in collaboration with Seoul National University Hospital and for expanding medical and wellness channels.",
+      "Alongside expansion of the sulforaphane-based biomaterials business, the company is pursuing entry into overseas capital markets over the medium to long term, including a potential Nasdaq IPO.",
     ],
     ko: [
-      "신규 전환사채(CB) 발행 및 인수 건.",
-      "2025년 12월 고유자금을 통한 투자 집행을 완료.",
-      "투자금은 서울대병원과 협업하는 설포라판 항암 관련 임상시험, 임상 이후 병원 및 암 관련 의료시설 대상 영업조직 구축 등에 활용 예정.",
-      "설포라판 기반 바이오 소재 사업 확대, 의료·웰니스 채널 진출 및 향후 IPO 가능성을 중심으로 Exit 전략 수립.",
+      "2025년 12월 고유자금을 통한 선행 투자 집행을 완료하였으며, 2026년 펀드를 통해 구주 및 신규 전환사채(CB) 인수를 완료.",
+      "투자금은 서울대병원과 협업 중인 설포라판 기반 항암 관련 임상연구 및 의료·웰니스 채널 확대에 활용.",
+      "설포라판 기반 바이오 소재 사업 확대와 함께, 중장기적으로 나스닥 IPO를 포함한 해외 자본시장 진출 진행 중.",
     ],
   };
 
