@@ -668,20 +668,24 @@
       en: {
         title: "CANDLESTICK PE | 캔들스틱 PE",
         headline: "CANDLESTICK PRIVATE EQUITY",
-        cardTitle: "CANDLESTICK PE",
+        cardKicker: "CANDLESTICK PE",
+        cardTitle:
+          'A Korea-focused<br><span class="hero-card-emphasis">Private Equity Partner</span><br>for promising growth companies',
         cardText:
-          "Candlestick PE is a Korea-based private equity firm investing in high-potential companies across growth sectors. With disciplined investment judgment and deep sector insight, we partner with companies, investors, and strategic stakeholders to create sustainable long-term value.",
+          "With accumulated investment experience and deep sector insight,<br>we support corporate growth strategies<br>and create sustainable value together.",
         footer:
-          'CANDLESTICK PE<div class="hero-sub"><span class="footer-email">E-mail: <a href="mailto:jcjang@candlestickpe.com">jcjang@candlestickpe.com</a></span><span class="footer-divider"> / </span><span class="footer-address">Address: Unit Ga-115, 3rd Floor, 39, Gangnam-daero 118-gil, Gangnam-gu, Seoul, Republic of Korea</span></div>',
+          'CANDLESTICK PE<div class="hero-sub"><span class="footer-email">E-mail: <a href="mailto:jcjang@candlestickpe.com">jcjang@candlestickpe.com</a></span><span class="footer-divider"> / </span><span class="footer-address">Address: 3rd Floor, 39, Gangnam-daero 118-gil, Gangnam-gu, Seoul, Republic of Korea</span></div>',
       },
       ko: {
         title: "CANDLESTICK PE | 캔들스틱 PE",
         headline: "CANDLESTICK PRIVATE EQUITY",
-        cardTitle: "CANDLESTICK PE",
+        cardKicker: "CANDLESTICK PE",
+        cardTitle:
+          '대한민국의 유망 기업과<br>성장 산업에 투자하는<br><span class="hero-card-emphasis">Private Equity Partner</span>',
         cardText:
-          "CANDLESTICK PE는 대한민국의 유망 기업과 성장 산업에 투자하는 전문 투자회사입니다. 축적된 투자 경험과 산업에 대한 깊은 이해를 바탕으로 기업의 성장 전략을 지원하며, 투자자 및 파트너와 함께 지속 가능한 가치를 만들어갑니다.",
+          "축적된 투자 경험과 산업에 대한 깊은 이해를 바탕으로,<br>기업의 성장 전략을 지원하며<br>지속가능한 가치를 함께 만들어갑니다.",
         footer:
-          'CANDLESTICK PE<div class="hero-sub"><span class="footer-email">이메일: <a href="mailto:jcjang@candlestickpe.com">jcjang@candlestickpe.com</a></span><span class="footer-divider"> / </span><span class="footer-address">주소: 서울특별시 강남구 강남대로118길 39, 3층 가-115호</span></div>',
+          'CANDLESTICK PE<div class="hero-sub"><span class="footer-email">이메일: <a href="mailto:jcjang@candlestickpe.com">jcjang@candlestickpe.com</a></span><span class="footer-divider"> / </span><span class="footer-address">주소: 서울특별시 강남구 강남대로118길 39, 3층</span></div>',
       },
     },
 
@@ -1584,8 +1588,9 @@
     } else {
       text(".topbar h1", data.headline);
     }
-    text(".hero-card h2", data.cardTitle);
-    text(".hero-card p", data.cardText);
+    text(".hero-card-kicker", data.cardKicker || BRAND_LABEL);
+    html(".hero-card-title", data.cardTitle);
+    html(".hero-card-copy", data.cardText);
     html(".hero-footer .footer-left", data.footer);
   }
 
