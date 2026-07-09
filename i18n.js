@@ -272,7 +272,7 @@
         date: "2026.04.07",
         title: "엔비디아의 AI '파일러'…해외서 몸값 높인다",
         summary:
-          "파일러의 NVIDIA 협력, 해외 파트너십 강화 및 신규 투자 라운드 논의를 다룬 기사입니다.",
+          "파일러의 NVIDIA 협력, 해외 파트너십 강화 및 신규 투자 라운드 논의를 다룬 기사임.",
         url: "https://dealsite.co.kr/articles/159629",
       },
       {
@@ -280,7 +280,7 @@
         date: "2025.11.18",
         title: "파일러, 엔비디아 인셉션 챌린지 1위...멀티모달AI로 T&S 혁신 제시",
         summary:
-          "NVIDIA Inception Startup Grand Challenge 2025 1위 수상과 멀티모달 AI 기반 T&S 경쟁력을 다룬 기사입니다.",
+          "NVIDIA Inception Startup Grand Challenge 2025 1위 수상과 멀티모달 AI 기반 T&S 경쟁력을 다룬 기사임.",
         url: "https://www.hellot.net/news/article.html?no=107265",
       },
       {
@@ -288,7 +288,7 @@
         date: "2026.04.29",
         title: "파일러, 엔비디아 네모트론 해커톤 '우승'…비디오 안전 기술력 입증",
         summary:
-          "NVIDIA Nemotron Developer Day Seoul 2026 해커톤 우승과 비디오 안전 분석 기술을 다룬 기사입니다.",
+          "NVIDIA Nemotron Developer Day Seoul 2026 해커톤 우승과 비디오 안전 분석 기술을 다룬 기사임.",
         url: "https://www.edaily.co.kr/News/Read?newsId=03476806645421040&mediaCodeNo=257",
       },
     ],
@@ -321,7 +321,7 @@
           date: "2025.02.13",
           title: "옵토마인드, 초고속 광트랜시버 시장서 주목…美 대형 데이터센터에 공급",
           summary:
-            "옵토마인드의 초고속 광트랜시버 공급, 국내외 데이터센터 레퍼런스 및 AI 네트워크 수요 대응을 다룬 기사입니다.",
+            "옵토마인드의 초고속 광트랜시버 공급, 국내외 데이터센터 레퍼런스 및 AI 네트워크 수요 대응을 다룬 기사임.",
           url: "https://www.epnc.co.kr/news/articleView.html?idxno=312572",
         },
         {
@@ -329,7 +329,7 @@
           date: "2026.03.10",
           title: "Visit Optomind at OFC 2026",
           summary:
-            "OFC 2026 참가와 AI·데이터센터 네트워크용 고속 광 인터커넥트 솔루션 전시 계획을 다룬 회사 소식입니다.",
+            "OFC 2026 참가와 AI·데이터센터 네트워크용 고속 광 인터커넥트 솔루션 전시 계획을 다룬 회사 소식임.",
           url: "https://optomindinc.com/news_detail.php?idx=140",
         },
       ],
@@ -367,7 +367,7 @@
           date: "2024.01.31",
           title: "담양군, ㈜에코월드팜·㈜비제이와 ‘설포라판’ 생산 사업 업무협약",
           summary:
-            "담양군, 에코월드팜, 비제이의 설포라판 생산 사업 업무협약을 다룬 기사입니다.",
+            "담양군, 에코월드팜, 비제이의 설포라판 생산 사업 업무협약을 다룬 기사임.",
           url: "https://www.fntoday.co.kr/news/articleView.html?idxno=313259",
         },
         {
@@ -375,7 +375,7 @@
           date: "2025.04.11",
           title: "에코월드팜, '이시형 박사의 설포라판' 출시",
           summary:
-            "에코월드팜의 설포라판 기반 프리미엄 건강식품 출시를 다룬 기사입니다.",
+            "에코월드팜의 설포라판 기반 프리미엄 건강식품 출시를 다룬 기사임.",
           url: "https://www.e-science.co.kr/news/articleView.html?idxno=104125",
         },
         {
@@ -383,7 +383,7 @@
           date: "2025.03.25",
           title: "에코월드팜, 코스닥 상장 대표주관계약 체결",
           summary:
-            "에코월드팜의 BNK투자증권 대표주관계약 체결 및 상장 준비를 다룬 기사입니다.",
+            "에코월드팜의 BNK투자증권 대표주관계약 체결 및 상장 준비를 다룬 기사임.",
           url: "https://www.donga.com/news/Economy/article/all/20250325/131277008/1",
         },
       ],
@@ -413,7 +413,7 @@
           date: "2025.11.13",
           title: "피플바이오, 최대주주 변경… “360억원 전략투자 유치”",
           summary:
-            "피플바이오의 전략적 투자 유치, 최대주주 변경 및 이스턴네트웍스와의 사업 확장 방향을 다룬 기사입니다.",
+            "피플바이오의 전략적 투자 유치, 최대주주 변경 및 이스턴네트웍스와의 사업 확장 방향을 다룬 기사임.",
           url: "https://www.edaily.co.kr/News/Read?newsId=04172166642365392&mediaCodeNo=257&OutLnkChk=Y",
         },
         {
@@ -421,7 +421,7 @@
           date: "2026.05.21",
           title: "美 FDA 혁신의료기기 지정 추진…피플바이오 9%↑[특징주]",
           summary:
-            "피플바이오의 미국 FDA 혁신의료기기 지정 추진 계획과 시장 반응을 다룬 기사입니다.",
+            "피플바이오의 미국 FDA 혁신의료기기 지정 추진 계획과 시장 반응을 다룬 기사임.",
           url: "https://n.news.naver.com/mnews/article/018/0006286607",
         },
       ],
@@ -444,7 +444,7 @@
           date: "2025.11.20",
           title: "이스턴네트웍스, 삼성동 국제업무지구에 국내 최초 ‘AI 전용 엣지 데이터센터’ 건립 나서",
           summary:
-            "이스턴네트웍스의 AI 전용 엣지 데이터센터 사업 추진, 개발 규모 및 운영 방향을 다룬 기사입니다.",
+            "이스턴네트웍스의 AI 전용 엣지 데이터센터 사업 추진, 개발 규모 및 운영 방향을 다룬 기사임.",
           url: "https://n.news.naver.com/mnews/article/018/0006268017",
         },
       ],
@@ -974,8 +974,8 @@
           },
           "ko": {
                 "title": "Portfolio | CANDLESTICK PE",
-                "heroTitle": "투자 구조 설계와 실행으로\n기업의 성장과 가치를 만들어갑니다.",
-                "heroSub": "캔들스틱 PE는 성장기업 투자, 구조화 투자, 부동산·특수상황 프로젝트 등\n다양한 거래에서 맞춤형 투자 구조를 설계하고 실행합니다.",
+                "heroTitle": "투자 구조 설계와 실행으로\n기업의 성장과 가치를 만들어감",
+                "heroSub": "캔들스틱 PE는 성장기업 투자, 구조화 투자, 부동산·특수상황 프로젝트 등\n다양한 거래에서 맞춤형 투자 구조를 설계하고 실행함.",
                 "sectionTitle": "포트폴리오",
                 "headers": [
                       "Project",
