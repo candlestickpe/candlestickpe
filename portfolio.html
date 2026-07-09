@@ -244,7 +244,14 @@
       padding:18px 24px;
     }
     .portfolio-card-media--logo-lg img{
-      padding:8px 14px;
+      padding:0;
+      transform:scale(1.16);
+      transform-origin:center;
+    }
+    .portfolio-card-media--logo-xl img{
+      padding:0;
+      transform:scale(1.65);
+      transform-origin:center;
     }
     .portfolio-card-media--subway-logo{
       display:flex;
@@ -1139,7 +1146,14 @@
       padding:18px 24px;
     }
     .portfolio-detail-panel .portfolio-detail-image.is-logo.is-logo-lg img{
-      padding:10px 14px;
+      padding:0;
+      transform:scale(1.16);
+      transform-origin:center;
+    }
+    .portfolio-detail-panel .portfolio-detail-image.is-logo.is-logo-xl img{
+      padding:0;
+      transform:scale(1.65);
+      transform-origin:center;
     }
     .portfolio-detail-panel .portfolio-detail-image.is-logo.is-subway-logo img{
       padding:30px 36px;
@@ -1389,7 +1403,7 @@
         </button>
 
         <button class="portfolio-card" type="button" data-project="peoplebio" data-category="M&amp;A">
-          <span class="portfolio-card-media portfolio-card-media--logo portfolio-card-media--logo-lg">
+          <span class="portfolio-card-media portfolio-card-media--logo portfolio-card-media--logo-xl">
             <img src="portfolio-peoplebio-banner.jpg" alt="PeopleBio" />
           </span>
           <span class="portfolio-card-body">
@@ -1572,7 +1586,7 @@
           image: "portfolio-peoplebio-banner.jpg",
           imageAlt: "PeopleBio",
           imageMode: "logo",
-          imageSize: "largeLogo",
+          imageSize: "xLargeLogo",
           overview:
             "바이오 기업의 전략적 가치 제고와 투자자 대상 매각 절차를 지원한 M&A 프로젝트임.",
           rationale: [
@@ -1984,6 +1998,7 @@
 
           detailImageWrap.classList.toggle("is-logo", project.imageMode === "logo");
           detailImageWrap.classList.toggle("is-logo-lg", project.imageSize === "largeLogo");
+          detailImageWrap.classList.toggle("is-logo-xl", project.imageSize === "xLargeLogo");
           detailImageWrap.classList.toggle("is-subway-logo", project.imageSize === "subwayLogo");
           detailImage.src = project.image;
           detailImage.alt = project.imageAlt || project.title;
