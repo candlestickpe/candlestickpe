@@ -1085,6 +1085,67 @@
       }
     }
 
+    .portfolio-detail-panel .portfolio-inline-detail{
+      margin:0;
+      padding:26px;
+      border-radius:8px;
+      background:#fbfcfe;
+      border:1px solid var(--line-gray);
+      box-shadow:0 10px 28px rgba(12,18,46,.07);
+    }
+    .portfolio-detail-panel .portfolio-detail{
+      margin-top:24px;
+      padding:22px 24px;
+      border:1px solid var(--line-gray);
+      border-radius:8px;
+      background:#fff;
+    }
+    .portfolio-detail-panel .portfolio-subsection + .portfolio-subsection{
+      padding-top:18px;
+      border-top:1px solid #eef1f5;
+    }
+    .portfolio-detail-panel .portfolio-detail ul{
+      margin:0;
+      padding-left:1.1rem;
+    }
+    .portfolio-detail-panel .portfolio-detail li{
+      margin:.45em 0;
+      color:var(--text-mid);
+      font-size:.94rem;
+      line-height:1.75;
+      word-break:keep-all;
+    }
+    .portfolio-detail-panel .related-articles{
+      margin-top:24px;
+      padding:22px 24px;
+      border:1px solid var(--line-gray);
+      border-radius:8px;
+      background:#fff;
+    }
+    .portfolio-detail-panel .related-articles[hidden]{
+      display:none;
+    }
+    .portfolio-detail-panel .article-link{
+      border-radius:6px;
+    }
+
+    @media (max-width: 900px){
+      .portfolio-detail-panel .portfolio-inline-detail{
+        margin:0;
+        padding:18px;
+      }
+      .portfolio-detail-panel .portfolio-detail,
+      .portfolio-detail-panel .related-articles{
+        padding:18px;
+      }
+      .portfolio-detail-panel .portfolio-detail li{
+        font-size:.88rem;
+        line-height:1.65;
+        word-break:break-all;
+        overflow-wrap:anywhere;
+      }
+    }
+
     .navbar--floating{
       position: absolute;
       top: 14px;
@@ -1245,18 +1306,13 @@
       </div>
 
       <section class="portfolio-detail-panel" id="portfolio-detail" aria-live="polite" hidden>
-        <div class="portfolio-detail-shell">
-          <div class="portfolio-detail-side">
-            <div class="portfolio-detail-media" data-detail-media>
-              <img data-detail-image src="" alt="" />
-            </div>
-            <dl class="portfolio-detail-facts" data-detail-facts></dl>
-          </div>
-          <div class="portfolio-detail-main">
-            <h3 class="portfolio-detail-title" data-detail-title></h3>
-            <p class="portfolio-detail-meta" data-detail-meta></p>
-            <div class="portfolio-detail-blocks" data-detail-blocks></div>
-          </div>
+        <div class="portfolio-inline-detail portfolio-inline-detail--cards">
+          <div class="project-fields project-fields--inline" data-detail-facts></div>
+          <div class="portfolio-detail" data-detail-sections></div>
+          <section class="related-articles" data-related-articles hidden>
+            <h3 class="related-title">관련기사</h3>
+            <div class="article-list" data-article-list></div>
+          </section>
         </div>
       </section>
 
@@ -1291,10 +1347,6 @@
             "후속 투자 유치 및 파트너십 검토",
             "글로벌 확장 전략 지원",
           ],
-          exitStrategy: [
-            "전략적 투자자 대상 M&A 가능성 검토",
-            "후속 라운드 또는 IPO 가능성 검토",
-          ],
         },
         optomind: {
           title: "Optomind",
@@ -1316,10 +1368,6 @@
             "사업 확장 및 재무계획 수립 지원",
             "후속 투자 유치 검토",
             "글로벌 고객 및 파트너십 확대 지원",
-          ],
-          exitStrategy: [
-            "전략적 투자자 대상 M&A 가능성 검토",
-            "후속 투자 라운드 또는 IPO 가능성 검토",
           ],
         },
         ecoworld: {
@@ -1343,10 +1391,6 @@
             "의료·웰니스 채널 확대 지원",
             "해외 자본시장 진출 준비 검토",
           ],
-          exitStrategy: [
-            "해외 자본시장 진출 및 IPO 가능성 검토",
-            "전략적 투자자 대상 M&A 가능성 검토",
-          ],
         },
         npl: {
           title: "Project NPL",
@@ -1367,11 +1411,6 @@
             "담보신탁 및 우선수익권 구조 검토",
             "임대수입 및 담보가치 기반 회수 구조 설계",
             "투자자 보호장치 및 자금관리 구조 검토",
-          ],
-          exitStrategy: [
-            "담보자산 매각",
-            "차환 및 리파이낸싱",
-            "콜옵션 또는 구조화 회수 방안 검토",
           ],
         },
         peoplebio: {
@@ -1395,11 +1434,6 @@
             "잠재 투자자 커뮤니케이션 지원",
             "클로징 조건 및 실행 일정 관리",
           ],
-          exitStrategy: [
-            "전략적 투자자 대상 매각",
-            "재무적 투자자 대상 투자 유치",
-            "단계적 지분 거래 구조 검토",
-          ],
         },
         "data-center": {
           title: "Data Center Structuring",
@@ -1421,11 +1455,197 @@
             "단계별 소요자금 및 자금 운영 시나리오 구성",
             "투자자 유치 및 금융기관 협의 지원",
           ],
-          exitStrategy: [
-            "장기 임대차 기반 안정화 후 매각",
-            "리파이낸싱",
-            "전략적 투자자 또는 인프라 투자자 대상 Exit 검토",
+        },
+      };
+
+      const projectDetails = {
+        pyler: {
+          fields: [
+            ["프로젝트명", "Project Vision AI — PYLER"],
+            ["회사 / 투자대상", "주식회사 파일러 / PYLER CO., LTD."],
+            ["섹터", "AI 기반 Ad-Tech"],
+            ["회사 홈페이지", "https://pyler.tech/"],
           ],
+          business: [
+            "Vision AI 기반의 Ad-Tech 기업으로, 브랜드 세이프티 및 광고 효율화 솔루션인 AiD와 AiM을 제공하고 있습니다.",
+            "NVIDIA AI 인프라를 기반으로 영상·이미지·음성·텍스트 및 콘텐츠 맥락 정보를 통합 분석하는 멀티모달 AI 기술을 구현하고 있습니다.",
+            "Vision AI 기술력을 기반으로 글로벌 사업 확장 및 전략적 파트너십 확대를 추진하고 있습니다.",
+          ],
+          projectOverview: [
+            "보통주 및 RCPS 지분 인수 구조로 성장자금 투자를 집행했습니다.",
+            "PEF의 GP로서 투자 구조 설계 및 투자 집행을 완료했습니다.",
+            "성장 전략, 후속 투자 유치 및 글로벌 확장 가능성을 검토했습니다.",
+          ],
+          articles: [
+            {
+              source: "딜사이트",
+              date: "2026.04.07",
+              title: "파일러, NVIDIA 협력 기반 해외 성장 전략 강화",
+              summary: "파일러의 NVIDIA 협력, 해외 파트너십 강화 및 신규 투자 라운드 논의를 다룬 기사입니다.",
+              url: "https://dealsite.co.kr/articles/159629",
+            },
+            {
+              source: "헬로티",
+              date: "2025.11.18",
+              title: "파일러, 엔비디아 인셉션 챌린지 1위...멀티모달AI로 T&S 혁신 제시",
+              summary: "NVIDIA Inception Startup Grand Challenge 2025 1위 수상과 멀티모달 AI 기반 T&S 경쟁력을 다룬 기사입니다.",
+              url: "https://www.hellot.net/news/article.html?no=107265",
+            },
+            {
+              source: "이데일리",
+              date: "2026.04.29",
+              title: "파일러, 엔비디아 네모트론 해커톤 우승",
+              summary: "NVIDIA Nemotron Developer Day Seoul 2026 해커톤 우승과 비디오 안전 분석 기술을 다룬 기사입니다.",
+              url: "https://www.edaily.co.kr/News/Read?newsId=03476806645421040&mediaCodeNo=257",
+            },
+          ],
+        },
+        optomind: {
+          fields: [
+            ["프로젝트명", "Project Optical — Optomind"],
+            ["회사 / 투자대상", "주식회사 옵토마인드 / OPTO MIND CO., LTD."],
+            ["섹터", "광통신 및 광통신장치 제조"],
+            ["회사 홈페이지", "https://www.optomindinc.com/"],
+          ],
+          business: [
+            "AI 데이터센터향 광트랜시버 및 AOC를 개발·제조하는 광통신 핵심부품 기업입니다.",
+            "고객 맞춤형 광트랜시버와 AOC 제품을 공급하며, AI 데이터센터의 고속·저지연 네트워크 인프라 확대에 대응하는 기술력을 보유하고 있습니다.",
+            "차세대 광통신 수요에 대응하기 위해 고속 제품 개발 및 상용화 논의를 진행하고 있습니다.",
+          ],
+          projectOverview: [
+            "신규 CB 발행 및 인수 구조로 투자를 집행했습니다.",
+            "신기술사업투자조합의 공동 GP로서 투자 구조 설계 및 집행에 참여했습니다.",
+            "AI 데이터센터 성장성과 광통신 부품 기술 경쟁력을 바탕으로 후속 성장 전략을 검토했습니다.",
+          ],
+          articles: [
+            {
+              source: "테크월드",
+              date: "2025.02.13",
+              title: "옵토마인드, 초고속 광트랜시버 시장서 주목",
+              summary: "옵토마인드의 초고속 광트랜시버 공급, 데이터센터 레퍼런스 및 AI 네트워크 수요 대응을 다룬 기사입니다.",
+              url: "https://www.epnc.co.kr/news/articleView.html?idxno=312572",
+            },
+            {
+              source: "옵토마인드",
+              date: "2026.03.10",
+              title: "Visit Optomind at OFC 2026",
+              summary: "OFC 2026 참가와 AI·데이터센터 네트워크용 고속 광 인터커넥트 솔루션 전시 계획을 다룬 회사 소식입니다.",
+              url: "https://optomindinc.com/news_detail.php?idx=140",
+            },
+          ],
+        },
+        ecoworld: {
+          fields: [
+            ["프로젝트명", "에코월드팜"],
+            ["회사 / 투자대상", "주식회사 에코월드팜 / ECO WORLD PHARM"],
+            ["섹터", "제약/바이오"],
+            ["회사 홈페이지", "https://www.ecoworldpharm.com/kr/intro.asp"],
+          ],
+          business: [
+            "설포라판 기반의 저속노화·항산화 솔루션을 넘어 항암 관련 솔루션까지 개발하고 있는 바이오 헬스케어 기업입니다.",
+            "설포라판의 항산화·항염 특성을 기반으로 항암 관련 임상연구를 진행하며 메디케어 제품군 확대를 추진하고 있습니다.",
+            "국내 생산 기반과 의료·웰니스 채널을 바탕으로 바이오 소재 사업 확장을 추진하고 있습니다.",
+          ],
+          projectOverview: [
+            "2025년 12월 고유자금을 통한 선행 투자 집행을 완료하고, 2026년 펀드를 통해 구주 및 신규 전환사채(CB) 인수를 완료했습니다.",
+            "투자금은 서울대병원과 협업 중인 설포라판 기반 항암 관련 임상연구 및 의료·웰니스 채널 확대에 활용됩니다.",
+            "설포라판 기반 바이오 소재 사업 확대와 함께 해외 자본시장 진출 가능성을 검토하고 있습니다.",
+          ],
+          articles: [
+            {
+              source: "파이낸스투데이",
+              date: "2024.01.31",
+              title: "담양군, 에코월드팜·비제이와 설포라판 생산 사업 업무협약",
+              summary: "담양군, 에코월드팜, 비제이의 설포라판 생산 사업 업무협약을 다룬 기사입니다.",
+              url: "https://www.fntoday.co.kr/news/articleView.html?idxno=313259",
+            },
+            {
+              source: "이코노미사이언스",
+              date: "2025.04.11",
+              title: "에코월드팜, 이시형 박사의 설포라판 출시",
+              summary: "에코월드팜의 설포라판 기반 프리미엄 건강식품 출시를 다룬 기사입니다.",
+              url: "https://www.e-science.co.kr/news/articleView.html?idxno=104125",
+            },
+            {
+              source: "동아일보",
+              date: "2025.03.25",
+              title: "에코월드팜, 코스닥 상장 대표주관계약 체결",
+              summary: "에코월드팜의 BNK투자증권 대표주관계약 체결 및 상장 준비를 다룬 기사입니다.",
+              url: "https://www.donga.com/news/Economy/article/all/20250325/131277008/1",
+            },
+          ],
+        },
+        npl: {
+          fields: [
+            ["프로젝트명", "Project NPL"],
+            ["회사 / 투자대상", "부동산 담보자산 기반 NPL 프로젝트"],
+            ["섹터", "Real Asset / Structured Investment"],
+            ["회사 홈페이지", "비공개"],
+          ],
+          business: [
+            "부동산 담보자산을 기반으로 회수 안정성과 구조화 수익을 함께 검토한 특수상황 투자 프로젝트입니다.",
+            "담보신탁 우선수익권, 임대수입 및 담보가치를 기반으로 투자금 회수 안정성을 검토했습니다.",
+            "선순위 금융과 수익증권 구조를 함께 고려한 구조화 부동산 투자 모델입니다.",
+          ],
+          projectOverview: [
+            "담보신탁 및 우선수익권 구조를 검토했습니다.",
+            "임대수입 및 담보가치 기반의 회수 구조를 설계했습니다.",
+            "투자자 보호장치와 자금관리 구조를 검토했습니다.",
+          ],
+          articles: [],
+        },
+        peoplebio: {
+          fields: [
+            ["프로젝트명", "PeopleBio M&A"],
+            ["회사 / 투자대상", "주식회사 피플바이오 / PeopleBio Co., Ltd."],
+            ["섹터", "제약/바이오"],
+            ["회사 홈페이지", "http://peoplebio.net"],
+          ],
+          business: [
+            "알츠하이머병 등 퇴행성 뇌질환 관련 혈액 기반 진단 솔루션을 개발하는 바이오 헬스케어 기업입니다.",
+            "진단 기술과 제품 상용화 기반을 바탕으로 국내외 헬스케어 시장에서 사업 확장 가능성을 보유하고 있습니다.",
+            "전략적 파트너십과 사업 구조 재편을 통해 기업가치 제고 가능성을 검토했습니다.",
+          ],
+          projectOverview: [
+            "바이오 기업의 전략적 가치 제고와 투자자 대상 매각 절차를 지원한 M&A 프로젝트입니다.",
+            "거래 구조 및 주요 조건을 검토하고 잠재 투자자 커뮤니케이션을 지원했습니다.",
+            "클로징 조건과 실행 일정 관리 등 거래 실행 과정을 지원했습니다.",
+          ],
+          articles: [
+            {
+              source: "이데일리",
+              date: "2025.11.13",
+              title: "피플바이오, 최대주주 변경 및 전략투자 유치",
+              summary: "피플바이오의 전략적 투자 유치, 최대주주 변경 및 사업 확장 방향을 다룬 기사입니다.",
+              url: "https://www.edaily.co.kr/News/Read?newsId=04172166642365392&mediaCodeNo=257&OutLnkChk=Y",
+            },
+            {
+              source: "이데일리",
+              date: "2026.05.21",
+              title: "피플바이오, 미국 FDA 혁신의료기기 지정 추진",
+              summary: "피플바이오의 미국 FDA 혁신의료기기 지정 추진 계획과 시장 반응을 다룬 기사입니다.",
+              url: "https://n.news.naver.com/mnews/article/018/0006286607",
+            },
+          ],
+        },
+        "data-center": {
+          fields: [
+            ["프로젝트명", "Data Center Structuring"],
+            ["회사 / 투자대상", "데이터센터 개발 프로젝트"],
+            ["섹터", "Data Center / Project Structuring"],
+            ["회사 홈페이지", "비공개"],
+          ],
+          business: [
+            "AI 및 클라우드 인프라 수요 확대에 대응하는 데이터센터 개발사업의 사업 구조를 검토한 프로젝트입니다.",
+            "부동산 자산 기반 개발사업의 투자자 유치, 금융기관 협의 및 자금조달 구조를 함께 검토했습니다.",
+            "개발 단계별 소요자금, 운영 안정화 및 투자자 보호 구조를 종합적으로 검토했습니다.",
+          ],
+          projectOverview: [
+            "SPC 구조와 지분·차입 구조를 검토했습니다.",
+            "단계별 소요자금 및 자금 운영 시나리오를 구성했습니다.",
+            "투자자 유치 및 금융기관 협의 구조를 지원했습니다.",
+          ],
+          articles: [],
         },
       };
 
@@ -1439,33 +1659,90 @@
         root.appendChild(list);
       }
 
-      function createBlock(title, content) {
+      function createDetailSection(title, items) {
         const block = document.createElement("section");
-        block.className = "portfolio-detail-block";
-        const heading = document.createElement("h4");
+        block.className = "portfolio-subsection";
+        const heading = document.createElement("h3");
+        heading.className = "portfolio-subheading";
         heading.textContent = title;
         block.appendChild(heading);
 
-        if (Array.isArray(content)) {
-          appendTextList(block, content);
-        } else {
-          const paragraph = document.createElement("p");
-          paragraph.textContent = content;
-          block.appendChild(paragraph);
-        }
+        appendTextList(block, items);
 
         return block;
       }
 
-      function createFact(label, value) {
+      function createFieldRow(label, value) {
         const row = document.createElement("div");
-        row.className = "portfolio-detail-fact";
-        const dt = document.createElement("dt");
-        dt.textContent = label;
-        const dd = document.createElement("dd");
-        dd.textContent = value;
-        row.append(dt, dd);
+        row.className = "field-row";
+
+        const labelNode = document.createElement("div");
+        labelNode.className = "field-label";
+        labelNode.textContent = label;
+
+        const valueNode = document.createElement("div");
+        valueNode.className = "field-value";
+        if (/^https?:\/\//.test(value)) {
+          const link = document.createElement("a");
+          link.href = value;
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+          link.textContent = value;
+          valueNode.appendChild(link);
+        } else {
+          valueNode.textContent = value;
+        }
+
+        row.append(labelNode, valueNode);
         return row;
+      }
+
+      function createArticleCard(item) {
+        const article = document.createElement("article");
+        article.className = "article-card article-card--link";
+
+        const imageSlot = document.createElement("div");
+        imageSlot.className = "article-image-slot article-image-slot--source";
+
+        const source = document.createElement("span");
+        source.className = "article-source";
+        source.textContent = item.source;
+
+        const mediaLabel = document.createElement("span");
+        mediaLabel.className = "article-media-label";
+        mediaLabel.textContent = "Article";
+        imageSlot.append(source, mediaLabel);
+
+        const copySlot = document.createElement("div");
+        copySlot.className = "article-copy-slot";
+
+        const meta = document.createElement("div");
+        meta.className = "article-meta";
+        meta.textContent = item.date;
+
+        const title = document.createElement("h4");
+        title.className = "article-card-title";
+        title.textContent = item.title;
+
+        const summary = document.createElement("p");
+        summary.className = "article-summary";
+        summary.textContent = item.summary;
+        copySlot.append(meta, title, summary);
+
+        const linkSlot = document.createElement("div");
+        linkSlot.className = "article-link-slot";
+
+        const link = document.createElement("a");
+        link.className = "article-link";
+        link.href = item.url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.setAttribute("aria-label", item.title + " - 기사 보기");
+        link.textContent = "기사 보기";
+        linkSlot.appendChild(link);
+
+        article.append(imageSlot, copySlot, linkSlot);
+        return article;
       }
 
       function initPortfolioCards() {
@@ -1475,40 +1752,39 @@
         const detail = document.getElementById("portfolio-detail");
         if (!cards.length || !filters.length || !grid || !detail) return;
 
-        const media = detail.querySelector("[data-detail-media]");
-        const image = detail.querySelector("[data-detail-image]");
         const facts = detail.querySelector("[data-detail-facts]");
-        const title = detail.querySelector("[data-detail-title]");
-        const meta = detail.querySelector("[data-detail-meta]");
-        const blocks = detail.querySelector("[data-detail-blocks]");
+        const sections = detail.querySelector("[data-detail-sections]");
+        const related = detail.querySelector("[data-related-articles]");
+        const articleList = detail.querySelector("[data-article-list]");
         let activeProject = null;
 
         function renderDetail(projectId) {
           const project = projects[projectId];
-          if (!project) return;
+          const projectDetail = projectDetails[projectId];
+          if (!project || !projectDetail) return;
           activeProject = projectId;
 
           cards.forEach(function (card) {
             card.classList.toggle("is-active", card.dataset.project === projectId);
           });
 
-          media.classList.toggle("is-logo", project.imageMode === "logo");
-          image.src = project.image;
-          image.alt = project.imageAlt;
           facts.replaceChildren(
-            createFact("Category", project.category),
-            createFact("Sector", project.sector),
-            createFact("Investment Type", project.investmentType),
-            createFact("Candlestick Role", project.role)
+            ...projectDetail.fields.map(function (field) {
+              return createFieldRow(field[0], field[1]);
+            })
           );
-          title.textContent = project.title;
-          meta.textContent = project.category + " · " + project.sector;
-          blocks.replaceChildren(
-            createBlock("Overview", project.overview),
-            createBlock("Investment Rationale", project.rationale),
-            createBlock("Value Creation Plan", project.valueCreation),
-            createBlock("Exit Strategy", project.exitStrategy)
+          sections.replaceChildren(
+            createDetailSection("Business", projectDetail.business),
+            createDetailSection("Project Overview", projectDetail.projectOverview)
           );
+
+          const articles = Array.isArray(projectDetail.articles) ? projectDetail.articles : [];
+          articleList.replaceChildren(
+            ...articles.map(function (article) {
+              return createArticleCard(article);
+            })
+          );
+          related.hidden = !articles.length;
 
           detail.hidden = false;
           window.requestAnimationFrame(function () {
