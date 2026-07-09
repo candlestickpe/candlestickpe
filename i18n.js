@@ -68,13 +68,13 @@
       "Acquisition of common shares and RCPS.",
       "Investment execution completed in April 2026.",
       "Led the deal and completed investment execution as GP of the PEF.",
-      "Established investment and exit strategies targeting an exit based on unicorn valuation by 2028.",
+      "Reviewed investment strategy and exit alternatives including strategic sale, follow-on financing, and IPO.",
     ],
     ko: [
       "보통주 및 RCPS 지분 인수 건.",
       "2026년 4월 투자 집행 완료.",
       "PEF의 GP로서 딜 리드 및 투자 집행을 완료.",
-      "2028년 유니콘 밸류에이션 기반 Exit을 목표로 투자전략 및 Exit 전략을 수립.",
+      "전략적 매각, 후속 투자 유치, IPO 등 다양한 Exit 가능성을 검토.",
     ],
   };
 
@@ -82,13 +82,13 @@
     en: [
       "Optical communications component company developing and manufacturing optical transceivers and AOC products for U.S. data centers.",
       "Supplies customized optical transceivers and AOC products, with technology positioned for high-speed, low-latency AI data center network infrastructure.",
-      "Expanding North American business based on collaboration and sales references with Coherent, Halo, Lumentum, Cadence, and other optical communications and data center ecosystem companies.",
+      "Expanding North American business based on collaboration and sales references within the global optical communications and data center ecosystem.",
       "Completed development of 1.6T and DR products, with commercialization and supply discussions underway with multiple customers.",
     ],
     ko: [
       "미국 데이터센터향 광트랜시버 및 AOC를 개발·제조하는 광통신 핵심부품 기업.",
       "고객 맞춤형 광트랜시버와 AOC 제품을 공급하며, AI 데이터센터의 고속·저지연 네트워크 인프라 확대에 대응하는 기술력 보유.",
-      "Coherent, Halo, Lumentum, Cadence 등 글로벌 광통신·데이터센터 생태계 주요 기업과의 협력 및 판매 레퍼런스를 기반으로 북미 시장 사업 기반 확대.",
+      "글로벌 광통신·데이터센터 생태계 내 협력 및 판매 레퍼런스를 기반으로 북미 시장 사업 기반 확대.",
       "차세대 광통신 수요에 대응하기 위해 1.6T 및 DR 제품 개발을 완료하고, 다수 고객사와 상용화 및 공급 협의 진행 중.",
     ],
   };
@@ -98,17 +98,17 @@
       "New CB issuance and subscription.",
       "Investment execution completed in April 2025.",
       "Participated in investment structure design and execution as co-GP of a New Technology Business Investment Association.",
-      "Led co-investor attraction and investor collaboration with Suseong Asset Investment, IMM Investment, and others.",
+      "Supported investment execution and investor collaboration process.",
       "Structured investment reflecting AI data center growth, global references, next-generation product competitiveness, and IPO potential.",
-      "Exit expected through IPO in the first half of 2027.",
+      "Reviewed exit alternatives including strategic investor sale, follow-on investment rounds, and IPO.",
     ],
     ko: [
       "신규 CB 발행 및 인수 건.",
       "2025년 4월 투자 집행 완료.",
       "신기술사업투자조합의 공동 GP로서 투자 구조 설계 및 집행 참여.",
-      "수성에셋인베스트먼트, IMM인베스트먼트 등 공동투자자 유치 및 투자자 협업을 주도.",
+      "투자 집행 및 투자자 협업 절차를 지원.",
       "AI 데이터센터 성장성, 글로벌 레퍼런스, 차세대 제품 경쟁력 및 IPO 가능성을 반영한 구조화 투자.",
-      "2027년 상반기 IPO를 통한 Exit 예정.",
+      "전략적 투자자 대상 매각, 후속 투자 라운드, IPO 등 Exit 가능성을 검토.",
     ],
   };
 
@@ -154,13 +154,13 @@
   const nplOverview = {
     en: [
       "Acquisition of first-priority beneficiary rights under collateral trust for Yeoksam-dong 706-12.",
-      "Total investment size of KRW 15.0 billion, structured with KRW 12.0 billion senior debt and KRW 3.0 billion beneficiary certificates.",
+      "Reviewed a structured investment approach using senior financing and beneficiary certificates.",
       "Designed rental income control and creditor protection structure through a monetary claim trust.",
       "Exit expected through borrower call option or sale of collateral assets.",
     ],
     ko: [
       "역삼동 706-12 담보신탁 1순위 우선수익권 인수 건",
-      "총 투자규모 150억원, 선순위 차입금 120억원 및 수익증권 30억원 구조",
+      "선순위 금융 및 수익증권을 활용한 구조화 투자 방식을 검토",
       "금전채권신탁을 통한 임대수입 통제 및 채권보전 구조 설계",
       "차주 콜옵션 또는 담보자산 매각을 통한 Exit 추진 예정",
     ],
@@ -244,7 +244,7 @@
       {
         source: "DealSite",
         date: "2026.04.07",
-        title: "NVIDIA-backed AI company PYLER looks abroad for higher valuation",
+        title: "NVIDIA-backed AI company PYLER expands overseas growth strategy",
         summary:
           "Discusses PYLER's NVIDIA collaboration, overseas partnership activity, and new investment round discussions.",
         url: "https://dealsite.co.kr/articles/159629",
@@ -393,7 +393,7 @@
         {
           source: "Edaily",
           date: "2025.11.13",
-          title: "PeopleBio changes largest shareholder and secures KRW 36 billion strategic investment",
+          title: "PeopleBio changes largest shareholder and secures strategic investment",
           summary:
             "Covers PeopleBio's strategic investment, largest shareholder change, and business expansion direction with Eastern Networks.",
           url: "https://www.edaily.co.kr/News/Read?newsId=04172166642365392&mediaCodeNo=257&OutLnkChk=Y",
@@ -896,9 +896,9 @@
     portfolio: {
           "en": {
                 "title": "Portfolio | CANDLESTICK PE",
-                "heroTitle": "Portfolio",
-                "heroSub": "",
-                "sectionTitle": "■ Portfolio",
+                "heroTitle": "Designing and executing investment structures\nto create enterprise growth and value.",
+                "heroSub": "Candlestick PE designs and executes tailored investment structures across growth-company investments, structured investments, and real asset or special situation projects.",
+                "sectionTitle": "Portfolio",
                 "headers": [
                       "Project",
                       "Business / Project Overview"
@@ -974,9 +974,9 @@
           },
           "ko": {
                 "title": "Portfolio | CANDLESTICK PE",
-                "heroTitle": "포트폴리오",
-                "heroSub": "",
-                "sectionTitle": "■ 포트폴리오",
+                "heroTitle": "투자 구조 설계와 실행으로\n기업의 성장과 가치를 만들어갑니다.",
+                "heroSub": "캔들스틱 PE는 성장기업 투자, 구조화 투자, 부동산·특수상황 프로젝트 등\n다양한 거래에서 맞춤형 투자 구조를 설계하고 실행합니다.",
+                "sectionTitle": "포트폴리오",
                 "headers": [
                       "Project",
                       "Business / Project Overview"
