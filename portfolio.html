@@ -394,50 +394,16 @@
       word-break:keep-all;
     }
     .portfolio-detail-block li{ margin:.35em 0; }
-    .portfolio-cta{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:24px;
-      margin-top:42px;
-      padding:32px 34px;
-      border:1px solid var(--line-gray);
-      border-radius:8px;
-      background:#f7f8fb;
-    }
-    .portfolio-cta-title{
-      margin:0;
-      color:var(--text-dark);
-      font-size:1.32rem;
-      font-weight:900;
-      line-height:1.55;
-      word-break:keep-all;
-    }
-    .portfolio-cta-button{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      min-width:128px;
-      min-height:44px;
-      padding:0 20px;
-      border-radius:6px;
-      background:var(--brand-blue);
-      color:#fff;
-      font-size:.92rem;
-      font-weight:900;
-      text-decoration:none;
-      white-space:nowrap;
-    }
-    .portfolio-cta-button:hover,
-    .portfolio-cta-button:focus{
-      color:#fff;
-      text-decoration:none;
-      background:#070b2d;
+    .portfolio-grid.filtered-view{
+      grid-template-columns:repeat(3, minmax(0, 1fr));
     }
 
     @media (max-width: 1100px){
       .portfolio-grid{
         grid-template-columns:repeat(3, minmax(0, 1fr));
+      }
+      .portfolio-grid.filtered-view{
+        grid-template-columns:repeat(2, minmax(0, 1fr));
       }
       .portfolio-detail-shell{
         grid-template-columns:1fr;
@@ -464,11 +430,6 @@
       .portfolio-detail-blocks{
         grid-template-columns:1fr;
       }
-      .portfolio-cta{
-        align-items:flex-start;
-        flex-direction:column;
-        padding:26px 22px;
-      }
     }
     @media (max-width: 576px){
       .hero-kicker{
@@ -484,6 +445,9 @@
       .portfolio-grid{
         grid-template-columns:1fr;
       }
+      .portfolio-grid.filtered-view{
+        grid-template-columns:1fr;
+      }
       .portfolio-card{
         min-height:auto;
       }
@@ -496,9 +460,6 @@
       }
       .portfolio-detail-title{
         font-size:1.32rem;
-      }
-      .portfolio-cta-title{
-        font-size:1.12rem;
       }
     }
 
@@ -1281,10 +1242,6 @@
         </div>
       </section>
 
-      <section class="portfolio-cta" aria-label="Contact Candlestick PE">
-        <h2 class="portfolio-cta-title">기업의 가치 제고와 투자 목적 달성을 위해<br>캔들스틱 PE가 최적의 파트너가 되겠습니다.</h2>
-        <a class="portfolio-cta-button" href="mailto:jcjang@candlestickpe.com">Contact Us</a>
-      </section>
     </div>
   </section>
   <!-- Bootstrap JS (bundle) -->
@@ -1470,8 +1427,9 @@
       function initPortfolioCards() {
         const cards = Array.from(document.querySelectorAll(".portfolio-card"));
         const filters = Array.from(document.querySelectorAll(".portfolio-filter"));
+        const grid = document.querySelector(".portfolio-grid");
         const detail = document.getElementById("portfolio-detail");
-        if (!cards.length || !filters.length || !detail) return;
+        if (!cards.length || !filters.length || !grid || !detail) return;
 
         const media = detail.querySelector("[data-detail-media]");
         const image = detail.querySelector("[data-detail-image]");
@@ -1515,6 +1473,8 @@
         }
 
         function applyFilter(category) {
+          grid.classList.toggle("filtered-view", category !== "All");
+
           filters.forEach(function (filter) {
             const isActive = filter.dataset.filter === category;
             filter.classList.toggle("is-active", isActive);
