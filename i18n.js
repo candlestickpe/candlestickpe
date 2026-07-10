@@ -140,12 +140,12 @@
 
   const nplBusiness = {
     en: [
-      "Real estate NPL investment project backed by collateral assets in Yeoksam-dong 706.",
+      "Real estate NPL investment project backed by collateral assets in Yeoksam.",
       "Reviewed recovery stability and structured return potential of the collateral assets.",
       "Reviewed investor protection structure using collateral trust and senior beneficiary rights.",
     ],
     ko: [
-      "역삼동 706 소재 부동산 담보자산을 기반으로 한 NPL 투자 프로젝트임.",
+      "역삼 소재 부동산 담보자산을 기반으로 한 NPL 투자 프로젝트임.",
       "담보자산의 회수 안정성과 구조화 수익 가능성을 종합적으로 검토함.",
       "담보신탁 및 우선수익권 구조를 활용한 투자자 보호 구조를 검토함.",
     ],
@@ -153,38 +153,38 @@
 
   const nplOverview = {
     en: [
-      "Designed an NPL investment structure for Yeoksam-dong 706.",
+      "Designed an NPL investment structure for Yeoksam real estate.",
       "Reviewed collateral value, recovery potential, and cash management structure.",
       "Reviewed collateral asset sale, refinancing, and structured recovery alternatives.",
     ],
     ko: [
-      "역삼동 706 소재 NPL 투자 구조를 설계함.",
+      "역삼 소재 부동산 NPL 투자 구조를 설계함.",
       "담보자산 가치, 회수 가능성, 자금관리 구조를 검토함.",
       "담보자산 매각, 차환 및 구조화 회수 방안을 검토함.",
     ],
   };
 
-  const npl663Business = {
+  const nplIIBusiness = {
     en: [
-      "Real estate NPL investment project backed by collateral assets in Yeoksam-dong 663.",
+      "Real estate NPL investment project backed by collateral assets in Yeoksam.",
       "Reviewed recovery stability and structured return potential of the collateral assets.",
       "Reviewed investor protection structure using collateral trust and senior beneficiary rights.",
     ],
     ko: [
-      "역삼동 663 소재 부동산 담보자산을 기반으로 한 NPL 투자 프로젝트임.",
+      "역삼 소재 부동산 담보자산을 기반으로 한 NPL 투자 프로젝트임.",
       "담보자산의 회수 안정성과 구조화 수익 가능성을 종합적으로 검토함.",
       "담보신탁 및 우선수익권 구조를 활용한 투자자 보호 구조를 검토함.",
     ],
   };
 
-  const npl663Overview = {
+  const nplIIOverview = {
     en: [
-      "Designed an NPL investment structure for Yeoksam-dong 663.",
+      "Designed an NPL investment structure for Yeoksam real estate.",
       "Reviewed collateral value, recovery potential, and cash management structure.",
       "Reviewed collateral asset sale, refinancing, and structured recovery alternatives.",
     ],
     ko: [
-      "역삼동 663 소재 NPL 투자 구조를 설계함.",
+      "역삼 소재 부동산 NPL 투자 구조를 설계함.",
       "담보자산 가치, 회수 가능성, 자금관리 구조를 검토함.",
       "담보자산 매각, 차환 및 구조화 회수 방안을 검토함.",
     ],
@@ -952,18 +952,18 @@
                             "articles": portfolioArticles.ecoworld.en
                       },
                       {
-                            "alt": "Project NPL 706",
+                            "alt": "Project NPL I",
                             "logoText": "NPL",
-                            "title": "Project NPL 706",
+                            "title": "Project NPL I",
                             "business": nplBusiness.en,
                             "overview": nplOverview.en
                       },
                       {
-                            "alt": "Project NPL 663",
+                            "alt": "Project NPL II",
                             "logoText": "NPL",
-                            "title": "Project NPL 663",
-                            "business": npl663Business.en,
-                            "overview": npl663Overview.en
+                            "title": "Project NPL II",
+                            "business": nplIIBusiness.en,
+                            "overview": nplIIOverview.en
                       },
                       {
                             "image": "PP.png",
@@ -1037,18 +1037,18 @@
                             "articles": portfolioArticles.ecoworld.ko
                       },
                       {
-                            "alt": "Project NPL 706",
+                            "alt": "Project NPL I",
                             "logoText": "NPL",
-                            "title": "Project NPL 706",
+                            "title": "Project NPL I",
                             "business": nplBusiness.ko,
                             "overview": nplOverview.ko
                       },
                       {
-                            "alt": "Project NPL 663",
+                            "alt": "Project NPL II",
                             "logoText": "NPL",
-                            "title": "Project NPL 663",
-                            "business": npl663Business.ko,
-                            "overview": npl663Overview.ko
+                            "title": "Project NPL II",
+                            "business": nplIIBusiness.ko,
+                            "overview": nplIIOverview.ko
                       },
                       {
                             "image": "PP.png",
