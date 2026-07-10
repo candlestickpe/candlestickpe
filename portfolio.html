@@ -318,6 +318,10 @@
       margin-top:36px;
       scroll-margin-top:24px;
     }
+    .portfolio-grid > .portfolio-detail-panel{
+      grid-column:1 / -1;
+      margin-top:0;
+    }
     .portfolio-detail-shell{
       display:grid;
       grid-template-columns:minmax(260px, .8fr) minmax(0, 1.25fr);
@@ -1994,11 +1998,67 @@
         const related = detail.querySelector("[data-related-articles]");
         const articleList = detail.querySelector("[data-article-list]");
         let activeProject = null;
+        let resizeFrame = null;
+
+        function getVisibleCards() {
+          return cards.filter(function (card) {
+            return !card.hidden;
+          });
+        }
+
+        function closeDetail() {
+          activeProject = null;
+          detail.hidden = true;
+          cards.forEach(function (card) {
+            card.classList.remove("is-active");
+          });
+        }
+
+        function getRowEndCard(card) {
+          const visibleCards = getVisibleCards();
+          const cardTop = card.getBoundingClientRect().top;
+          let rowEndCard = card;
+
+          visibleCards.forEach(function (visibleCard) {
+            const visibleTop = visibleCard.getBoundingClientRect().top;
+            if (Math.abs(visibleTop - cardTop) < 4) {
+              rowEndCard = visibleCard;
+            }
+          });
+
+          return rowEndCard;
+        }
+
+        function placeDetailAfterCard(card) {
+          detail.hidden = true;
+          getRowEndCard(card).insertAdjacentElement("afterend", detail);
+        }
+
+        function repositionDetail() {
+          if (!activeProject || detail.hidden) return;
+
+          const activeCard = cards.find(function (card) {
+            return card.dataset.project === activeProject;
+          });
+
+          if (!activeCard || activeCard.hidden) {
+            closeDetail();
+            return;
+          }
+
+          placeDetailAfterCard(activeCard);
+          detail.hidden = false;
+        }
 
         function renderDetail(projectId) {
           const project = projects[projectId];
           const projectDetail = projectDetails[projectId];
-          if (!project || !projectDetail) return;
+          const selectedCard = cards.find(function (card) {
+            return card.dataset.project === projectId;
+          });
+          if (!project || !projectDetail || !selectedCard || selectedCard.hidden) return;
+
+          placeDetailAfterCard(selectedCard);
           activeProject = projectId;
 
           cards.forEach(function (card) {
@@ -2036,6 +2096,7 @@
         }
 
         function applyFilter(category) {
+          closeDetail();
           grid.classList.toggle("filtered-view", category !== "All");
 
           filters.forEach(function (filter) {
@@ -2044,22 +2105,10 @@
             filter.setAttribute("aria-pressed", String(isActive));
           });
 
-          let activeProjectStillVisible = false;
           cards.forEach(function (card) {
             const isVisible = category === "All" || card.dataset.category === category;
             card.hidden = !isVisible;
-            if (isVisible && card.dataset.project === activeProject) {
-              activeProjectStillVisible = true;
-            }
           });
-
-          if (!activeProjectStillVisible) {
-            activeProject = null;
-            detail.hidden = true;
-            cards.forEach(function (card) {
-              card.classList.remove("is-active");
-            });
-          }
         }
 
         filters.forEach(function (filter) {
@@ -2071,6 +2120,16 @@
         cards.forEach(function (card) {
           card.addEventListener("click", function () {
             renderDetail(card.dataset.project);
+          });
+        });
+
+        window.addEventListener("resize", function () {
+          if (resizeFrame) {
+            window.cancelAnimationFrame(resizeFrame);
+          }
+          resizeFrame = window.requestAnimationFrame(function () {
+            resizeFrame = null;
+            repositionDetail();
           });
         });
       }
