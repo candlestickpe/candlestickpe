@@ -75,7 +75,7 @@
       "2026년 4월 투자 집행 완료.",
       "PEF의 GP로서 딜 리드 및 투자 집행을 완료.",
       "전략적 매각, 후속 투자 유치, IPO 등 다양한 Exit 가능성을 검토.",
-      "인수 Value: Pre 약 1,330억원",
+      "인수 Value: 약 1,330억원",
     ],
   };
 
@@ -240,13 +240,13 @@
     },
     peoplebio: {
       en: [
-        ["Project Name", "PeopleBio M&A"],
+        ["Project Name", "Project PeopleBio"],
         ["Company / Target", "PeopleBio Co., Ltd."],
         ["Sector", "Pharmaceuticals / Bio"],
         ["Company Website", "http://peoplebio.net"],
       ],
       ko: [
-        ["프로젝트명", "피플바이오 M&A"],
+        ["프로젝트명", "Project PeopleBio"],
         ["회사 / 투자대상", "주식회사 피플바이오 / PeopleBio Co., Ltd."],
         ["섹터", "제약/바이오"],
         ["회사 홈페이지", "http://peoplebio.net"],
@@ -624,15 +624,15 @@
     },
     "project-peoplebio-ma": {
       en: {
-        title: "PeopleBio M&A | CANDLESTICK PE",
-        heroTitle: "PeopleBio M&A",
+        title: "Project PeopleBio | CANDLESTICK PE",
+        heroTitle: "Project PeopleBio",
         heroSub: "",
         backLabel: "Back to Portfolio",
         eyebrow: "Portfolio Detail",
-        heading: "PeopleBio M&A",
+        heading: "Project PeopleBio",
         lead: "",
         fields: [
-          ["Project Name", "PeopleBio M&A"],
+          ["Project Name", "Project PeopleBio"],
           ["Company / Target", "PeopleBio Co., Ltd."],
           ["Sector", "Pharmaceuticals / Bio"],
           ["Company Website", "http://peoplebio.net"],
@@ -973,7 +973,7 @@
                       {
                             "image": "PP.png",
                             "alt": "PeopleBio",
-                            "title": "PeopleBio M&A",
+                            "title": "Project PeopleBio",
                             "detail": portfolioDetailFields.peoplebio.en,
                             "articles": portfolioArticles.peoplebio.en,
                             "business": [
