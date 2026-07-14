@@ -2147,6 +2147,10 @@
     if (document.querySelector("#project-detail")) applyProjectDetail(pageData);
     if (pageName === "team") applyTeam(pageData);
     if (pageName === "esg") applyEsg(pageData);
+
+    document.dispatchEvent(
+      new CustomEvent("candlestickpe:languagechange", { detail: { lang } })
+    );
   }
 
   document.addEventListener("DOMContentLoaded", function () {
