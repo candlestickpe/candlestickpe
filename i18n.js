@@ -925,8 +925,8 @@
     portfolio: {
           "en": {
                 "title": "Portfolio | CANDLESTICK PE",
-                "heroTitle": "Designing and executing investment structures\nto create enterprise growth and value.",
-                "heroSub": "Candlestick PE designs and executes tailored investment structures across growth-company investments, structured investments, and real asset or special situation projects.",
+                "heroTitle": "Portfolio",
+                "heroSub": "",
                 "sectionTitle": "Portfolio",
                 "headers": [
                       "Project",
@@ -1010,8 +1010,8 @@
           },
           "ko": {
                 "title": "Portfolio | CANDLESTICK PE",
-                "heroTitle": "투자 구조 설계와 실행으로\n기업의 성장과 가치를 만들어감",
-                "heroSub": "캔들스틱 PE는 성장기업 투자, 구조화 투자, 부동산·특수상황 프로젝트 등\n다양한 거래에서 맞춤형 투자 구조를 설계하고 실행함.",
+                "heroTitle": "Portfolio",
+                "heroSub": "",
                 "sectionTitle": "포트폴리오",
                 "headers": [
                       "Project",
