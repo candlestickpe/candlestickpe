@@ -75,6 +75,7 @@
       "2026년 4월 투자 집행 완료.",
       "PEF의 GP로서 딜 리드 및 투자 집행을 완료.",
       "전략적 매각, 후속 투자 유치, IPO 등 다양한 Exit 가능성을 검토.",
+      "인수 Value: Pre 약 1,330억원",
     ],
   };
 
@@ -109,6 +110,7 @@
       "투자 집행 및 투자자 협업 절차를 지원.",
       "AI 데이터센터 성장성, 글로벌 레퍼런스, 차세대 제품 경쟁력 및 IPO 가능성을 반영한 구조화 투자.",
       "전략적 투자자 대상 매각, 후속 투자 라운드, IPO 등 Exit 가능성을 검토.",
+      "인수 Value: Pre 약 650억원",
     ],
   };
 
@@ -132,9 +134,12 @@
       "Alongside expansion of the sulforaphane-based biomaterials business, the company is pursuing entry into overseas capital markets over the medium to long term, including a potential Nasdaq IPO.",
     ],
     ko: [
-      "2025년 12월 고유자금을 통한 선행 투자 집행을 완료하였으며, 2026년 펀드를 통해 구주 및 신규 전환사채(CB) 인수를 완료.",
+      "보통주 및 신규 CB 인수 건",
+      "2025년 12월 고유자금을 통한 CB 투자 집행 완료",
+      "2026년 펀드를 통해 구주 및 신규 CB 투자 집행 완료",
       "투자금은 서울대병원과 협업 중인 설포라판 기반 항암 관련 임상연구 및 의료·웰니스 채널 확대에 활용.",
       "설포라판 기반 바이오 소재 사업 확대와 함께, 중장기적으로 나스닥 IPO를 포함한 해외 자본시장 진출 진행 중.",
+      "인수 Value: Pre 약 540억원",
     ],
   };
 
@@ -193,13 +198,13 @@
   const portfolioDetailFields = {
     pyler: {
       en: [
-        ["Project Name", "Project Vision AI — PYLER"],
+        ["Project Name", "Project Vision AI"],
         ["Company / Target", "PYLER CO., LTD."],
         ["Sector", "AI-based AdTech"],
         ["Company Website", "https://pyler.tech/"],
       ],
       ko: [
-        ["프로젝트명", "Project Vision AI — PYLER"],
+        ["프로젝트명", "Project Vision AI"],
         ["회사 / 투자대상", "주식회사 파일러 / PYLER CO., LTD."],
         ["섹터", "AI기반 AdTech"],
         ["회사 홈페이지", "https://pyler.tech/"],
@@ -207,13 +212,13 @@
     },
     optical: {
       en: [
-        ["Project Name", "Project Optical — Optomind"],
+        ["Project Name", "Project Optical"],
         ["Company / Target", "OPTO MIND CO., LTD."],
         ["Sector", "Optical communication and optical communication device manufacturing"],
         ["Company Website", "https://www.optomindinc.com/"],
       ],
       ko: [
-        ["프로젝트명", "Project Optical — Optomind"],
+        ["프로젝트명", "Project Optical"],
         ["회사 / 투자대상", "주식회사 옵토마인드 / OPTO MIND CO.,LTD."],
         ["섹터", "광통신 및 광통신장치 제조"],
         ["회사 홈페이지", "https://www.optomindinc.com/"],
@@ -221,13 +226,13 @@
     },
     ecoworld: {
       en: [
-        ["Project Name", "Ecoworld Pharm"],
+        ["Project Name", "Project Eco"],
         ["Company / Target", "Ecoworld Pharm Co., Ltd. / ECO WORLD PHARM"],
         ["Sector", "Pharmaceuticals / Bio"],
         ["Company Website", "https://www.ecoworldpharm.com/kr/intro.asp"],
       ],
       ko: [
-        ["프로젝트명", "에코월드팜"],
+        ["프로젝트명", "Project Eco"],
         ["회사 / 투자대상", "주식회사 에코월드팜 / ECO WORLD PHARM"],
         ["섹터", "제약/바이오"],
         ["회사 홈페이지", "https://www.ecoworldpharm.com/kr/intro.asp"],
@@ -935,7 +940,7 @@
                       {
                             "image": "Optomind.png",
                             "alt": "OPTOMIND",
-                            "title": "Project Optical — Optomind",
+                            "title": "Project Optical",
                             "business": opticalBusiness.en,
                             "overview": opticalOverview.en,
                             "detail": portfolioDetailFields.optical.en,
@@ -944,7 +949,7 @@
                       {
                             "image": "ecoworldpharm-logo.svg",
                             "alt": "ECO WORLD PHARM",
-                            "title": "Ecoworld Pharm",
+                            "title": "Project Eco",
                             "logoWide": true,
                             "business": ecoworldBusiness.en,
                             "overview": ecoworldOverview.en,
@@ -1020,7 +1025,7 @@
                       {
                             "image": "Optomind.png",
                             "alt": "OPTOMIND",
-                            "title": "Project Optical — Optomind",
+                            "title": "Project Optical",
                             "business": opticalBusiness.ko,
                             "overview": opticalOverview.ko,
                             "detail": portfolioDetailFields.optical.ko,
@@ -1029,7 +1034,7 @@
                       {
                             "image": "ecoworldpharm-logo.svg",
                             "alt": "ECO WORLD PHARM",
-                            "title": "에코월드팜",
+                            "title": "Project Eco",
                             "logoWide": true,
                             "business": ecoworldBusiness.ko,
                             "overview": ecoworldOverview.ko,
