@@ -1010,7 +1010,7 @@
           },
           "ko": {
                 "title": "Portfolio | CANDLESTICK PE",
-                "heroTitle": "Portfolio",
+                "heroTitle": "포트폴리오",
                 "heroSub": "",
                 "sectionTitle": "포트폴리오",
                 "headers": [
