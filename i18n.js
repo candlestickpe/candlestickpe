@@ -389,6 +389,14 @@
             "Covers Ecoworld Pharm's listing preparation through a lead manager agreement with BNK Investment & Securities.",
           url: "https://www.donga.com/news/Economy/article/all/20250325/131277008/1",
         },
+        {
+          source: "E-DongA",
+          date: "2026.07.07",
+          title: "Broccoli sprout extract may inhibit breast cancer cell growth",
+          summary:
+            "Covers research findings on the potential of broccoli sprout extract to inhibit breast cancer cell growth.",
+          url: "https://edu.donga.com/news/articleView.html?idxno=109693",
+        },
       ],
       ko: [
         {
@@ -414,6 +422,14 @@
           summary:
             "에코월드팜의 BNK투자증권 대표주관계약 체결 및 상장 준비를 다룬 기사임.",
           url: "https://www.donga.com/news/Economy/article/all/20250325/131277008/1",
+        },
+        {
+          source: "E동아",
+          date: "2026.07.07",
+          title: "브로콜리새싹추출물, 유방암 세포 성장 억제 가능성 확인",
+          summary:
+            "브로콜리새싹추출물의 유방암 세포 성장 억제 가능성을 다룬 기사임.",
+          url: "https://edu.donga.com/news/articleView.html?idxno=109693",
         },
       ],
     },
@@ -807,7 +823,7 @@
         heroSub:
           "캔들스틱 PE는 기관전용 PEF를 설립·운용하며, 기업의 성장 니즈와 투자자의 장기적 가치를 함께 고려한 전략적 투자를 실행하는 사모펀드 운용사입니다.",
         introEyebrow: "기관전용 PEF 운용사",
-        introTitle: "기업의 성장과 투자자의 가치를 함께 설계하는 PEF 파트너",
+        introTitle: "기업의 성장과 투자자의 가치를 함께 설계하는 파트너",
         introLead:
           "캔들스틱 PE는 기관전용 PEF의 업무집행사원(GP)으로서 펀드 결성, 투자 구조 설계, 투자 집행, 사후관리 및 회수까지의 전 과정을 검토합니다.<br>각 기업의 자금 수요, 주주 구성, 성장 전략, 회수 가능성을 종합적으로 고려하여 실질적인 투자 구조를 설계합니다.",
         roleCards: [
