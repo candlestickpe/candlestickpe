@@ -715,9 +715,10 @@
         headline: "CANDLESTICK PRIVATE EQUITY",
         cardKicker: "CANDLESTICK PE",
         cardTitle:
-          'A Korea-focused<br><span class="hero-card-emphasis">Private Equity Partner</span><br>for promising growth companies',
+          'A Korea-Focused<br><span class="hero-card-emphasis">Private Equity Partner</span>',
+        cardSubhead: "backing companies with strong growth potential",
         cardText:
-          "With accumulated investment experience and deep sector insight,<br>we support corporate growth strategies<br>and create sustainable value together.",
+          "Drawing on extensive investment experience and deep sector expertise,<br>we partner with management teams<br>to create long-term value.",
         footer:
           'CANDLESTICK PE<div class="hero-sub"><span class="footer-email">E-mail: <a href="mailto:jcjang@candlestickpe.com">jcjang@candlestickpe.com</a></span><span class="footer-divider"> / </span><span class="footer-address">Address: 3rd Floor, 39, Gangnam-daero 118-gil, Gangnam-gu, Seoul, Republic of Korea</span></div>',
       },
@@ -726,9 +727,10 @@
         headline: "CANDLESTICK PRIVATE EQUITY",
         cardKicker: "CANDLESTICK PE",
         cardTitle:
-          '대한민국의 유망 기업과<br>성장 산업에 투자하는<br><span class="hero-card-emphasis">Private Equity Partner</span>',
+          '한국 시장에 집중하는<br><span class="hero-card-emphasis">Private Equity Partner</span>',
+        cardSubhead: "<strong>성장 잠재력이 높은 기업에 투자하고 성장을 함께합니다</strong>",
         cardText:
-          "축적된 투자 경험과 산업에 대한 깊은 이해를 바탕으로,<br>기업의 성장 전략을 지원하며<br>지속가능한 가치를 함께 만들어갑니다.",
+          "<strong>축적된 투자 경험과 산업 전문성을 바탕으로,</strong><br>경영진과 긴밀히 협력하여<br>지속적인 기업가치 제고를 추구합니다.",
         footer:
           'CANDLESTICK PE<div class="hero-sub"><span class="footer-email">이메일: <a href="mailto:jcjang@candlestickpe.com">jcjang@candlestickpe.com</a></span><span class="footer-divider"> / </span><span class="footer-address">주소: 서울특별시 강남구 강남대로118길 39, 3층</span></div>',
       },
@@ -1649,6 +1651,7 @@
     }
     text(".hero-card-kicker", data.cardKicker || BRAND_LABEL);
     html(".hero-card-title", data.cardTitle);
+    html(".hero-card-subhead", data.cardSubhead);
     html(".hero-card-copy", data.cardText);
     html(".hero-footer .footer-left", data.footer);
   }
