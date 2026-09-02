@@ -1254,74 +1254,76 @@
           ["Value Creation", "Candlestick supports practical initiatives across business strategy, capital structure, sales management, organizational management, and risk management to drive long-term value creation at portfolio companies."],
           ["External Experts", "Candlestick works with law firms, accounting firms, tax advisors, and industry experts to assess risks and evaluate potential improvement measures for portfolio companies."],
         ],
-        stewardshipTitle: "Candlestick's Stewardship Code",
+        stewardshipTitle: "Candlestick’s Responsible Investment Principles",
         stewardshipLead: [
-          "Candlestick recognizes its fiduciary responsibility as an institutional investor to manage and operate investors' assets faithfully and prudently. The Company supports the core purpose of the Korea Stewardship Code, including the long-term value enhancement of portfolio companies, pursuit of investors' long-term interests, and sound development of capital markets, and establishes the following principles suited to its investment strategy and operating characteristics.",
-          "This Stewardship Code applies to institutional private collective investment vehicles and related investment assets managed or operated by Candlestick as a general partner or manager. The specific method of implementation may vary depending on each fund's articles, investment agreements, applicable laws, portfolio company characteristics, and investment structure.",
+          "Candlestick Co., Ltd. (“Candlestick” or the “Company”) recognizes its responsibility as an institutional investor to manage assets entrusted by investors with due care and prudence.",
+          "The Company believes that protecting investors’ interests and supporting the mid- to long-term growth and value creation of investee companies are fundamental to responsible investing. Accordingly, Candlestick has established its own Responsible Investment Principles, reflecting its investment strategy and operating characteristics, and seeks to apply these principles throughout the investment lifecycle, from investment review and execution to post-investment management and exit.",
+          "These principles apply to institutional private equity funds and related investment assets managed by Candlestick in its capacity as a general partner (“GP”) or investment manager. Their application may vary depending on each fund’s governing documents and investment agreements, applicable laws and regulations, the characteristics of the investee company, and the relevant investment structure.",
         ],
         stewardshipPrinciples: [
           {
-            title: "Principle 1. Fiduciary Responsibility Policy",
+            title: "Principle 1. Putting Investors’ Interests First and Responsible Fund Management",
             paragraphs: [
-              "Candlestick prioritizes investors' interests over the interests of the Company, shareholders, and employees. In fund formation, investment, operation, post-investment management, and exit, the Company treats all investors reasonably and fairly and does not unfairly favor or discriminate against specific investors without reasonable grounds.",
-              "As a prudent manager, Candlestick faithfully performs its duties in accordance with applicable laws, fund articles, investment agreements, and internal regulations and procedures. The Company recognizes that maximizing investors' interests through the long-term growth and value enhancement of portfolio companies is the core of its fiduciary responsibility.",
+              "Candlestick gives priority to the interests of investors over those of the Company, its shareholders, and its employees in carrying out its fund management responsibilities. Throughout fund formation, investment, management, post-investment oversight, and exit, the Company seeks to treat all investors fairly and reasonably and does not provide preferential or discriminatory treatment to any investor without reasonable grounds.",
+              "Candlestick performs its duties with due care and diligence in accordance with applicable laws and regulations, fund governing documents and investment agreements, and its internal policies and procedures. The Company regards promoting investors’ interests through the mid- to long-term growth and value creation of investee companies as an important principle of responsible fund management.",
             ],
           },
           {
             title: "Principle 2. Prevention and Management of Conflicts of Interest",
             paragraphs: [
-              "Candlestick recognizes that conflicts of interest may arise between the Company and investors, among investors, among multiple funds, and between employees and funds during fund operations.",
-              "The Company reviews transactions or decisions that may involve conflicts of interest in advance and, where necessary, notifies or obtains consent from investors in accordance with applicable laws, fund articles, and internal procedures to protect investors.",
-              "Candlestick uses internal control standards, investment committee procedures, compliance systems, and external expert reviews where needed to prevent conflicts of interest. The Company also continuously manages employees to prevent conduct that may harm the interests of the Company or investors.",
+              "Candlestick recognizes that actual or potential conflicts of interest may arise between the Company and investors, among different investors, among multiple funds, or between the Company’s employees and the funds it manages.",
+              "The Company reviews transactions and decisions that may give rise to conflicts of interest in advance and, where appropriate, takes measures necessary to protect investors, including providing notice to or obtaining consent from investors in accordance with applicable laws and regulations, fund governing documents and investment agreements, and internal procedures.",
+              "Candlestick maintains internal controls, investment committee procedures, compliance oversight, and, where appropriate, external expert review to prevent and manage conflicts of interest. The Company also maintains appropriate policies and controls designed to prevent employees from engaging in conduct that could adversely affect the interests of the Company or its investors.",
             ],
           },
           {
-            title: "Principle 3. Periodic Monitoring of Portfolio Companies",
+            title: "Principle 3. Periodic Monitoring of Investee Companies",
             paragraphs: [
-              "Candlestick determines whether to invest after sufficient due diligence and internal review before execution. After investment, it periodically reviews portfolio companies' management status, financial condition, operating performance, cash management, major contracts, internal controls, and key ESG issues.",
-              "The Company communicates regularly and as needed with management and key employees of portfolio companies and discusses long-term growth strategies and key execution priorities. Where necessary, it reviews management status through board participation, shareholder voting, consultation on major management matters, information requests, and external advice.",
-              "Candlestick considers not only financial performance but also non-financial factors such as management strategy, product and service competitiveness, internal controls, legal compliance, governance, and sustainability as important elements affecting corporate value.",
+              "Candlestick makes investment decisions only after conducting appropriate due diligence and internal review. Following an investment, the Company periodically monitors the investee company’s business and financial condition, operating performance, use of funds, material contracts, internal controls, and significant ESG-related matters.",
+              "The Company maintains regular and as-needed communication with management and key personnel of investee companies and discusses their mid- to long-term growth strategies and key execution priorities. Where appropriate, Candlestick monitors investee companies through board participation, the exercise of voting rights, consultation on material management matters, requests for information, and external advice.",
+              "Candlestick considers not only financial performance but also non-financial factors—including business strategy, product and service competitiveness, internal controls, legal and regulatory compliance, corporate governance, and sustainability—as important factors affecting the mid- to long-term value of investee companies.",
             ],
           },
           {
-            title: "Principle 4. Constructive Engagement with Portfolio Companies",
+            title: "Principle 4. Constructive Engagement with Investee Companies",
             paragraphs: [
-              "Candlestick values trust and shared understanding with portfolio companies. The Company continuously discusses growth direction, key priorities, financial strategy, organization management, and risk management with portfolio company management and conducts constructive engagement to enhance long-term corporate value.",
-              "Depending on the importance of the matter and the investment structure, the Company may conduct stewardship activities through the following methods.",
-              "Candlestick prioritizes consultation and voluntary improvement with portfolio companies, but may review more active measures within the scope permitted by relevant contracts and laws when deemed necessary to protect investors.",
+              "Candlestick places importance on building trust and shared understanding with investee companies. The Company engages in ongoing dialogue with management teams regarding growth strategies, key priorities, financial strategy, organizational management, and risk management, and seeks to engage constructively in support of mid- to long-term value creation.",
+              "Depending on the significance of the matter, the relevant investment structure, and the rights available to Candlestick, the Company may engage with investee companies through appropriate channels and work with management to identify and address relevant improvement priorities.",
+              "Candlestick prioritizes dialogue with investee companies and voluntary improvement. Where necessary to protect investors’ interests, the Company may consider more active measures within the scope permitted by applicable laws and investment agreements.",
             ],
           },
           {
-            title: "Principle 5. Voting Policy",
+            title: "Principle 5. Exercise of Voting and Shareholder Rights",
             paragraphs: [
-              "Candlestick exercises voting rights at shareholder meetings and boards of portfolio companies with priority on the interests of funds and investors. Voting decisions are made by comprehensively considering sustainable growth, long-term corporate value enhancement, investor protection, and conflicts of interest.",
-              "The Company reviews the content and impact of each agenda item and clearly determines whether to vote for, against, or abstain. For important agenda items, it may use opinions from the investment committee, compliance function, or external experts in addition to review by responsible investment professionals.",
-              "Due to the nature of institutional private fund management, Candlestick may not disclose voting records to the general public. However, where required by applicable laws, fund articles, or agreements with investors, the Company reports voting records and key reasons to investors.",
+              "Candlestick exercises voting and other shareholder rights at shareholder meetings, board meetings, and through other available governance mechanisms with priority given to the interests of the fund and its investors. In doing so, the Company considers the mid- to long-term growth and value creation of the investee company, the protection of investors’ interests, and any actual or potential conflicts of interest.",
+              "The Company reviews the substance and potential impact of each matter before determining whether to vote in favor, against, or abstain. For material matters, Candlestick may, where appropriate, seek input through its investment committee, compliance procedures, or external experts in addition to review by the responsible investment professionals.",
+              "Given the nature of institutional private equity funds, Candlestick may not publicly disclose details of its voting or shareholder-rights activities. Where required under applicable laws and regulations, fund governing documents, or agreements with investors, however, the Company reports relevant activities and the principal considerations underlying its decisions to investors.",
             ],
           },
           {
-            title: "Principle 6. Investor Reporting",
+            title: "Principle 6. Investor Reporting and Communication",
             paragraphs: [
-              "Candlestick reports fund operation status, portfolio company status, major management matters, voting activities, and stewardship activities to investors in accordance with applicable laws, fund articles, and agreements with investors.",
-              "The Company communicates with investors through regular operation reports, member meetings, investor materials, and individual consultations. If matters that may materially affect investors' interests arise, the Company may provide ad hoc reports or conduct consultations in accordance with relevant procedures.",
+              "Candlestick provides investors with information on fund operations, investee company developments, material management matters, and significant investment management activities in accordance with applicable laws and regulations, fund governing documents, and agreements with investors.",
+              "The Company communicates with investors through periodic fund reports, meetings of fund investors, investor reporting materials, and direct consultation. Where a matter may have a material impact on investors’ interests, Candlestick may provide timely updates or consult with investors in accordance with the applicable procedures.",
             ],
           },
           {
-            title: "Principle 7. Capability and Professional Expertise",
+            title: "Principle 7. Professional Capabilities and Expertise",
             paragraphs: [
-              "Candlestick continuously strengthens capabilities in investment, M&A, corporate analysis, finance, accounting, law, tax, industry research, and post-investment management to effectively fulfill fiduciary responsibilities.",
-              "To understand portfolio companies sufficiently and identify practical value enhancement measures, the Company enhances the expertise of internal investment professionals and actively collaborates with law firms, accounting firms, tax advisors, industry experts, and financial institutions.",
-              "Candlestick recognizes that securing excellent investment professionals and developing their capabilities are core foundations for investment performance and investor protection, and will continue to improve necessary training and internal management systems to enhance employee expertise and ethical awareness.",
+              "Candlestick continuously develops the expertise and capabilities required for responsible investing and effective fund management, including investment analysis, M&A, corporate analysis, finance, accounting, legal and tax matters, industry research, and post-investment management.",
+              "To develop a thorough understanding of investee companies and identify practical value-creation opportunities, the Company seeks to strengthen the expertise of its investment professionals and, where appropriate, works with external specialists including law firms, accounting firms, tax advisors, industry experts, and financial institutions.",
+              "Candlestick recognizes that attracting high-quality investment professionals and continuously developing their capabilities are important foundations for investment performance and investor protection. The Company therefore continues to enhance training and internal management systems designed to strengthen professional expertise and ethical standards.",
             ],
           },
         ],
+        engagementTitle: "Key Monitoring and Engagement Activities",
         engagementHeaders: ["Category", "Key Activities"],
         engagementRows: [
-          ["General Monitoring", "Management meetings, financial data review, business plan review, key KPI monitoring"],
-          ["Management Engagement", "Participation in board or shareholder meetings, consultation on major decisions, proposals for management improvement"],
-          ["Risk Management", "Review of legal, accounting, tax, labor, and regulatory risks; recommendations for internal control improvements"],
-          ["Contractual Rights", "Exercise of consent rights, consultation rights, information request rights, protective provisions, and other contractual rights"],
-          ["Material Issue Response", "Step-by-step response to illegal acts, material contract breaches, accounting or financial red flags, and conflicts of interest"],
+          ["Ongoing Monitoring", "Meetings with management, review of financial information and business plans, and monitoring of key performance indicators"],
+          ["Management Engagement", "Participation in board or shareholder meetings, consultation on material decisions, and recommendations for operational improvements"],
+          ["Risk Management", "Review of legal, accounting, tax, labor, and regulatory risks, together with recommendations to strengthen internal controls"],
+          ["Exercise of Contractual Rights", "Exercise of consent rights, consultation rights, information rights, and other contractual protections available under investment agreements"],
+          ["Response to Material Issues", "Escalating responses, as appropriate, to unlawful conduct, material contractual breaches, financial or accounting irregularities, or conflicts of interest"],
         ],
       },
       ko: {
@@ -1349,74 +1351,76 @@
           ["가치 제고", "투자대상회사의 중장기적인 기업가치 제고를 위해 경영전략, 재무구조, 영업관리, 조직관리 및 리스크 관리 등 실질적인 개선 활동을 지원합니다."],
           ["외부 전문가 활용", "법무법인, 회계법인, 세무법인 및 산업 전문가 등 외부 전문가와 협업하여 투자대상회사의 리스크를 진단하고 개선 방안을 검토합니다."],
         ],
-        stewardshipTitle: "주식회사 캔들스틱의 스튜어드십 코드",
+        stewardshipTitle: "캔들스틱의 책임투자 원칙",
         stewardshipLead: [
-          "주식회사 캔들스틱은 기관투자자로서 투자자의 자산을 성실하고 신중하게 관리·운용해야 할 수탁자 책임을 인식하고 있습니다. 회사는 한국 스튜어드십 코드의 기본 취지인 투자대상회사의 중장기 가치 향상, 투자자의 중장기 이익 도모, 자본시장의 건전한 발전에 공감하며, 회사의 투자전략과 운용 특성에 맞는 수탁자 책임 이행 원칙을 다음과 같이 수립합니다.",
-          "본 스튜어드십 코드는 캔들스틱이 업무집행사원 또는 운용사로서 관리·운용하는 기관전용 사모집합투자기구 및 관련 투자자산에 적용됩니다. 다만, 각 펀드의 정관, 투자계약, 관련 법령, 투자대상회사의 특성 및 투자 구조에 따라 구체적인 이행 방식은 달라질 수 있습니다.",
+          "주식회사 캔들스틱(이하 “캔들스틱” 또는 “회사”)은 기관투자자로서 투자자로부터 맡겨진 자산을 성실하고 신중하게 관리·운용할 책임을 중요하게 인식하고 있습니다.",
+          "회사는 투자자의 이익을 보호하고 투자대상회사의 중장기적인 성장과 기업가치 제고를 지원하는 것이 책임 있는 투자의 중요한 기반이라고 생각합니다. 이에 따라 캔들스틱은 회사의 투자전략과 운용 특성에 맞는 책임투자 원칙을 수립하고, 투자 검토부터 투자 집행, 사후관리 및 회수에 이르는 전 과정에서 이를 고려하고자 합니다.",
+          "본 원칙은 캔들스틱이 업무집행사원(GP) 또는 운용사로서 관리·운용하는 기관전용 사모집합투자기구 및 관련 투자자산에 적용됩니다. 다만 각 펀드의 정관 및 투자계약, 관련 법령, 투자대상회사의 특성 및 투자 구조 등에 따라 구체적인 적용 방식은 달라질 수 있습니다.",
         ],
         stewardshipPrinciples: [
           {
-            title: "원칙 1. 수탁자 책임 이행 정책",
+            title: "원칙 1. 투자자 이익 우선 및 책임 있는 운용",
             paragraphs: [
-              "캔들스틱은 투자자의 이익을 회사, 주주 및 임직원의 이익보다 우선하여 고려합니다. 회사는 펀드의 결성, 투자, 운용, 사후관리 및 회수 과정에서 모든 투자자를 합리적이고 공정하게 대우하며, 합리적 사유 없이 특정 투자자를 부당하게 우대하거나 차별하지 않습니다.",
-              "캔들스틱은 선량한 관리자로서 관련 법령, 펀드 정관, 투자계약, 내부 규정 및 절차에 따라 직무를 성실히 수행합니다. 회사는 투자대상회사의 장기적 성장과 기업가치 제고를 통해 투자자의 이익을 극대화하는 것을 수탁자 책임의 핵심으로 인식합니다.",
+              "캔들스틱은 펀드의 관리·운용 과정에서 투자자의 이익을 회사, 주주 및 임직원의 이익보다 우선하여 고려합니다. 회사는 펀드의 결성, 투자, 운용, 사후관리 및 회수에 이르는 전 과정에서 모든 투자자를 합리적이고 공정하게 대우하며, 합리적인 사유 없이 특정 투자자를 부당하게 우대하거나 차별하지 않습니다.",
+              "캔들스틱은 선량한 관리자의 주의의무를 바탕으로 관련 법령, 펀드 정관 및 투자계약, 내부 규정과 절차에 따라 맡은 직무를 성실히 수행합니다. 회사는 투자대상회사의 중장기적인 성장과 기업가치 제고를 통해 투자자의 이익을 증진하는 것을 책임 있는 운용의 중요한 원칙으로 인식합니다.",
             ],
           },
           {
             title: "원칙 2. 이해상충 방지 및 관리",
             paragraphs: [
-              "캔들스틱은 펀드 운용 과정에서 회사와 투자자, 특정 투자자와 다른 투자자, 복수의 펀드, 회사 임직원과 펀드 사이에 이해상충이 발생할 수 있음을 인식하고 있습니다.",
-              "회사는 이해상충 가능성이 있는 거래나 의사결정에 대해 사전에 검토하고, 필요한 경우 관련 법령, 펀드 정관 및 내부 절차에 따라 투자자에게 고지하거나 동의를 받는 등 투자자 보호에 필요한 조치를 취합니다.",
-              "캔들스틱은 이해상충을 예방하기 위해 내부통제기준, 투자심의 절차, 준법감시 체계 및 필요시 외부 전문가 검토를 활용합니다. 또한 임직원이 회사 또는 투자자의 이익을 해할 우려가 있는 행위를 하지 않도록 지속적으로 관리합니다.",
+              "캔들스틱은 펀드 운용 과정에서 회사와 투자자, 특정 투자자와 다른 투자자, 복수의 펀드, 회사 임직원과 펀드 사이에 실제 또는 잠재적인 이해상충이 발생할 수 있음을 인식하고 있습니다.",
+              "회사는 이해상충 가능성이 있는 거래 또는 의사결정에 대해 사전에 검토하고, 필요한 경우 관련 법령, 펀드 정관 및 투자계약, 내부 절차에 따라 투자자에게 고지하거나 동의를 받는 등 투자자 보호를 위해 필요한 조치를 취합니다.",
+              "캔들스틱은 이해상충을 예방하고 관리하기 위해 내부통제기준, 투자심의 절차, 준법감시 체계 및 필요한 경우 외부 전문가의 검토를 활용합니다. 또한 임직원이 회사 또는 투자자의 이익을 해할 우려가 있는 행위를 하지 않도록 관련 내부통제 및 관리 절차를 운영합니다.",
             ],
           },
           {
             title: "원칙 3. 투자대상회사에 대한 주기적 점검",
             paragraphs: [
-              "캔들스틱은 투자 집행 전 충분한 실사와 내부 심의 절차를 거쳐 투자 여부를 결정합니다. 투자 이후에는 투자대상회사의 경영현황, 재무상태, 영업성과, 자금운용, 주요 계약, 내부통제 및 ESG 관련 주요 이슈를 주기적으로 점검합니다.",
-              "회사는 투자대상회사의 경영진 및 주요 임직원과 정기·비정기적으로 소통하며, 회사의 중장기 성장 전략과 주요 실행 과제를 함께 논의합니다. 필요한 경우 이사회 참여, 주주총회 의결권 행사, 주요 경영사항 협의, 자료 요청, 외부 자문 등을 통해 투자대상회사의 경영 현황을 점검합니다.",
-              "캔들스틱은 투자대상회사의 재무적 성과뿐만 아니라 경영전략, 제품·서비스 경쟁력, 내부통제, 법규 준수, 지배구조 및 지속가능성 등 비재무적 요소도 기업가치에 영향을 미치는 중요한 요소로 고려합니다.",
+              "캔들스틱은 투자 집행에 앞서 충분한 실사와 내부 심의 절차를 거쳐 투자 여부를 결정합니다. 투자 이후에는 투자대상회사의 경영 현황, 재무상태, 영업성과, 자금운용, 주요 계약, 내부통제 및 ESG 관련 주요 이슈 등을 주기적으로 점검합니다.",
+              "회사는 투자대상회사의 경영진 및 주요 임직원과 정기적·비정기적으로 소통하며, 중장기 성장 전략과 주요 실행 과제를 함께 논의합니다. 필요한 경우 이사회 참여, 주주총회 의결권 행사, 주요 경영사항 협의, 자료 요청 및 외부 자문 등을 통해 투자대상회사의 주요 경영 현황을 점검합니다.",
+              "캔들스틱은 투자대상회사의 재무적 성과뿐만 아니라 경영전략, 제품 및 서비스 경쟁력, 내부통제, 법규 준수, 지배구조 및 지속가능성 등 비재무적 요소 역시 중장기적인 기업가치에 영향을 미치는 중요한 요소로 고려합니다.",
             ],
           },
           {
-            title: "원칙 4. 투자대상회사와의 건설적 관여활동",
+            title: "원칙 4. 투자대상회사와의 건설적 관여",
             paragraphs: [
-              "캔들스틱은 투자대상회사와의 신뢰관계와 공감대 형성을 중시합니다. 회사는 투자대상회사의 경영진과 성장 방향, 핵심 과제, 재무전략, 조직 운영, 리스크 관리 등에 대해 지속적으로 논의하며, 투자대상회사의 중장기 기업가치 제고를 위한 건설적 관여활동을 수행합니다.",
-              "회사는 사안의 중요도와 투자 구조에 따라 다음과 같은 방법으로 수탁자 책임 활동을 전개할 수 있습니다.",
-              "캔들스틱은 투자대상회사와의 협의와 자율적 개선을 우선하되, 투자자 보호를 위해 필요하다고 판단되는 경우 관련 계약 및 법령이 허용하는 범위 내에서 보다 적극적인 조치를 검토할 수 있습니다.",
+              "캔들스틱은 투자대상회사와의 신뢰관계와 공감대 형성을 중시합니다. 회사는 투자대상회사의 경영진과 성장 방향, 핵심 과제, 재무전략, 조직 운영 및 리스크 관리 등에 대해 지속적으로 논의하며, 투자대상회사의 중장기적인 기업가치 제고를 위한 건설적인 관여활동을 수행합니다.",
+              "회사는 사안의 중요도, 투자 구조 및 보유한 권리에 따라 적절한 방식과 수준으로 투자대상회사와 소통하고 필요한 개선 과제를 함께 검토할 수 있습니다.",
+              "캔들스틱은 투자대상회사와의 협의와 자율적인 개선을 우선하며, 투자자 보호를 위해 필요하다고 판단되는 경우 관련 법령과 투자계약이 허용하는 범위 내에서 보다 적극적인 조치를 검토할 수 있습니다.",
             ],
           },
           {
-            title: "원칙 5. 의결권 행사 정책",
+            title: "원칙 5. 의결권 및 주주권 행사",
             paragraphs: [
-              "캔들스틱은 투자대상회사의 주주총회 및 이사회에서 펀드와 투자자의 이익을 우선하여 의결권을 행사합니다. 의결권 행사는 투자대상회사의 지속가능한 성장, 중장기 기업가치 제고, 투자자의 이익 보호, 이해상충 여부 등을 종합적으로 고려하여 결정합니다.",
-              "회사는 각 안건의 내용과 영향을 검토한 후 찬성, 반대 또는 기권 여부를 명확히 판단합니다. 중요한 안건의 경우 담당 운용인력의 검토뿐만 아니라 투자심의위원회, 준법감시 또는 외부 전문가의 의견을 활용할 수 있습니다.",
-              "캔들스틱은 기관전용 사모집합투자기구 운용의 특성상 의결권 행사 내역을 일반 대중에게 공개하지 않을 수 있습니다. 다만, 관련 법령, 펀드 정관 및 투자자와의 약정에 따라 필요한 경우 의결권 행사 내역과 주요 사유를 투자자에게 보고합니다.",
+              "캔들스틱은 투자대상회사의 주주총회 및 이사회 등에서 펀드와 투자자의 이익을 우선적으로 고려하여 의결권 및 기타 주주권을 행사합니다. 회사는 투자대상회사의 중장기적인 성장과 기업가치 제고, 투자자의 이익 보호, 실제 또는 잠재적인 이해상충 여부 등을 종합적으로 고려하여 의사결정을 내립니다.",
+              "회사는 각 안건의 내용과 투자에 미치는 영향을 충분히 검토한 후 찬성, 반대 또는 기권 여부를 판단합니다. 중요한 안건의 경우 담당 운용인력의 검토뿐만 아니라 필요에 따라 투자심의위원회, 준법감시 절차 또는 외부 전문가의 의견을 활용할 수 있습니다.",
+              "캔들스틱은 기관전용 사모집합투자기구의 특성을 고려하여 의결권 및 주주권 행사 내역을 일반에 공개하지 않을 수 있습니다. 다만 관련 법령, 펀드 정관 및 투자자와의 약정에 따라 필요한 경우 주요 행사 내역과 판단 근거를 투자자에게 보고합니다.",
             ],
           },
           {
-            title: "원칙 6. 투자자 보고",
+            title: "원칙 6. 투자자 보고 및 소통",
             paragraphs: [
-              "캔들스틱은 관련 법령, 펀드 정관 및 투자자와의 약정에 따라 투자자에게 펀드 운용 현황, 투자대상회사 현황, 주요 경영사항, 의결권 행사 및 수탁자 책임 이행 활동을 보고합니다.",
-              "회사는 정기 운용보고, 사원총회, 투자자 보고자료, 개별 협의 등을 통해 투자자와 소통합니다. 또한 투자자의 이익에 중대한 영향을 미칠 수 있는 사항이 발생하는 경우, 관련 절차에 따라 수시 보고 또는 협의를 진행할 수 있습니다.",
+              "캔들스틱은 관련 법령, 펀드 정관 및 투자자와의 약정에 따라 투자자에게 펀드 운용 현황, 투자대상회사 현황, 주요 경영사항 및 주요 투자관리 활동 등을 보고합니다.",
+              "회사는 정기 운용보고, 사원총회, 투자자 보고자료 및 개별 협의 등을 통해 투자자와 지속적으로 소통합니다. 또한 투자자의 이익에 중대한 영향을 미칠 수 있는 사항이 발생하는 경우 관련 절차에 따라 필요한 내용을 적시에 보고하거나 투자자와 협의할 수 있습니다.",
             ],
           },
           {
-            title: "원칙 7. 역량 및 전문성 확보",
+            title: "원칙 7. 전문성 및 역량 강화",
             paragraphs: [
-              "캔들스틱은 수탁자 책임을 효과적으로 이행하기 위해 투자, M&A, 기업분석, 재무, 회계, 법무, 세무, 산업 리서치 및 사후관리 역량을 지속적으로 강화합니다.",
-              "회사는 투자대상회사를 충분히 이해하고 실질적인 가치 제고 방안을 도출하기 위해 내부 운용인력의 전문성을 높이는 한편, 법무법인, 회계법인, 세무법인, 산업 전문가, 금융기관 등 외부 전문가와의 협업을 적극 활용합니다.",
-              "캔들스틱은 우수한 운용인력의 확보와 역량 개발이 투자성과와 투자자 보호의 핵심 기반이라는 점을 인식하고, 임직원의 전문성 향상과 윤리의식 제고를 위해 필요한 교육과 내부 관리체계를 지속적으로 보완해 나가겠습니다.",
+              "캔들스틱은 책임 있는 투자와 펀드 운용을 효과적으로 수행하기 위해 투자, M&A, 기업분석, 재무, 회계, 법무, 세무, 산업 리서치 및 사후관리 등에 필요한 전문성과 역량을 지속적으로 강화합니다.",
+              "회사는 투자대상회사를 충분히 이해하고 실질적인 기업가치 제고 방안을 도출하기 위해 내부 운용인력의 전문성을 높이는 한편, 필요한 경우 법무법인, 회계법인, 세무법인, 산업 전문가 및 금융기관 등 외부 전문가와 적극적으로 협업합니다.",
+              "캔들스틱은 우수한 운용인력의 확보와 지속적인 역량 개발이 투자성과와 투자자 보호의 중요한 기반임을 인식하고, 임직원의 전문성 향상과 윤리의식 제고를 위한 교육 및 내부 관리체계를 지속적으로 보완해 나가겠습니다.",
             ],
           },
         ],
+        engagementTitle: "주요 관리 및 관여 활동",
         engagementHeaders: ["구분", "주요 활동"],
         engagementRows: [
-          ["일반 점검", "경영진 미팅, 재무자료 검토, 사업계획 점검, 주요 KPI 모니터링"],
-          ["경영 관여", "이사회 또는 주주총회 참여, 주요 의사결정 협의, 경영개선 과제 제안"],
-          ["리스크 관리", "법무·회계·세무·노무·규제 리스크 점검, 내부통제 개선 권고"],
-          ["계약상 권리 행사", "투자계약상 동의권, 협의권, 자료요청권, 보호조항 등 행사"],
-          ["중대 이슈 대응", "위법행위, 중대한 계약 위반, 회계·재무상 이상징후, 이해상충 발생 시 단계적 대응"],
+          ["일반 점검", "경영진 미팅, 재무자료 검토, 사업계획 점검 및 주요 KPI 모니터링"],
+          ["경영 관여", "이사회 또는 주주총회 참여, 주요 의사결정 협의 및 경영개선 과제 제안"],
+          ["리스크 관리", "법무·회계·세무·노무·규제 관련 리스크 점검 및 내부통제 개선 권고"],
+          ["계약상 권리 행사", "투자계약에 따른 동의권, 협의권, 자료요청권 및 투자자 보호를 위한 기타 계약상 권리 행사"],
+          ["중대 이슈 대응", "위법행위, 중대한 계약 위반, 회계·재무상 이상징후 또는 이해상충 발생 시 사안의 중요도에 따른 단계적 대응"],
         ],
       },
     },
@@ -2134,6 +2138,7 @@
 
     text("#stewardship-code .section-title", data.stewardshipTitle);
     paragraphs("#stewardship-code .section-lead", data.stewardshipLead);
+    text("#stewardship-code .engagement-title", data.engagementTitle);
 
     document.querySelectorAll("#stewardship-code .stewardship-principle").forEach(function (article, index) {
       const principle = data.stewardshipPrinciples[index];
