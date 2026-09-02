@@ -25,7 +25,7 @@
         portfolio: "Portfolio",
         team: "Key Personnel",
         philosophy: "Philosophy",
-        esg: "ESG / Stewardship Code",
+        esg: "ESG / Responsible Investment",
       },
       close: "Close",
       toggle: "Switch language",
@@ -39,7 +39,7 @@
         portfolio: "포트폴리오",
         team: "핵심운용인력",
         philosophy: "투자철학",
-        esg: "ESG / 스튜어드십 코드",
+        esg: "ESG / 책임투자 원칙",
       },
       close: "닫기",
       toggle: "언어 전환",
@@ -1221,8 +1221,8 @@
 
     esg: {
       en: {
-        title: "ESG / Stewardship Code | CANDLESTICK PE",
-        heroTitle: "ESG / Stewardship Code",
+        title: "ESG / Responsible Investment | CANDLESTICK PE",
+        heroTitle: "ESG / Responsible Investment",
         heroSub: "",
         esgTitle: "Candlestick’s Approach to ESG",
         esgLead: [
@@ -1327,8 +1327,8 @@
         ],
       },
       ko: {
-        title: "ESG / 스튜어드십 코드 | CANDLESTICK PE",
-        heroTitle: "ESG / 스튜어드십 코드",
+        title: "ESG / 책임투자 원칙 | CANDLESTICK PE",
+        heroTitle: "ESG / 책임투자 원칙",
         heroSub: "",
         esgTitle: "캔들스틱의 ESG",
         esgLead: [
