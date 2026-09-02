@@ -742,39 +742,40 @@
         heroTitle: "About Candlestick",
         heroSub:
           "Candlestick PE structures and manages institutional private equity funds, executing investments tailored to the strategic and financial needs of each company.",
-        introEyebrow: "Institutional PEF Manager",
-        introTitle: "Private equity solutions built around each company's needs",
+        introEyebrow: "INSTITUTIONAL PRIVATE EQUITY",
+        introTitle:
+          "A Private Equity Partner Aligning Company Growth with Long-Term Investor Value",
         introLead:
-          "As the general partner of institutional private equity funds, Candlestick PE reviews each transaction from the perspective of fund formation, investment execution, post-investment value creation, and exit. We focus on building practical investment structures that reflect the company's capital needs, shareholder objectives, growth strategy, and recoverability.",
+          "As the general partner of institutional private equity funds, Candlestick PE covers the full investment lifecycle—from fund formation and deal structuring to investment execution, post-investment management, and exit.<br><br>We design practical investment structures based on each company's capital needs, shareholder base, growth strategy, and exit prospects.",
         roleCards: [
           {
             title: "Investment Vehicle",
             body:
-              "Candlestick establishes and manages institutional PEFs as the investment vehicle for corporate investments.",
+              "Candlestick establishes and manages institutional private equity funds as the primary vehicles for its investments in companies.",
             items: [
-              "Institutional private equity fund formation and management",
-              "Investment structure design aligned with investor and company needs",
-              "Fund-level governance, reporting, and compliance management",
+              "Formation and Management of Institutional Private Equity Funds",
+              "Investment Structures Aligned with Investor and Company Objectives",
+              "Fund Governance, Reporting, and Compliance Management",
             ],
           },
           {
-            title: "Deal Coverage",
+            title: "Investment Scope",
             body:
-              "We review control investments, M&A transactions, growth capital, and financial restructuring opportunities with a PEF-oriented approach.",
+              "We evaluate investment opportunities based on each company's strategic and financial needs, including control investments, M&A transactions, growth capital, and financial restructuring.",
             items: [
-              "Control investment and M&A opportunities",
-              "Growth capital for companies requiring expansion capital",
-              "Capital structure improvement and shareholder restructuring cases",
+              "Control Investments and M&A Transactions",
+              "Growth Capital for Companies Seeking Additional Funding",
+              "Financial Restructuring and Shareholder Reorganization",
             ],
           },
           {
-            title: "Value-add Role",
+            title: "Value Creation",
             body:
-              "After investment, Candlestick works with management teams and stakeholders to support practical value creation initiatives.",
+              "Following an investment, Candlestick works with management teams and stakeholders to support practical value-creation initiatives.",
             items: [
-              "Business strategy, financial planning, and governance improvement",
-              "Support for internal control, reporting, and risk management",
-              "Exit strategy review and execution support",
+              "Business Strategy, Financial Planning, and Corporate Governance Enhancement",
+              "Strengthening Internal Controls, Reporting Systems, and Risk Management",
+              "Exit Strategy Review and Execution Support",
             ],
           },
         ],
