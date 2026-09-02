@@ -779,46 +779,46 @@
             ],
           },
         ],
-        flowTitle: "How Candlestick Executes PEF Investments",
+        flowTitle: "Our Investment Process",
         flowSteps: [
           {
-            title: "Capital Formation",
+            title: "Fund Formation",
             body:
-              "Form an institutional PEF based on the investment thesis, transaction structure, and target investor profile.",
+              "We form institutional private equity funds based on the investment thesis, transaction structure, and investor base.",
           },
           {
             title: "Deal Structuring",
             body:
-              "Design transaction terms that reflect the company's funding purpose, shareholder needs, and investor protection requirements.",
+              "We design investment terms that reflect the company’s financing objectives, shareholder needs, and investor protection requirements.",
           },
           {
             title: "Investment Execution",
             body:
-              "Complete diligence, investment committee review, fund documentation, and capital deployment through the PEF.",
+              "We execute investments through the fund after completing due diligence, investment committee review, fund documentation, and funding procedures.",
           },
           {
             title: "Value Creation",
             body:
-              "Support management on strategy, finance, governance, organization, and risk-management priorities after investment.",
+              "After investment, we support strategic, financial, and governance initiatives aimed at enhancing company value.",
           },
           {
             title: "Exit",
             body:
-              "Review exit alternatives and timing based on company performance, market conditions, and fund objectives.",
+              "We review exit alternatives and timing based on company performance, market conditions, and fund objectives.",
           },
         ],
         solutionsTitle: "Solutions We Provide",
         solutions: [
-          "Control investment",
-          "M&A investment",
-          "Growth capital",
-          "Financial restructuring",
-          "Business portfolio realignment",
-          "Governance improvement",
+          "Control Investments",
+          "M&A",
+          "Growth Capital",
+          "Financial Restructuring",
+          "Business Portfolio Restructuring",
+          "Corporate Governance Improvement",
         ],
         closingTitle: "Our Role",
         closingText:
-          "Candlestick PE acts as a GP and investment partner that connects institutional capital with corporate needs. We aim to execute investments through disciplined PEF structures and help portfolio companies build sustainable enterprise value.",
+          "Candlestick PE serves as a GP and investment partner connecting institutional capital with the needs of businesses. Guided by integrity and a responsible investment philosophy, we design and execute disciplined private equity structures that support sustainable value creation and lay the foundation for long-term growth at our portfolio companies.",
       },
       ko: {
         title: "About Candlestick | CANDLESTICK PE",
