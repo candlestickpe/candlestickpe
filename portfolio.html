@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net 'sha256-0N5yCXkaTV9EkaCoeFWBhM/UEvSGSEf2lpdCkB7LBG8='; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data:; font-src 'self' https://cdn.jsdelivr.net data:; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net 'sha256-Yk8fiDjwEmHqKHRRyqy+ntFZAwLtBAIyUQsr+jg174g='; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data:; font-src 'self' https://cdn.jsdelivr.net data:; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <link rel="icon" type="image/png" href="candlestick-logo.png" />
   <title>포트폴리오 | CANDLESTICK PE</title>
@@ -1693,6 +1693,13 @@
               url: "https://www.edaily.co.kr/News/Read?newsId=03476806645421040&mediaCodeNo=257",
             },
             {
+              source: "브랜드브리프",
+              date: "2026.05.27",
+              title: "파일러, 국내 기업 유일 'NYC AI 랜딩패드' 선정… 북미 시장 진출 본격화",
+              summary: "파일러의 NYC AI 랜딩패드 선정과 뉴욕 사무실 개설을 통한 북미 시장 진출 계획을 다룬 기사임.",
+              url: "https://www.brandbrief.co.kr/news/articleView.html?idxno=9922",
+            },
+            {
               source: "세계일보",
               date: "2026.08.27",
               title: "“두 사람이 대화하는 장면 찾아줘”… AI가 이 한 마디에 멈춰선 이유 [나인O'Clock]",
@@ -2436,7 +2443,11 @@
             createDetailSection(labels.projectOverview, projectDetail.projectOverview)
           );
 
-          const articles = Array.isArray(projectDetail.articles) ? projectDetail.articles : [];
+          const articles = Array.isArray(projectDetail.articles)
+            ? projectDetail.articles.slice().sort(function (a, b) {
+                return b.date.localeCompare(a.date);
+              })
+            : [];
           articleList.replaceChildren(
             ...articles.map(function (article) {
               return createArticleCard(article);
