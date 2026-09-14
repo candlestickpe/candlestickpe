@@ -221,7 +221,9 @@
     .portfolio-card[hidden]{ display:none; }
     .portfolio-card-media{
       position:relative;
-      height:148px;
+      width:100%;
+      aspect-ratio:4 / 3;
+      flex-shrink:0;
       background:#f6f8fb;
       border-bottom:1px solid #eef1f5;
       overflow:hidden;
@@ -229,7 +231,7 @@
     .portfolio-card-media img{
       width:100%;
       height:100%;
-      object-fit:cover;
+      object-fit:contain;
       display:block;
     }
     .portfolio-card-media--logo{
@@ -248,13 +250,9 @@
     }
     .portfolio-card-media--logo-lg img{
       padding:0;
-      transform:scale(1.16);
-      transform-origin:center;
     }
     .portfolio-card-media--logo-xl img{
       padding:0;
-      transform:scale(1.65);
-      transform-origin:center;
     }
     .portfolio-card-media--subway-logo{
       display:flex;
@@ -485,9 +483,6 @@
       }
       .portfolio-card{
         min-height:auto;
-      }
-      .portfolio-card-media{
-        height:132px;
       }
       .portfolio-detail-fact{
         grid-template-columns:1fr;
