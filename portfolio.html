@@ -221,9 +221,7 @@
     .portfolio-card[hidden]{ display:none; }
     .portfolio-card-media{
       position:relative;
-      width:100%;
-      height:222px;
-      flex-shrink:0;
+      height:148px;
       background:#f6f8fb;
       border-bottom:1px solid #eef1f5;
       overflow:hidden;
@@ -231,12 +229,8 @@
     .portfolio-card-media img{
       width:100%;
       height:100%;
-      object-fit:contain;
-      display:block;
-    }
-    .portfolio-card[data-category="NPL"] .portfolio-card-media img,
-    .portfolio-card[data-project="data-center"] .portfolio-card-media img{
       object-fit:cover;
+      display:block;
     }
     .portfolio-card-media--logo{
       display:flex;
@@ -254,9 +248,13 @@
     }
     .portfolio-card-media--logo-lg img{
       padding:0;
+      transform:scale(1.16);
+      transform-origin:center;
     }
     .portfolio-card-media--logo-xl img{
       padding:0;
+      transform:scale(1.65);
+      transform-origin:center;
     }
     .portfolio-card-media--subway-logo{
       display:flex;
@@ -489,7 +487,7 @@
         min-height:auto;
       }
       .portfolio-card-media{
-        height:198px;
+        height:132px;
       }
       .portfolio-detail-fact{
         grid-template-columns:1fr;
@@ -1396,7 +1394,7 @@
 
         <button class="portfolio-card" type="button" data-project="nplII" data-category="NPL">
           <span class="portfolio-card-media">
-            <img src="npl_project_ii_wide.png" alt="NPL real asset investment banner" />
+            <img src="npl_project_ii_banner.png?v=20260710-npl-generic-v1" alt="NPL real asset investment banner" />
           </span>
           <span class="portfolio-card-body">
             <span class="portfolio-card-badge">NPL</span>
@@ -1409,7 +1407,7 @@
 
         <button class="portfolio-card" type="button" data-project="nplIII" data-category="NPL">
           <span class="portfolio-card-media">
-            <img src="npl_project_iii_wide.png" alt="마곡역 소재 아파트" />
+            <img src="npl_project_iii_banner.png" alt="마곡역 소재 아파트" />
           </span>
           <span class="portfolio-card-body">
             <span class="portfolio-card-badge">NPL</span>
