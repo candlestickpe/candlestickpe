@@ -222,7 +222,7 @@
     .portfolio-card-media{
       position:relative;
       width:100%;
-      aspect-ratio:4 / 3;
+      height:222px;
       flex-shrink:0;
       background:#f6f8fb;
       border-bottom:1px solid #eef1f5;
@@ -233,6 +233,9 @@
       height:100%;
       object-fit:contain;
       display:block;
+    }
+    .portfolio-card[data-project="nplI"] .portfolio-card-media img{
+      object-fit:cover;
     }
     .portfolio-card-media--logo{
       display:flex;
@@ -483,6 +486,9 @@
       }
       .portfolio-card{
         min-height:auto;
+      }
+      .portfolio-card-media{
+        height:198px;
       }
       .portfolio-detail-fact{
         grid-template-columns:1fr;
